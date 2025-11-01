@@ -29,26 +29,26 @@ export default function Header() {
               <Link href="/" className="text-gray-300 hover:text-blue-500">
                 Home
               </Link>
-              <Link href="/shop" className="text-gray-300 hover:text-blue-500">
+              <Link href="" className="text-gray-300 hover:text-blue-500">
                 About
               </Link>
-              <Link href="/about" className="text-gray-300 hover:text-blue-500">
+              <Link href="" className="text-gray-300 hover:text-blue-500">
                 Buisiness Plan
               </Link>
               <Link
-                href="/contact"
+                href=""
                 className="text-gray-300 hover:text-blue-500"
               >
                 Our Works
               </Link>
               <Link
-                href="/contact"
+                href=""
                 className="text-gray-300 hover:text-blue-500"
               >
                 Company Profile
               </Link>
               <Link
-                href="/contact"
+                href=""
                 className="text-gray-300 hover:text-blue-500"
               >
                 Contact
