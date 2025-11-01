@@ -1,4 +1,3 @@
-
 import Header from "@/componets/layout/Header";
 import "./globals.css";
 
@@ -9,15 +8,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" >
-      <body
-        className="antialised text-gray-500 "
-      >
+    <html lang="en">
+      <body className="antialised text-gray-500 ">
         <Header />
-        <main>
- {children}
-        </main>
-       
+        <main>{children}</main>
       </body>
     </html>
   );
