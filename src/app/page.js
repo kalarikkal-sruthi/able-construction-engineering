@@ -35,22 +35,24 @@ export default function Home() {
         </div>
         <div className="absolute inset-0 bg-black/0" />
       </section>
-      <section className="flex flex-col items-start justify-start  text-gray-800 pt-25 pl-25 pb-20 pr-25">
+      <section className="flex flex-col items-center justify-center  text-gray-800 pt-25 pl-25 pb-15 pr-25">
         <div className="  flex-none ">
-          <h2 className="font-bold text-6xl text/6">
+          <h2 className="font-bold text-5xl text/8 text-center">
             We deliver expert building work
             <span className="text-[#bf7b7b]">
               solutions and trusted support for
             </span>
+            <br></br>
             all construction project demands
           </h2>
         </div>
       </section>
-      <section className="pl-25 pb-30 pr-25">
+      <section className="pl-25 pb-30 pr-25 relative">
         <div className="flex gap-6 items-center">
-          <div className="w-1/4">
-            <h2 className="text-6xl font-bold text-gray-800 mb-6">
-              About Our Company
+          <div className="w-2/5 h-[600px] flex flex-col justify-center " >
+            <h2 className="text-5xl font-bold text-gray-800 mb-6">
+              About 
+              <br></br> Our Company
             </h2>
             <p className="text-gray-600">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -64,15 +66,26 @@ export default function Home() {
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum.
             </p>
+            
           </div>
-          <div className="w-3/4 relative h-160">
+          <div className="w-3/5 relative h-160">
             <Image
               src="/about.jpg"
               alt="About Background"
               fill
-              className="object-cover rounded-2xl"
+              className="object-contain rounded-2xl"
             />
           </div>
+        </div>
+        <div>
+          <Image
+              src="/homelogo.png"
+              alt="About Background"
+              width={400}
+              height={400}
+              
+              className="object-contain absolute start-0 bottom-0 rounded-2xl bottom-0 -ml-8 "
+            />
         </div>
       </section>
       <section className="flex flex-col items-start justify-start  text-gray-800  pl-25 pb-20 pr-25">
