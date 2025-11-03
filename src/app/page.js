@@ -13,33 +13,70 @@ export default function Home() {
             className="object-cover scale-110 animate-zoom-slow"
           />
         </div>
-
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
-          <h1 className="text-[4rem] mb-0 mt-0 font-extrabold text-[#251f77] leading-tight">
-            P.Y ABLE CONSTRUCTION & ENGINEERING CO. LTD
+        <div className="relative z-10 flex flex-col items-start justify-end h-full text-white text-center ml-16 pb-16">
+          <h1 className="text-[5rem] mb-0 mt-0 font-extrabold text-[#251f77] leading-tight ">
+            P.Y ABLE CONSTRUCTION
           </h1>
-          <p className="text-[3rem] text-[#be7a79] mb-0 mt-0">
-            Smooth zoom-in background using Tailwind
+          <h1 className="text-[5rem] mb-0 mt-0 font-extrabold text-[#251f77] leading-tight">
+            & ENGINEERING CO. LTD
+          </h1>
+          <p className="text-[3rem] font-extrabold  text-[#fff] mb-0 mt-0">
+            Private Limited By Shares
           </p>
-
-          <h1 className="text-5xl font-bold mb-4 text-[#251f77]">
-            Our Expertise
-          </h1>
-          <div className="text-center">
-            <h2 className="text-6xl font-extrabold text-[#251f77]">35+</h2>
-            <p className="text-xl text-gray-600">Years of Experience</p>
+          <div className="text-center ">
+            <h3 className="text-6xl font-extrabold text-[#251f77] bg-[#ffffff85] rounded-full  flex items-center px-5 py-3 ">
+              35+
+              <span className="text-xl text-[#d1413f]">
+                Years of Experience
+              </span>
+            </h3>
+            <p className="text-xl text-[#d1413f]"></p>
           </div>
         </div>
-
         <div className="absolute inset-0 bg-black/0" />
       </section>
+      <section className="flex flex-col items-start justify-start  text-gray-800 pt-25 pl-25 pb-20 pr-25">
+        <div className="  flex-none ">
+          <h2 className="font-bold text-6xl text/6">
+            We deliver expert building work
+            <span className="text-[#bf7b7b]">
+              solutions and trusted support for
+            </span>
+            all construction project demands
+          </h2>
+        </div>
+      </section>
+      <section className="pl-25 pb-30 pr-25">
+        <div className="flex gap-6 items-center">
+          <div className="w-1/4">
+            <h2 className="text-6xl font-bold text-gray-800 mb-6">
+              About Our Company
+            </h2>
+            <p className="text-gray-600">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+          <div className="w-3/4 relative h-160">
+            <Image
+              src="/about.jpg"
+              alt="About Background"
+              fill
+              className="object-cover rounded-2xl"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col items-start justify-start  text-gray-800  pl-25 pb-20 pr-25">
 
-      <section className="h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-800">
-        <h2 className="text-4xl font-semibold mb-3">About Us</h2>
-        <p className="max-w-xl text-center">
-          We provide amazing services with smooth scrolling and beautiful
-          design.
-        </p>
       </section>
     </main>
   );

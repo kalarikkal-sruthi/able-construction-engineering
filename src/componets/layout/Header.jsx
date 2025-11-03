@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <main className="relative m-0 p-0">
       <header className="fixed top-[15px] left-0 w-full z-50 ">
-        <div className="mx-auto px-8 sm:px-10 lg:px-12 border  shadow-md border-blue-500 rounded-full bg-[#fff]">
+        <div className="mx-auto px-8 sm:px-10 lg:px-12 border  shadow-md border500 rounded-full bg-[#fff]">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="font-bold text-blue-600 flex items-center">
