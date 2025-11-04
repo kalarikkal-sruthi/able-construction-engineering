@@ -41,3 +41,13 @@ font-family: 'Switzer', 'Helvetica Neue', Arial, sans-serif;
 .animate-zoom-slow {
   animation: zoomSlow 20s ease-in-out infinite alternate;
 }
+
+.slick-prev:before, .slick-next:before {
+    opacity: .75;
+    color: #251f77;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: slick;
+    font-size: 30px;
+    line-height: 1;
+}

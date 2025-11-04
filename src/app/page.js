@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import QualityServices from "@/componets/ui/QualityServices";
 
 export default function Home() {
   return (
@@ -118,7 +119,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative w-full mt-10 -ml-30">
+        <div className="relative w-full mt-10 -ml-40">
           <Image
             src="/homelogo.png"
             alt="Home Logo"
@@ -130,49 +131,104 @@ export default function Home() {
       </section>
 
       {/* ===== PROJECTS SECTION ===== */}
-      <section className="flex flex-col items-center justify-center bg-[#f2e4e4] text-gray-800 py-20 px-30">
+      <section className="flex flex-col items-center justify-center bg-[#f2e4e4] text-gray-800 pt-30 px-30">
         <motion.h2
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-5xl text-center font-bold leading-tight text-gray-800 mb-6"
+          className="text-5xl text-center font-bold leading-tight text-gray-800 mb-10"
         >
-          We deliver
+       Provide
           <br />
-          <span className="text-[#251f77]">smart building projects</span>
+          <span className="text-[#251f77]">Quality Services</span>
+        </motion.h2>
+
+        
+      </section>
+<QualityServices />
+      {/* ===== IMAGE GRID ===== */}
+
+
+
+    
+ <section className="flex flex-col items-center justify-center  text-gray-800 pt-20 px-30">
+        <motion.h2
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="text-5xl text-center font-bold leading-tight text-gray-800 mb-10"
+        >
+        Explore Our 
+          <br />
+          <span className="text-[#a14c4d]">Recent Projects</span>
         </motion.h2>
       </section>
 
-      {/* ===== IMAGE GRID ===== */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-[#f2e4e4] px-30 pb-20">
-        {[1, 2, 3, 4].map((num) => (
-          <div key={num} className="bg-white rounded-xl text-center shadow-lg">
-            <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3] overflow-hidden rounded-t-xl">
-              <Image
-                src={`/${num}.jpg`}
-                alt={`Project ${num}`}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw,
-             (max-width: 1200px) 50vw,
-             25vw"
-                priority={num === 1}
-              />
-            </div>
+  <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-30 pb-20">
+  {[
+   {
+      id: 1,
+      title: "Earth Works",
+      desc: "Specialized excavation, grading, and land preparation ensuring solid foundations for all construction phases.",
+      img: "/1.jpg",
+    },
+    {
+      id: 2,
+      title: "Pipe Lining",
+      desc: "Efficient underground utility and drainage systems installation using high-quality pipes and precision alignment.",
+      img: "/2.jpg",
+    },
+    {
+      id: 3,
+      title: "RCC Works",
+      desc: "Reliable reinforced concrete construction for beams, slabs, and columns with a focus on durability and safety.",
+      img: "/3.jpg",
+    },
+    {
+      id: 4,
+      title: "Road Works",
+      desc: "Comprehensive road construction and maintenance — from subgrade preparation to final asphalt paving.",
+      img: "/4.jpg",
+    },
+    {
+      id: 5,
+      title: "Ducts Installation",
+      desc: "Professional HVAC and electrical duct installation ensuring seamless airflow and efficient utility routing.",
+      img: "/5.jpg",
+    },
+    {
+      id: 6,
+      title: "Road Constructions",
+      desc: "Full-scale infrastructure development including highways, pavements, and drainage systems built to last.",
+      img: "/6.jpg",
+    },
+  ].map((item) => (
+    <div
+      key={item.id}
+      className="bg-white rounded-xl text-center shadow-lg hover:shadow-2xl transition-all duration-300"
+    >
+      <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3] overflow-hidden rounded-t-xl">
+        <Image
+          src={item.img}
+          alt={item.title}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                25vw"
+          priority={item.id === 1}
+        />
+      </div>
 
-            <div className="p-6">
-              <h1 className="mb-3 text-black text-2xl font-bold">
-                Riverwalk Towers
-              </h1>
-              <p className="text-gray-600">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-        ))}
-      </section>
+      <div className="p-6">
+        <h1 className="mb-3 text-black text-2xl font-bold">{item.title}</h1>
+        <p className="text-gray-600">{item.desc}</p>
+      </div>
+    </div>
+  ))}
+</section>
     </main>
   );
 }
