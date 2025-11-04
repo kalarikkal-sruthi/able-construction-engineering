@@ -26,30 +26,30 @@ export default function Header() {
             </div>
 
             <nav className="dispaly  md:flex items-center space-x-8 mr-8">
-              <Link href="/" className="text-gray-300 hover:text-blue-500">
+              <Link href="/" className="text-[#bf7b7b] hover:text-[#251f77]">
                 Home
               </Link>
-              <Link href="" className="text-gray-300 hover:text-blue-500">
+              <Link href="" className="text-[#bf7b7b] hover:text-[#251f77]">
                 About
               </Link>
-              <Link href="" className="text-gray-300 hover:text-blue-500">
+              <Link href="" className="text-[#bf7b7b] hover:text-[#251f77]">
                 Buisiness Plan
               </Link>
               <Link
                 href=""
-                className="text-gray-300 hover:text-blue-500"
+                className="text-[#bf7b7b] hover:text-[#251f77]"
               >
                 Our Works
               </Link>
               <Link
                 href=""
-                className="text-gray-300 hover:text-blue-500"
+                className="text-[#bf7b7b] hover:text-[#251f77]0"
               >
                 Company Profile
               </Link>
               <Link
                 href=""
-                className="text-gray-300 hover:text-blue-500"
+                className="text-[#bf7b7b] hover:text-[#251f77]"
               >
                 Contact
               </Link>
