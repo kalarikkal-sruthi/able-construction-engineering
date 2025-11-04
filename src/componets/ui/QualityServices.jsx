@@ -28,55 +28,53 @@ function QualityServices() {
   };
 
   // ✅ Each object represents a different service/project
-const projects = [
-  {
-    id: 1,
-    image: "/1.webp",
-    title: "Structural Construction",
-    description:
-      "High-rise apartment structures built with precision-engineered RCC frameworks ensuring safety and stability.",
-  },
-  {
-    id: 2,
-    image: "/2.webp",
-    title: "Luxury Apartments",
-    description:
-      "Modern residential apartments designed with premium finishes, natural lighting, and optimized space utilization.",
-  },
-  {
-    id: 3,
-    image: "/3.webp",
-    title: "Architectural Planning",
-    description:
-      "Comprehensive architectural layouts for efficient apartment designs balancing aesthetics and functionality.",
-  },
-  {
-    id: 4,
-    image: "/4.webp",
-    title: "General Contracting",
-    description:
-      "End-to-end apartment construction services from excavation to finishing, ensuring timely and quality delivery.",
-  },
-  {
-    id: 5,
-    image: "/5.webp",
-    title: "Interior Finishing",
-    description:
-      "Elegant interiors for modern apartments featuring customized joinery, lighting, and space-saving solutions.",
-  },
-  {
-    id: 6,
-    image: "/6.webp",
-    title: "Renovation & Remodeling",
-    description:
-      "Transforming existing apartment spaces into modern, efficient, and visually appealing living environments.",
-  },
-];
+  const projects = [
+    {
+      id: 1,
+      image: "/1.webp",
+      title: "Structural Construction",
+      description:
+        "High-rise apartment structures built with precision-engineered RCC frameworks ensuring safety and stability.",
+    },
+    {
+      id: 2,
+      image: "/2.webp",
+      title: "Luxury Apartments",
+      description:
+        "Modern residential apartments designed with premium finishes, natural lighting, and optimized space utilization.",
+    },
+    {
+      id: 3,
+      image: "/3.webp",
+      title: "Architectural Planning",
+      description:
+        "Comprehensive architectural layouts for efficient apartment designs balancing aesthetics and functionality.",
+    },
+    {
+      id: 4,
+      image: "/4.webp",
+      title: "General Contracting",
+      description:
+        "End-to-end apartment construction services from excavation to finishing, ensuring timely and quality delivery.",
+    },
+    {
+      id: 5,
+      image: "/5.webp",
+      title: "Interior Finishing",
+      description:
+        "Elegant interiors for modern apartments featuring customized joinery, lighting, and space-saving solutions.",
+    },
+    {
+      id: 6,
+      image: "/6.webp",
+      title: "Renovation & Remodeling",
+      description:
+        "Transforming existing apartment spaces into modern, efficient, and visually appealing living environments.",
+    },
+  ];
 
   return (
     <div className="slider-container px-30 pb-30  bg-[#f2e4e4]">
-     
-
       <Slider {...settings}>
         {projects.map((project) => (
           <div key={project.id} className="px-4">

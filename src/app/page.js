@@ -2,8 +2,31 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import QualityServices from "@/componets/ui/QualityServices";
+import { MdDesignServices } from "react-icons/md"; // Design Development
+import { FiCalendar } from "react-icons/fi"; // Project Planning
+import { GiSofa } from "react-icons/gi"; // Interior Design
 
 export default function Home() {
+  const services = [
+    {
+      id: 1,
+      title: "Design Development",
+      desc: "We provide a transparent cost estimate and handle all necessary permits and approvals to get your project started smoothly.",
+      Icon: MdDesignServices,
+    },
+    {
+      id: 2,
+      title: "Project Planning",
+      desc: "Project planning involves defining goals, tasks, resources, timelines, and responsibilities to successful project execution.",
+      Icon: FiCalendar,
+    },
+    {
+      id: 3,
+      title: "Interior Design",
+      desc: "Interior design involves creating functional, aesthetic spaces by arranging elements to improve comfort and usability.",
+      Icon: GiSofa,
+    },
+  ];
   return (
     <main>
       {/* ===== HERO SECTION ===== */}
@@ -139,20 +162,15 @@ export default function Home() {
           viewport={{ once: true, amount: 0.3 }}
           className="text-5xl text-center font-bold leading-tight text-gray-800 mb-10"
         >
-       Provide
+          Provide
           <br />
           <span className="text-[#251f77]">Quality Services</span>
         </motion.h2>
-
-        
       </section>
-<QualityServices />
+      <QualityServices />
       {/* ===== IMAGE GRID ===== */}
 
-
-
-    
- <section className="flex flex-col items-center justify-center  text-gray-800 pt-20 px-30">
+      <section className="flex flex-col items-center justify-center  text-gray-800 pt-20 px-30">
         <motion.h2
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -160,75 +178,116 @@ export default function Home() {
           viewport={{ once: true, amount: 0.3 }}
           className="text-5xl text-center font-bold leading-tight text-gray-800 mb-10"
         >
-        Explore Our 
+          Explore Our
           <br />
           <span className="text-[#a14c4d]">Recent Projects</span>
         </motion.h2>
       </section>
 
-  <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-30 pb-20">
-  {[
-   {
-      id: 1,
-      title: "Earth Works",
-      desc: "Specialized excavation, grading, and land preparation ensuring solid foundations for all construction phases.",
-      img: "/1.jpg",
-    },
-    {
-      id: 2,
-      title: "Pipe Lining",
-      desc: "Efficient underground utility and drainage systems installation using high-quality pipes and precision alignment.",
-      img: "/2.jpg",
-    },
-    {
-      id: 3,
-      title: "RCC Works",
-      desc: "Reliable reinforced concrete construction for beams, slabs, and columns with a focus on durability and safety.",
-      img: "/3.jpg",
-    },
-    {
-      id: 4,
-      title: "Road Works",
-      desc: "Comprehensive road construction and maintenance — from subgrade preparation to final asphalt paving.",
-      img: "/4.jpg",
-    },
-    {
-      id: 5,
-      title: "Ducts Installation",
-      desc: "Professional HVAC and electrical duct installation ensuring seamless airflow and efficient utility routing.",
-      img: "/5.jpg",
-    },
-    {
-      id: 6,
-      title: "Road Constructions",
-      desc: "Full-scale infrastructure development including highways, pavements, and drainage systems built to last.",
-      img: "/6.jpg",
-    },
-  ].map((item) => (
-    <div
-      key={item.id}
-      className="bg-white rounded-xl text-center shadow-lg hover:shadow-2xl transition-all duration-300"
-    >
-      <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3] overflow-hidden rounded-t-xl">
-        <Image
-          src={item.img}
-          alt={item.title}
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw,
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 px-30 ">
+        {[
+          {
+            id: 1,
+            title: "Earth Works",
+            desc: "Specialized excavation, grading, and land preparation ensuring solid foundations for all construction phases.",
+            img: "/1.jpg",
+          },
+          {
+            id: 2,
+            title: "Pipe Lining",
+            desc: "Efficient underground utility and drainage systems installation using high-quality pipes and precision alignment.",
+            img: "/2.jpg",
+          },
+          {
+            id: 3,
+            title: "RCC Works",
+            desc: "Reliable reinforced concrete construction for beams, slabs, and columns with a focus on durability and safety.",
+            img: "/3.jpg",
+          },
+          {
+            id: 4,
+            title: "Road Works",
+            desc: "Comprehensive road construction and maintenance — from subgrade preparation to final asphalt paving.",
+            img: "/4.jpg",
+          },
+          {
+            id: 5,
+            title: "Ducts Installation",
+            desc: "Professional HVAC and electrical duct installation ensuring seamless airflow and efficient utility routing.",
+            img: "/5.jpg",
+          },
+          {
+            id: 6,
+            title: "Road Constructions",
+            desc: "Full-scale infrastructure development including highways, pavements, and drainage systems built to last.",
+            img: "/6.jpg",
+          },
+        ].map((item) => (
+          <div
+            key={item.id}
+            className="bg-white rounded-xl text-center shadow-lg hover:shadow-2xl transition-all duration-300"
+          >
+            <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] lg:aspect-[4/3] overflow-hidden rounded-t-xl">
+              <Image
+                src={item.img}
+                alt={item.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw,
                 25vw"
-          priority={item.id === 1}
-        />
-      </div>
+                priority={item.id === 1}
+              />
+            </div>
 
-      <div className="p-6">
-        <h1 className="mb-3 text-black text-2xl font-bold">{item.title}</h1>
-        <p className="text-gray-600">{item.desc}</p>
-      </div>
+            <div className="p-6">
+              <h1 className="mb-3 text-black text-2xl font-bold">
+                {item.title}
+              </h1>
+              <p className="text-gray-600">{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </section>
+      <section className="flex flex-col items-center justify-center  text-gray-800 pt-30 px-30">
+        <motion.h2
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="text-5xl text-center font-bold leading-tight text-gray-800 mb-10"
+        >
+          Our End-to-End Process
+          <br />
+          <span className="text-[#a14c4d]">for Building Success</span>
+        </motion.h2>
+      </section>
+     
+      <section className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-30 py-30  overflow-hidden">
+        {/* Background Image (centered, 50% width) */}
+        <div
+          className="absolute   w-full h-full  bg-no-repeat bg-center  "
+          style={{
+            backgroundImage: "url('/vector_11.webp')",
+          }}
+        ></div>
+      {services.map(({ id, title, desc, Icon }, index) => (
+  <div
+    key={id}
+    className={`relative z-10 rounded-xl text-center p-6 ${
+      index === 1 ? "" : "" 
+    }`}
+  >
+    <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#251f77] text-white">
+      <Icon className="w-8 h-8" aria-hidden="true" />
     </div>
-  ))}
-</section>
+    <h1 className="text-2xl text-black font-bold">{title}</h1>
+    {/* <p>{desc}</p> */}
+  </div>
+))}
+
+        {/* Foreground Content */}
+      </section>
     </main>
   );
 }
