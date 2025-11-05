@@ -204,22 +204,23 @@ export default function Home() {
       {/* ===== INTRO SECTION ===== */}
 
       {/* ===== ABOUT SECTION ===== */}
-      <section className="relative px-4 sm:px-6 lg:px-8 xl:px-30 pt-30 pb-16 sm:pb-20 lg:pb-24">
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10 items-center">
-          {/* Text Content */}
+      <section className="relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24 xl:px-12 xl:py-30">
+        <div className="flex flex-col gap-6 md:gap-8 lg:flex-row lg:gap-10 xl:gap-12 2xl:gap-16 items-center">
+          {/* Text Content - Mobile First */}
           <div className="w-full lg:w-2/5 flex flex-col justify-center">
             <motion.h2
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-gray-800 mb-4 sm:mb-6"
+              className="text-2xl font-bold leading-tight text-gray-800 mb-4 
+                   xs:text-3xl 
+                   sm:text-4xl sm:mb-6 
+                   md:text-5xl 
+                   lg:text-4xl lg:mb-8 
+                   xl:text-5xl 
+                   2xl:text-6xl"
             >
               About
               <br />
               <span className="text-[#a14c4d]">Our Company</span>
             </motion.h2>
-
             {/* Company Name */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
