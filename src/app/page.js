@@ -162,115 +162,119 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-black/10" />
       </section> */}
-<section className="relative h-screen w-full overflow-hidden">
-  {/* Background Image */}
-  <div className="absolute inset-0">
-    <Image
-      src="/banner2.jpg"
-      alt="Construction Background"
-      fill
-      className="object-cover"
-      priority
-    />
-    {/* Gradient Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/40"></div>
-  </div>
+      <section className="relative h-screen w-full overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/banner2.jpg"
+            alt="Construction Background"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/40"></div>
+        </div>
 
-  {/* Text Overlay with Glass Effect */}
-  <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.3 }}
-      className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 sm:p-12 lg:p-16 shadow-2xl"
-    >
-      <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white text-center leading-tight">
-        <span className="block">We deliver expert</span>
-        <span className="block text-yellow-300">building work solutions</span>
-        <span className="block text-white/90">and trusted support for</span>
-        <span className="block text-yellow-300">all construction project demands</span>
-      </h2>
-    </motion.div>
-  </div>
-</section>
-
-
+        {/* Text Overlay with Glass Effect */}
+        <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-8 lg:p-16 shadow-2xl w-[95%] max-w-4xl mx-auto"
+          >
+            <h2 className="font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white text-center leading-tight sm:leading-tight">
+              <span className="block mb-3 sm:mb-3">We deliver expert</span>
+              <span className="block text-yellow-300 mb-3 sm:mb-3">
+                building work solutions
+              </span>
+              <span className="block text-white/90 mb-3 sm:mb-3">
+                and trusted support for
+              </span>
+              <span className="block text-yellow-300">
+                all construction project demands
+              </span>
+            </h2>
+          </motion.div>
+        </div>
+      </section>
 
       {/* ===== INTRO SECTION ===== */}
 
       {/* ===== ABOUT SECTION ===== */}
       <section className="relative px-4 sm:px-6 lg:px-8 xl:px-30 pt-30 pb-16 sm:pb-20 lg:pb-24">
-  <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10 items-center">
-    {/* Text Content */}
-    <div className="w-full lg:w-2/5 flex flex-col justify-center">
-      <motion.h2
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }}
-        className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-gray-800 mb-4 sm:mb-6"
-      >
-        About
-        <br />
-        <span className="text-[#a14c4d]">Our Company</span>
-      </motion.h2>
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10 items-center">
+          {/* Text Content */}
+          <div className="w-full lg:w-2/5 flex flex-col justify-center">
+            <motion.h2
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-gray-800 mb-4 sm:mb-6"
+            >
+              About
+              <br />
+              <span className="text-[#a14c4d]">Our Company</span>
+            </motion.h2>
 
-      {/* Company Name */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }}
-        className="mb-6 sm:mb-8"
-      >
-        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#251f77]">
-          P.Y ABLE CONSTRUCTION & ENGINEERING CO. LTD
-        </h3>
-      </motion.div>
+            {/* Company Name */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="mb-6 sm:mb-8"
+            >
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#251f77]">
+                P.Y ABLE CONSTRUCTION & ENGINEERING CO. LTD
+              </h3>
+            </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <p className="text-gray-600 mb-4 text-base sm:text-lg leading-relaxed">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry standard dummy text
-          ever since the 1500s.
-        </p>
-        <p className="text-gray-600 mb-4 text-base sm:text-lg leading-relaxed">
-          It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged.
-        </p>
-        <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-          It was popularised in the 1960s with the release of Letraset
-          sheets containing Lorem Ipsum passages.
-        </p>
-      </motion.div>
-    </div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <p className="text-gray-600 mb-4 text-base sm:text-lg leading-relaxed">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s.
+              </p>
+              <p className="text-gray-600 mb-4 text-base sm:text-lg leading-relaxed">
+                It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages.
+              </p>
+            </motion.div>
+          </div>
 
-    {/* Image Content */}
-    <div className="w-full lg:w-3/5 relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px]">
-      <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }}
-      >
-        <Image
-          src="/about.jpg"
-          alt="About Background"
-          fill
-          className="object-cover rounded-2xl lg:rounded-3xl shadow-lg"
-        />
-      </motion.div>
-    </div>
-  </div>
+          {/* Image Content */}
+          <div className="w-full lg:w-3/5 relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px]">
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <Image
+                src="/about.jpg"
+                alt="About Background"
+                fill
+                className="object-cover shadow-lg"
+              />
+            </motion.div>
+          </div>
+        </div>
 
-  {/* Bottom Logo */}
-  {/* <div className="relative w-full mt-8 lg:mt-10 lg:-ml-40">
+        {/* Bottom Logo */}
+        {/* <div className="relative w-full mt-8 lg:mt-10 lg:-ml-40">
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -287,7 +291,7 @@ export default function Home() {
       />
     </motion.div>
   </div> */}
-</section>
+      </section>
       {/* <section className="relative px-30 pb-20">
         <div className="flex gap-6 items-center">
           <div className="w-2/5 flex flex-col justify-center">
