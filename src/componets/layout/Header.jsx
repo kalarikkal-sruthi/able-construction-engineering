@@ -12,7 +12,7 @@ export default function Header() {
     <main className="relative m-0 p-0">
       <header className="fixed top-[15px] left-0 w-full z-50">
         <div className="mx-auto px-4 sm:px-6 lg:px-8 border shadow-md border-gray-200 rounded-full bg-[#ffffff] backdrop-blur-sm">
-          <div className="flex justify-between items-center py-2">
+          <div className="flex justify-between items-center ">
             {/* Logo and Title */}
             <div className="flex items-center space-x-2 sm:space-x-3">
               <div className="font-bold text-blue-600 flex items-center">
@@ -25,7 +25,7 @@ export default function Header() {
                     alt="Able Logo"
                     width={100}
                     height={80}
-                    className="object-contain ml-2 sm:ml-[20px] w-20 sm:w-24"
+                    className="object-contain ml-2 sm:ml-[20px] w-16 sm:w-24"
                   />
                 </Link>
               </div>

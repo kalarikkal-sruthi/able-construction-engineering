@@ -41,8 +41,8 @@ export default function Home() {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover z-10"
         >
-          <source src="/1.mp4" type="video/mp4" />
-          <source src="/1.webm" type="video/webm" />
+          <source src="/2.mp4" type="video/mp4" />
+          <source src="/2.webm" type="video/webm" />
           {/* Fallback image if video doesn't load */}
           <Image
             src="/hero-fallback.jpg"
@@ -53,7 +53,7 @@ export default function Home() {
         </video>
 
         {/* Dark overlay for better text readability */}
-        <div className="absolute top-0 left-0  h-full bg-black bg-opacity-40 z-20"></div>
+        <div className="absolute top-0 left-0  h-full bg-black bg-opacity-60 z-20"></div>
 
         {/* Centered Text Content */}
         <div className="relative z-30 text-center text-white px-4 sm:px-6 lg:px-8 xl:px-12 max-w-4xl mx-auto pt-16 sm:pt-20 lg:pt-24">
@@ -162,33 +162,45 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-black/10" />
       </section> */}
+<section className="relative h-screen w-full overflow-hidden">
+  {/* Background Image */}
+  <div className="absolute inset-0">
+    <Image
+      src="/banner2.jpg"
+      alt="Construction Background"
+      fill
+      className="object-cover"
+      priority
+    />
+    {/* Gradient Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/40"></div>
+  </div>
+
+  {/* Text Overlay with Glass Effect */}
+  <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 sm:p-12 lg:p-16 shadow-2xl"
+    >
+      <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white text-center leading-tight">
+        <span className="block">We deliver expert</span>
+        <span className="block text-yellow-300">building work solutions</span>
+        <span className="block text-white/90">and trusted support for</span>
+        <span className="block text-yellow-300">all construction project demands</span>
+      </h2>
+    </motion.div>
+  </div>
+</section>
+
+
 
       {/* ===== INTRO SECTION ===== */}
-      <section className="flex flex-col items-center justify-center text-gray-800 py-12 sm:py-16 lg:py-20 xl:py-24 px-4 sm:px-6 lg:px-8 xl:px-10">
-        <div className="w-full max-w-6xl mx-auto">
-          <motion.h2
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeOut",
-              delay: 0.2,
-            }}
-            viewport={{ once: true, amount: 0.3 }}
-            className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight sm:leading-tight lg:leading-tight text-center text-black"
-          >
-            We deliver expert building work
-            <br className="hidden sm:block" />
-            <span className="text-[#a14c4d]">
-              solutions and trusted support for
-            </span>
-            <br className="hidden sm:block" />
-            all construction project demands
-          </motion.h2>
-        </div>
-      </section>
+
       {/* ===== ABOUT SECTION ===== */}
-      <section className="relative px-4 sm:px-6 lg:px-8 xl:px-30 pb-16 sm:pb-20 lg:pb-24">
+      <section className="relative px-4 sm:px-6 lg:px-8 xl:px-30 pt-30 pb-16 sm:pb-20 lg:pb-24">
   <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10 items-center">
     {/* Text Content */}
     <div className="w-full lg:w-2/5 flex flex-col justify-center">
