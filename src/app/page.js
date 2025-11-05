@@ -30,7 +30,90 @@ export default function Home() {
   return (
     <main>
       {/* ===== HERO SECTION ===== */}
-      <section className="relative h-screen overflow-hidden">
+
+      {/* Video Background Section */}
+      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        {/* Video Background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover z-10"
+        >
+          <source src="/1.mp4" type="video/mp4" />
+          <source src="/1.webm" type="video/webm" />
+          {/* Fallback image if video doesn't load */}
+          <Image
+            src="/hero-fallback.jpg"
+            alt="Hero Background"
+            fill
+            className="object-cover"
+          />
+        </video>
+
+        {/* Dark overlay for better text readability */}
+        <div className="absolute top-0 left-0  h-full bg-black bg-opacity-40 z-20"></div>
+
+        {/* Centered Text Content */}
+        <div className="relative z-30 text-center text-white px-4 sm:px-6 lg:px-8 xl:px-12 max-w-4xl mx-auto pt-16 sm:pt-20 lg:pt-24">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full"
+          >
+            <div className="mb-3 sm:mb-4 lg:mb-6">
+              <span className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide">
+                Welcome to
+              </span>
+            </div>
+            <div className="relative inline-block">
+              <span className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold font-mono text-white relative block">
+                Able Group
+                <div className="absolute bottom-1 sm:bottom-2 left-0 w-full h-2 sm:h-3 bg-gradient-to-r from-transparent via-yellow-400 to-transparent opacity-70 rounded-full"></div>
+              </span>
+            </div>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="text-base sm:text-lg lg:text-xl xl:text-2xl mb-6 sm:mb-8 lg:mb-10 leading-relaxed sm:leading-loose opacity-90 max-w-3xl mx-auto px-2"
+          >
+            Transforming ideas into exceptional digital experiences with
+            innovation and expertise
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.4,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center"
+          >
+            <button className="bg-[#251f77] text-white  sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-4 rounded-full hover:bg-[#251f77e6] transition-all duration-300 text-base sm:text-lg lg:text-xl font-semibold shadow-lg hover:shadow-xl  sm:w-auto min-w-[160px]">
+              Get Started
+            </button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* <section className="relative h-screen overflow-hidden">
         <div className="inset-0">
           <Image
             src="/banner.jpg"
@@ -78,33 +161,124 @@ export default function Home() {
         </div>
 
         <div className="absolute inset-0 bg-black/10" />
-      </section>
+      </section> */}
 
       {/* ===== INTRO SECTION ===== */}
-      <section className="flex flex-col items-center justify-center text-gray-800 py-20 px-10">
-        <div>
+      <section className="flex flex-col items-center justify-center text-gray-800 py-12 sm:py-16 lg:py-20 xl:py-24 px-4 sm:px-6 lg:px-8 xl:px-10">
+        <div className="w-full max-w-6xl mx-auto">
           <motion.h2
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+              delay: 0.2,
+            }}
             viewport={{ once: true, amount: 0.3 }}
-            className="font-bold text-6xl leading-tight text-center text-black"
+            className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight sm:leading-tight lg:leading-tight text-center text-black"
           >
             We deliver expert building work
-            <br />
+            <br className="hidden sm:block" />
             <span className="text-[#a14c4d]">
               solutions and trusted support for
             </span>
-            <br />
+            <br className="hidden sm:block" />
             all construction project demands
           </motion.h2>
         </div>
       </section>
-
       {/* ===== ABOUT SECTION ===== */}
-      <section className="relative px-30 pb-20">
+      <section className="relative px-4 sm:px-6 lg:px-8 xl:px-30 pb-16 sm:pb-20 lg:pb-24">
+  <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10 items-center">
+    {/* Text Content */}
+    <div className="w-full lg:w-2/5 flex flex-col justify-center">
+      <motion.h2
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-gray-800 mb-4 sm:mb-6"
+      >
+        About
+        <br />
+        <span className="text-[#a14c4d]">Our Company</span>
+      </motion.h2>
+
+      {/* Company Name */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="mb-6 sm:mb-8"
+      >
+        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#251f77]">
+          P.Y ABLE CONSTRUCTION & ENGINEERING CO. LTD
+        </h3>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <p className="text-gray-600 mb-4 text-base sm:text-lg leading-relaxed">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry standard dummy text
+          ever since the 1500s.
+        </p>
+        <p className="text-gray-600 mb-4 text-base sm:text-lg leading-relaxed">
+          It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.
+        </p>
+        <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+          It was popularised in the 1960s with the release of Letraset
+          sheets containing Lorem Ipsum passages.
+        </p>
+      </motion.div>
+    </div>
+
+    {/* Image Content */}
+    <div className="w-full lg:w-3/5 relative h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px]">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <Image
+          src="/about.jpg"
+          alt="About Background"
+          fill
+          className="object-cover rounded-2xl lg:rounded-3xl shadow-lg"
+        />
+      </motion.div>
+    </div>
+  </div>
+
+  {/* Bottom Logo */}
+  {/* <div className="relative w-full mt-8 lg:mt-10 lg:-ml-40">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="flex justify-center lg:justify-start"
+    >
+      <Image
+        src="/homelogo.png"
+        alt="P.Y ABLE CONSTRUCTION & ENGINEERING CO. LTD"
+        width={400}
+        height={360}
+        className="object-contain rounded-2xl w-64 sm:w-80 lg:w-96 xl:w-[500px]"
+      />
+    </motion.div>
+  </div> */}
+</section>
+      {/* <section className="relative px-30 pb-20">
         <div className="flex gap-6 items-center">
-          <div className="w-2/5 h-[600px] flex flex-col justify-center">
+          <div className="w-2/5 flex flex-col justify-center">
             <motion.h2
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -151,7 +325,7 @@ export default function Home() {
             className="object-contain absolute left-0 rounded-2xl"
           />
         </div>
-      </section>
+      </section> */}
 
       {/* ===== PROJECTS SECTION ===== */}
       <section className="flex flex-col items-center justify-center bg-[#f2e4e4] text-gray-800 pt-30 px-30">
@@ -262,7 +436,7 @@ export default function Home() {
           <span className="text-[#a14c4d]">for Building Success</span>
         </motion.h2>
       </section>
-     
+
       <section className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-30 py-30  overflow-hidden">
         {/* Background Image (centered, 50% width) */}
         <div
@@ -271,20 +445,20 @@ export default function Home() {
             backgroundImage: "url('/vector_11.webp')",
           }}
         ></div>
-      {services.map(({ id, title, desc, Icon }, index) => (
-  <div
-    key={id}
-    className={`relative z-10 rounded-xl text-center p-6 ${
-      index === 1 ? "" : "" 
-    }`}
-  >
-    <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#251f77] text-white">
-      <Icon className="w-8 h-8" aria-hidden="true" />
-    </div>
-    <h1 className="text-2xl text-black font-bold">{title}</h1>
-    {/* <p>{desc}</p> */}
-  </div>
-))}
+        {services.map(({ id, title, desc, Icon }, index) => (
+          <div
+            key={id}
+            className={`relative z-10 rounded-xl text-center p-6 ${
+              index === 1 ? "" : ""
+            }`}
+          >
+            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#251f77] text-white">
+              <Icon className="w-8 h-8" aria-hidden="true" />
+            </div>
+            <h1 className="text-2xl text-black font-bold">{title}</h1>
+            {/* <p>{desc}</p> */}
+          </div>
+        ))}
 
         {/* Foreground Content */}
       </section>
