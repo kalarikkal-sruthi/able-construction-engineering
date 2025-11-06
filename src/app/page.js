@@ -91,8 +91,8 @@ export default function Home() {
             viewport={{ once: true, amount: 0.3 }}
             className="text-base sm:text-lg lg:text-xl xl:text-2xl mb-6 sm:mb-8 lg:mb-10 leading-relaxed sm:leading-loose opacity-90 max-w-3xl mx-auto px-2"
           >
-            Transforming ideas into exceptional digital experiences with
-            innovation and expertise
+            Building a New Standard in Ugandan Real Estate
+PY Able Construction – A Legacy of Excellence, Now Building Your Future in Uganda.
           </motion.p>
 
           <motion.div
@@ -165,7 +165,7 @@ export default function Home() {
       <section className="relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/bannerthree.jpg"
+            src="/secondbanner.jpg"
             alt="Construction Background"
             fill
             className="object-cover"
@@ -240,17 +240,15 @@ export default function Home() {
             >
               <p className="text-gray-600 mb-4 text-base sm:text-lg leading-relaxed">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry standard dummy text
-                ever since the 1500s.
+             Welcome to PY Able Construction & Engineering Co. Ltd, the newest chapter in the storied legacy of the Able Group. With decades of expertise in delivering complex, high-quality infrastructure and building projects across the GCC and India, we have now planted our flag in the heart of Kampala, Uganda.
+
+
               </p>
               <p className="text-gray-600 mb-4 text-base sm:text-lg leading-relaxed">
-                It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
+              We are here to redefine urban living by developing premium, modern apartments that combine international quality standards with a deep understanding of the local landscape. Trust, quality, and timely delivery aren't just our promises—they are our proven track record.   industry. Lorem Ipsum has been the industry standard dummy text
+                ever since the 1500s.
               </p>
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                It was popularised in the 1960s with the release of Letraset
-                sheets containing Lorem Ipsum passages.
-              </p>
+              
             </motion.div>
           </div>
 
@@ -389,26 +387,26 @@ export default function Home() {
           {[
             {
               id: 1,
-              title: "Earth Works",
-              desc: "Specialized excavation, grading, and land preparation ensuring solid foundations for all construction phases.",
+              title: " Earthworks & Road Construction:",
+              desc: "Mass excavation, embankment filling, and building durable highways and airport runways.",
               img: "/1.jpg",
             },
             {
               id: 2,
-              title: "Pipe Lining",
-              desc: "Efficient underground utility and drainage systems installation using high-quality pipes and precision alignment.",
+              title: " Pipeline & Drainage Systems",
+              desc: "Specialist in laying GRP, RCC, and ductile iron pipes for water supply, sewerage, and stormwater drainage.",
               img: "/2.jpg",
             },
             {
               id: 3,
-              title: "RCC Works",
-              desc: "Reliable reinforced concrete construction for beams, slabs, and columns with a focus on durability and safety.",
+              title: " RCC Structures",
+              desc: "Construction of complex reinforced concrete structures including tunnels, retaining walls, water tanks, bridges, and box culverts.",
               img: "/3.jpg",
             },
             {
               id: 4,
-              title: "Road Works",
-              desc: "Comprehensive road construction and maintenance — from subgrade preparation to final asphalt paving.",
+              title: "Ducts Installation:",
+              desc: "Sophisticated work for airfield ground lighting at airports and special cable systems for Formula One tracks.",
               img: "/4.jpg",
             },
             // {
