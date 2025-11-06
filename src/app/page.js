@@ -451,26 +451,32 @@ export default function Home() {
               </div>
             </div>
           ))}
-        </div>        
+        </div>
       </section>
-      
-
-      <section className="flex flex-col items-center justify-center  text-gray-800 pt-30 px-30">
+{/* 
+      <section className="relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24 xl:px-12 xl:py-30 bg-[#f5f5f5]">
         <motion.h2
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-5xl text-center font-bold leading-tight text-gray-800 mb-10"
+         className="text-2xl leading-tight text-gray-800 mb-4   text-center
+                   xs:text-3xl 
+                   sm:text-4xl sm:mb-6 
+                   md:text-5xl 
+                   lg:text-4xl lg:mb-8 
+                   xl:text-5xl 
+                   2xl:text-6xl"
         >
+        
           Our End-to-End Process
           <br />
           <span className="text-[#a14c4d]">for Building Success</span>
         </motion.h2>
-      </section>
+   
 
-      <section className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-30 py-30  overflow-hidden">
-        {/* Background Image (centered, 50% width) */}
+      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-hidden">
+        
         <div
           className="absolute   w-full h-full  bg-no-repeat bg-center  "
           style={{
@@ -478,22 +484,27 @@ export default function Home() {
           }}
         ></div>
         {services.map(({ id, title, desc, Icon }, index) => (
-          <div
-            key={id}
-            className={`relative z-10 rounded-xl text-center p-6 ${
-              index === 1 ? "" : ""
-            }`}
-          >
-            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-[#251f77] text-white">
-              <Icon className="w-8 h-8" aria-hidden="true" />
-            </div>
-            <h1 className="text-2xl text-black font-bold">{title}</h1>
-            {/* <p>{desc}</p> */}
-          </div>
-        ))}
-
-        {/* Foreground Content */}
-      </section>
+  <div
+    key={id}
+    className="relative z-10 rounded-xl text-center p-4 sm:p-6 lg:p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+  >
+    <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto mb-3 sm:mb-4 rounded-full bg-[#251f77] text-white">
+      <Icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" aria-hidden="true" />
+    </div>
+    <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-2">
+      {title}
+    </h1>
+    {desc && (
+      <p className="text-gray-600 text-sm sm:text-base">
+        {desc}
+      </p>
+    )}
+  </div>
+))}
+     
+</div>
+       
+      </section> */}
     </main>
   );
 }
