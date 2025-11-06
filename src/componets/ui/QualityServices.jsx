@@ -10,8 +10,7 @@ const settings = {
   dots: true,
   infinite: true,
   speed: 700,
-  slidesToShow: 3,
-  slidesToScroll: 1,
+ 
   autoplay: true,
   autoplaySpeed: 2500,
   pauseOnHover: true,
@@ -86,7 +85,7 @@ const settings = {
   ]
 };
 
-  // ✅ Each object represents a different service/project
+ 
   const projects = [
     {
       id: 1,
