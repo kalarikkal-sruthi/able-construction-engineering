@@ -149,42 +149,42 @@ export default function Header() {
               ))}
 
               {/* Social Icons in Mobile Menu */}
-              <div className="flex justify-center space-x-6 py-6 border-b border-gray-100">
-                <Link
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  className="text-gray-500 hover:text-pink-600 transition"
-                >
-                  <Instagram size={24} />
-                </Link>
-                <Link
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  className="text-gray-500 hover:text-blue-600 transition"
-                >
-                  <Facebook size={24} />
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  className="text-gray-500 hover:text-blue-700 transition"
-                >
-                  <Linkedin size={24} />
-                </Link>
-                <Link
-                  href="https://yourwebsite.com"
-                  target="_blank"
-                  className="text-gray-500 hover:text-green-600 transition"
-                >
-                  <Globe size={24} />
-                </Link>
-              </div>
+             <div className="flex justify-start space-x-4 sm:space-x-6 py-4 sm:py-6 border-b border-gray-100">
+  <Link
+    href="https://www.instagram.com/"
+    target="_blank"
+    className="text-gray-500 hover:text-pink-600 transition-transform duration-300 hover:scale-110"
+  >
+    <Instagram className="w-5 h-5 sm:w-6 sm:h-6" />
+  </Link>
+  <Link
+    href="https://www.facebook.com/"
+    target="_blank"
+    className="text-gray-500 hover:text-blue-600 transition-transform duration-300 hover:scale-110"
+  >
+    <Facebook className="w-5 h-5 sm:w-6 sm:h-6" />
+  </Link>
+  <Link
+    href="https://www.linkedin.com/"
+    target="_blank"
+    className="text-gray-500 hover:text-blue-700 transition-transform duration-300 hover:scale-110"
+  >
+    <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
+  </Link>
+  <Link
+    href="https://yourwebsite.com"
+    target="_blank"
+    className="text-gray-500 hover:text-green-600 transition-transform duration-300 hover:scale-110"
+  >
+    <Globe className="w-5 h-5 sm:w-6 sm:h-6" />
+  </Link>
+</div>
 
-              <div className="pt-4">
-                <button className="bg-[#251f77] text-white px-6 py-4 rounded-full hover:bg-[#251f7780] transition w-full font-semibold text-lg">
-                  Get In Touch
-                </button>
-              </div>
+             <div className="pt-3 sm:pt-4 md:pt-6">
+  <button className="bg-[#251f77] text-white px-3 py-2.5 xs:px-4 xs:py-3 sm:px-5 sm:py-3.5 md:px-6 md:py-4 rounded-full hover:bg-[#251f77cc] transition-all duration-300  font-semibold text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl hover:shadow-lg hover:shadow-[#251f77]/30 active:scale-95">
+    Get In Touch
+  </button>
+</div>
             </nav>
           </div>
         )}
