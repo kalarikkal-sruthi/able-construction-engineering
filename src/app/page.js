@@ -163,7 +163,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/10" />
       </section> */}
       <section className="relative h-screen w-full overflow-hidden">
-      
         <div className="absolute inset-0">
           <Image
             src="/bannerthree.jpg"
@@ -172,20 +171,19 @@ export default function Home() {
             className="object-cover"
             priority
           />
-         
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/40"></div>
+
+          <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/40"></div>
         </div>
 
-       
         <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
-            className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-8 lg:p-16 shadow-2xl w-[95%] max-w-4xl mx-auto"
+            className="bg-white/5 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-8 lg:p-16 shadow-2xl w-[95%] max-w-4xl mx-auto"
           >
-            <h2 className="font-bold text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white text-center leading-tight sm:leading-tight">
+            <h2 className=" text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white text-center leading-tight sm:leading-tight">
               <span className="block mb-3 sm:mb-3">We deliver expert</span>
               <span className="block text-yellow-300 mb-3 sm:mb-3">
                 building work solutions
@@ -209,7 +207,7 @@ export default function Home() {
           {/* Text Content - Mobile First */}
           <div className="w-full lg:w-2/5 flex flex-col justify-center">
             <motion.h2
-              className="text-2xl font-bold leading-tight text-gray-800 mb-4 
+              className="text-2xl leading-tight text-gray-800 mb-4 
                    xs:text-3xl 
                    sm:text-4xl sm:mb-6 
                    md:text-5xl 
@@ -229,7 +227,7 @@ export default function Home() {
               viewport={{ once: true, amount: 0.3 }}
               className="mb-6 sm:mb-8"
             >
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#251f77]">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl  text-[#251f77]">
                 P.Y ABLE CONSTRUCTION & ENGINEERING CO. LTD
               </h3>
             </motion.div>
@@ -345,20 +343,28 @@ export default function Home() {
       </section> */}
 
       {/* ===== PROJECTS SECTION ===== */}
-      <section className="flex flex-col items-center justify-center bg-[#f2e4e4] text-gray-800 pt-30 px-30">
+      <section className="relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24 xl:px-12 xl:py-30  bg-[#f5f5f5]">
         <motion.h2
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-5xl text-center font-bold leading-tight text-gray-800 mb-10"
+        className="text-2xl leading-tight text-gray-800 mb-4   text-center
+                   xs:text-3xl 
+                   sm:text-4xl sm:mb-6 
+                   md:text-5xl 
+                   lg:text-4xl lg:mb-8 
+                   xl:text-5xl 
+                   2xl:text-6xl"
+           
         >
           Provide
           <br />
           <span className="text-[#251f77]">Quality Services</span>
         </motion.h2>
+        <QualityServices />
       </section>
-      <QualityServices />
+      
       {/* ===== IMAGE GRID ===== */}
 
       <section className="flex flex-col items-center justify-center  text-gray-800 pt-20 px-30">
@@ -369,9 +375,9 @@ export default function Home() {
           viewport={{ once: true, amount: 0.3 }}
           className="text-5xl text-center font-bold leading-tight text-gray-800 mb-10"
         >
-          Explore Our
+         Check Out Our
           <br />
-          <span className="text-[#a14c4d]">Recent Projects</span>
+          <span className="text-[#a14c4d]"> Latest Creations</span>
         </motion.h2>
       </section>
 
