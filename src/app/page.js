@@ -354,7 +354,7 @@ export default function Home() {
     ))}
   </div>
 </section>
-    <section className="relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24 xl:px-12 xl:py-30">
+    <section className="relative px-4  pb-0 pt-12 sm:px-6 sm:pt-16 md:pt-20 lg:px-8 lg:pt-24 xl:px-12 xl:pt-30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Header Section */}
           <div className="text-center mb-8 sm:mb-10 lg:mb-12">
