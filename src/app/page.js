@@ -239,7 +239,7 @@ PY Able Construction – A Legacy of Excellence, Now Building Your Future in Uga
               viewport={{ once: true, amount: 0.3 }}
             >
               <p className="text-gray-600 mb-4 text-base sm:text-lg leading-relaxed">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+        
              Welcome to PY Able Construction & Engineering Co. Ltd, the newest chapter in the storied legacy of the Able Group. With decades of expertise in delivering complex, high-quality infrastructure and building projects across the GCC and India, we have now planted our flag in the heart of Kampala, Uganda.
 
 
@@ -387,7 +387,7 @@ PY Able Construction – A Legacy of Excellence, Now Building Your Future in Uga
           {[
             {
               id: 1,
-              title: " Earthworks & Road Construction:",
+              title: " Earthworks & Road Construction",
               desc: "Mass excavation, embankment filling, and building durable highways and airport runways.",
               img: "/1.jpg",
             },
@@ -449,7 +449,13 @@ PY Able Construction – A Legacy of Excellence, Now Building Your Future in Uga
               </div>
             </div>
           ))}
+          
         </div>
+        <div className="pt-3 sm:pt-4 md:pt-10 text-center">
+  <button className="bg-[#251f77] text-white px-3 py-2.5 xs:px-4 xs:py-3 sm:px-3 sm:py-2 md:px-4 md:py-2 rounded-full hover:bg-[#251f77cc] transition-all duration-300  font-semibold text-sm xs:text-base sm:text-lg md:text-xl lg:text-xl hover:shadow-lg hover:shadow-[#251f77]/30 active:scale-95">
+    Get In Touch
+  </button>
+</div>
       </section>
       
 {/* 
