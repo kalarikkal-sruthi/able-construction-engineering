@@ -163,7 +163,7 @@ export default function Home() {
                    md:text-5xl 
                    lg:text-4xl lg:mb-8 
                    xl:text-5xl 
-                   2xl:text-5xl"
+                   2xl:text-6xl"
             >
               About
               <br />
@@ -234,7 +234,7 @@ export default function Home() {
                md:text-4xl 
                lg:text-4xl lg:mb-6 
                xl:text-5xl 
-               2xl:text-5xl"
+               2xl:text-6xl"
       >
         Prime Apartment
         <br />
