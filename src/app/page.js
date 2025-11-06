@@ -223,7 +223,131 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative px-4 sm:px-6 lg:px-8 xl:px-12 pb-16 sm:pb-20 lg:pb-24 xl:pb-30">
+      <section className="relative py-20 lg:py-28 bg-gradient-to-br from-gray-900 via-[#1a1a1a] to-[#251f77] overflow-hidden">
+  {/* Animated Background Elements */}
+  <div className="absolute inset-0">
+    {/* Floating Shapes */}
+    <div className="absolute top-10 left-10 w-20 h-20 bg-[#a14c4d]/20 rounded-full animate-float"></div>
+    <div className="absolute top-1/4 right-20 w-16 h-16 bg-[#251f77]/30 rounded-lg animate-float-slow"></div>
+    <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-[#a14c4d]/10 rounded-full animate-float-delayed"></div>
+    
+    {/* Grid Pattern */}
+    <div className="absolute inset-0 opacity-10 bg-[length:50px_50px] bg-grid-white"></div>
+  </div>
+
+  <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-6xl mx-auto text-center">
+      
+      {/* Animated Badge */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full mb-8"
+      >
+        <span className="font-mono text-sm tracking-widest uppercase">Our Commitment</span>
+      </motion.div>
+
+      {/* Main Heading with Stagger Animation */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="space-y-4 mb-8"
+      >
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight"
+        >
+          Transforming Uganda's
+        </motion.h2>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="relative inline-block"
+        >
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-[#a14c4d] to-yellow-400 bg-clip-text text-transparent leading-tight">
+            Urban Landscape
+          </h2>
+          {/* Underline Animation */}
+          <motion.div
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+            viewport={{ once: true }}
+            className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#a14c4d] to-yellow-400 transform origin-left"
+          />
+        </motion.div>
+      </motion.div>
+
+      {/* Subheading with Typewriter Effect */}
+      <motion.p
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.7 }}
+        viewport={{ once: true }}
+        className="text-xl sm:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
+      >
+        through exceptional apartment development
+      </motion.p>
+
+      {/* Animated CTA Button */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.9 }}
+        viewport={{ once: true }}
+        className="flex justify-center"
+      >
+        <button className="group relative bg-gradient-to-r from-[#a14c4d] to-[#251f77] text-white px-8 py-4 rounded-full hover:from-[#251f77] hover:to-[#a14c4d] transition-all duration-500 font-semibold text-lg overflow-hidden shadow-2xl hover:shadow-3xl hover:scale-105">
+          <span className="relative z-10 flex items-center gap-3">
+            Start Your Journey
+            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </span>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#251f77] to-[#a14c4d] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </button>
+      </motion.div>
+
+    </div>
+  </div>
+
+  {/* Floating Particles */}
+  <div className="absolute inset-0 overflow-hidden">
+    {[...Array(5)].map((_, i) => (
+      <motion.div
+        key={i}
+        className="absolute w-2 h-2 bg-white/30 rounded-full"
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ 
+          opacity: [0, 1, 0],
+          y: [0, -100],
+          x: Math.random() * 100 - 50
+        }}
+        transition={{
+          duration: 3 + Math.random() * 2,
+          delay: Math.random() * 2,
+          repeat: Infinity,
+          repeatType: "loop"
+        }}
+        style={{
+          left: `${Math.random() * 100}%`,
+          top: `${Math.random() * 100}%`,
+        }}
+      />
+    ))}
+  </div>
+</section>
+      <section className="relative px-4 sm:px-6 lg:px-8 xl:px-12 pb-16 sm:pb-20 lg:pb-24 xl:py-30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Header Section */}
           <div className="text-center mb-8 sm:mb-10 lg:mb-12">
@@ -240,69 +364,62 @@ export default function Home() {
                xl:text-5xl 
                2xl:text-6xl"
             >
-              Prime Apartment
+            Premium Residential
               <br />
               <span className="text-[#a14c4d]">Development</span>
             </motion.h2>
-            {/* 
-      <div className="text-xl sm:text-2xl lg:text-3xl text-[#a14c4d] font-bold mb-4 sm:mb-5 lg:mb-6">
-        for Sale & Rent
-      </div>
-      <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
-        Our core mission in Uganda: Addressing the growing demand for
-        high-quality housing
-      </p> */}
+    
           </div>
 
           {/* Mission Statement */}
-          <div className="bg-gradient-to-r from-[#a14c4d] to-[#251f77] rounded-xl sm:rounded-2xl p-6 sm:p-8 text-white text-center mb-8 sm:mb-10 lg:mb-12">
+          {/* <div className="bg-gradient-to-r from-[#a14c4d] to-[#251f77] rounded-xl sm:rounded-2xl p-6 sm:p-8 text-white text-center mb-8 sm:mb-10 lg:mb-12">
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed">
               "We are committed to transforming Uganda's urban landscape through
               exceptional apartment development"
             </p>
-          </div>
+          </div> */}
 
           {/* Features Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 mb-8 sm:mb-10 lg:mb-12">
-            {[
-              {
-                icon: "🏛️",
-                title: "Modern Designs",
-                desc: "Contemporary aesthetics for urban living",
-              },
-              {
-                icon: "🏗️",
-                title: "Quality Construction",
-                desc: "Best materials and engineering",
-              },
-              {
-                icon: "📍",
-                title: "Strategic Locations",
-                desc: "Accessible growing neighborhoods",
-              },
-              {
-                icon: "⭐",
-                title: "Full Amenities",
-                desc: "Security, parking, community spaces",
-              },
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="text-center p-4 sm:p-5 lg:p-6 bg-gray-50 rounded-lg sm:rounded-xl hover:shadow-md sm:hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">
-                  {feature.icon}
-                </div>
-                <h3 className="font-semibold text-gray-900 text-sm sm:text-base mb-1 sm:mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-xs sm:text-sm text-gray-600">
-                  {feature.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-
+       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mb-8 sm:mb-10 lg:mb-12">
+  {[
+    {
+      title: "Modern Designs",
+      desc: "Contemporary aesthetics for urban living",
+    },
+    {
+      title: "Quality Construction",
+      desc: "Best materials and engineering",
+    },
+    {
+      title: "Strategic Locations", 
+      desc: "Accessible growing neighborhoods",
+    },
+    {
+      title: "Full Amenities",
+      desc: "Security, parking, community spaces",
+    },
+  ].map((feature, index) => (
+    <div
+      key={index}
+      className="text-center p-4 bg-white border border-gray-200 rounded-lg hover:border-[#a14c4d] hover:shadow-lg transition-all duration-300 group"
+    >
+      {/* Number Indicator */}
+      <div className="flex justify-center mb-3">
+        <div className="w-8 h-8 rounded-full bg-[#a14c4d] text-white flex items-center justify-center text-sm font-bold group-hover:scale-110 transition-transform duration-300">
+          {index + 1}
+        </div>
+      </div>
+      
+      <h3 className="font-bold text-gray-900 text-sm mb-2 group-hover:text-[#a14c4d] transition-colors duration-300">
+        {feature.title}
+      </h3>
+      
+      <p className="text-xs text-gray-600 leading-tight">
+        {feature.desc}
+      </p>
+    </div>
+  ))}
+</div>
           {/* Final Statement */}
           <div className="text-center">
             <p className="text-base sm:text-lg text-gray-700 italic">
