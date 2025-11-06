@@ -385,7 +385,7 @@ export default function Home() {
     <span className="text-[#a14c4d]"> Latest Creations</span>
   </motion.h2>
   
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 xl:gap-14">
+  <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 xl:gap-14">
     {[
       {
         id: 1,
@@ -411,18 +411,18 @@ export default function Home() {
         desc: "Comprehensive road construction and maintenance — from subgrade preparation to final asphalt paving.",
         img: "/4.jpg",
       },
-      {
-        id: 5,
-        title: "Ducts Installation",
-        desc: "Professional HVAC and electrical duct installation ensuring seamless airflow and efficient utility routing.",
-        img: "/5.jpg",
-      },
-      {
-        id: 6,
-        title: "Road Constructions",
-        desc: "Full-scale infrastructure development including highways, pavements, and drainage systems built to last.",
-        img: "/6.jpg",
-      },
+      // {
+      //   id: 5,
+      //   title: "Ducts Installation",
+      //   desc: "Professional HVAC and electrical duct installation ensuring seamless airflow and efficient utility routing.",
+      //   img: "/5.jpg",
+      // },
+      // {
+      //   id: 6,
+      //   title: "Road Constructions",
+      //   desc: "Full-scale infrastructure development including highways, pavements, and drainage systems built to last.",
+      //   img: "/6.jpg",
+      // },
     ].map((item) => (
       <div
         key={item.id}
