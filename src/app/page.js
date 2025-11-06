@@ -200,7 +200,7 @@ export default function Home() {
                 modern apartments that combine international quality standards
                 with a deep understanding of the local landscape. Trust,
                 quality, and timely delivery aren't just our promises—they are
-                our proven track record. industry.
+                our proven track record.
               </p>
             </motion.div>
           </div>
@@ -223,24 +223,28 @@ export default function Home() {
           </div>
         </div>
       </section>
-    <section className="relative px-4 sm:px-6 lg:px-8 xl:px-12 pb-16 sm:pb-20 lg:pb-24 xl:pb-30">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    {/* Header Section */}
-    <div className="text-center mb-8 sm:mb-10 lg:mb-12">
-      <motion.h2
-        className="text-2xl leading-tight text-gray-800 mb-3
+      <section className="relative px-4 sm:px-6 lg:px-8 xl:px-12 pb-16 sm:pb-20 lg:pb-24 xl:pb-30">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Header Section */}
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <motion.h2
+             initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+              className="text-2xl leading-tight text-gray-800 mb-3
                xs:text-3xl 
                sm:text-3xl sm:mb-4 
                md:text-4xl 
                lg:text-4xl lg:mb-6 
                xl:text-5xl 
                2xl:text-6xl"
-      >
-        Prime Apartment
-        <br />
-        <span className="text-[#a14c4d]">Development</span>
-      </motion.h2>
-{/* 
+            >
+              Prime Apartment
+              <br />
+              <span className="text-[#a14c4d]">Development</span>
+            </motion.h2>
+            {/* 
       <div className="text-xl sm:text-2xl lg:text-3xl text-[#a14c4d] font-bold mb-4 sm:mb-5 lg:mb-6">
         for Sale & Rent
       </div>
@@ -248,69 +252,73 @@ export default function Home() {
         Our core mission in Uganda: Addressing the growing demand for
         high-quality housing
       </p> */}
-    </div>
+          </div>
 
-    {/* Mission Statement */}
-    <div className="bg-gradient-to-r from-[#a14c4d] to-[#251f77] rounded-xl sm:rounded-2xl p-6 sm:p-8 text-white text-center mb-8 sm:mb-10 lg:mb-12">
-      <p className="text-base sm:text-lg lg:text-xl leading-relaxed">
-        "We are committed to transforming Uganda's urban landscape through
-        exceptional apartment development"
-      </p>
-    </div>
+          {/* Mission Statement */}
+          <div className="bg-gradient-to-r from-[#a14c4d] to-[#251f77] rounded-xl sm:rounded-2xl p-6 sm:p-8 text-white text-center mb-8 sm:mb-10 lg:mb-12">
+            <p className="text-base sm:text-lg lg:text-xl leading-relaxed">
+              "We are committed to transforming Uganda's urban landscape through
+              exceptional apartment development"
+            </p>
+          </div>
 
-    {/* Features Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 mb-8 sm:mb-10 lg:mb-12">
-      {[
-        {
-          icon: "🏛️",
-          title: "Modern Designs",
-          desc: "Contemporary aesthetics for urban living",
-        },
-        {
-          icon: "🏗️",
-          title: "Quality Construction",
-          desc: "Best materials and engineering",
-        },
-        {
-          icon: "📍",
-          title: "Strategic Locations",
-          desc: "Accessible growing neighborhoods",
-        },
-        {
-          icon: "⭐",
-          title: "Full Amenities",
-          desc: "Security, parking, community spaces",
-        },
-      ].map((feature, index) => (
-        <div
-          key={index}
-          className="text-center p-4 sm:p-5 lg:p-6 bg-gray-50 rounded-lg sm:rounded-xl hover:shadow-md sm:hover:shadow-lg transition-shadow duration-300"
-        >
-          <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">{feature.icon}</div>
-          <h3 className="font-semibold text-gray-900 text-sm sm:text-base mb-1 sm:mb-2">
-            {feature.title}
-          </h3>
-          <p className="text-xs sm:text-sm text-gray-600">{feature.desc}</p>
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 mb-8 sm:mb-10 lg:mb-12">
+            {[
+              {
+                icon: "🏛️",
+                title: "Modern Designs",
+                desc: "Contemporary aesthetics for urban living",
+              },
+              {
+                icon: "🏗️",
+                title: "Quality Construction",
+                desc: "Best materials and engineering",
+              },
+              {
+                icon: "📍",
+                title: "Strategic Locations",
+                desc: "Accessible growing neighborhoods",
+              },
+              {
+                icon: "⭐",
+                title: "Full Amenities",
+                desc: "Security, parking, community spaces",
+              },
+            ].map((feature, index) => (
+              <div
+                key={index}
+                className="text-center p-4 sm:p-5 lg:p-6 bg-gray-50 rounded-lg sm:rounded-xl hover:shadow-md sm:hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">
+                  {feature.icon}
+                </div>
+                <h3 className="font-semibold text-gray-900 text-sm sm:text-base mb-1 sm:mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600">
+                  {feature.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Final Statement */}
+          <div className="text-center">
+            <p className="text-base sm:text-lg text-gray-700 italic">
+              We are creating{" "}
+              <span className="text-[#a14c4d] font-semibold">
+                sustainable communities
+              </span>{" "}
+              and{" "}
+              <span className="text-[#251f77] font-semibold">
+                valuable assets
+              </span>{" "}
+              for our clients
+            </p>
+          </div>
         </div>
-      ))}
-    </div>
-
-    {/* Final Statement */}
-    <div className="text-center">
-      <p className="text-base sm:text-lg text-gray-700 italic">
-        We are creating{" "}
-        <span className="text-[#a14c4d] font-semibold">
-          sustainable communities
-        </span>{" "}
-        and{" "}
-        <span className="text-[#251f77] font-semibold">
-          valuable assets
-        </span>{" "}
-        for our clients
-      </p>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* ===== PROJECTS SECTION ===== */}
       <section className="relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24 xl:px-12 xl:py-30  bg-[#f5f5f5]">
