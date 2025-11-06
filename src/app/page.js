@@ -223,13 +223,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative py-20 lg:py-28 bg-gradient-to-br from-gray-900 via-[#1a1a1a] to-[#251f77] overflow-hidden">
+<section className="relative py-20 lg:py-28 bg-gradient-to-br from-[#050235] via-[#050235] to-[#050235] overflow-hidden">
   {/* Animated Background Elements */}
   <div className="absolute inset-0">
     {/* Floating Shapes */}
-    <div className="absolute top-10 left-10 w-20 h-20 bg-[#a14c4d]/20 rounded-full animate-float"></div>
-    <div className="absolute top-1/4 right-20 w-16 h-16 bg-[#251f77]/30 rounded-lg animate-float-slow"></div>
-    <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-[#a14c4d]/10 rounded-full animate-float-delayed"></div>
+    <div className="absolute top-10 left-10 w-20 h-20 bg-[#ffdf20]/20 rounded-full animate-float"></div>
+    <div className="absolute top-1/4 right-20 w-16 h-16 bg-[#251f77]/40 rounded-lg animate-float-slow"></div>
+    <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-[#a14c4d]/30 rounded-full animate-float-delayed"></div>
     
     {/* Grid Pattern */}
     <div className="absolute inset-0 opacity-10 bg-[length:50px_50px] bg-grid-white"></div>
@@ -262,7 +262,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight"
+          className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl  text-white leading-tight"
         >
           Transforming Uganda's
         </motion.h2>
@@ -274,7 +274,7 @@ export default function Home() {
           viewport={{ once: true }}
           className="relative inline-block"
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-[#a14c4d] to-yellow-400 bg-clip-text text-transparent leading-tight">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl bg-gradient-to-r from-[#ffdf20] to-[#ffdf20] bg-clip-text text-transparent leading-tight">
             Urban Landscape
           </h2>
           {/* Underline Animation */}
@@ -283,7 +283,7 @@ export default function Home() {
             whileInView={{ scaleX: 1 }}
             transition={{ duration: 1, delay: 1 }}
             viewport={{ once: true }}
-            className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#a14c4d] to-yellow-400 transform origin-left"
+            className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#ffdf20] to-[#a14c4d] transform origin-left"
           />
         </motion.div>
       </motion.div>
@@ -294,7 +294,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.7 }}
         viewport={{ once: true }}
-        className="text-xl sm:text-2xl lg:text-3xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
+        className="text-xl sm:text-2xl lg:text-3xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed"
       >
         through exceptional apartment development
       </motion.p>
@@ -305,9 +305,10 @@ export default function Home() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
         viewport={{ once: true }}
-        className="flex justify-center"
+        className="flex justify-center gap-4"
       >
-        <button className="group relative bg-gradient-to-r from-[#a14c4d] to-[#251f77] text-white px-8 py-4 rounded-full hover:from-[#251f77] hover:to-[#a14c4d] transition-all duration-500 font-semibold text-lg overflow-hidden shadow-2xl hover:shadow-3xl hover:scale-105">
+        {/* Primary Button */}
+        {/* <button className="group relative bg-gradient-to-r from-[#a14c4d] to-[#251f77] text-white px-8 py-4 rounded-full hover:from-[#251f77] hover:to-[#a14c4d] transition-all duration-500 font-semibold text-lg overflow-hidden shadow-2xl hover:shadow-3xl hover:scale-105">
           <span className="relative z-10 flex items-center gap-3">
             Start Your Journey
             <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -315,7 +316,9 @@ export default function Home() {
             </svg>
           </span>
           <div className="absolute inset-0 bg-gradient-to-r from-[#251f77] to-[#a14c4d] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        </button>
+        </button> */}
+
+      
       </motion.div>
 
     </div>
@@ -323,18 +326,22 @@ export default function Home() {
 
   {/* Floating Particles */}
   <div className="absolute inset-0 overflow-hidden">
-    {[...Array(5)].map((_, i) => (
+    {[...Array(8)].map((_, i) => (
       <motion.div
         key={i}
-        className="absolute w-2 h-2 bg-white/30 rounded-full"
+        className="absolute w-2 h-2 rounded-full"
+        style={{
+          backgroundColor: i % 3 === 0 ? '#ffdf20' : i % 3 === 1 ? '#a14c4d' : '#251f77',
+          opacity: 0.4
+        }}
         initial={{ opacity: 0, y: -100 }}
         animate={{ 
-          opacity: [0, 1, 0],
-          y: [0, -100],
+          opacity: [0, 0.6, 0],
+          y: [0, -150],
           x: Math.random() * 100 - 50
         }}
         transition={{
-          duration: 3 + Math.random() * 2,
+          duration: 4 + Math.random() * 3,
           delay: Math.random() * 2,
           repeat: Infinity,
           repeatType: "loop"
@@ -347,7 +354,7 @@ export default function Home() {
     ))}
   </div>
 </section>
-      <section className="relative px-4 sm:px-6 lg:px-8 xl:px-12 pb-16 sm:pb-20 lg:pb-24 xl:py-30">
+    <section className="relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24 xl:px-12 xl:py-30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Header Section */}
           <div className="text-center mb-8 sm:mb-10 lg:mb-12">
@@ -365,7 +372,7 @@ export default function Home() {
                2xl:text-6xl"
             >
             Premium Residential
-              <br />
+             < br />
               <span className="text-[#a14c4d]">Development</span>
             </motion.h2>
     
@@ -486,25 +493,25 @@ export default function Home() {
               id: 1,
               title: " Earthworks & Road Construction",
               desc: "Mass excavation, embankment filling, and building durable highways and airport runways.",
-              img: "/1.jpg",
+              img: "/LATESTWORKS/earthwork2.jpg",
             },
             {
               id: 2,
               title: " Pipeline & Drainage Systems",
               desc: "Specialist in laying GRP, RCC, and ductile iron pipes for water supply, sewerage, and stormwater drainage.",
-              img: "/2.jpg",
+              img: "/LATESTWORKS/pipeline.jpeg",
             },
             {
               id: 3,
               title: " RCC Structures",
               desc: "Construction of complex reinforced concrete structures including tunnels, retaining walls, water tanks, bridges, and box culverts.",
-              img: "/3.jpg",
+              img: "/LATESTWORKS/rcc1.jpg",
             },
             {
               id: 4,
               title: "Ducts Installation",
               desc: "Sophisticated work for airfield ground lighting at airports and special cable systems for Formula One tracks.",
-              img: "/4.jpg",
+              img: "/LATESTWORKS/ductinstallation.jpg",
             },
           ].map((item) => (
             <div
