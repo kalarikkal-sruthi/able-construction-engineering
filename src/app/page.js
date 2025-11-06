@@ -115,7 +115,7 @@ export default function Home() {
       <section className="relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/secondbanner.jpg"
+            src="/second-banner.jpg"
             alt="Construction Background"
             fill
             className="object-cover"
