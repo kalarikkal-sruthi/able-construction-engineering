@@ -240,14 +240,14 @@ export default function Home() {
         <br />
         <span className="text-[#a14c4d]">Development</span>
       </motion.h2>
-
+{/* 
       <div className="text-xl sm:text-2xl lg:text-3xl text-[#a14c4d] font-bold mb-4 sm:mb-5 lg:mb-6">
         for Sale & Rent
       </div>
       <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
         Our core mission in Uganda: Addressing the growing demand for
         high-quality housing
-      </p>
+      </p> */}
     </div>
 
     {/* Mission Statement */}
