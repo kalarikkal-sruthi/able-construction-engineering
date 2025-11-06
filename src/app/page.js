@@ -163,20 +163,20 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/10" />
       </section> */}
       <section className="relative h-screen w-full overflow-hidden">
-        {/* Background Image */}
+      
         <div className="absolute inset-0">
           <Image
-            src="/banner2.jpg"
+            src="/bannerthree.jpg"
             alt="Construction Background"
             fill
             className="object-cover"
             priority
           />
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/40"></div>
+         
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/40"></div>
         </div>
 
-        {/* Text Overlay with Glass Effect */}
+       
         <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
