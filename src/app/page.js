@@ -181,7 +181,7 @@ export default function Home() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
-            className="bg-white/5 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-8 lg:p-16 shadow-2xl w-[95%] max-w-4xl mx-auto"
+            className=" rounded-3xl p-6 sm:p-8 lg:p-16 shadow-2xl w-[95%] max-w-4xl mx-auto"
           >
             <h2 className=" text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white text-center leading-tight sm:leading-tight">
               <span className="block mb-3 sm:mb-3">We deliver expert</span>
