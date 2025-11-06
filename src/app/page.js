@@ -366,92 +366,95 @@ export default function Home() {
 
       {/* ===== IMAGE GRID ===== */}
 
-<section className="relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24 xl:px-12 xl:py-30">
-  <motion.h2
-    initial={{ opacity: 0, x: -100 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.8, ease: "easeOut" }}
-    viewport={{ once: true, amount: 0.3 }}
-    className="text-2xl leading-tight text-gray-800 mb-4 text-center
+      <section className="relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24 xl:px-12 xl:py-30">
+        <motion.h2
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="text-2xl leading-tight text-gray-800 mb-4 text-center
                xs:text-3xl 
                sm:text-4xl sm:mb-6 
                md:text-5xl 
                lg:text-4xl lg:mb-8 
                xl:text-5xl 
                2xl:text-6xl"
-  >
-    Check Out Our
-    <br />
-    <span className="text-[#a14c4d]"> Latest Creations</span>
-  </motion.h2>
-  
-  <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 xl:gap-14">
-    {[
-      {
-        id: 1,
-        title: "Earth Works",
-        desc: "Specialized excavation, grading, and land preparation ensuring solid foundations for all construction phases.",
-        img: "/1.jpg",
-      },
-      {
-        id: 2,
-        title: "Pipe Lining",
-        desc: "Efficient underground utility and drainage systems installation using high-quality pipes and precision alignment.",
-        img: "/2.jpg",
-      },
-      {
-        id: 3,
-        title: "RCC Works",
-        desc: "Reliable reinforced concrete construction for beams, slabs, and columns with a focus on durability and safety.",
-        img: "/3.jpg",
-      },
-      {
-        id: 4,
-        title: "Road Works",
-        desc: "Comprehensive road construction and maintenance — from subgrade preparation to final asphalt paving.",
-        img: "/4.jpg",
-      },
-      // {
-      //   id: 5,
-      //   title: "Ducts Installation",
-      //   desc: "Professional HVAC and electrical duct installation ensuring seamless airflow and efficient utility routing.",
-      //   img: "/5.jpg",
-      // },
-      // {
-      //   id: 6,
-      //   title: "Road Constructions",
-      //   desc: "Full-scale infrastructure development including highways, pavements, and drainage systems built to last.",
-      //   img: "/6.jpg",
-      // },
-    ].map((item) => (
-      <div
-        key={item.id}
-        className="bg-white rounded-xl text-center shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-01"
-      >
-        <div className="relative w-full aspect-[4/3] overflow-hidden rounded-t-xl">
-          <Image
-            src={item.img}
-            alt={item.title}
-            fill
-            className="object-cover hover:scale-110 transition-transform duration-300"
-            sizes="(max-width: 768px) 100vw,
+        >
+          Check Out Our
+          <br />
+          <span className="text-[#a14c4d]"> Latest Creations</span>
+        </motion.h2>
+
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 xl:gap-14">
+          {[
+            {
+              id: 1,
+              title: "Earth Works",
+              desc: "Specialized excavation, grading, and land preparation ensuring solid foundations for all construction phases.",
+              img: "/1.jpg",
+            },
+            {
+              id: 2,
+              title: "Pipe Lining",
+              desc: "Efficient underground utility and drainage systems installation using high-quality pipes and precision alignment.",
+              img: "/2.jpg",
+            },
+            {
+              id: 3,
+              title: "RCC Works",
+              desc: "Reliable reinforced concrete construction for beams, slabs, and columns with a focus on durability and safety.",
+              img: "/3.jpg",
+            },
+            {
+              id: 4,
+              title: "Road Works",
+              desc: "Comprehensive road construction and maintenance — from subgrade preparation to final asphalt paving.",
+              img: "/4.jpg",
+            },
+            // {
+            //   id: 5,
+            //   title: "Ducts Installation",
+            //   desc: "Professional HVAC and electrical duct installation ensuring seamless airflow and efficient utility routing.",
+            //   img: "/5.jpg",
+            // },
+            // {
+            //   id: 6,
+            //   title: "Road Constructions",
+            //   desc: "Full-scale infrastructure development including highways, pavements, and drainage systems built to last.",
+            //   img: "/6.jpg",
+            // },
+          ].map((item) => (
+            <div
+              key={item.id}
+              className="bg-white rounded-xl text-center shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-01"
+            >
+              <div className="relative w-full aspect-[4/3] overflow-hidden rounded-t-xl">
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  fill
+                  className="object-cover hover:scale-110 transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw,
                    (max-width: 1024px) 50vw,
                    33vw"
-            priority={item.id === 1}
-          />
-        </div>
+                  priority={item.id === 1}
+                />
+              </div>
 
-        <div className="p-4 sm:p-6 lg:p-8">
-          <h1 className="mb-3 text-black text-xl sm:text-2xl font-bold">
-            {item.title}
-          </h1>
-          <p className="text-gray-600 text-sm sm:text-base">{item.desc}</p>
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
-    
+              <div className="p-4 sm:p-6 lg:p-8">
+                <h1 className="mb-3 text-black text-xl sm:text-2xl font-bold">
+                  {item.title}
+                </h1>
+                <p className="text-gray-600 text-sm sm:text-base">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>        
+      </section>
+      
+
       <section className="flex flex-col items-center justify-center  text-gray-800 pt-30 px-30">
         <motion.h2
           initial={{ opacity: 0, x: -100 }}
