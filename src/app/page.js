@@ -53,7 +53,7 @@ export default function Home() {
         </video>
 
         {/* Dark overlay for better text readability */}
-        <div className="absolute top-0 left-0  h-full bg-black bg-opacity-60 z-20"></div>
+        <div className="absolute top-0 left-0  h-full bg-black  z-20"></div>
 
         {/* Centered Text Content */}
         <div className="relative z-30 text-center text-white px-4 sm:px-6 lg:px-8 xl:px-12 max-w-4xl mx-auto pt-16 sm:pt-20 lg:pt-24">
