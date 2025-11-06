@@ -181,7 +181,7 @@ PY Able Construction – A Legacy of Excellence, Now Building Your Future in Uga
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
-            className=" rounded-3xl p-6 sm:p-8 lg:p-16 shadow-2xl w-[95%] max-w-4xl mx-auto"
+            className="  p-6 sm:p-8 lg:p-16  w-[95%] max-w-4xl mx-auto"
           >
             <h2 className=" text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white text-center leading-tight sm:leading-tight">
               <span className="block mb-3 sm:mb-3">We deliver expert</span>
@@ -405,7 +405,7 @@ PY Able Construction – A Legacy of Excellence, Now Building Your Future in Uga
             },
             {
               id: 4,
-              title: "Ducts Installation:",
+              title: "Ducts Installation",
               desc: "Sophisticated work for airfield ground lighting at airports and special cable systems for Formula One tracks.",
               img: "/4.jpg",
             },
@@ -451,6 +451,7 @@ PY Able Construction – A Legacy of Excellence, Now Building Your Future in Uga
           ))}
         </div>
       </section>
+      
 {/* 
       <section className="relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24 xl:px-12 xl:py-30 bg-[#f5f5f5]">
         <motion.h2

@@ -61,46 +61,46 @@ function QualityServices() {
   const projects = [
     {
       id: 1,
-      image: "/1.webp",
+      image: "/quality-services/structural-construction.jpg",
       title: "Structural Construction",
       description:
         "High-rise apartment structures built with precision-engineered RCC frameworks ensuring safety and stability.",
     },
     {
       id: 2,
-      image: "/2.webp",
+      image: "/quality-services/luxury-apartment.jpg",
       title: "Luxury Apartments",
       description:
         "Modern residential apartments designed with premium finishes, natural lighting, and optimized space utilization.",
     },
     {
       id: 3,
-      image: "/3.webp",
+      image: "/quality-services/creative-architect-projecting-big-drawings-dark-loft-office-cafe-with-dark-retro-style.jpg",
       title: "Architectural Planning",
       description:
         "Comprehensive architectural layouts for efficient apartment designs balancing aesthetics and functionality.",
     },
     {
       id: 4,
-      image: "/4.webp",
+      image: "/quality-services/general-contracting.jpg",
       title: "General Contracting",
       description:
         "End-to-end apartment construction services from excavation to finishing, ensuring timely and quality delivery.",
     },
     {
       id: 5,
-      image: "/5.webp",
+      image: "/quality-services/interior-finishing.jpg",
       title: "Interior Finishing",
       description:
         "Elegant interiors for modern apartments featuring customized joinery, lighting, and space-saving solutions.",
     },
-    {
-      id: 6,
-      image: "/6.webp",
-      title: "Renovation & Remodeling",
-      description:
-        "Transforming existing apartment spaces into modern, efficient, and visually appealing living environments.",
-    },
+    // {
+    //   id: 6,
+    //   image: "/6.webp",
+    //   title: "Renovation & Remodeling",
+    //   description:
+    //     "Transforming existing apartment spaces into modern, efficient, and visually appealing living environments.",
+    // },
   ];
 
   return (
@@ -109,9 +109,9 @@ function QualityServices() {
         {projects.map((project) => (
           <div key={project.id} className="px-2 sm:px-3 lg:px-4 group">
             {/* Clean Card Design */}
-            <div className="bg-white border-gray-100 transition-all duration-500 overflow-hidden hover:shadow-lg hover:shadow-yellow-100/50">
+            <div className=" border-gray-100 transition-all duration-500 overflow-hidden hover:shadow-lg hover:shadow-yellow-100/50">
               {/* Image with Subtle Frame */}
-              <div className="p-3 sm:p-4 lg:p-6 pb-0">
+              <div className=" pb-0">
                 <div className="relative overflow-hidden rounded-lg">
                   <img
                     src={project.image}
