@@ -115,7 +115,7 @@ export default function Home() {
       <section className="relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/second-banner.jpg"
+            src="/secondbanner.jpg"
             alt="Construction Background"
             fill
             className="object-cover"
@@ -445,7 +445,7 @@ export default function Home() {
       </section>
 
       {/* ===== PROJECTS SECTION ===== */}
-      <section className="relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24 xl:px-12 xl:py-30  bg-[#f5f5f5]">
+      {/* <section className="relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24 xl:px-12 xl:py-30  bg-[#f5f5f5]">
         <motion.h2
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -464,7 +464,7 @@ export default function Home() {
           <span className="text-[#251f77]">Quality Services</span>
         </motion.h2>
         <QualityServices />
-      </section>
+      </section> */}
 
       {/* ===== IMAGE GRID ===== */}
 
