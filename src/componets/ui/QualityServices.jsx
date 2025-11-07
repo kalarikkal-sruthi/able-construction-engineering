@@ -73,7 +73,7 @@ OUR EXPERTISE
           <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
             <div className="aspect-square overflow-hidden">
               <img 
-                src="/1.jpg" 
+                src="/expertise/jcb.jpg" 
                 alt="Site Excavation"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -91,7 +91,7 @@ OUR EXPERTISE
           <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
             <div className="aspect-square overflow-hidden">
               <img 
-                src="/1.jpg" 
+                src="/expertise/rcc.jpg" 
                 alt="Land Grading"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -109,7 +109,7 @@ OUR EXPERTISE
           <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
             <div className="aspect-square overflow-hidden">
               <img 
-                src="/1.jpg" 
+                src="/expertise/road.jpg" 
                 alt="Erosion Control"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -127,7 +127,7 @@ OUR EXPERTISE
           <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
             <div className="aspect-square overflow-hidden">
               <img 
-                src="/1.jpg" 
+                src="/expertise/pipeline.jpg" 
                 alt="Final Preparation"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -140,24 +140,39 @@ OUR EXPERTISE
           </div>
         </SwiperSlide>
 
-        {/* Slide 5 */}
-        <SwiperSlide>
+
+   <SwiperSlide>
           <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
             <div className="aspect-square overflow-hidden">
               <img 
-                src="/1.jpg" 
+                src="/expertise/drainage.jpg" 
                 alt="Additional Service"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
             </div>
             {/* Transparent Text Overlay */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">ADDITIONAL SERVICE</h3>
-              <p className="text-xs md:text-sm opacity-90 leading-relaxed">Additional construction services description</p>
+              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">DRAINAGE SYSTEMS</h3>
+              <p className="text-xs md:text-sm opacity-90 leading-relaxed">Mastering the Flow, Taming the Elements.</p>
             </div>
           </div>
         </SwiperSlide>
-
+           <SwiperSlide>
+          <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+            <div className="aspect-square overflow-hidden">
+              <img 
+                src="/expertise/bridge.jpg" 
+                alt="Additional Service"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            {/* Transparent Text Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2"> BRIDGE WORKS</h3>
+              <p className="text-xs md:text-sm opacity-90 leading-relaxed">Connecting Destinies, Overcoming Nature's Challenges.</p>
+            </div>
+          </div>
+        </SwiperSlide>
         {/* Add more slides as needed */}
       </Swiper>
 
