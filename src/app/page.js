@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <main>
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
-       
         <video
           autoPlay
           muted
@@ -20,7 +19,7 @@ export default function Home() {
         >
           <source src="/hero.mp4" type="video/mp4" />
           <source src="/hero.mp4" type="video/webm" />
-         
+
           <Image
             src="/main-banner-video-image.png"
             alt="Hero Background"
@@ -132,36 +131,49 @@ export default function Home() {
         </div>
       </section>
       <section className="relative h-screen w-full overflow-hidden">
-        <div className="absolute inset-0">
-          {/* <Image
-            src="/secondbanner.jpg"
-            alt="Construction Background"
-            fill
-            className="object-cover"
-            priority
-          /> */}
-
+        <motion.div
+          className="absolute inset-0"
+          initial={{ scale: 1.2 }}
+          whileInView={{ scale: 1 }}
+          transition={{
+            duration: 1.5,
+            ease: "easeOut",
+          }}
+          viewport={{ once: true, amount: 0.3 }}
+          style={{
+            backgroundImage: "url('/second-banner.jpeg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed", 
+          }}
+        >
           <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/40"></div>
-        </div>
+        </motion.div>
 
         <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+              delay: 0.2,
+            }}
             viewport={{ once: true, amount: 0.3 }}
-            className="  p-6 sm:p-8 lg:p-16  w-[95%] max-w-4xl mx-auto"
+            className="p-6 sm:p-8 lg:p-16 w-[95%] max-w-8xl mx-auto"
           >
-            <h2 className=" text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white text-center leading-tight sm:leading-tight">
-              <span className="block mb-3 sm:mb-3">We deliver expert</span>
+            <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white text-center leading-tight sm:leading-tight">
+              <span className="block mb-3 sm:mb-3">
+                From International Landmarks to Your Kampala Address.
+              </span>
               <span className="block text-yellow-300 mb-3 sm:mb-3">
-                building work solutions
-              </span>
-              <span className="block text-white/90 mb-3 sm:mb-3">
-                and trusted support for
-              </span>
-              <span className="block text-yellow-300">
-                all construction project demands
+                PY Able Construction is the new standard in Ugandan real estate.
+                We are the direct descendant of the Able Group, a global
+                construction and trading powerhouse. For over 20 years, we've
+                shaped skylines and infrastructure across the Middle East and
+                India. Now, we're channeling that unparalleled expertise into
+                creating your future home in Uganda—where luxury, innovation,
+                and reliability converge.
               </span>
             </h2>
           </motion.div>
