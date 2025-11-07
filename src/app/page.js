@@ -7,33 +7,10 @@ import { FiCalendar } from "react-icons/fi"; // Project Planning
 import { GiSofa } from "react-icons/gi"; // Interior Design
 
 export default function Home() {
-  const services = [
-    {
-      id: 1,
-      title: "Design Development",
-      desc: "We provide a transparent cost estimate and handle all necessary permits and approvals to get your project started smoothly.",
-      Icon: MdDesignServices,
-    },
-    {
-      id: 2,
-      title: "Project Planning",
-      desc: "Project planning involves defining goals, tasks, resources, timelines, and responsibilities to successful project execution.",
-      Icon: FiCalendar,
-    },
-    {
-      id: 3,
-      title: "Interior Design",
-      desc: "Interior design involves creating functional, aesthetic spaces by arranging elements to improve comfort and usability.",
-      Icon: GiSofa,
-    },
-  ];
   return (
     <main>
-      {/* ===== HERO SECTION ===== */}
-
-      {/* Video Background Section */}
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
-        {/* Video Background */}
+       
         <video
           autoPlay
           muted
@@ -41,18 +18,17 @@ export default function Home() {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover z-10"
         >
-          <source src="/2.mp4" type="video/mp4" />
-          <source src="/2.webm" type="video/webm" />
-          {/* Fallback image if video doesn't load */}
+          <source src="/hero.mp4" type="video/mp4" />
+          <source src="/hero.mp4" type="video/webm" />
+         
           <Image
-            src="/hero-fallback.jpg"
+            src="/main-banner-video-image.png"
             alt="Hero Background"
             fill
             className="object-cover"
           />
         </video>
 
-        {/* Dark overlay for better text readability */}
         <div className="absolute top-0 left-0  h-full bg-black  z-20"></div>
 
         {/* Centered Text Content */}
@@ -191,7 +167,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
     </main>
   );
 }
