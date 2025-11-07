@@ -26,7 +26,15 @@ function QualityServices() {
           <Swiper
             slidesPerView={1}
             spaceBetween={20}
-            freeMode={true}
+            // freeMode={true}
+            loop={true} // Enable infinite loop
+  speed={800} // Transition speed in milliseconds
+  autoplay={{
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  }}
+           
             pagination={{
               clickable: true,
               el: ".swiper-pagination",
