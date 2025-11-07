@@ -12,17 +12,17 @@ import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 
 function QualityServices() {
   return (
-    <section className="py-10 md:py-24 lg:py-20 bg-gray-50">
+    <section className="py-8 md:py-20 lg:py-20 bg-gray-50">
       <div className=" mx-auto px-4 sm:px-6 lg:px-16">
         {/* Optional Section Heading */}
-        <div className="text-start mb-8 md:mb-10">
+        <div className="text-start mb-4 md:mb-8">
           <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
             Our Core Competencies
           </span>
 
           {/* Alternative Shorter Introduction */}
 
-          <p className="text-05xl sm:text-1xl lg:text-1xl xl:text-1xl block  mb-3 mt-3 sm:mb-3 text-black ">
+          <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-1 sm:mt-1 mb-4 md:mb-8 sm:mb-3 text-black ">
             Pioneering construction innovation with comprehensive
             engineering—from earthworks to bridges. We deliver precision,
             reliability, and quality to transform visions into enduring
@@ -78,7 +78,7 @@ function QualityServices() {
                 spaceBetween: 14,
               },
             }}
-            modules={[FreeMode, Pagination,Autoplay]}
+            modules={[FreeMode, Pagination, Autoplay]}
             className="services-swiper pb-12"
           >
             {/* Slide 1 */}
@@ -93,10 +93,10 @@ function QualityServices() {
                 </div>
                 {/* Transparent Text Overlay */}
                 <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">
+                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-0">
                     EARTHWORKS
                   </h3>
-                  <p className="text-xs md:text-sm opacity-90 leading-relaxed text">
+                  <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] opacity-90 leading-relaxed text">
                     Transforming Terrain with Surgical Precision.
                   </p>
                   <motion.div
@@ -122,8 +122,7 @@ function QualityServices() {
     rounded-full 
     transition-all 
     duration-300 
-    text-sm 
-    xl:text-sm
+    text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]
     relative
     overflow-hidden
     group
@@ -131,7 +130,7 @@ function QualityServices() {
     flex
     items-center
     justify-center
-    min-w-[130px]
+    min-w-[120px]
     xl:min-w-[130px]
     hover:bg-white/20
   "
@@ -179,7 +178,7 @@ function QualityServices() {
                   <p className="text-xs md:text-sm opacity-90 leading-relaxed">
                     Creating Possibility from Raw Land.
                   </p>
-                    <motion.div
+                  <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -188,7 +187,7 @@ function QualityServices() {
                       ease: "easeOut",
                     }}
                     viewport={{ once: true, amount: 0.3 }}
-                   className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-start items-start"
+                    className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-start items-start"
                   >
                     <button
                       className="
@@ -259,7 +258,7 @@ function QualityServices() {
                   <p className="text-xs md:text-sm opacity-90 leading-relaxed">
                     The Architecture of Strength and Permanence.
                   </p>
-                    <motion.div
+                  <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -339,7 +338,7 @@ function QualityServices() {
                   <p className="text-xs md:text-sm opacity-90 leading-relaxed">
                     Ready-to-build surfaces for construction projects
                   </p>
-                    <motion.div
+                  <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -348,7 +347,7 @@ function QualityServices() {
                       ease: "easeOut",
                     }}
                     viewport={{ once: true, amount: 0.3 }}
-                 className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-start items-start"
+                    className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-start items-start"
                   >
                     <button
                       className="
@@ -418,7 +417,7 @@ function QualityServices() {
                   <p className="text-xs md:text-sm opacity-90 leading-relaxed">
                     Mastering the Flow, Taming the Elements.
                   </p>
-                    <motion.div
+                  <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -497,7 +496,7 @@ function QualityServices() {
                   <p className="text-xs md:text-sm opacity-90 leading-relaxed">
                     Connecting Destinies, Overcoming Nature's Challenges.
                   </p>
-                    <motion.div
+                  <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -562,10 +561,7 @@ function QualityServices() {
           </Swiper>
 
           {/* Custom Pagination */}
-          <div
-            className="swiper-pagination flex justify-center items-center gap-3 !relative !mt-8 "
-
-          ></div>
+          <div className="swiper-pagination flex justify-center items-center gap-3 !relative !mt-8 "></div>
         </div>
 
         {/* Optional Navigation Buttons */}

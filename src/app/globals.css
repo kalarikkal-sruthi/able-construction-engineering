@@ -114,8 +114,8 @@ body {
 }
 
 .swiper-pagination-bullet-active{
-  height: 10px !important;
+ 
     background: black !important;
-    width: 10px !important;
+ 
 }
 
