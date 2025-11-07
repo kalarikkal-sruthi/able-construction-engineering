@@ -1,145 +1,175 @@
-"use client";
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+
+
+
+// import required modules
+import { FreeMode, Pagination } from 'swiper/modules';
 
 function QualityServices() {
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 700,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2500,
-  pauseOnHover: true,
-  arrows: true,
-  cssEase: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2, // ✅ show 2 on tablets/laptops
-        slidesToScroll: 1,
-        arrows: true,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1, // ✅ show 1 on mobile
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: false,
-      },
-    },
-    {
-      breakpoint: 640,
-      settings: {
-        slidesToShow: 1, // ✅ ensure 1 on smaller mobile too
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: false, // changed to false so image stays centered naturally
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1, // ✅ only one on extra small screens
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: false,
-      },
-    },
-  ],
-};
-
-
-  const projects = [
-    {
-      id: 1,
-      image: "/quality-services/structural-construction.jpg",
-      title: "Structural Construction",
-      description:
-        "High-rise apartment structures built with precision-engineered RCC frameworks ensuring safety and stability.",
-    },
-    {
-      id: 2,
-      image: "/quality-services/luxury-apartment.jpg",
-      title: "Luxury Apartments",
-      description:
-        "Modern residential apartments designed with premium finishes, natural lighting, and optimized space utilization.",
-    },
-    {
-      id: 3,
-      image: "/quality-services/creative-architect-projecting-big-drawings-dark-loft-office-cafe-with-dark-retro-style.jpg",
-      title: "Architectural Planning",
-      description:
-        "Comprehensive architectural layouts for efficient apartment designs balancing aesthetics and functionality.",
-    },
-    {
-      id: 4,
-      image: "/quality-services/general-contracting.jpg",
-      title: "General Contracting",
-      description:
-        "End-to-end apartment construction services from excavation to finishing, ensuring timely and quality delivery.",
-    },
-    {
-      id: 5,
-      image: "/quality-services/interior-finishing.jpg",
-      title: "Interior Finishing",
-      description:
-        "Elegant interiors for modern apartments featuring customized joinery, lighting, and space-saving solutions.",
-    },
-    // {
-    //   id: 6,
-    //   image: "/6.webp",
-    //   title: "Renovation & Remodeling",
-    //   description:
-    //     "Transforming existing apartment spaces into modern, efficient, and visually appealing living environments.",
-    // },
-  ];
-
   return (
-    <div className="slider-container bg-[#f5f5f5]">
-      <Slider {...settings}>
-        {projects.map((project) => (
-          <div key={project.id} className="px-2 sm:px-3 lg:px-4 group">
-            {/* Clean Card Design */}
-            <div className=" border-gray-100 transition-all duration-500 overflow-hidden hover:shadow-lg hover:shadow-yellow-100/50">
-              {/* Image with Subtle Frame */}
-              <div className=" pb-0">
-                <div className="relative overflow-hidden rounded-lg">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-80 sm:h-64 md:h-80 lg:h-96 xl:h-120 object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-yellow-400/10 transition-colors duration-500" />
-                </div>
-              </div>
+<section className="py-10 md:py-24 lg:py-20 bg-gray-50">
+  <div className=" mx-auto px-4 sm:px-6 lg:px-20">
+    {/* Optional Section Heading */}
+    <div className="text-center mb-8 md:mb-16">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+OUR EXPERTISE
+      </h2>
+     
+    </div>
 
-              {/* Content */}
-              <div className="p-4 sm:p-6 lg:p-8 text-center">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors duration-300">
-                  {project.title}
-                </h3>
-
-                <p className="text-gray-500 text-sm sm:text-base mb-3 sm:mb-4">
-                  Premium construction services
-                </p>
-
-                {/* Divider with yellow gradient */}
-                <div className="w-8 h-0.5 bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 rounded-full mx-auto group-hover:w-16 transition-all duration-500"></div>
-              </div>
+    {/* Swiper Container */}
+    <div className="relative">
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        freeMode={true}
+        pagination={{
+          clickable: true,
+          el: '.swiper-pagination',
+          type: 'bullets',
+        }}
+        breakpoints={{
+          // Mobile first approach
+          480: {
+            slidesPerView: 1.2,
+            spaceBetween: 20
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 20
+          },
+          // Tablet
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 25
+          },
+          // Small desktop
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          // Large desktop
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 40
+          },
+          1536: {
+            slidesPerView: 4,
+            spaceBetween: 40
+          }
+        }}
+        modules={[FreeMode, Pagination]}
+        className="services-swiper pb-12"
+      >
+        {/* Slide 1 */}
+        <SwiperSlide>
+          <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+            <div className="aspect-square overflow-hidden">
+              <img 
+                src="/1.jpg" 
+                alt="Site Excavation"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            {/* Transparent Text Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">EARTHWORKS</h3>
+              <p className="text-xs md:text-sm opacity-90 leading-relaxed">Transforming Terrain with Surgical Precision.</p>
             </div>
           </div>
-        ))}
-      </Slider>
+        </SwiperSlide>
+
+        {/* Slide 2 */}
+        <SwiperSlide>
+          <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+            <div className="aspect-square overflow-hidden">
+              <img 
+                src="/1.jpg" 
+                alt="Land Grading"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            {/* Transparent Text Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">RCC STRUCTURES</h3>
+              <p className="text-xs md:text-sm opacity-90 leading-relaxed">Creating Possibility from Raw Land.</p>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 3 */}
+        <SwiperSlide>
+          <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+            <div className="aspect-square overflow-hidden">
+              <img 
+                src="/1.jpg" 
+                alt="Erosion Control"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            {/* Transparent Text Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">ROAD CONSTRUCTION</h3>
+              <p className="text-xs md:text-sm opacity-90 leading-relaxed">The Architecture of Strength and Permanence.</p>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 4 */}
+        <SwiperSlide>
+          <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+            <div className="aspect-square overflow-hidden">
+              <img 
+                src="/1.jpg" 
+                alt="Final Preparation"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            {/* Transparent Text Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">PIPELINE SYSTEMS</h3>
+              <p className="text-xs md:text-sm opacity-90 leading-relaxed">Ready-to-build surfaces for construction projects</p>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        {/* Slide 5 */}
+        <SwiperSlide>
+          <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+            <div className="aspect-square overflow-hidden">
+              <img 
+                src="/1.jpg" 
+                alt="Additional Service"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            {/* Transparent Text Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">ADDITIONAL SERVICE</h3>
+              <p className="text-xs md:text-sm opacity-90 leading-relaxed">Additional construction services description</p>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        {/* Add more slides as needed */}
+      </Swiper>
+
+      {/* Custom Pagination */}
+    <div className="swiper-pagination flex justify-center items-center gap-2 !relative !mt-8"></div>
     </div>
-  );
+
+    {/* Optional Navigation Buttons */}
+   
+  </div>
+</section>
+  )
 }
 
-export default QualityServices;
+export default QualityServices

@@ -44,7 +44,7 @@ export default function Home() {
           >
             <div className="mb-3 sm:mb-4 lg:mb-6">
               <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
-                WHERE GLOBAL LEGACY MEETS UGANDA'S FUTURE
+                WHERE GLOBAL LEGACY MEETS UGANDA&apos;S FUTURE
               </span>
             </div>
             {/* <div className="relative inline-block">
@@ -151,6 +151,7 @@ export default function Home() {
         </motion.div>
 
         <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
+          
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -162,23 +163,42 @@ export default function Home() {
             viewport={{ once: true, amount: 0.3 }}
             className="p-6 sm:p-8 lg:p-16 w-[95%] max-w-8xl mx-auto"
           >
-            <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white text-center leading-tight sm:leading-tight">
-              <span className="block mb-3 sm:mb-3">
-                From International Landmarks to Your Kampala Address.
+
+            <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full"
+          >
+            <div className="mb-3 sm:mb-4 lg:mb-6 text-center">
+              <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-none-2 text-white ">
+                WHERE GLOBAL LEGACY MEETS UGANDA&apos;S FUTURE
               </span>
-              <span className="block text-yellow-300 mb-3 sm:mb-3">
-                PY Able Construction is the new standard in Ugandan real estate.
-                We are the direct descendant of the Able Group, a global
-                construction and trading powerhouse. For over 20 years, we've
-                shaped skylines and infrastructure across the Middle East and
-                India. Now, we're channeling that unparalleled expertise into
-                creating your future home in Uganda—where luxury, innovation,
-                and reliability converge.
+               <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl block text-yellow-500 mb-3 mt-3 sm:mb-3 font-thin">
+              Our story begins in 1992 with the founding of the Able Group. What started as a single venture has exploded into an international network of companies across India, UAE, Qatar, and Oman. Our reputation wasn't built on promises; it was forged on the ground of some of the world's most ambitious projects.
               </span>
-            </h2>
+            </div>
+            {/* <div className="relative inline-block">
+              <span className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold font-mono text-white relative block">
+                Able Group
+                <div className="absolute bottom-1 sm:bottom-2 left-0 w-full h-2 sm:h-3 bg-gradient-to-r from-transparent via-yellow-400 to-transparent opacity-70 rounded-full"></div>
+              </span>
+            </div> */}
+            
+          </motion.h1>
+
+           
+           
           </motion.div>
         </div>
       </section>
+      <QualityServices />
+
+
     </main>
   );
 }
