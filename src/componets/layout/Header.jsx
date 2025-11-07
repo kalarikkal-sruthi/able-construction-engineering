@@ -159,7 +159,7 @@ export default function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden text-gray-700 hover:text-blue-500 focus:outline-none mr-2 p-2"
+              className="lg:hidden text-white hover:text-black focus:outline-none mr-2 p-2"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -170,13 +170,13 @@ export default function Header() {
         <div
           className={`
   lg:hidden 
-  bg-white 
+  bg-[#ffffffed]
   shadow-xl 
-  rounded-3xl
+ 
   fixed
   top-0
   left-0
-  w-full
+  w-64
   h-full
   z-50
   transform
@@ -227,36 +227,36 @@ export default function Header() {
             ))}
 
             {/* Social Icons in Mobile Menu */}
-         <div className="flex justify-start  py-4  space-x-4 sm:space-x-6 ">
-  <Link
-    href="https://www.instagram.com/"
-    target="_blank"
-    className="text-gray-500 hover:text-pink-600 transition-transform duration-300 hover:scale-110"
-  >
-    <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
-  </Link>
-  <Link
-    href="https://www.facebook.com/"
-    target="_blank"
-    className="text-gray-500 hover:text-blue-600 transition-transform duration-300 hover:scale-110"
-  >
-    <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
-  </Link>
-  <Link
-    href="https://www.linkedin.com/"
-    target="_blank"
-    className="text-gray-500 hover:text-blue-700 transition-transform duration-300 hover:scale-110"
-  >
-    <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
-  </Link>
-  <Link
-    href="https://yourwebsite.com"
-    target="_blank"
-    className="text-gray-500 hover:text-green-600 transition-transform duration-300 hover:scale-110"
-  >
-    <Globe className="w-4 h-4 sm:w-5 sm:h-5" />
-  </Link>
-</div>
+            <div className="flex justify-start  py-4  space-x-4 sm:space-x-6 ">
+              <Link
+                href="https://www.instagram.com/"
+                target="_blank"
+                className="text-gray-500 hover:text-pink-600 transition-transform duration-300 hover:scale-110"
+              >
+                <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
+              </Link>
+              <Link
+                href="https://www.facebook.com/"
+                target="_blank"
+                className="text-gray-500 hover:text-blue-600 transition-transform duration-300 hover:scale-110"
+              >
+                <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/"
+                target="_blank"
+                className="text-gray-500 hover:text-blue-700 transition-transform duration-300 hover:scale-110"
+              >
+                <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
+              </Link>
+              <Link
+                href="https://yourwebsite.com"
+                target="_blank"
+                className="text-gray-500 hover:text-green-600 transition-transform duration-300 hover:scale-110"
+              >
+                <Globe className="w-4 h-4 sm:w-5 sm:h-5" />
+              </Link>
+            </div>
 
             {/* Animated Button */}
             <div className="pt-3 sm:pt-4 md:pt-6">
