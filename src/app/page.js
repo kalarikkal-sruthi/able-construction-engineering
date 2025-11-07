@@ -141,7 +141,7 @@ export default function Home() {
           }}
           viewport={{ once: true, amount: 0.3 }}
           style={{
-            backgroundImage: "url('/second-banner.jpeg')",
+            backgroundImage: "url('/second-banner.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "fixed",
@@ -173,10 +173,10 @@ export default function Home() {
               className="w-full"
             >
               <div className="mb-3 sm:mb-4 lg:mb-6 text-center">
-                <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-none-2 text-white ">
+                <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide drop-shadow-lg leading-none-2 text-white ">
                   WHERE GLOBAL LEGACY MEETS UGANDA&apos;S FUTURE
                 </span>
-                <span className="text-2xl sm:text-2xl lg:text-3xl xl:text-3xl block  mb-3 mt-3 sm:mb-3 text-white font-thin">
+                <span className="text-05xl sm:text-1xl lg:text-1xl xl:text-1xl block  mb-3 mt-3 sm:mb-3 text-white">
                   Our story begins in 1992 with the founding of the Able Group.
                   What started as a single venture has exploded into an
                   international network of companies across India, UAE, Qatar,

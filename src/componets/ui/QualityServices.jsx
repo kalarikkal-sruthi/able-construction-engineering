@@ -16,19 +16,15 @@ function QualityServices() {
       <div className=" mx-auto px-4 sm:px-6 lg:px-16">
         {/* Optional Section Heading */}
         <div className="text-start mb-8 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl  text-gray-900">
-            OUR EXPERTISE
-          </h2>
+           <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
+               Our Core Competencies
+                </span>
+         
           {/* Alternative Shorter Introduction */}
-<div className="max-w-4xl mx-auto">
-  <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-    At the forefront of construction innovation, we deliver comprehensive engineering 
-    solutions that blend technical excellence with practical execution. Our multidisciplinary 
-    expertise spans earthworks to bridge construction, ensuring seamless project delivery 
-    from groundbreaking to completion. Trusted for our precision, reliability, and 
-    commitment to quality, we transform ambitious visions into enduring realities.
-  </p>
-</div>
+
+  <p className="text-05xl sm:text-1xl lg:text-1xl xl:text-1xl block  mb-3 mt-3 sm:mb-3 text-black ">
+    Pioneering construction innovation with comprehensive engineering—from earthworks to bridges. We deliver precision, reliability, and quality to transform visions into enduring realities.
+</p>
         </div>
 
         {/* Swiper Container */}
@@ -98,7 +94,7 @@ function QualityServices() {
                   <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">
                     EARTHWORKS
                   </h3>
-                  <p className="text-xs md:text-sm opacity-90 leading-relaxed">
+                  <p className="text-xs md:text-sm opacity-90 leading-relaxed text">
                     Transforming Terrain with Surgical Precision.
                   </p>
                   <p></p>
