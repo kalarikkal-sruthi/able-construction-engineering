@@ -176,7 +176,7 @@ export default function Home() {
                 <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-none-2 text-white ">
                   WHERE GLOBAL LEGACY MEETS UGANDA&apos;S FUTURE
                 </span>
-                <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl block text-yellow-500 mb-3 mt-3 sm:mb-3 font-thin">
+                <span className="text-2xl sm:text-2xl lg:text-3xl xl:text-3xl block  mb-3 mt-3 sm:mb-3 text-white font-thin">
                   Our story begins in 1992 with the founding of the Able Group.
                   What started as a single venture has exploded into an
                   international network of companies across India, UAE, Qatar,

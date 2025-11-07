@@ -15,10 +15,20 @@ function QualityServices() {
     <section className="py-10 md:py-24 lg:py-20 bg-gray-50">
       <div className=" mx-auto px-4 sm:px-6 lg:px-16">
         {/* Optional Section Heading */}
-        <div className="text-center mb-8 md:mb-16">
+        <div className="text-start mb-8 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl  text-gray-900">
             OUR EXPERTISE
           </h2>
+          {/* Alternative Shorter Introduction */}
+<div className="max-w-4xl mx-auto">
+  <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+    At the forefront of construction innovation, we deliver comprehensive engineering 
+    solutions that blend technical excellence with practical execution. Our multidisciplinary 
+    expertise spans earthworks to bridge construction, ensuring seamless project delivery 
+    from groundbreaking to completion. Trusted for our precision, reliability, and 
+    commitment to quality, we transform ambitious visions into enduring realities.
+  </p>
+</div>
         </div>
 
         {/* Swiper Container */}
@@ -80,7 +90,7 @@ function QualityServices() {
                   <img
                     src="/expertise/jcb.jpg"
                     alt="Site Excavation"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 "
                   />
                 </div>
                 {/* Transparent Text Overlay */}
@@ -91,6 +101,7 @@ function QualityServices() {
                   <p className="text-xs md:text-sm opacity-90 leading-relaxed">
                     Transforming Terrain with Surgical Precision.
                   </p>
+                  <p></p>
                 </div>
               </div>
             </SwiperSlide>
