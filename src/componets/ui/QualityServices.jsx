@@ -16,7 +16,7 @@ function QualityServices() {
       <div className=" mx-auto px-4 sm:px-6 lg:px-16">
         {/* Optional Section Heading */}
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl  text-gray-900">
             OUR EXPERTISE
           </h2>
         </div>
