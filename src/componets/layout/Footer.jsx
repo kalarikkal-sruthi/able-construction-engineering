@@ -120,7 +120,7 @@ function Footer() {
             <li className="flex items-start gap-3  sm:justify-start">
               <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
               <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
-                <strong>Qatar Office</strong>
+                <strong>Associated Companies</strong>
                 {/* <br />
     Doha, Qatar
     <br />

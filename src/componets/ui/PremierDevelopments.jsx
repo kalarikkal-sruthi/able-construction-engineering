@@ -92,7 +92,7 @@ function PremierDevelopments() {
           >
             {/* Slide 1 */}
             <SwiperSlide>
-              <div className="group relative overflow-hidden  transition-all duration-500 h-full bg-white">
+              <div className="group relative  transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/modern developments/Yas Island, Abudhabi.jpg"
@@ -173,7 +173,7 @@ function PremierDevelopments() {
 
             {/* Slide 2 */}
             <SwiperSlide>
-              <div className="group relative overflow-hidden  transition-all duration-500 h-full bg-white">
+              <div className="group relative   transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/modern developments/waterpark.jpg"
@@ -254,7 +254,7 @@ function PremierDevelopments() {
 
             {/* Slide 3 */}
              <SwiperSlide>
-              <div className="group relative overflow-hidden  transition-all duration-500 h-full bg-white">
+              <div className="group relative   transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/modern developments/sewageplant.jpg"
@@ -333,7 +333,7 @@ Irrigation main and Sewage Main
               </div>
             </SwiperSlide>
               <SwiperSlide>
-              <div className="group relative overflow-hidden  transition-all duration-500 h-full bg-white">
+              <div className="group relative  transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/modern developments/airport.jpg"
@@ -413,7 +413,7 @@ Drainage and construction of chambers.
               </div>
             </SwiperSlide>
    <SwiperSlide>
-              <div className="group relative overflow-hidden  transition-all duration-500 h-full bg-white">
+              <div className="group relative transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/modern developments/hamadport.jpg"

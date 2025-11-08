@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <main className="relative m-0 p-0">
       <header className="fixed top-[0px] left-0 w-full z-50 ">
-        <div className="mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   shadow-md border-gray-200  bg-[#ffffff] backdrop-blur-sm z-100">
+        <div className="mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   shadow-md border-gray-200  bg-[#000] backdrop-blur-sm z-100">
           <div className="flex justify-between items-center ">
             {/* Logo and Title */}
             <div className="flex items-center space-x-2 sm:space-x-3">
@@ -32,9 +32,12 @@ export default function Header() {
               {/* Able Group Title with Highlighted Head */}
               <div className="sm:block">
                 <div className="flex items-baseline">
-                  <span className="text-lg sm:text-xl lg:text-3xl font-bold  text-[#251f77]  px-2 py-1 rounded-l-md">
+                  <span className="text-1xl sm:text-2xl lg:text-2xl xl:text-2xl font-bold  text-white font-sans tracking-wide  leading-none-2">
+                 ABLE GROUP
+              </span>
+                  {/* <span className="text-lg sm:text-xl lg:text-3xl font-bold  text-black  px-2 py-1 rounded-l-md">
                     ABLE GROUP
-                  </span>
+                  </span> */}
                 </div>
               </div>
             </div>
@@ -43,44 +46,46 @@ export default function Header() {
             <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6 mr-4">
               <Link
                 href="/"
-                className="text-[#251f77] hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
                 Home
               </Link>
               <Link
                 href=""
-                className="text-[#251f77] hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
                 About
               </Link>
               <Link
                 href=""
-                className="text-[#251f77] hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
                 Business Plan
               </Link>
               <Link
                 href=""
-                className="text-[#251f77] hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
                 Our Works
               </Link>
               <Link
                 href=""
-                className="text-[#251f77] hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
                 Company Profile
               </Link>
               <Link
                 href=""
-                className="text-[#251f77] hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
                 Contact
               </Link>
               <button
                 className="
-          bg-[#251f77] 
-          text-white 
+      bg-black
+    border-1
+    border-white
+    text-white 
           px-2 
           xl:px-2
           py-2 
@@ -128,28 +133,28 @@ export default function Header() {
                 <Link
                   href="https://www.instagram.com/"
                   target="_blank"
-                  className="text-[#251f77] hover:text-pink-600 transition"
+                  className="text-white hover:text-pink-600 transition"
                 >
                   <Instagram size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
                   href="https://www.facebook.com/"
                   target="_blank"
-                  className="text-[#251f77] hover:text-blue-600 transition"
+                  className="text-white hover:text-blue-600 transition"
                 >
                   <Facebook size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/"
                   target="_blank"
-                  className="text-[#251f77] hover:text-blue-700 transition"
+                  className="text-white hover:text-blue-700 transition"
                 >
                   <Linkedin size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
                   href="https://yourwebsite.com"
                   target="_blank"
-                  className="text-[#251f77] hover:text-green-600 transition"
+                  className="text-white hover:text-green-600 transition"
                 >
                   <Globe size={18} className="xl:w-5 xl:h-5" />
                 </Link>
@@ -159,7 +164,7 @@ export default function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden text-[#251f77] hover:text-black focus:outline-none mr-2 p-2"
+              className="lg:hidden text-white hover:text-black focus:outline-none mr-2 p-2"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -170,7 +175,7 @@ export default function Header() {
         <div
           className={`
   lg:hidden 
-  bg-[#ffffffed]
+  bg-[#ffffff]
   shadow-xl 
  
   fixed
@@ -262,8 +267,10 @@ export default function Header() {
             <div className="pt-3 sm:pt-4 md:pt-6">
               <button
                 className="
-          bg-[#251f77] 
-          text-white 
+          bg-black
+    border-1
+    border-black
+    text-white 
           px-2 
           xl:px-2
           py-2 
