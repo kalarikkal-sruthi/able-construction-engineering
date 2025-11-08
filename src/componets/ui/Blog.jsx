@@ -35,7 +35,34 @@ function Blog() {
 
          
         </div>
-
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+  {/* Image 1 */}
+  <div className="h-100 md:h-150"> {/* Fixed height */}
+    <img
+      src="/apartments/apartment1.jpg"
+      alt="Description 1"
+      className="w-full h-full object-cover rounded-lg"
+    />
+  </div>
+  
+  {/* Image 2 */}
+  <div className="h-64 md:h-80"> {/* Same fixed height */}
+    <img
+      src="/apartments/apartment2.jpg"
+      alt="Description 2"
+      className="w-full h-full object-cover rounded-lg"
+    />
+  </div>
+  
+  {/* Image 3 */}
+  <div className="h-64 md:h-80"> {/* Same fixed height */}
+    <img
+      src="/apartments/apartment3.jpg"
+      alt="Description 3"
+      className="w-full h-full object-cover rounded-lg"
+    />
+  </div>
+</div>
         {/* Optional Navigation Buttons */}
       </div>
     </section></div>
