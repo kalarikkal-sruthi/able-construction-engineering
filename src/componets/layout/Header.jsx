@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <main className="relative m-0 p-0">
       <header className="fixed top-[0px] left-0 w-full z-50 ">
-        <div className="mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   shadow-md border-gray-200  bg-[#ffffff75] backdrop-blur-sm z-100">
+        <div className="mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   shadow-md border-gray-200  bg-[#ffffff] backdrop-blur-sm z-100">
           <div className="flex justify-between items-center ">
             {/* Logo and Title */}
             <div className="flex items-center space-x-2 sm:space-x-3">
@@ -43,37 +43,37 @@ export default function Header() {
             <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6 mr-4">
               <Link
                 href="/"
-                className="text-[#fff] hover:text-[#251f77] text-sm xl:text-base transition-colors"
+                className="text-[#251f77] hover:text-[#251f77] text-sm xl:text-base transition-colors"
               >
                 Home
               </Link>
               <Link
                 href=""
-                className="text-[#fff] hover:text-[#251f77] text-sm xl:text-base transition-colors"
+                className="text-[#251f77] hover:text-[#251f77] text-sm xl:text-base transition-colors"
               >
                 About
               </Link>
               <Link
                 href=""
-                className="text-[#fff] hover:text-[#251f77] text-sm xl:text-base transition-colors"
+                className="text-[#251f77] hover:text-[#251f77] text-sm xl:text-base transition-colors"
               >
                 Business Plan
               </Link>
               <Link
                 href=""
-                className="text-[#fff] hover:text-[#251f77] text-sm xl:text-base transition-colors"
+                className="text-[#251f77] hover:text-[#251f77] text-sm xl:text-base transition-colors"
               >
                 Our Works
               </Link>
               <Link
                 href=""
-                className="text-[#fff] hover:text-[#251f77] text-sm xl:text-base transition-colors"
+                className="text-[#251f77] hover:text-[#251f77] text-sm xl:text-base transition-colors"
               >
                 Company Profile
               </Link>
               <Link
                 href=""
-                className="text-[#fff] hover:text-[#251f77] text-sm xl:text-base transition-colors"
+                className="text-[#251f77] hover:text-[#251f77] text-sm xl:text-base transition-colors"
               >
                 Contact
               </Link>
@@ -128,28 +128,28 @@ export default function Header() {
                 <Link
                   href="https://www.instagram.com/"
                   target="_blank"
-                  className="text-white hover:text-pink-600 transition"
+                  className="text-[#251f77] hover:text-pink-600 transition"
                 >
                   <Instagram size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
                   href="https://www.facebook.com/"
                   target="_blank"
-                  className="text-white hover:text-blue-600 transition"
+                  className="text-[#251f77] hover:text-blue-600 transition"
                 >
                   <Facebook size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/"
                   target="_blank"
-                  className="text-white hover:text-blue-700 transition"
+                  className="text-[#251f77] hover:text-blue-700 transition"
                 >
                   <Linkedin size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
                   href="https://yourwebsite.com"
                   target="_blank"
-                  className="text-white hover:text-green-600 transition"
+                  className="text-[#251f77] hover:text-green-600 transition"
                 >
                   <Globe size={18} className="xl:w-5 xl:h-5" />
                 </Link>
