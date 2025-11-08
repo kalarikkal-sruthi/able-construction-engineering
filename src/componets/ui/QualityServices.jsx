@@ -93,10 +93,10 @@ function QualityServices() {
                 </div>
                 {/* Transparent Text Overlay */}
                 <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-0">
+                  <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
                     EARTHWORKS
                   </h3>
-                  <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] opacity-90 leading-relaxed text">
+                  <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
                     Transforming Terrain with Surgical Precision.
                   </p>
                   <motion.div
@@ -170,13 +170,12 @@ function QualityServices() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                {/* Transparent Text Overlay */}
                 <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">
+                   <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
                     RCC STRUCTURES
                   </h3>
-                  <p className="text-xs md:text-sm opacity-90 leading-relaxed">
-                    Creating Possibility from Raw Land.
+                  <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
+                     Creating Possibility from Raw Land.
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -201,8 +200,7 @@ function QualityServices() {
     rounded-full 
     transition-all 
     duration-300 
-    text-sm 
-    xl:text-sm
+    text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]
     relative
     overflow-hidden
     group
@@ -210,7 +208,7 @@ function QualityServices() {
     flex
     items-center
     justify-center
-    min-w-[130px]
+    min-w-[120px]
     xl:min-w-[130px]
     hover:bg-white/20
   "
@@ -237,6 +235,9 @@ function QualityServices() {
                     </button>
                   </motion.div>
                 </div>
+                {/* Transparent Text Overlay */}
+              
+              
               </div>
             </SwiperSlide>
 
@@ -250,13 +251,12 @@ function QualityServices() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                {/* Transparent Text Overlay */}
-                <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">
+                      <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+                  <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
                     ROAD CONSTRUCTION
                   </h3>
-                  <p className="text-xs md:text-sm opacity-90 leading-relaxed">
-                    The Architecture of Strength and Permanence.
+                  <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
+                     The Architecture of Strength and Permanence.
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -281,8 +281,7 @@ function QualityServices() {
     rounded-full 
     transition-all 
     duration-300 
-    text-sm 
-    xl:text-sm
+    text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]
     relative
     overflow-hidden
     group
@@ -290,7 +289,7 @@ function QualityServices() {
     flex
     items-center
     justify-center
-    min-w-[130px]
+    min-w-[120px]
     xl:min-w-[130px]
     hover:bg-white/20
   "
@@ -317,6 +316,9 @@ function QualityServices() {
                     </button>
                   </motion.div>
                 </div>
+                {/* Transparent Text Overlay */}
+           
+           
               </div>
             </SwiperSlide>
 
@@ -330,13 +332,13 @@ function QualityServices() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                {/* Transparent Text Overlay */}
-                <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">
-                    PIPELINE SYSTEMS
+
+                     <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+                  <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                      PIPELINE SYSTEMS
                   </h3>
-                  <p className="text-xs md:text-sm opacity-90 leading-relaxed">
-                    Ready-to-build surfaces for construction projects
+                  <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
+                      Ready-to-build surfaces for construction projects
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -361,8 +363,7 @@ function QualityServices() {
     rounded-full 
     transition-all 
     duration-300 
-    text-sm 
-    xl:text-sm
+    text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]
     relative
     overflow-hidden
     group
@@ -370,7 +371,7 @@ function QualityServices() {
     flex
     items-center
     justify-center
-    min-w-[130px]
+    min-w-[120px]
     xl:min-w-[130px]
     hover:bg-white/20
   "
@@ -397,6 +398,7 @@ function QualityServices() {
                     </button>
                   </motion.div>
                 </div>
+     
               </div>
             </SwiperSlide>
 
@@ -409,13 +411,12 @@ function QualityServices() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                {/* Transparent Text Overlay */}
-                <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">
-                    DRAINAGE SYSTEMS
+                            <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+                 <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                      DRAINAGE SYSTEMS
                   </h3>
-                  <p className="text-xs md:text-sm opacity-90 leading-relaxed">
-                    Mastering the Flow, Taming the Elements.
+                  <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
+                       Mastering the Flow, Taming the Elements.
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -440,8 +441,7 @@ function QualityServices() {
     rounded-full 
     transition-all 
     duration-300 
-    text-sm 
-    xl:text-sm
+    text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]
     relative
     overflow-hidden
     group
@@ -449,7 +449,7 @@ function QualityServices() {
     flex
     items-center
     justify-center
-    min-w-[130px]
+    min-w-[120px]
     xl:min-w-[130px]
     hover:bg-white/20
   "
@@ -476,6 +476,8 @@ function QualityServices() {
                     </button>
                   </motion.div>
                 </div>
+                {/* Transparent Text Overlay */}
+              
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -488,13 +490,13 @@ function QualityServices() {
                   />
                 </div>
                 {/* Transparent Text Overlay */}
-                <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">
-                    {" "}
-                    BRIDGE WORKS
+
+                                 <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+                  <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                      BRIDGE WORKS
                   </h3>
-                  <p className="text-xs md:text-sm opacity-90 leading-relaxed">
-                    Connecting Destinies, Overcoming Nature's Challenges.
+                  <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
+                         Connecting Destinies, Overcoming Nature's Challenges.
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -519,8 +521,7 @@ function QualityServices() {
     rounded-full 
     transition-all 
     duration-300 
-    text-sm 
-    xl:text-sm
+    text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]
     relative
     overflow-hidden
     group
@@ -528,7 +529,7 @@ function QualityServices() {
     flex
     items-center
     justify-center
-    min-w-[130px]
+    min-w-[120px]
     xl:min-w-[130px]
     hover:bg-white/20
   "
@@ -555,6 +556,7 @@ function QualityServices() {
                     </button>
                   </motion.div>
                 </div>
+           
               </div>
             </SwiperSlide>
             {/* Add more slides as needed */}
