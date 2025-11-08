@@ -216,13 +216,13 @@ export default function Home() {
                     }}
                     viewport={{ once: true, amount: 0.3 }}
                   >
-                    <span className=" text-1xl sm:text-1xl lg:text-1xl xl:text-1xl">
+                    {/* <span className=" text-1xl sm:text-1xl lg:text-1xl xl:text-1xl">
                       {" "}
                       Premium Apartments in Kampala | For Sale & Rent
-                    </span>
-                    <br></br>
+                    </span> */}
+                    {/* <br></br> */}
                     <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-                      Your Life , Elevated.
+                    Uganda In Focus
                     </span>
                   </motion.h1>
 
@@ -238,15 +238,20 @@ export default function Home() {
                     precision, and design for modern comfort—eliminating
                     compromises to deliver a home that stands apart.
                   </span>
-                </div>
+<span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block   mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-black">
+                         We are not just selling apartments; we are delivering a promise—a promise of a secure, luxurious, and well-crafted home that will be your pride for generations.
+              
+                  </span>
+              </div>
               </div>
 
               <div className="flex space-x-4 ">
                 <button
                   className="
-                         border-1 
-          bg-[#251f77] 
-          text-white 
+                             bg-black
+    border-1
+    border-black
+    text-white 
           px-2 
           xl:px-2
           py-2 
@@ -292,9 +297,9 @@ export default function Home() {
                 <button
                   className="
          border-1 
-border-[#251f77] 
-          text-[#251f77] 
-          border-[#251f77] 
+
+          text-[#000] 
+          border-[#000] 
           px-2 
           xl:px-2
           py-2 
