@@ -349,7 +349,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative h-[600px] overflow-hidden">
                 <Image
-                  src="/ungada-new.jpg" // Replace with your image path
+                  src="/businessmeet.jpg" // Replace with your image path
                   alt="Luxury Apartment Interior"
                   fill
                   className="object-cover"
