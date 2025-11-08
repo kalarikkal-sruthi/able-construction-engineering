@@ -337,7 +337,7 @@ border-[#251f77]
           <div className="relative">
             <div className="relative h-[600px]  overflow-hidden">
               <Image
-                src="/ungada.png" // Replace with your image path
+                src="/ungada-new.jpg" // Replace with your image path
                 alt="Luxury Apartment Interior"
                 fill
                 className="object-cover"
