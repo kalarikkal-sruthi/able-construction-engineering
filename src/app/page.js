@@ -5,6 +5,7 @@ import QualityServices from "@/componets/ui/QualityServices";
 import { MdDesignServices } from "react-icons/md"; // Design Development
 import { FiCalendar } from "react-icons/fi"; // Project Planning
 import { GiSofa } from "react-icons/gi"; // Interior Design
+import PremierDevelopments from "@/componets/ui/PremierDevelopments";
 
 export default function Home() {
   return (
@@ -360,6 +361,9 @@ border-[#251f77]
           </div>
         </div>
       </section>
+<PremierDevelopments />
+
+
     </main>
   );
 }

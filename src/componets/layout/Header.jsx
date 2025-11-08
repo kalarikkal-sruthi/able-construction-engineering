@@ -32,7 +32,7 @@ export default function Header() {
               {/* Able Group Title with Highlighted Head */}
               <div className="sm:block">
                 <div className="flex items-baseline">
-                  <span className="text-lg sm:text-xl lg:text-3xl font-bold  text-[#fff]  px-2 py-1 rounded-l-md">
+                  <span className="text-lg sm:text-xl lg:text-3xl font-bold  text-[#251f77]  px-2 py-1 rounded-l-md">
                     ABLE GROUP
                   </span>
                 </div>
