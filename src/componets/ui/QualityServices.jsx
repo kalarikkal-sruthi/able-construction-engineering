@@ -85,7 +85,7 @@ function QualityServices() {
               },
               1536: {
                 slidesPerView: 4,
-                spaceBetween: 20,
+                spaceBetween: 30,
               },
             }}
             modules={[FreeMode, Pagination, Autoplay]}

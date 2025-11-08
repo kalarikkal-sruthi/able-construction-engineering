@@ -84,7 +84,7 @@ function PremierDevelopments() {
               },
               1536: {
                 slidesPerView: 3,
-                spaceBetween: 14,
+                spaceBetween: 30
               },
             }}
             modules={[FreeMode, Pagination, Autoplay]}
@@ -92,7 +92,7 @@ function PremierDevelopments() {
           >
             {/* Slide 1 */}
             <SwiperSlide>
-              <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+              <div className="group relative overflow-hidden  transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/expertise/jcb.jpg"
@@ -101,7 +101,7 @@ function PremierDevelopments() {
                   />
                 </div>
                 {/* Transparent Text Overlay */}
-                <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+                <div className="text-start right-0  p-4 md:p-6 text-black">
                   <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
                     EARTHWORKS
                   </h3>
