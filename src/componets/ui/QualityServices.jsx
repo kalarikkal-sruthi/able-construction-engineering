@@ -49,7 +49,7 @@ function QualityServices() {
             loop={true} // Enable infinite loop
             speed={800} // Transition speed in milliseconds
             autoplay={{
-              delay: 2000,
+              delay: 1500,
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
