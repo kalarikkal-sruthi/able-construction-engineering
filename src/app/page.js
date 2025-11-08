@@ -147,7 +147,7 @@ export default function Home() {
             backgroundImage: "url('/second-banner.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            backgroundAttachment: "fixed",
+            // backgroundAttachment: "fixed",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-black/20"></div>

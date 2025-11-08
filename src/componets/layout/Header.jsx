@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <main className="relative m-0 p-0">
       <header className="fixed top-[0px] left-0 w-full z-50 ">
-        <div className="mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   shadow-md border-gray-200  bg-[#ffffffe8] backdrop-blur-sm z-100">
+        <div className="mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   shadow-md border-gray-200  bg-[#ffffff] backdrop-blur-sm z-100">
           <div className="flex justify-between items-center ">
             {/* Logo and Title */}
             <div className="flex items-center space-x-2 sm:space-x-3">
