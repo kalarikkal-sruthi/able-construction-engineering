@@ -62,11 +62,11 @@ function QualityServices() {
               // Mobile first approach
               480: {
                 slidesPerView: 1.2,
-                spaceBetween: 20,
+                spaceBetween: 10,
               },
               640: {
                 slidesPerView: 1.5,
-                spaceBetween: 20,
+                spaceBetween: 10,
               },
               // Tablet
               768: {
@@ -81,11 +81,11 @@ function QualityServices() {
               // Large desktop
               1280: {
                 slidesPerView: 3,
-                spaceBetween: 14,
+                spaceBetween: 20,
               },
               1536: {
                 slidesPerView: 4,
-                spaceBetween: 14,
+                spaceBetween: 20,
               },
             }}
             modules={[FreeMode, Pagination, Autoplay]}

@@ -14,7 +14,7 @@ import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 
 function PremierDevelopments() {
   return (
-    <section className="py-8 md:py-20 lg:py-20 bg-gray-50">
+    <section className="py-8 md:py-20 lg:py-20 ">
       <div className=" mx-auto px-4 sm:px-6 lg:px-16">
         {/* Optional Section Heading */}
         <div className="text-start mb-4 md:mb-8">

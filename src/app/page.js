@@ -6,6 +6,8 @@ import { MdDesignServices } from "react-icons/md"; // Design Development
 import { FiCalendar } from "react-icons/fi"; // Project Planning
 import { GiSofa } from "react-icons/gi"; // Interior Design
 import PremierDevelopments from "@/componets/ui/PremierDevelopments";
+import Blog from "@/componets/ui/Blog";
+import RegisterYourInterest from "@/componets/ui/RegisterYourInterest";
 
 export default function Home() {
   return (
@@ -361,7 +363,9 @@ border-[#251f77]
           </div>
         </div>
       </section>
+      <Blog />
 <PremierDevelopments />
+{/* <RegisterYourInterest /> */}
 
 
     </main>
