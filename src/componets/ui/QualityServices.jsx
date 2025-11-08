@@ -16,13 +16,23 @@ function QualityServices() {
       <div className=" mx-auto px-4 sm:px-6 lg:px-16">
         {/* Optional Section Heading */}
         <div className="text-start mb-4 md:mb-8">
+<motion.h1   initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="w-full">
+
+
           <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
             Our Core Competencies
           </span>
-
+</motion.h1>
           {/* Alternative Shorter Introduction */}
 
-          <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-1 sm:mt-1 mb-4 md:mb-8 sm:mb-3 text-black ">
+          <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
             Pioneering construction innovation with comprehensive
             engineering—from earthworks to bridges. We deliver precision,
             reliability, and quality to transform visions into enduring
@@ -496,7 +506,7 @@ function QualityServices() {
                       BRIDGE WORKS
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                         Connecting Destinies, Overcoming Nature's Challenges.
+                         Connecting Destinies, Overcoming Nature&apos;s Challenges.
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
