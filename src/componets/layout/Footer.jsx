@@ -10,7 +10,7 @@ function Footer() {
       <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 xl:gap-14">
         
         {/* --- Column 1: Company Info --- */}
-        <div className="text-center sm:text-left">
+        <div className="sm:text-left">
           <Link href="/" className="inline-block">
             {/* <Image
               src="/logo.png"
@@ -20,7 +20,7 @@ function Footer() {
               className="object-contain mx-auto sm:mx-0 mb-4 sm:mb-6 w-24 sm:w-28 md:w-32 lg:w-36"
             /> */}
               <div className="mb-3 sm:mb-4 lg:mb-6">
-              <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
+              <span className="text-3xl sm:text-3xl lg:text-3xl xl:text-3xl font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
              Able Group
               </span>
             </div>
@@ -32,13 +32,13 @@ function Footer() {
         </div>
 
         {/* --- Column 2: Quick Links --- */}
-        <div className="text-center sm:text-left">
+        <div className=" sm:text-left">
            <div className="mb-3 sm:mb-4 lg:mb-6">
               <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
              Quick Links
               </span>
             </div>
-          <ul className="space-y-2 sm:space-y-3 text-gray-300">
+          <ul className="space-y-2 sm:space-y-3 text-gray-300 sm-display-flex">
             <li>
               <a href="#" className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">Home</a>
             </li>
@@ -61,7 +61,7 @@ function Footer() {
         </div>
 
         {/* --- Column 3: Contact Info --- */}
-        <div className="text-center sm:text-left">
+        <div className="sm:text-left">
           <div className="mb-3 sm:mb-4 lg:mb-6">
               <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
             Contact Us
@@ -69,7 +69,7 @@ function Footer() {
             </div>
          <ul className="space-y-3 sm:space-y-4 text-gray-300">
   {/* Head Office */}
-  <li className="flex items-start gap-3 justify-center sm:justify-start">
+  <li className="flex items-start gap-3 sm:justify-start">
     <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
     <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
       <strong>Ungada Office</strong>
@@ -82,21 +82,21 @@ function Footer() {
     </span>
     
   </li>
-  <li className="flex items-center gap-3 justify-center sm:justify-start">
+  <li className="flex items-center gap-3  sm:justify-start">
     <MdEmail className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] flex-shrink-0" />
     <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px]">info@ablegroup.com</span>
   </li>
   {/* Branch Office */}
-<li className="flex items-start gap-3 justify-center sm:justify-start">
+<li className="flex items-start gap-3  sm:justify-start">
   <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
   <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
     <strong>Qatar Office</strong>
-    <br />
+    {/* <br />
     Doha, Qatar
     <br />
-    West Bay, Business District
-    <br />
-    <span className="text-[11px]">Tel: +974 1234 5678</span>
+    West Bay, Business District */}
+    {/* <br /> */}
+    {/* <span className="text-[11px]">Tel: +974 1234 5678</span> */}
     <br />
     <span className="text-[11px]">
       Website:{" "}
