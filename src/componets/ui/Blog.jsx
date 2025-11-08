@@ -41,7 +41,7 @@ function Blog() {
               {" "}
               {/* Fixed height */}
               <img
-                src="/apartments/apartment1.jpg"
+                src="/apartments/apartment5.jpg"
                 alt="Description 1"
                 className="w-full h-full object-cover "
               />
