@@ -159,7 +159,7 @@ export default function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden text-white hover:text-black focus:outline-none mr-2 p-2"
+              className="lg:hidden text-[#251f77] hover:text-black focus:outline-none mr-2 p-2"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

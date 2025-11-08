@@ -198,7 +198,7 @@ export default function Home() {
       </section>
       <QualityServices />
 
- <section className="min-h-screen flex pb-8 md:pb-20 lg:pb-20 ">
+ <section className="min-h-screen flex py-8 md:py-20 lg:py-20">
       <div className=" mx-auto mx-auto px-4 sm:px-6 lg:px-16 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
