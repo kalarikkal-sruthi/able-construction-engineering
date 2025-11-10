@@ -16,20 +16,20 @@ function QualityServices() {
       <div className=" mx-auto px-4 sm:px-6 lg:px-16">
         {/* Optional Section Heading */}
         <div className="text-start mb-4 md:mb-8">
-<motion.h1   initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-              }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="w-full">
-
-
-          <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-            Our Core Competencies
-          </span>
-</motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full"
+          >
+            <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
+              Our Core Competencies
+            </span>
+          </motion.h1>
           {/* Alternative Shorter Introduction */}
 
           <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
@@ -181,11 +181,11 @@ function QualityServices() {
                   />
                 </div>
                 <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                   <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                  <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
                     RCC STRUCTURES
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                     Creating Possibility from Raw Land.
+                    Creating Possibility from Raw Land.
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -246,8 +246,6 @@ function QualityServices() {
                   </motion.div>
                 </div>
                 {/* Transparent Text Overlay */}
-              
-              
               </div>
             </SwiperSlide>
 
@@ -261,12 +259,12 @@ function QualityServices() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                      <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+                <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
                   <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
                     ROAD CONSTRUCTION
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                     The Architecture of Strength and Permanence.
+                    The Architecture of Strength and Permanence.
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -327,8 +325,6 @@ function QualityServices() {
                   </motion.div>
                 </div>
                 {/* Transparent Text Overlay */}
-           
-           
               </div>
             </SwiperSlide>
 
@@ -343,12 +339,12 @@ function QualityServices() {
                   />
                 </div>
 
-                     <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+                <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
                   <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
-                      PIPELINE SYSTEMS
+                    PIPELINE SYSTEMS
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                      Ready-to-build surfaces for construction projects
+                    Ready-to-build surfaces for construction projects
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -408,7 +404,6 @@ function QualityServices() {
                     </button>
                   </motion.div>
                 </div>
-     
               </div>
             </SwiperSlide>
 
@@ -421,12 +416,12 @@ function QualityServices() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                            <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                 <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
-                      DRAINAGE SYSTEMS
+                <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+                  <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                    DRAINAGE SYSTEMS
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                       Mastering the Flow, Taming the Elements.
+                    Mastering the Flow, Taming the Elements.
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -487,7 +482,6 @@ function QualityServices() {
                   </motion.div>
                 </div>
                 {/* Transparent Text Overlay */}
-              
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -501,12 +495,12 @@ function QualityServices() {
                 </div>
                 {/* Transparent Text Overlay */}
 
-                                 <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
+                <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
                   <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
-                      BRIDGE WORKS
+                    BRIDGE WORKS
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                         Connecting Destinies, Overcoming Nature&apos;s Challenges.
+                    Connecting Destinies, Overcoming Nature&apos;s Challenges.
                   </p>
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -566,7 +560,6 @@ function QualityServices() {
                     </button>
                   </motion.div>
                 </div>
-           
               </div>
             </SwiperSlide>
             {/* Add more slides as needed */}
@@ -575,15 +568,15 @@ function QualityServices() {
           {/* Custom Pagination */}
           <div className="swiper-pagination flex justify-center items-center gap-3 !relative !mt-8 "></div>
         </div>
-    <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                    viewport={{ once: true }}
-                    className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
-                  >
-                    <button
-                      className="
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
+        >
+          <button
+            className="
       bg-black
     border-1
     border-black
@@ -606,12 +599,12 @@ function QualityServices() {
     xl:min-w-[130px]
    
   "
-                    >
-                      <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                       View All 
-                      </span>
-                      <span
-                        className="
+          >
+            <span className="transition-transform duration-300 group-hover:-translate-x-2">
+              View All
+            </span>
+            <span
+              className="
       absolute
       right-4
       top-1.5
@@ -623,11 +616,11 @@ function QualityServices() {
       duration-300
       font-bold
     "
-                      >
-                        →
-                      </span>
-                    </button>
-                  </motion.div>
+            >
+              →
+            </span>
+          </button>
+        </motion.div>
         {/* Optional Navigation Buttons */}
       </div>
     </section>
