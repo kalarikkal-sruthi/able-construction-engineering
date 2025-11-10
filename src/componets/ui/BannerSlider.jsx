@@ -121,7 +121,7 @@ function BannerSlider() {
                 >
                   <div className="mb-3 sm:mb-4 lg:mb-6">
                     <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                      WHERE GLOBAL LEGACY MEETS UGANDA&apos;S FUTURE
+                      Qatar Saudi Materials Trading
                     </span>
                   </div>
                 </motion.h1>
