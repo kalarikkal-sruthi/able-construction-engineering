@@ -222,7 +222,7 @@ function BannerSlider() {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="relative h-screen w-full flex items-center justify-center">
               <video
                 autoPlay
@@ -279,8 +279,8 @@ function BannerSlider() {
                 </motion.div>
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </SwiperSlide> */}
+          {/* <SwiperSlide>
             <div className="relative h-screen w-full flex items-center justify-center">
               <video
                 autoPlay
@@ -336,7 +336,7 @@ function BannerSlider() {
                 </motion.div>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </section>
  
