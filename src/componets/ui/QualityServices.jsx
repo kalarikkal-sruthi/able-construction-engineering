@@ -109,7 +109,7 @@ function QualityServices() {
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
                     Transforming Terrain with Surgical Precision.
                   </p>
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -165,7 +165,7 @@ function QualityServices() {
                         →
                       </span>
                     </button>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
               </div>
             </SwiperSlide>
@@ -187,7 +187,7 @@ function QualityServices() {
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
                     Creating Possibility from Raw Land.
                   </p>
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -243,7 +243,7 @@ function QualityServices() {
                         →
                       </span>
                     </button>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
                 {/* Transparent Text Overlay */}
               </div>
@@ -266,7 +266,7 @@ function QualityServices() {
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
                     The Architecture of Strength and Permanence.
                   </p>
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -322,7 +322,7 @@ function QualityServices() {
                         →
                       </span>
                     </button>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
                 {/* Transparent Text Overlay */}
               </div>
@@ -346,7 +346,7 @@ function QualityServices() {
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
                     Ready-to-build surfaces for construction projects
                   </p>
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -402,7 +402,7 @@ function QualityServices() {
                         →
                       </span>
                     </button>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
               </div>
             </SwiperSlide>
@@ -423,7 +423,7 @@ function QualityServices() {
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
                     Mastering the Flow, Taming the Elements.
                   </p>
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -479,7 +479,7 @@ function QualityServices() {
                         →
                       </span>
                     </button>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
                 {/* Transparent Text Overlay */}
               </div>
@@ -502,7 +502,7 @@ function QualityServices() {
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
                     Connecting Destinies, Overcoming Nature&apos;s Challenges.
                   </p>
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -558,7 +558,7 @@ function QualityServices() {
                         →
                       </span>
                     </button>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
               </div>
             </SwiperSlide>

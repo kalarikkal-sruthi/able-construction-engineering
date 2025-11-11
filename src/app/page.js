@@ -254,7 +254,6 @@ export default function Home() {
       <Blog />
       <PremierDevelopments />
       <RegisterInterestForm />
-
     </main>
   );
 }

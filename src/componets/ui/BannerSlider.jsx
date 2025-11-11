@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import Image from "next/image";
 // import required modules
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
@@ -21,8 +22,16 @@ function BannerSlider() {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          loop=
-          modules={[Autoplay]}
+          loop={true}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '"></span>';
+            },
+          }}
+          modules={[Autoplay, Pagination]} 
+       
         >
           <SwiperSlide>
             <div className="relative h-screen w-full flex items-center justify-center">
@@ -77,7 +86,7 @@ function BannerSlider() {
                 >
                   <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300 text-sm xl:text-base relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
                     <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                      Get In Touch
+                      Explore Now
                     </span>
                     <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
                       →
@@ -140,7 +149,7 @@ function BannerSlider() {
                 >
                   <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300 text-sm xl:text-base relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
                     <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                      Get In Touch
+                      Explore Now
                     </span>
                     <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
                       →
@@ -203,7 +212,7 @@ function BannerSlider() {
                 >
                   <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300 text-sm xl:text-base relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
                     <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                      Get In Touch
+                      Explore Now
                     </span>
                     <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
                       →
@@ -264,10 +273,9 @@ function BannerSlider() {
                   viewport={{ once: true, amount: 0.3 }}
                   className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center"
                 >
-  <span className="text-1xl sm:text-1xl lg:text-1xl xl:text-1xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                     Coming Soon
-                    </span>
-
+                  <span className="text-1xl sm:text-1xl lg:text-1xl xl:text-1xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
+                    Launching Soon...
+                  </span>
                 </motion.div>
               </div>
             </div>
@@ -323,10 +331,9 @@ function BannerSlider() {
                   viewport={{ once: true, amount: 0.3 }}
                   className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center"
                 >
-
-                   <span className="text-1xl sm:text-1xl lg:text-1xl xl:text-1xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                     Coming Soon
-                    </span>
+                  <span className="text-1xl sm:text-1xl lg:text-1xl xl:text-1xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
+                    Launching Soon...
+                  </span>
                 </motion.div>
               </div>
             </div>
