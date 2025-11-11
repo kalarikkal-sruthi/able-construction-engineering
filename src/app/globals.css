@@ -30,7 +30,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-;
+  ;
   font-style: normal;
   /* background-color: #f9fafb;
   color: #111827; */
@@ -126,11 +126,11 @@ body {
 
 /* Custom pagination dots */
 .swiper-pagination-bullet {
-  background: white !important;
+ 
   /* opacity: 0.5; */
   width: 10px;
   height: 10px;
- 
+
 }
 
 .swiper-pagination-bullet-active {
@@ -145,9 +145,10 @@ body {
   bottom: 30px !important;
 }
 
-:is(.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-horizontal.swiper-pagination-bullets) .swiper-pagination-bullet{
+:is(.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-horizontal.swiper-pagination-bullets) .swiper-pagination-bullet {
   margin: 6px !important;
 }
+
 /* Custom styles for better form appearance */
 select {
   appearance: none;

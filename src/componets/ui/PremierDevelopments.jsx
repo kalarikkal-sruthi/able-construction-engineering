@@ -44,9 +44,8 @@ function PremierDevelopments() {
           <Swiper
             slidesPerView={1}
             spaceBetween={20}
-            // freeMode={true}
-            loop={true} // Enable infinite loop
-            speed={800} // Transition speed in milliseconds
+            loop={true}
+            speed={800}
             autoplay={{
               delay: 1500,
               disableOnInteraction: false,
@@ -54,11 +53,10 @@ function PremierDevelopments() {
             }}
             pagination={{
               clickable: true,
-              el: ".swiper-pagination",
+              el: ".custom-pagination", // Connect to custom container
               type: "bullets",
             }}
             breakpoints={{
-              // Mobile first approach
               480: {
                 slidesPerView: 1.2,
                 spaceBetween: 20,
@@ -67,17 +65,14 @@ function PremierDevelopments() {
                 slidesPerView: 1.5,
                 spaceBetween: 20,
               },
-              // Tablet
               768: {
                 slidesPerView: 2,
                 spaceBetween: 25,
               },
-              // Small desktop
               1024: {
                 slidesPerView: 3,
                 spaceBetween: 30,
               },
-              // Large desktop
               1280: {
                 slidesPerView: 3,
                 spaceBetween: 14,
@@ -113,7 +108,7 @@ function PremierDevelopments() {
                     <strong>Project Name : </strong> Project K race Track
                     (Formula one Grand Prix)
                   </p>
-
+{/* 
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -166,7 +161,7 @@ function PremierDevelopments() {
                         →
                       </span>
                     </button>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
               </div>
             </SwiperSlide>
@@ -194,7 +189,7 @@ function PremierDevelopments() {
                     Yas Island
                   </p>
 
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
@@ -246,14 +241,14 @@ function PremierDevelopments() {
                         →
                       </span>
                     </button>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
                 {/* Transparent Text Overlay */}
               </div>
             </SwiperSlide>
 
             {/* Slide 3 */}
-             <SwiperSlide>
+            <SwiperSlide>
               <div className="group relative   transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
@@ -264,18 +259,19 @@ function PremierDevelopments() {
                 </div>
                 <div className=" text-start right-0 mt-3 text-black">
                   <h3 className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
-                   Sewage Treatment Plant, Jebal Ali
+                    Sewage Treatment Plant, Jebal Ali
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                    <strong>Able Middle East : </strong> RCC structures –Final settlement Tanks &
-Activated Sludge Tanks, Laying & Testing of
-Irrigation main and Sewage Main
+                    <strong>Able Middle East : </strong> RCC structures –Final
+                    settlement Tanks & Activated Sludge Tanks, Laying & Testing
+                    of Irrigation main and Sewage Main
                   </p>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                    <strong>Project Name : </strong> DS 150 – sewage treatment plant
+                    <strong>Project Name : </strong> DS 150 – sewage treatment
+                    plant
                   </p>
 
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
@@ -327,12 +323,12 @@ Irrigation main and Sewage Main
                         →
                       </span>
                     </button>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
                 {/* Transparent Text Overlay */}
               </div>
             </SwiperSlide>
-              <SwiperSlide>
+            <SwiperSlide>
               <div className="group relative  transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
@@ -343,19 +339,20 @@ Irrigation main and Sewage Main
                 </div>
                 <div className=" text-start right-0 mt-3 text-black">
                   <h3 className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
-                 New Doha International Airport Project Doha
+                    New Doha International Airport Project Doha
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                    <strong>Able Middle East : </strong> Construction of Jet Blast deflectors,
-Construction of box culverts, Laying and
-testing of Grp pipelines for storm water,
-Drainage and construction of chambers.
+                    <strong>Able Middle East : </strong> Construction of Jet
+                    Blast deflectors, Construction of box culverts, Laying and
+                    testing of Grp pipelines for storm water, Drainage and
+                    construction of chambers.
                   </p>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                    <strong>Project Name : </strong>New Doha International Airport Project
+                    <strong>Project Name : </strong>New Doha International
+                    Airport Project
                   </p>
 
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
@@ -407,12 +404,12 @@ Drainage and construction of chambers.
                         →
                       </span>
                     </button>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
                 {/* Transparent Text Overlay */}
               </div>
             </SwiperSlide>
-   <SwiperSlide>
+            <SwiperSlide>
               <div className="group relative transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
@@ -423,18 +420,18 @@ Drainage and construction of chambers.
                 </div>
                 <div className=" text-start right-0 mt-3 text-black">
                   <h3 className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
-                   Hamad Port
+                    Hamad Port
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                    <strong>Able Middle East : </strong> Laying and testing of Grp pipelines for storm
-water, Drainage and construction of
-chambers, Enabling Works & Bulk Filling
+                    <strong>Able Middle East : </strong> Laying and testing of
+                    Grp pipelines for storm water, Drainage and construction of
+                    chambers, Enabling Works & Bulk Filling
                   </p>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
                     <strong>Project Name : </strong> Hamad Port
                   </p>
 
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
@@ -486,28 +483,27 @@ chambers, Enabling Works & Bulk Filling
                         →
                       </span>
                     </button>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
                 {/* Transparent Text Overlay */}
               </div>
             </SwiperSlide>
-         
-               
+
             {/* Add more slides as needed */}
           </Swiper>
 
           {/* Custom Pagination */}
-          <div className="swiper-pagination flex justify-center items-center gap-3 !relative !mt-8 "></div>
+             <div className="custom-pagination flex justify-center items-center gap-3 !relative !mt-8"></div>
         </div>
-    <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                    viewport={{ once: true }}
-                    className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
-                  >
-                    <button
-                      className="
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
+        >
+          <button
+            className="
     bg-black
     border-1
     border-black
@@ -530,12 +526,12 @@ chambers, Enabling Works & Bulk Filling
     xl:min-w-[200px]
   
   "
-                    >
-                      <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                       View All Developments
-                      </span>
-                      <span
-                        className="
+          >
+            <span className="transition-transform duration-300 group-hover:-translate-x-2">
+              View All Developments
+            </span>
+            <span
+              className="
       absolute
       right-4
       top-1.5
@@ -547,11 +543,11 @@ chambers, Enabling Works & Bulk Filling
       duration-300
       font-bold
     "
-                      >
-                        →
-                      </span>
-                    </button>
-                  </motion.div>
+            >
+              →
+            </span>
+          </button>
+        </motion.div>
         {/* Optional Navigation Buttons */}
       </div>
     </section>

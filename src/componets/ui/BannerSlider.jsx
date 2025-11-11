@@ -13,7 +13,7 @@ import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 
 function BannerSlider() {
   return (
-    <diiv>
+  
       <section className="relative h-screen w-full overflow-hidden">
         <Swiper
           className="h-full w-full"
@@ -68,7 +68,7 @@ function BannerSlider() {
                 >
                   <div className="mb-3 sm:mb-4 lg:mb-6">
                     <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                      Construction sector across India, Uganda, Qatar, UAE, Oman
+                      Construction Sector Across India, Uganda, Qatar, UAE, Oman
                     </span>
                   </div>
                 </motion.h1>
@@ -131,7 +131,7 @@ function BannerSlider() {
                 >
                   <div className="mb-3 sm:mb-4 lg:mb-6">
                     <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                      Trading between Qatar and Saudi Arabia
+                      Trading Between Qatar And Saudi Arabia
                     </span>
                   </div>
                 </motion.h1>
@@ -194,7 +194,7 @@ function BannerSlider() {
                 >
                   <div className="mb-3 sm:mb-4 lg:mb-6">
                     <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                      Agricultural practices in India and Uganda
+                      Agricultural Practices In India And Uganda
                     </span>
                   </div>
                 </motion.h1>
@@ -340,7 +340,7 @@ function BannerSlider() {
           </SwiperSlide>
         </Swiper>
       </section>
-    </diiv>
+ 
   );
 }
 

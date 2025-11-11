@@ -1,218 +1,215 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+"use client";
+
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 const RegisterInterestForm = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    projectName: '',
-    phoneCode: '+91 (India)',
-    apartmentType: '',
-    agreeToTerms: false
+    firstName: "",
+    lastName: "",
+    mobileNumber: "",
+    email: "",
+    companyName: "",
+    message: "",
   });
 
-  const apartmentTypes = [
-    'Studio',
-    '1 Bedroom',
-    '2 Bedroom',
-    '3 Bedroom',
-    'Penthouse',
-    'Villa'
-  ];
-
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : value
-    }));
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
     // Handle form submission here
+    console.log("Form submitted:", formData);
   };
-
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-900 to-black py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-12"
-        >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-            REGISTER
-            <br />
-            YOUR
-            <br />
-            <span className="text-yellow-400">INTEREST</span>
-          </h1>
-          <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
-        </motion.div>
-
-        {/* Form Container */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 sm:p-8 lg:p-12 border border-white/20"
-        >
-          <form onSubmit={handleSubmit} className="space-y-6">
-            {/* First Row - First Name & Last Name */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-white text-sm font-medium mb-2">
-                  FIRST NAME*
-                </label>
-                <input
-                  type="text"
-                  name="firstName"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-colors"
-                  placeholder="Enter your first name"
-                />
-              </div>
-
-              <div>
-                <label className="block text-white text-sm font-medium mb-2">
-                  LAST NAME*
-                </label>
-                <input
-                  type="text"
-                  name="lastName"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-colors"
-                  placeholder="Enter your last name"
-                />
-              </div>
-            </div>
-
-            {/* Second Row - Email & Project Name */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-white text-sm font-medium mb-2">
-                  EMAIL*
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-colors"
-                  placeholder="Enter your email"
-                />
-              </div>
-
-              <div>
-                <label className="block text-white text-sm font-medium mb-2">
-                  PROJECT NAME*
-                </label>
-                <input
-                  type="text"
-                  name="projectName"
-                  value={formData.projectName}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-colors"
-                  placeholder="Enter project name"
-                />
-              </div>
-            </div>
-
-            {/* Third Row - Phone & Apartment Type */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-white text-sm font-medium mb-2">
-                  PHONE CODE
-                </label>
-                <select
-                  name="phoneCode"
-                  value={formData.phoneCode}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-colors"
+    <section className="flex py-8 md:py-20 lg:py-20 bg-gradient-to-br from-[#000000ea] to-[#000000f5]">
+      <div className="mx-auto px-4 sm:px-6 lg:px-16 w-full">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
+          {" "}
+          {/* Changed to 5 columns */}
+          {/* Content Column - spans 1 of 5 columns (20%) */}
+          <div className="flex flex-col justify-start space-y-6 lg:col-span-2">
+            {" "}
+            {/* Added lg:col-span-1 */}
+            <div className="space-y-4 my-0">
+              <div className="text-start">
+                <motion.h1
+                  initial={{ opacity: 0, y: -20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.8,
+                    ease: "easeOut",
+                  }}
+                  viewport={{ once: true, amount: 0.3 }}
                 >
-                  <option value="+91 (India)">+91 (India)</option>
-                  <option value="+256 (Uganda)">+256 (Uganda)</option>
-                  <option value="+974 (Qatar)">+974 (Qatar)</option>
-                  <option value="+971 (UAE)">+971 (UAE)</option>
-                  <option value="+968 (Oman)">+968 (Oman)</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-white text-sm font-medium mb-2">
-                  APARTMENT TYPE
-                </label>
-                <select
-                  name="apartmentType"
-                  value={formData.apartmentType}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition-colors"
-                >
-                  <option value="">Select apartment type</option>
-                  {apartmentTypes.map((type) => (
-                    <option key={type} value={type}>
-                      {type}
-                    </option>
-                  ))}
-                </select>
+                  <span className="text-2xl sm:text-2xl lg:text-6xl xl:text-6xl font-light font-sans tracking-wide leading-none-2 text-white">
+                    REGISTER <br></br>YOUR <br></br>INTERESE
+                  </span>
+                </motion.h1>
               </div>
             </div>
+          </div>
+          {/* Image Column - spans 4 of 5 columns (80%) */}
+          <div className="relative lg:col-span-3">
+            {" "}
+            {/* Added lg:col-span-4 */}
+            <div className="relative overflow-hidden">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Row 1: First Name & Last Name */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200"
+                      placeholder="First Name *"
+                      required
+                    />
+                  </div>
 
-            {/* Terms and Conditions */}
-            <div className="flex items-start space-x-3">
-              <input
-                type="checkbox"
-                name="agreeToTerms"
-                checked={formData.agreeToTerms}
-                onChange={handleChange}
-                required
-                className="mt-1 w-4 h-4 text-yellow-400 bg-white/5 border-white/20 rounded focus:ring-yellow-400 focus:ring-2"
-              />
-              <label className="text-white text-sm">
-                I have read and agree to the Terms & Conditions
-              </label>
+                  <div className="space-y-2">
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200"
+                      placeholder="Last Name *"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* Row 2: Mobile Number & Email */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <input
+                      type="tel"
+                      id="mobileNumber"
+                      name="mobileNumber"
+                      value={formData.mobileNumber}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200"
+                      placeholder="Mobile Number *"
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200"
+                      placeholder="Your Email *"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* Row 3: Company Name & Message */}
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <input
+                      type="text"
+                      id="companyName"
+                      name="companyName"
+                      value={formData.companyName}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200"
+                      placeholder="Company Name"
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows={4}
+                      className="w-full px-4 py-3 border border-gray-300 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 resize-none"
+                      placeholder="Your Message"
+                    />
+                  </div>
+                </div>
+
+                {/* Submit Button */}
+                <div className="pt-4">
+                  <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                    className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
+                  >
+                    <button
+                      className="
+      bg-white
+      border-1
+      border-white
+      text-black 
+      px-2 
+      xl:px-2
+      py-2 
+      rounded-full 
+      transition-all 
+      duration-300 
+      text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]
+      relative
+      overflow-hidden
+      group
+      hover:-translate-y-0.5
+      flex
+      items-center
+      justify-center
+      min-w-full
+      xl:min-w-full
+    
+    "
+                    >
+                      <span className="transition-transform duration-300 group-hover:-translate-x-2">
+                        Submit
+                      </span>
+                      <span
+                        className="
+        absolute
+        -right-20
+        top-1.5
+        opacity-0
+        -translate-x-2
+        group-hover:opacity-100
+        group-hover:translate-x-0
+        transition-all
+        duration-300
+        font-bold
+            text-black 
+      "
+                      >
+                        →
+                      </span>
+                    </button>
+                  </motion.div>
+                </div>
+              </form>
             </div>
-
-            {/* Submit Button */}
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              type="submit"
-              disabled={!formData.agreeToTerms}
-              className="w-full bg-yellow-400 text-gray-900 py-4 px-6 rounded-lg font-semibold text-lg hover:bg-yellow-300 disabled:bg-gray-600 disabled:text-gray-400 disabled:cursor-not-allowed transition-colors duration-300"
-            >
-              SUBMIT
-            </motion.button>
-
-            {/* reCAPTCHA Notice */}
-            <div className="text-center">
-              <p className="text-gray-400 text-xs">
-                This site is protected by reCAPTCHA and the Google{' '}
-                <a href="#" className="text-yellow-400 hover:underline">
-                  Privacy Policy
-                </a>{' '}
-                and{' '}
-                <a href="#" className="text-yellow-400 hover:underline">
-                  Terms of Service
-                </a>{' '}
-                apply.
-              </p>
-            </div>
-          </form>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
+
+   
   );
 };
 
