@@ -58,7 +58,7 @@ function BannerSlider() {
                 >
                   <div className="mb-3 sm:mb-4 lg:mb-6">
                     <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                     Construction sector across India, Uganda, Qatar, UAE, Oman
+                      Construction sector across India, Uganda, Qatar, UAE, Oman
                     </span>
                   </div>
                 </motion.h1>
@@ -149,7 +149,7 @@ function BannerSlider() {
               </div>
             </div>
           </SwiperSlide>
-                <SwiperSlide>
+          <SwiperSlide>
             <div className="relative h-screen w-full flex items-center justify-center">
               <video
                 autoPlay
@@ -212,7 +212,7 @@ function BannerSlider() {
               </div>
             </div>
           </SwiperSlide>
-           <SwiperSlide>
+          <SwiperSlide>
             <div className="relative h-screen w-full flex items-center justify-center">
               <video
                 autoPlay
@@ -263,12 +263,15 @@ function BannerSlider() {
                   viewport={{ once: true, amount: 0.3 }}
                   className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center"
                 >
-                 
+  <span className="text-1xl sm:text-1xl lg:text-1xl xl:text-1xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
+                     Coming Soon
+                    </span>
+
                 </motion.div>
               </div>
             </div>
           </SwiperSlide>
-                <SwiperSlide>
+          <SwiperSlide>
             <div className="relative h-screen w-full flex items-center justify-center">
               <video
                 autoPlay
@@ -303,7 +306,7 @@ function BannerSlider() {
                 >
                   <div className="mb-3 sm:mb-4 lg:mb-6">
                     <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                     Heavy Construction Equipment Rental Services
+                      Heavy Construction Equipment Rental Services
                     </span>
                   </div>
                 </motion.h1>
@@ -319,13 +322,14 @@ function BannerSlider() {
                   viewport={{ once: true, amount: 0.3 }}
                   className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center"
                 >
-                
+
+                   <span className="text-1xl sm:text-1xl lg:text-1xl xl:text-1xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
+                     Coming Soon
+                    </span>
                 </motion.div>
               </div>
             </div>
           </SwiperSlide>
-
-          
         </Swiper>
       </section>
     </diiv>
