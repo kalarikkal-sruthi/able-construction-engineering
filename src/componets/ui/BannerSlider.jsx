@@ -158,8 +158,8 @@ function BannerSlider() {
                 playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover z-10"
               >
-                <source src="/hero2.mp4" type="video/mp4" />
-                <source src="/hero2.mp4" type="video/webm" />
+                <source src="/hero3.mp4" type="video/mp4" />
+                <source src="/hero3.mp4" type="video/webm" />
                 <Image
                   src="/main-banner-video-image.png"
                   alt="Hero Background"
@@ -221,8 +221,8 @@ function BannerSlider() {
                 playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover z-10"
               >
-                <source src="/hero2.mp4" type="video/mp4" />
-                <source src="/hero2.mp4" type="video/webm" />
+                <source src="/hero4.mp4" type="video/mp4" />
+                <source src="/hero4.mp4" type="video/webm" />
                 <Image
                   src="/main-banner-video-image.png"
                   alt="Hero Background"
