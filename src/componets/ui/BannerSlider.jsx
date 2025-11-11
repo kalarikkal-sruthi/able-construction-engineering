@@ -222,7 +222,7 @@ function BannerSlider() {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="relative h-screen w-full flex items-center justify-center">
               <video
                 autoPlay
@@ -243,7 +243,7 @@ function BannerSlider() {
 
               <div className="absolute top-0 left-0 h-full bg-black z-20"></div>
 
-              {/* Centered Text Content */}
+            
               <div className="relative z-30 text-center text-white px-4 sm:px-6 lg:px-8 xl:px-12 max-w-4xl mx-auto">
                 <motion.h1
                   initial={{ opacity: 0, y: -20 }}
@@ -301,7 +301,6 @@ function BannerSlider() {
 
               <div className="absolute top-0 left-0 h-full bg-black z-20"></div>
 
-              {/* Centered Text Content */}
               <div className="relative z-30 text-center text-white px-4 sm:px-6 lg:px-8 xl:px-12 max-w-4xl mx-auto">
                 <motion.h1
                   initial={{ opacity: 0, y: -20 }}
@@ -337,7 +336,7 @@ function BannerSlider() {
                 </motion.div>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </section>
  
