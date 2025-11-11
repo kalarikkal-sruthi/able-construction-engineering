@@ -21,6 +21,7 @@ function BannerSlider() {
             delay: 5000,
             disableOnInteraction: false,
           }}
+          loop=
           modules={[Autoplay]}
         >
           <SwiperSlide>
@@ -280,8 +281,8 @@ function BannerSlider() {
                 playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover z-10"
               >
-                <source src="/hero2.mp4" type="video/mp4" />
-                <source src="/hero2.mp4" type="video/webm" />
+                <source src="/hero5.mp4" type="video/mp4" />
+                <source src="/hero5.mp4" type="video/webm" />
                 <Image
                   src="/main-banner-video-image.png"
                   alt="Hero Background"
