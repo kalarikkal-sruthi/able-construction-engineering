@@ -33,8 +33,8 @@ export default function Header() {
               <div className="sm:block">
                 <div className="flex items-baseline">
                   <span className="text-1xl sm:text-2xl lg:text-2xl xl:text-2xl font-bold  text-white font-sans tracking-wide  leading-none-2">
-                 ABLE GROUP
-              </span>
+                    ABLE GROUP
+                  </span>
                   {/* <span className="text-lg sm:text-xl lg:text-3xl font-bold  text-black  px-2 py-1 rounded-l-md">
                     ABLE GROUP
                   </span> */}

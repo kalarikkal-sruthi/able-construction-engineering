@@ -43,7 +43,7 @@ const RegisterInterestForm = () => {
                   }}
                   viewport={{ once: true, amount: 0.3 }}
                 >
-                  <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light font-sans tracking-wide leading-tight text-white">
+                  <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide leading-tight text-white">
                     REGISTER <br className="hidden sm:block" />
                     YOUR <br className="hidden sm:block" />
                     INTEREST
@@ -60,7 +60,7 @@ const RegisterInterestForm = () => {
               viewport={{ once: true }}
               className="pt-4"
             >
-              <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
+              <p className="text-gray-300 text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] leading-relaxed">
                 Get in touch with us for more information about our services and
                 offerings.
               </p>
@@ -80,7 +80,7 @@ const RegisterInterestForm = () => {
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400"
+                      className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400"
                       placeholder="First Name *"
                       required
                     />
@@ -93,7 +93,7 @@ const RegisterInterestForm = () => {
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400"
+                      className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400"
                       placeholder="Last Name *"
                       required
                     />
@@ -109,7 +109,7 @@ const RegisterInterestForm = () => {
                       name="mobileNumber"
                       value={formData.mobileNumber}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400"
+                      className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400"
                       placeholder="Mobile Number *"
                       required
                     />
@@ -122,7 +122,7 @@ const RegisterInterestForm = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400"
+                      className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400"
                       placeholder="Your Email *"
                       required
                     />
@@ -138,7 +138,7 @@ const RegisterInterestForm = () => {
                       name="companyName"
                       value={formData.companyName}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400"
+                      className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400"
                       placeholder="Company Name"
                     />
                   </div>
@@ -150,7 +150,7 @@ const RegisterInterestForm = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows={4}
-                      className="w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400 resize-none"
+                      className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] w-full px-4 py-3 sm:py-4 border border-gray-400 focus:ring-0 focus:border-white focus:border-2 outline-none transition-all duration-200 bg-transparent text-white placeholder-gray-400 resize-none"
                       placeholder="Your Message"
                     />
                   </div>
