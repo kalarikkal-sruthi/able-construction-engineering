@@ -21,7 +21,7 @@ function Blog() {
               className="w-full"
             >
               <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-                Uganda's Emerging Conversations
+               Our Next Chapter
               </span>
             </motion.h1>
             {/* Alternative Shorter Introduction */}
@@ -71,15 +71,15 @@ function Blog() {
           </div>
           {/* Optional Navigation Buttons */}
         </div>
-            <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                            viewport={{ once: true }}
-                            className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-10 lg:gap-6 justify-center items-center"
-                          >
-                            <button
-                              className="
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-10 lg:gap-6 justify-center items-center"
+        >
+          <button
+            className="
             bg-black
     border-1
     border-black
@@ -102,12 +102,12 @@ function Blog() {
             xl:min-w-[130px]
            
           "
-                            >
-                              <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                               View All 
-                              </span>
-                              <span
-                                className="
+          >
+            <span className="transition-transform duration-300 group-hover:-translate-x-2">
+              View All
+            </span>
+            <span
+              className="
               absolute
               right-4
               top-1.5
@@ -119,11 +119,11 @@ function Blog() {
               duration-300
               font-bold
             "
-                              >
-                                →
-                              </span>
-                            </button>
-                          </motion.div>
+            >
+              →
+            </span>
+          </button>
+        </motion.div>
       </section>
     </div>
   );

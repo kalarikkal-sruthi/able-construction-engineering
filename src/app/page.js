@@ -104,7 +104,7 @@ export default function Home() {
                     </span> */}
                     {/* <br></br> */}
                     <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-                      Uganda In Focus
+                      The New Foundation
                     </span>
                   </motion.h1>
 

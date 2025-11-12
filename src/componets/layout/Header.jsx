@@ -1,12 +1,15 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { Instagram, Facebook, Linkedin, Globe } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenDropdown, setIsOpenDropdown] = useState(false);
+  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
+
 
   return (
     <main className="relative m-0 p-0">
@@ -46,39 +49,78 @@ export default function Header() {
             <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6 mr-4">
               <Link
                 href="/"
-                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+                className="text-white  text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
                 Home
               </Link>
               <Link
                 href=""
-                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+                className="text-white  text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
-                About
+                About Us
+              </Link>
+              <div
+                className="relative inline-block"
+                onMouseEnter={() => setIsOpenDropdown(true)}
+                onMouseLeave={() => setIsOpenDropdown(false)}
+              >
+                <Link
+                  href="#"
+                  className="text-white  text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] transition-colors"
+                >
+                  Our Businesses ▼
+                </Link>
+
+                {/* Dropdown Menu */}
+                <div
+                  className={`
+        absolute top-full left-0 bg-black min-w-[200px] 
+        shadow-lg z-[1000] border border-gray-100
+        transition-all duration-300 ease-in-out
+        ${
+          isOpenDropdown
+            ? "opacity-100 visible translate-y-0"
+            : "opacity-0 invisible -translate-y-2"
+        }
+      `}
+                >
+                  <Link
+                    href="/construction"
+                    className="block px-4 py-3 text-sm text-white hover:bg-[#fff] hover:text-black transition-colors border-b border-gray-100"
+                  >
+                   Construction & Engineering
+                  </Link>
+                  <Link
+                    href="/trading"
+                    className="block px-4 py-3 text-sm text-white hover:bg-[#fff] hover:text-black transition-colors border-b border-gray-100"
+                  >
+                   Commodities Trading
+                  </Link>
+                  <Link
+                    href="/farming"
+                    className="block px-4 py-3 text-sm text-white hover:bg-[#fff] hover:text-black transition-colors"
+                  >
+                   Agricultural Farming
+                  </Link>
+                </div>
+              </div>
+              <Link
+                href=""
+                className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+              >
+                Future Plans
               </Link>
               <Link
                 href=""
-                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+                className="text-white  text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
-                Business Plan
+                Developments
               </Link>
               <Link
                 href=""
-                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+                className="text-white  text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
-                Our Works
-              </Link>
-              <Link
-                href=""
-                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
-              >
-                Company Profile
-              </Link>
-              <Link
-                href=""
-                className="text-white hover:text-[#251f77] text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
-              >
-                Contact
+                Contact Us
               </Link>
               <button
                 className="
@@ -213,7 +255,93 @@ export default function Header() {
           </button>
 
           <nav className="flex flex-col p-4 pt-16 h-full overflow-y-auto z-40">
-            {[
+              <Link
+              href="/"
+              className="text-gray-800 hover:text-[#251f77] py-4 transition-all duration-200 font-medium text-left border-gray-100 hover:translate-x-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </Link>
+            
+            <Link
+              href="/about"
+              className="text-gray-800 hover:text-[#251f77] py-4 transition-all duration-200 font-medium text-left border-gray-100 hover:translate-x-2"
+              onClick={() => setIsOpen(false)}
+            >
+              About Us
+            </Link>
+
+            {/* Mobile Dropdown for Our Businesses */}
+            <div className="">
+              <button
+                onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
+                className="flex justify-start items-center w-full text-gray-800 hover:text-[#251f77] py-4 transition-all duration-200 font-medium text-left"
+              >
+                <span>Our Businesses</span>
+                <ChevronDown 
+                  size={16} 
+                  className={`transition-transform duration-300 ${
+                    isMobileDropdownOpen ? "rotate-180" : ""
+                  }`} 
+                />
+              </button>
+              
+              {/* Mobile Dropdown Menu */}
+              <div className={`
+                overflow-hidden transition-all duration-300 ease-in-out
+                ${isMobileDropdownOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
+              `}>
+                <Link
+                  href="/construction"
+                  className="block pl-6 py-3 text-sm text-gray-600 hover:text-[#251f77] transition-colors "
+                  onClick={() => setIsOpen(false)}
+                >
+                  Construction & Engineering
+                </Link>
+                <Link
+                  href="/trading"
+                  className="block pl-6 py-3 text-sm text-gray-600 hover:text-[#251f77] transition-colors "
+                  onClick={() => setIsOpen(false)}
+                >
+                  Commodities Trading
+                </Link>
+                <Link
+                  href="/farming"
+                  className="block pl-6 py-3 text-sm text-gray-600 hover:text-[#251f77] transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Agricultural Farming
+                </Link>
+              </div>
+            </div>
+
+            <Link
+              href="/future-plans"
+                  className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
+               
+              onClick={() => setIsOpen(false)}
+            >
+              Future Plans
+            </Link>
+            
+            <Link
+              href="/developments"
+                 className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
+               
+              onClick={() => setIsOpen(false)}
+            >
+              Developments
+            </Link>
+            
+            <Link
+              href="/contact"
+                 className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
+               
+              onClick={() => setIsOpen(false)}
+            >
+              Contact Us
+            </Link>
+            {/* {[
               "Home",
               "About",
               "Business Plan",
@@ -229,7 +357,7 @@ export default function Header() {
               >
                 {label}
               </Link>
-            ))}
+            ))} */}
 
             {/* Social Icons in Mobile Menu */}
             <div className="flex justify-start  py-4  space-x-4 sm:space-x-6 ">
