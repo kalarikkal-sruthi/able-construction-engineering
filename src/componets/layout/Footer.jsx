@@ -55,7 +55,7 @@ function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
-                  Business Plan
+                 Future Plans
                 </a>
               </li>
               <li>
@@ -63,7 +63,7 @@ function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
-                  Our Works
+                 Developments
                 </a>
               </li>
               <li>
@@ -71,17 +71,10 @@ function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
-                  Company Profile
+                  Contact Us
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
-                >
-                  Contact
-                </a>
-              </li>
+             
             </ul>
           </div>
 
@@ -89,7 +82,7 @@ function Footer() {
           <div className="text-start sm:text-left">
             <div className="mb-1 sm:mb-2 lg:mb-3">
               <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
-                New Launches
+                Our Business 
               </span>
             </div>
             <ul className="space-y-2 sm:space-y-3 text-gray-300">
@@ -98,7 +91,7 @@ function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
-                  Farming
+                 Construction & Engineering
                 </a>
               </li>
               <li>
@@ -106,7 +99,7 @@ function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
-                  Tourism
+                  Commodities Trading
                 </a>
               </li>
               <li>
@@ -114,7 +107,7 @@ function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
-                  Rental Services
+                 Agricultural Farming
                 </a>
               </li>
             </ul>
