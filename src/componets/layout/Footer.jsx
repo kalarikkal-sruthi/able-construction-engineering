@@ -7,7 +7,7 @@ import { Instagram, Facebook, Linkedin, Globe } from "lucide-react";
 function Footer() {
   return (
     <footer className="bg-[#000] text-white relative px-4 py-8 sm:px-6 sm:py-12 md:py-16 lg:px-8 lg:py-20 xl:px-12 xl:py-24">
-      <div className="mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 xl:gap-14">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 xl:gap-14 mb-8">
         {/* --- Column 1: Company Info - Full width on mobile, 1st column on desktop --- */}
         <div className="lg:col-span-1 text-start sm:text-left">
           <Link href="/" className="inline-block">
@@ -18,10 +18,25 @@ function Footer() {
             </div>
           </Link>
           <p className="text-gray-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] leading-relaxed">
-            We specialize in quality apartment and infrastructure construction,
-            delivering projects with precision, safety, and sustainability.
+            A dynamic international conglomerate specializing in construction,
+            strategic trading, and sustainable agribusiness across India, the
+            Middle East, and East Africa.
           </p>
           <br />
+          <ul className="space-y-3 sm:space-y-4 text-gray-300">
+            <div className="mb-1 sm:mb-2 lg:mb-3">
+              <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
+                Email
+              </span>
+            </div>
+
+            <li className="flex text-start gap-3 justify-start sm:justify-start">
+              <MdEmail className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] flex-shrink-0" />
+              <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px]">
+                Py.ableengineeringcoltd@gmail.com
+              </span>
+            </li>
+          </ul>
         </div>
 
         {/* --- Columns 2 & 3: Quick Links & New Launches - 2 columns on mobile, 2nd & 3rd columns on desktop --- */}
@@ -55,7 +70,7 @@ function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
-                 Future Plans
+                  Future Plans
                 </a>
               </li>
               <li>
@@ -63,7 +78,7 @@ function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
-                 Developments
+                  Developments
                 </a>
               </li>
               <li>
@@ -74,7 +89,6 @@ function Footer() {
                   Contact Us
                 </a>
               </li>
-             
             </ul>
           </div>
 
@@ -82,7 +96,7 @@ function Footer() {
           <div className="text-start sm:text-left">
             <div className="mb-1 sm:mb-2 lg:mb-3">
               <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
-                Our Business 
+                Our Business
               </span>
             </div>
             <ul className="space-y-2 sm:space-y-3 text-gray-300">
@@ -91,7 +105,7 @@ function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
-                 Construction & Engineering
+                  Construction & Engineering
                 </a>
               </li>
               <li>
@@ -107,81 +121,145 @@ function Footer() {
                   href="#"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
-                 Agricultural Farming
+                  Agricultural Farming
                 </a>
               </li>
             </ul>
           </div>
+
+
+          
+        </div>
+        
+      </div>
+    
+      {/* --- Column 4: Address - Full width on mobile, 4th column on desktop --- */}
+      <div className="border-t border-t-1 border-gray-400 text-start">
+        <div className="mb-4 mt-8 ">
+          <span className="text-2xl sm:text-3xl lg:text-3xl xl:text-3xl font-light font-sans tracking-wide drop-shadow-lg">
+            Our Branches
+          </span>
         </div>
 
-        {/* --- Column 4: Address - Full width on mobile, 4th column on desktop --- */}
-        <div className="lg:col-span-1 text-start  sm:text-left">
-          <ul className="space-y-3 sm:space-y-4 text-gray-300">
-            <div className="mb-1 sm:mb-2 lg:mb-3">
-              <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
-                Address
-              </span>
-            </div>
-            {/* Head Office */}
-            <li className="flex items-start gap-3 justify-start sm:justify-start">
-              <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
-              <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
-                <strong>Ungada </strong>
-                <br />
-                Central Kampala, Nakasero III
-                <br />
-                Buganda Road I, Uganda
-                <br />
-                <span className="text-[11px]">Tel: +256 123 456 789</span>
-              </span>
-            </li>
-            <li className="flex text-start gap-3 justify-start sm:justify-start">
-              <MdEmail className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] flex-shrink-0" />
-              <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px]">
-                Py.ableengineeringcoltd@gmail.com
-              </span>
-            </li>
-          </ul>
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
+          {/* Head Office Section */}
+          <div className="flex-1">
+            <ul className="space-y-3 sm:space-y-4 text-gray-300">
+              {/* Head Office */}
+              <li className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
+                <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
+                  <strong> India (Headquarters & Construction)</strong>
+                  
 
-          <ul className="space-y-3 sm:space-y-4 text-gray-300">
-            <div className="mt-3 sm:mt-4 lg:mt-6 mb-1 sm:mb-2 lg:mb-3">
-              <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
-                Associated Companies
-              </span>
-            </div>
-            <li className="flex items-start gap-3 justify-start sm:justify-start">
-              <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
-              <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
-                <strong>Qatar</strong>
-                <br />
-                Website:{" "}
-                <a
-                  href="https://www.ablegroupqatar.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-300 hover:text-blue-100 underline"
-                >
-                  https://www.ablegroupqatar.com/
-                </a>
-              </span>
-            </li>
-            <li className="flex items-start gap-3 justify-start sm:justify-start">
-              <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
-              <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
-                <strong>Saudi Arabia</strong>
-                {/* <br />
-            Central Kampala, Nakasero III
-            <br />
-            Buganda Road I, Uganda
-            <br />
-            <span className="text-[11px]">Tel: +256 123 456 789</span> */}
-              </span>
-            </li>
-          </ul>
+
+
+                  <br />
+                 Able Group Trading Contractors
+                  <br />
+                 X-427, Cheruvadi, Mavoor,
+                  <br />
+                  Kozhikode - 673661
+                  <br />
+                  Kerala, India
+                  {/* <span className="text-[11px]">Tel: +256 123 456 789</span> */}
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Associated Companies Section */}
+          <div className="flex-1">
+            <ul className="space-y-3 sm:space-y-4 text-gray-300">
+              <li className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
+                <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
+                  <strong>Uganda (Construction & Engineering)</strong>
+ 
+                  <br />
+                 P.Y ABLE CONSTRUCTION & ENGINEERING CO. LTD
+                 <br />
+                 Central Kampala, Nisbasero III
+                  <br />
+                  Buganda Road I, Uganda
+                  <br />
+                  <span className="text-[11px]">Tel: +256 123 456 789</span>
+                 
+          
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="flex-1">
+            <ul className="space-y-3 sm:space-y-4 text-gray-300">
+              <li className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
+                <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
+                  <strong> Qatar (Trading & Building Materials) </strong>
+                  <br />
+                  Able Group W.L.L.
+                  <br />
+Barwa Commercial Avenue, Type-5(Sayer), Block-30, 2nd Floor
+<br />
+Ind. area Road, Doha, Qatar
+                 
+                  <br />
+                  <span className="text-[11px]">Tel: +974 4450 1707</span>
+
+                  <br /> Showroom:Barwa Village, Building - 6, Shop-40842, Wakrah
+                  <br />
+                   <span className="text-[11px]">Tel: +974 4415 5355</span>
+                  {/* <a href="https://www.ablegroupqatar.com/" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:text-blue-100 underline">https://www.ablegroupqatar.com/</a>
+                   */}
+ 
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="flex-1">
+            <ul className="space-y-3 sm:space-y-4 text-gray-300">
+              <li className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
+                <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
+                  <strong>Saudi Arabia (Trading)</strong>
+                  <br />
+                 Able Middle East Trading Company
+(شركة قادر الشرق الأوسط للتجارة)
+                  <br />
+                  Building No: 3325, Street: Al Afadila, Secondary No:8853
+                  <br />
+Al Khalidiyah Ash Shamaliyah Dist., Postal Code: 32231
+<br />
+Dammam, Kingdom of Saudi Arabia
+                 
+                  <br />
+                  <span className="text-[11px]">Tel: +966 558 294 888</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+            <div className="flex-1">
+            <ul className="space-y-3 sm:space-y-4 text-gray-300">
+              <li className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
+                <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
+                  <strong>India (Farming)</strong>
+                  <br />
+                  Able Farms Pvt. Ltd.
+                  <br />
+Office No 5 Q, 1st Floor, Able Commercial Avenue,
+<br />
+Karasherry, Kozhikode, Kerala
+<br />
+
+                 
+                  <span className="text-[11px]">Tel: +91 9526 746402</span>
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      {/* --- Bottom Bar --- */}
 
       <div className="border-t border-t-1 border-gray-400 mt-8 sm:mt-12 ">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-2 text-white text-[10px] sm:text-[11px]">

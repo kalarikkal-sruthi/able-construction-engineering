@@ -27,9 +27,7 @@ function Blog() {
             {/* Alternative Shorter Introduction */}
 
             <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
-              Explore a curated collection of our landmark projects. Each one is
-              a testament to the scale, innovation, and uncompromising quality
-              we deliver, setting new standards in every market we enter.
+             Building on three decades of global excellence, we are now shaping the future of development. Explore our pioneering projects in construction, sustainable agriculture, and strategic trading—where innovation meets legacy, and new standards are born.
             </p>
           </div>
 

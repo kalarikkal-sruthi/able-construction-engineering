@@ -62,6 +62,10 @@ export default function Home() {
                   BUILT ON A FOUNDATION OF GLOBAL EXPERTISE
                 </span>
                 <span className="text-05xl sm:text-1xl lg:text-1xl xl:text-1xl block  mb-3 mt-3 sm:mb-3 text-white">
+                
+                          At the Able Group, we are not just constructing buildings and infrastructure; we are building the very foundations for progress and modern living. Our work—from landmark infrastructure in the Middle East and India to premium residential spaces in emerging markets—is unified by a single, uncompromising standard: excellence.
+         
+                
                   Our story begins in 1992 with the founding of the Able Group.
                   What started as a single venture has exploded into an
                   international network of companies across India, UAE, Qatar,
@@ -69,7 +73,16 @@ export default function Home() {
                   forged on the ground of some of the world&apos;s most
                   ambitious projects.
                 </span>
-              </div>
+  <span className="text-05xl sm:text-1xl lg:text-1xl xl:text-1xl block  mb-3 mt-3 sm:mb-3 text-white">
+                    Our strength is amplified by a fully integrated supply chain. Through our established trading divisions in Qatar and Saudi Arabia, we are direct suppliers of essential construction materials and industrial fuel. This unique capability guarantees project integrity, ensures timely delivery, and provides a competitive edge that sets us apart.
+ </span>
+   <span className="text-05xl sm:text-1xl lg:text-1xl xl:text-1xl block  mb-3 mt-3 sm:mb-3 text-white">
+Our vision for growth extends beyond construction. We are cultivating prosperity through sustainable agribusiness, from integrated farming initiatives in Wayanad, India, to our new venture in premium coffee cultivation for export in Uganda. This deep-rooted commitment allows us to nurture communities and create lasting value from the ground up. </span>
+        
+          <span className="text-05xl sm:text-1xl lg:text-1xl xl:text-1xl block  mb-3 mt-3 sm:mb-3 text-white">
+We are more than a construction company; we are a holistic partner in development, dedicated to transforming visions into enduring realities that empower communities and inspire generations.</span>
+        
+          </div>
               {/* <div className="relative inline-block">
               <span className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold font-mono text-white relative block">
                 Able Group
