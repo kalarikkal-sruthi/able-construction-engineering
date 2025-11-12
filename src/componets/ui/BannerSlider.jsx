@@ -69,9 +69,14 @@ function BannerSlider() {
               >
                 <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                    Construction Sector Across India, Uganda, Qatar, UAE, Oman
+                   Global Construction Excellence
                   </span>
                 </div>
+                 <div className="mb-3 sm:mb-4 lg:mb-6">
+                  <span className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
+                  Building Futures Across India, Uganda, Qatar, UAE & Oman
+                  </span>
+                  </div>
               </motion.h1>
 
               <motion.div
@@ -134,7 +139,7 @@ function BannerSlider() {
               >
                 <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                    Trading Between Qatar And Saudi Arabia
+                  Strategic Trading & Supply
                   </span>
                 </div>
               </motion.h1>
@@ -197,8 +202,9 @@ function BannerSlider() {
               >
                 <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                    Agricultural Practices In India And Uganda
+                   Sustainable Farming Ventures
                   </span>
+                
                 </div>
               </motion.h1>
 

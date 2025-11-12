@@ -31,9 +31,16 @@ export default function page() {
               >
                 <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                    Construction And Engineering
+                  Construction
                   </span>
+                  
                 </div>
+<div className="mb-3 sm:mb-4 lg:mb-6">
+                  <span className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
+                Building Landmarks, Forging Futures
+                  </span>
+                  </div>
+                
               </motion.h1>
             </div>
           </div>
