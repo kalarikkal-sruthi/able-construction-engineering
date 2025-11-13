@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 function ConstructionBanner() {
   return (
-    <div>   <section className="relative h-[60vh] min-h-[500px] w-full">
+    <div>
+      <section className="relative h-[60vh] min-h-[500px] w-full">
         <div className="absolute inset-0">
           <Image
             src="/innerpage-construction/construction-innerpage.jpg"
@@ -30,16 +31,14 @@ function ConstructionBanner() {
               >
                 <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                  Construction
+                    Construction
                   </span>
-                  
                 </div>
-<div className="mb-3 sm:mb-4 lg:mb-6">
+                <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                Building Landmarks, Forging Futures
+                    Building Landmarks, Forging Futures
                   </span>
-                  </div>
-                
+                </div>
               </motion.h1>
             </div>
           </div>
@@ -77,15 +76,20 @@ function ConstructionBanner() {
             >
               <div className="mb-3 sm:mb-4 lg:mb-6">
                 <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide leading-tight">
-               From the iconic Yas Island F1 Circuit in Abu Dhabi to vital public infrastructure in Kerala and modern apartments in Uganda, Able Group is a name synonymous with reliability, scale, and precision in construction. We don't just build structures; we deliver the foundations for growth and community development.
-
+                  From the iconic Yas Island F1 Circuit in Abu Dhabi to vital
+                  public infrastructure in Kerala and modern apartments in
+                  Uganda, Able Group is a name synonymous with reliability,
+                  scale, and precision in construction. We don&apos;t just build
+                  structures; we deliver the foundations for growth and
+                  community development.
                 </span>
               </div>
             </motion.h1>
           </div>
         </div>
-      </section></div>
-  )
+      </section>
+    </div>
+  );
 }
 
-export default ConstructionBanner
+export default ConstructionBanner;

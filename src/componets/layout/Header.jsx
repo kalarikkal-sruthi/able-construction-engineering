@@ -10,7 +10,6 @@ export default function Header() {
   const [isOpenDropdown, setIsOpenDropdown] = useState(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
 
-
   return (
     <main className="relative m-0 p-0">
       <header className="fixed top-[0px] left-0 w-full z-50 ">
@@ -88,19 +87,19 @@ export default function Header() {
                     href="/construction"
                     className="block px-4 py-3 text-sm text-white hover:bg-[#fff] hover:text-black transition-colors border-b border-gray-100"
                   >
-                   Construction & Engineering
+                    Construction & Engineering
                   </Link>
                   <Link
                     href="/trading"
                     className="block px-4 py-3 text-sm text-white hover:bg-[#fff] hover:text-black transition-colors border-b border-gray-100"
                   >
-                   Commodities Trading
+                    Commodities Trading
                   </Link>
                   <Link
                     href="/farming"
                     className="block px-4 py-3 text-sm text-white hover:bg-[#fff] hover:text-black transition-colors"
                   >
-                   Agricultural Farming
+                    Agricultural Farming
                   </Link>
                 </div>
               </div>
@@ -255,14 +254,14 @@ export default function Header() {
           </button>
 
           <nav className="flex flex-col p-4 pt-16 h-full overflow-y-auto z-40">
-              <Link
+            <Link
               href="/"
               className="text-gray-800 hover:text-[#251f77] py-4 transition-all duration-200 font-medium text-left border-gray-100 hover:translate-x-2"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
-            
+
             <Link
               href="/about"
               className="text-gray-800 hover:text-[#251f77] py-4 transition-all duration-200 font-medium text-left border-gray-100 hover:translate-x-2"
@@ -278,19 +277,25 @@ export default function Header() {
                 className="flex justify-start items-center w-full text-gray-800 hover:text-[#251f77] py-4 transition-all duration-200 font-medium text-left"
               >
                 <span>Our Businesses</span>
-                <ChevronDown 
-                  size={16} 
+                <ChevronDown
+                  size={16}
                   className={`transition-transform duration-300 ${
                     isMobileDropdownOpen ? "rotate-180" : ""
-                  }`} 
+                  }`}
                 />
               </button>
-              
+
               {/* Mobile Dropdown Menu */}
-              <div className={`
+              <div
+                className={`
                 overflow-hidden transition-all duration-300 ease-in-out
-                ${isMobileDropdownOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
-              `}>
+                ${
+                  isMobileDropdownOpen
+                    ? "max-h-40 opacity-100"
+                    : "max-h-0 opacity-0"
+                }
+              `}
+              >
                 <Link
                   href="/construction"
                   className="block pl-6 py-3 text-sm text-gray-600 hover:text-[#251f77] transition-colors "
@@ -317,26 +322,23 @@ export default function Header() {
 
             <Link
               href="/future-plans"
-                  className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
-               
+              className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
               onClick={() => setIsOpen(false)}
             >
               Future Plans
             </Link>
-            
+
             <Link
               href="/developments"
-                 className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
-               
+              className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
               onClick={() => setIsOpen(false)}
             >
               Developments
             </Link>
-            
+
             <Link
               href="/contact"
-                 className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
-               
+              className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
               onClick={() => setIsOpen(false)}
             >
               Contact Us
