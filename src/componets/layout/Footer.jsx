@@ -154,6 +154,7 @@ function Footer() {
 
 
 
+
                   <br />
                  Able Group Trading Contractors
                   <br />
@@ -161,8 +162,10 @@ function Footer() {
                   <br />
                   Kozhikode - 673661
                   <br />
-                  Kerala, India
-                  {/* <span className="text-[11px]">Tel: +256 123 456 789</span> */}
+                  Kerala, India  <br />
+                  <span className="text-[11px]">Tel: <br /></span>  +91 9656 007755 <br />
+                  +91 9526 746402
+
                 </span>
               </li>
             </ul>
@@ -183,8 +186,13 @@ function Footer() {
                   <br />
                   Buganda Road I, Uganda
                   <br />
-                  <span className="text-[11px]">Tel: +256 123 456 789</span>
+
+                   <span className="text-[11px]">Tel: <br /></span>  +256 752 405037 <br />
+                 +256 753 049048 <br />+256 758 010181
+
                  
+
+
           
                 </span>
               </li>
