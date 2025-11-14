@@ -180,11 +180,14 @@ function Footer() {
                   <strong>Uganda (Construction & Engineering)</strong>
  
                   <br />
-                 P.Y ABLE CONSTRUCTION & ENGINEERING CO. LTD
-                 <br />
+                 P.Y ABLE CONSTRUCTION & ENGINEERING CO. LTD<br />
+                 NAKASERO ||| BUGANDA ROAD  <br />
+                 P.O.BOX 168327  <br />
+                 KAMPALA UGANDA
+                 {/* <br />
                  Central Kampala, Nisbasero III
                   <br />
-                  Buganda Road I, Uganda
+                  Buganda Road I, Uganda */}
                   <br />
 
                    <span className="text-[11px]">Tel: <br /></span>  +256 752 405037 <br />

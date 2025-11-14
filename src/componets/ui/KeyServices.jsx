@@ -94,12 +94,12 @@ function KeyServices() {
   </div>
 
   {/* Content */}
-  <div className="relative z-10 px-4 sm:px-6 lg:px-8 xl:px-8 py-6 sm:py-10 lg:py-14 xl:py-14 flex flex-col items-center text-center h-full justify-center">
-    <div className="w-12 sm:w-14 lg:w-16 xl:w-16 h-12 sm:h-14 lg:h-16 xl:h-16 bg-black bg-opacity-20 rounded-full flex items-center justify-center mb-4 group-hover:bg-black group-hover:bg-opacity-30 group-hover:scale-110 transition-all duration-300">
-      <service.icon className="w-6 sm:w-7 lg:w-8 xl:w-8 h-6 sm:h-7 lg:h-8 xl:h-8 text-white" />
+  <div className="relative z-10  px-4 sm:px-4 lg:px-6 xl:px-6 py-6 sm:py-10 lg:py-14 xl:py-14 flex flex-col items-center text-center h-full justify-center">
+    <div className="w-8 sm:w-10 lg:w-14 xl:w-14  h-8 sm:h-10 lg:h-14 xl:h-14 bg-black bg-opacity-20 rounded-full flex items-center justify-center mb-4 group-hover:bg-black group-hover:bg-opacity-30 group-hover:scale-110 transition-all duration-300">
+      <service.icon className="w-4 sm:w-5 lg:w-6 xl:w-6 h-4 sm:h-5 lg:h-6 xl:h-6 text-white " />
     </div>
 
-    <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold text-white mb-3">
+    <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold text-white mb-0">
       {service.title}
     </h3>
 
