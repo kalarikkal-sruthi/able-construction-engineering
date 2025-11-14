@@ -31,7 +31,7 @@ export default function Header() {
         ? 'bg-black shadow-lg' 
         : 'bg-transparent'
     }`}>
-        <div className={`mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   shadow-md border-gray-200  bg-[#0000] backdrop-blur-sm z-100  transition-all duration-500 ${
+        <div className={`mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   border-gray-200  bg-[#0000]   transition-all duration-500 ${
         isScrolled ? 'bg-black' : 'bg-transparent'
       }`}>
           <div className="flex justify-between items-center ">
