@@ -143,7 +143,7 @@ export default function Header() {
               </Link>
               <button
                 className="
-      bg-black
+      bg-transparent
     border-1
     border-white
     text-white 
