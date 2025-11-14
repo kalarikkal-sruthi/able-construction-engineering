@@ -95,8 +95,8 @@ function KeyServices() {
 
   {/* Content */}
   <div className="relative z-10  px-4 sm:px-4 lg:px-6 xl:px-6 py-6 sm:py-10 lg:py-14 xl:py-14 flex flex-col items-center text-center h-full justify-center">
-    <div className="w-8 sm:w-10 lg:w-14 xl:w-14  h-8 sm:h-10 lg:h-14 xl:h-14 bg-black bg-opacity-20 rounded-full flex items-center justify-center mb-4 group-hover:bg-black group-hover:bg-opacity-30 group-hover:scale-110 transition-all duration-300">
-      <service.icon className="w-4 sm:w-5 lg:w-6 xl:w-6 h-4 sm:h-5 lg:h-6 xl:h-6 text-white " />
+    <div className="w-8 sm:w-10 lg:w-14 xl:w-14  h-8 sm:h-10 lg:h-14 xl:h-14 bg-black bg-opacity-20 rounded-full flex items-center justify-center  group-hover:bg-black group-hover:bg-opacity-30 group-hover:scale-110 transition-all duration-300">
+      <service.icon className="w-4 sm:w-5 lg:w-6 xl:w-6 h-4 sm:h-5 lg:h-6 xl:h-6 text-white mb-0" />
     </div>
 
     <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold text-white mb-0">

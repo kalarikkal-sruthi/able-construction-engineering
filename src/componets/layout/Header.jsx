@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { Instagram, Facebook, Linkedin, Globe } from "lucide-react";
@@ -9,11 +9,31 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenDropdown, setIsOpenDropdown] = useState(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <main className="relative m-0 p-0">
-      <header className="fixed top-[0px] left-0 w-full z-50 ">
-        <div className="mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   shadow-md border-gray-200  bg-[#000] backdrop-blur-sm z-100">
+      <header className={`fixed top-[0px] left-0 w-full z-50 ransition-all duration-500 ${
+      isScrolled 
+        ? 'bg-black shadow-lg' 
+        : 'bg-transparent'
+    }`}>
+        <div className={`mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   shadow-md border-gray-200  bg-[#0000] backdrop-blur-sm z-100  transition-all duration-500 ${
+        isScrolled ? 'bg-black' : 'bg-transparent'
+      }`}>
           <div className="flex justify-between items-center ">
             {/* Logo and Title */}
             <div className="flex items-center space-x-2 sm:space-x-3">
@@ -111,7 +131,7 @@ export default function Header() {
               </Link>
               <Link
                 href=""
-                className="text-white  text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
+                className="text-white   text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
                 Developments
               </Link>
@@ -174,28 +194,28 @@ export default function Header() {
                 <Link
                   href="https://www.instagram.com/"
                   target="_blank"
-                  className="text-white hover:text-pink-600 transition"
+                  className="text-white  hover:text-pink-600 transition"
                 >
                   <Instagram size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
                   href="https://www.facebook.com/"
                   target="_blank"
-                  className="text-white hover:text-blue-600 transition"
+                  className="text-white  hover:text-blue-600 transition"
                 >
                   <Facebook size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/"
                   target="_blank"
-                  className="text-white hover:text-blue-700 transition"
+                  className="text-white  hover:text-blue-700 transition"
                 >
                   <Linkedin size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
                   href="https://yourwebsite.com"
                   target="_blank"
-                  className="text-white hover:text-green-600 transition"
+                  className="text-white  hover:text-green-600 transition"
                 >
                   <Globe size={18} className="xl:w-5 xl:h-5" />
                 </Link>
