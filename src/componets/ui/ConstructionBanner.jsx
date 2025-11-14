@@ -9,7 +9,7 @@ function ConstructionBanner() {
   <div className="absolute inset-0">
     <div className="relative h-full w-full">
       <Image
-        src="/innerpage-construction/construction-innerpage.jpg"
+        src="/innerpage-construction/construction-work.jpg"
         alt="Construction & Engineering"
         fill
         className="object-cover scale-110 parallax-zoom"
