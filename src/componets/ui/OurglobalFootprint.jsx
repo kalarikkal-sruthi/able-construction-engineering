@@ -252,7 +252,7 @@ function OurglobalFootprint() {
                   </div>
 
                   <p className="text-gray-300 leading-relaxed mb-6 sm:mb-8 lg:mb-10 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] font-light">
-                    Driving Uganda's urban transformation with sustainable
+                    Driving Uganda&apos;s urban transformation with sustainable
                     construction solutions that foster economic growth and
                     enhance community living standards across the nation.
                   </p>
@@ -420,7 +420,7 @@ function OurglobalFootprint() {
                 {/* Bottom Content */}
                 <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:left-8 text-white">
                   <div className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-80 font-light">
-                    Building Uganda's Future Since 2003
+                    Building Uganda&apos;s Future Since 2003
                   </div>
                   <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light mt-1 sm:mt-2">
                     Excellence in Construction

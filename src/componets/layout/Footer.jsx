@@ -180,10 +180,12 @@ function Footer() {
                   <strong>Uganda (Construction & Engineering)</strong>
  
                   <br />
-                 P.Y ABLE CONSTRUCTION & ENGINEERING CO. LTD<br />
-                 NAKASERO ||| BUGANDA ROAD  <br />
-                 P.O.BOX 168327  <br />
-                 KAMPALA UGANDA
+                  P.Y Able Construction & Engineering Co. LTD <br />
+                 Nakasero ||| Buganda Road <br />
+                
+                 P.O.Box 168327  <br />
+                 Kampala Uganda
+                
                  {/* <br />
                  Central Kampala, Nisbasero III
                   <br />
