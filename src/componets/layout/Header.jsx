@@ -28,11 +28,11 @@ export default function Header() {
     <main className="relative m-0 p-0">
       <header className={`fixed top-[0px] left-0 w-full z-50 ransition-all duration-500 ${
       isScrolled 
-        ? 'bg-black shadow-lg' 
+        ? 'bg-white shadow-lg' 
         : 'bg-transparent'
     }`}>
         <div className={`mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   border-gray-200  bg-[#0000]   transition-all duration-500 ${
-        isScrolled ? 'bg-black' : 'bg-transparent'
+        isScrolled ? 'bg-white' : 'bg-transparent'
       }`}>
           <div className="flex justify-between items-center ">
             {/* Logo and Title */}
