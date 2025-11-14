@@ -103,7 +103,7 @@ function QualityServices() {
                 </div>
                 {/* Transparent Text Overlay */}
                 <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                  <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                  <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
                     EARTHWORKS
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
@@ -181,7 +181,7 @@ function QualityServices() {
                   />
                 </div>
                 <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                  <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                  <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
                     RCC STRUCTURES
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
@@ -260,7 +260,7 @@ function QualityServices() {
                   />
                 </div>
                 <div className="text-start absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 md:p-6 text-white">
-                  <h3 className="ext-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                  <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
                     ROAD CONSTRUCTION
                   </h3>
                   <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">

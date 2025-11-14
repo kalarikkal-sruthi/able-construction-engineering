@@ -5,7 +5,7 @@ import Image from "next/image";
 function ConstructionBanner() {
   return (
     <div>
-   <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden">
+   <section className="relative h-[70vh] min-h-[600px] w-full overflow-hidden">
   <div className="absolute inset-0">
     <div className="relative h-full w-full">
       <Image

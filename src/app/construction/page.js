@@ -7,7 +7,7 @@ import ConstructionBanner from "@/componets/ui/ConstructionBanner";
 import OurglobalFootprint from "@/componets/ui/OurglobalFootprint";
 export default function page() {
   return (
-    <main className="pt-16">
+    <main>
    <ConstructionBanner />
 <KeyServices />
     <OurglobalFootprint />
