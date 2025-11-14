@@ -99,11 +99,11 @@ function KeyServices() {
       <service.icon className="w-6 sm:w-7 lg:w-8 xl:w-8 h-6 sm:h-7 lg:h-8 xl:h-8 text-white" />
     </div>
 
-    <h3 className="text-[16px] sm:text-[18px] lg:text-[20px] xl:text-[22px] font-semibold text-white mb-3">
+    <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold text-white mb-3">
       {service.title}
     </h3>
 
-    <p className="text-[14px] sm:text-[15px] lg:text-[16px] xl:text-[16px] text-white text-opacity-90 leading-relaxed">
+    <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] text-white text-opacity-90 leading-relaxed">
       {service.description}
     </p>
   </div>
