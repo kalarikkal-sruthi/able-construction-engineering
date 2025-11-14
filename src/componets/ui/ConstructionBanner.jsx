@@ -67,7 +67,7 @@ function ConstructionBanner() {
               className="w-full text-center"
             >
               <div className="mb-3 sm:mb-4 lg:mb-6">
-                <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide leading-tight">
+                <span className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[18x] font-light font-sans tracking-wide leading-tight">
                   From the iconic Yas Island F1 Circuit in Abu Dhabi to vital
                   public infrastructure in Kerala and modern apartments in
                   Uganda, Able Group is a name synonymous with reliability,
