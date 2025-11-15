@@ -13,8 +13,6 @@ import Link from "next/link";
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 
 function BannerSlider() {
-  
-
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <Swiper
@@ -69,14 +67,14 @@ function BannerSlider() {
               >
                 <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                   Global Construction Excellence
+                    Global Construction Excellence
                   </span>
                 </div>
-                 <div className="mb-3 sm:mb-4 lg:mb-6">
+                <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                  Building Futures Across India, Uganda, Qatar, UAE & Oman
+                    Building Futures Across India, Uganda, Qatar, UAE & Oman
                   </span>
-                  </div>
+                </div>
               </motion.h1>
 
               <motion.div
@@ -139,7 +137,7 @@ function BannerSlider() {
               >
                 <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                  Strategic Trading & Supply
+                    Strategic Trading & Supply
                   </span>
                 </div>
               </motion.h1>
@@ -155,14 +153,16 @@ function BannerSlider() {
                 viewport={{ once: true, amount: 0.3 }}
                 className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center"
               >
-                <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300 text-sm xl:text-base relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
-                  <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                    Explore Now
-                  </span>
-                  <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
-                    →
-                  </span>
-                </button>
+                <Link href="/trading" className="">
+                  <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300 text-sm xl:text-base relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
+                    <span className="transition-transform duration-300 group-hover:-translate-x-2">
+                      Explore Now
+                    </span>
+                    <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
+                      →
+                    </span>
+                  </button>
+                </Link>
               </motion.div>
             </div>
           </div>
@@ -202,9 +202,8 @@ function BannerSlider() {
               >
                 <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                   Sustainable Farming Ventures
+                    Sustainable Farming Ventures
                   </span>
-                
                 </div>
               </motion.h1>
 

@@ -341,7 +341,7 @@ function OurglobalFootprint() {
               "
                       >
                         <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                         View Our Profile
+                          View Our Profile
                         </span>
                         <span
                           className="
@@ -542,7 +542,7 @@ function OurglobalFootprint() {
           "
                       >
                         <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                         View Our Profile
+                          View Our Profile
                         </span>
                         <span
                           className="
@@ -589,7 +589,7 @@ function OurglobalFootprint() {
               {/* Image Panel with Overlay Stats */}
               <div className="lg:col-span-2 relative h-64 sm:h-72 md:h-80 lg:h-auto min-h-[300px]">
                 <Image
-                   src="/innerpage-construction/middle-east.jpg"
+                  src="/innerpage-construction/middle-east.jpg"
                   alt="Mega-Projects in Middle East: Airports, Formula 1 Tracks, and Strategic Infrastructure"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 66vw, 50vw"
@@ -602,14 +602,11 @@ function OurglobalFootprint() {
                 <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
                   <div className="bg-[#0000006b] p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
-                     25+
+                      25+
                     </div>
                     <div className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] text-gray-300">
-                   Years Experience
+                      Years Experience
                     </div>
-
-
-
                   </div>
                   <div className="bg-[#0000006b]   p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">

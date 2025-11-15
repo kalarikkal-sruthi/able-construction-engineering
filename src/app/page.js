@@ -59,20 +59,30 @@ export default function Home() {
             >
               <div className="mb-3 sm:mb-4 lg:mb-6 text-center">
                 <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide drop-shadow-lg leading-none-2 text-white ">
-                   BUILT ON A FOUNDATION OF GLOBAL EXPERTISE
+                  BUILT ON A FOUNDATION OF GLOBAL EXPERTISE
                 </span>
                 <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mb-3 mt-3 sm:mb-3 text-white">
-               Since our foundation in 1992, the Able Group has been built on a legacy of excellence and strategic growth. We have since evolved into a dynamic international conglomerate, defining skylines and powering industries across India, the Middle East, and East Africa.
+                  Since our foundation in 1992, the Able Group has been built on
+                  a legacy of excellence and strategic growth. We have since
+                  evolved into a dynamic international conglomerate, defining
+                  skylines and powering industries across India, the Middle
+                  East, and East Africa.
                 </span>
                 <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mb-3 mt-3 sm:mb-3 text-white">
-                Our integrated expertise spans the entire development ecosystem. We are builders of landmark infrastructure and precision-engineered residential spaces; suppliers of essential construction materials and industrial fuel through established trading networks in Qatar and Saudi Arabia; and cultivators, advancing sustainable agribusiness from the farmlands of Wayanad to the emerging coffee plantations of Uganda.
+                  Our integrated expertise spans the entire development
+                  ecosystem. We are builders of landmark infrastructure and
+                  precision-engineered residential spaces; suppliers of
+                  essential construction materials and industrial fuel through
+                  established trading networks in Qatar and Saudi Arabia; and
+                  cultivators, advancing sustainable agribusiness from the
+                  farmlands of Wayanad to the emerging coffee plantations of
+                  Uganda.
                 </span>
                 <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]block  mb-3 mt-3 sm:mb-3 text-white">
-                
-Driven by three decades of unwavering commitment, we do not merely complete projects—we build legacies of quality, reliability, and trust, from the ground up.
+                  Driven by three decades of unwavering commitment, we do not
+                  merely complete projects—we build legacies of quality,
+                  reliability, and trust, from the ground up.
                 </span>
-
-              
               </div>
               {/* <div className="relative inline-block">
               <span className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold font-mono text-white relative block">
@@ -108,21 +118,41 @@ Driven by three decades of unwavering commitment, we do not merely complete proj
                     </span> */}
                     {/* <br></br> */}
                     <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-                     Building Legacies, From the Ground Up
+                      Building Legacies, From the Ground Up
                     </span>
                   </motion.h1>
 
                   <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block   mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-black">
-                   At the Able Group, we are not just constructing buildings and infrastructure; we are building the very foundations for progress and modern living. Our work—from landmark infrastructure in the Middle East and India to premium residential spaces in emerging markets—is unified by a single, uncompromising standard: excellence.
+                    At the Able Group, we are not just constructing buildings
+                    and infrastructure; we are building the very foundations for
+                    progress and modern living. Our work—from landmark
+                    infrastructure in the Middle East and India to premium
+                    residential spaces in emerging markets—is unified by a
+                    single, uncompromising standard: excellence.
                   </span>
                   <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block   mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-black">
-                    Our strength is amplified by a fully integrated supply chain. Through our established trading divisions in Qatar and Saudi Arabia, we are direct suppliers of essential construction materials and industrial fuel. This unique capability guarantees project integrity, ensures timely delivery, and provides a competitive edge that sets us apart.
+                    Our strength is amplified by a fully integrated supply
+                    chain. Through our established trading divisions in Qatar
+                    and Saudi Arabia, we are direct suppliers of essential
+                    construction materials and industrial fuel. This unique
+                    capability guarantees project integrity, ensures timely
+                    delivery, and provides a competitive edge that sets us
+                    apart.
                   </span>
                   <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block   mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-black">
-                   Our vision for growth extends beyond construction. We are cultivating prosperity through sustainable agribusiness, from integrated farming initiatives in Wayanad, India, to our new venture in premium coffee cultivation for export in Uganda. This deep-rooted commitment allows us to nurture communities and create lasting value from the ground up.
+                    Our vision for growth extends beyond construction. We are
+                    cultivating prosperity through sustainable agribusiness,
+                    from integrated farming initiatives in Wayanad, India, to
+                    our new venture in premium coffee cultivation for export in
+                    Uganda. This deep-rooted commitment allows us to nurture
+                    communities and create lasting value from the ground up.
                   </span>
-                   <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block   mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-black">
-             We are more than a construction company; we are a holistic partner in development, dedicated to transforming visions into enduring realities that empower communities and inspire generations. </span>
+                  <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block   mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-black">
+                    We are more than a construction company; we are a holistic
+                    partner in development, dedicated to transforming visions
+                    into enduring realities that empower communities and inspire
+                    generations.{" "}
+                  </span>
                 </div>
               </div>
 
