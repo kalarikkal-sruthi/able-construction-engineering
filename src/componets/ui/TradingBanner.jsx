@@ -11,7 +11,7 @@ function TradingBanner() {
         <div className="absolute inset-0">
           <div className="relative h-full w-full">
             <Image
-              src="/innerpage-construction/construction-work.jpg"
+              src="/innerpage-construction/inventory-distribution.jpg"
               alt="Construction & Engineering"
               fill
               className="object-cover scale-110 parallax-zoom"
@@ -80,7 +80,7 @@ function TradingBanner() {
             >
               <div className="mb-3 sm:mb-4 lg:mb-6">
                 <span className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[18x] font-light font-sans tracking-wide leading-tight">
-                 Able Group's trading divisions are the vital link in the supply chain, ensuring a seamless flow of essential materials and resources. From the specialized tools in a craftsman&apos;s hands to the diesel powering industrial growth, we are a trusted partner for quality and reliability.
+                 Able Group&apos;s trading divisions are the vital link in the supply chain, ensuring a seamless flow of essential materials and resources. From the specialized tools in a craftsman&apos;s hands to the diesel powering industrial growth, we are a trusted partner for quality and reliability.
                 </span>
               </div>
             </motion.h1>
