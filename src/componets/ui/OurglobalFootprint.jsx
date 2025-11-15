@@ -199,7 +199,7 @@ function OurglobalFootprint() {
 
                 {/* Floating Stats Grid */}
                 <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
-                  <div className="bg-black backdrop-blur-sm p-3 sm:p-4 text-center border border-white/10 min-w-[80px] sm:min-w-[100px]">
+                  <div className="bg-[#0000006b]  p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
                       25+
                     </div>
@@ -207,7 +207,7 @@ function OurglobalFootprint() {
                       Years Experience
                     </div>
                   </div>
-                  <div className="bg-black backdrop-blur-sm  p-3 sm:p-4 text-center border border-white/10 min-w-[80px] sm:min-w-[100px]">
+                  <div className="bg-[#0000006b]   p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
                       96+
                     </div>
@@ -399,7 +399,7 @@ function OurglobalFootprint() {
 
                 {/* Floating Stats Grid */}
                 <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
-                  <div className="bg-black backdrop-blur-sm p-3 sm:p-4 text-center border border-white/10 min-w-[80px] sm:min-w-[100px]">
+                  <div className="bg-[#0000006b] backdrop-blur-sm p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
                       20+
                     </div>
@@ -407,7 +407,7 @@ function OurglobalFootprint() {
                       Years Experience
                     </div>
                   </div>
-                  <div className="bg-black backdrop-blur-sm p-3 sm:p-4 text-center border border-white/10 min-w-[80px] sm:min-w-[100px]">
+                  <div className="bg-[#0000006b]  p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
                       138+
                     </div>
@@ -600,7 +600,7 @@ function OurglobalFootprint() {
 
                 {/* Floating Stats Grid */}
                 <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
-                  <div className="bg-black backdrop-blur-sm p-3 sm:p-4 text-center border border-white/10 min-w-[80px] sm:min-w-[100px]">
+                  <div className="bg-[#0000006b] p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
                      25+
                     </div>
@@ -611,7 +611,7 @@ function OurglobalFootprint() {
 
 
                   </div>
-                  <div className="bg-black backdrop-blur-sm  p-3 sm:p-4 text-center border border-white/10 min-w-[80px] sm:min-w-[100px]">
+                  <div className="bg-[#0000006b]   p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
                       31+
                     </div>
