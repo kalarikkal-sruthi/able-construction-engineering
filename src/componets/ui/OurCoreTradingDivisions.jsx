@@ -3,56 +3,59 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 function OurCoreTradingDivisions() {
-const divisions = [
-  {
-    id: 1,
-    title: "Safety Products",
-    description: "Comprehensive personal protective equipment (PPE) ensuring workplace safety and compliance",
-    imageUrl: "/innerpage-trading/safety-products.jpg",
-  },
-  {
-    id: 2,
-    title: "Fasteners",
-    description: "Complete range of TIMCO and PATTA® fasteners for secure and reliable construction solutions",
-    imageUrl: "/innerpage-trading/fasteners.jpg",
-  },
-  {
-    id: 3,
-    title: "Sanitary Ware",
-    description: "Elegant Acsent solutions combining modern design with exceptional durability",
-    imageUrl: "/innerpage-trading/sanitery-wares.jpg",
-  },
-  {
-    id: 4,
-    title: "Painting Tools",
-    description: "Premium National and ZIO brushes and rollers for professional painting results",
-    imageUrl: "/innerpage-trading/painting-tools.jpg",
-  },
-  {
-    id: 5,
-    title: "Durable Hand & Power Tools",
-    description: "Professional-grade Patta and TIMCO tools built for performance and longevity",
-    imageUrl: "/innerpage-trading/powertools.jpg",
-  },
-  {
-    id: 6,
-    title: "Adhesives",
-    description: "High-quality bonding solutions for construction and industrial applications",
-    imageUrl: "/innerpage-trading/adhesives.jpg",
-  },
-  {
-    id: 7,
-    title: "Hardware & Building Materials",
-    description: "Comprehensive selection of essential construction components and materials",
-    imageUrl: "/innerpage-trading/hardware-building-meterial.jpg",
-  },
-  {
-    id: 8,
-    title: "Electricals",
-    description: "Complete electrical supplies from basic wiring to advanced conduits and geotextiles",
-    imageUrl: "/innerpage-trading/electricals.jpg",
-  }
-];
+  const divisions = [
+    {
+      id: 1,
+      title: "Safety Products",
+      description:
+        "Comprehensive personal protective equipment (PPE) from Bodyguard and Timco Safety",
+      imageUrl: "/innerpage-trading/safety-products.jpg",
+    },
+    {
+      id: 2,
+      title: "Fasteners",
+      description:
+        "A full range of TIMCO and PATTA® fasteners, adhesives, and general hardware",
+      imageUrl: "/innerpage-trading/fasteners.jpg",
+    },
+    {
+      id: 3,
+      title: "Sanitary Ware",
+      description: "Elegant and durable solutions from Acsent",
+      imageUrl: "/innerpage-trading/sanitery-wares.jpg",
+    },
+    {
+      id: 4,
+      title: "Painting Tools",
+      description: "Brushes, rollers, and accessories from National and ZIO",
+      imageUrl: "/innerpage-trading/painting-tools.jpg",
+    },
+    {
+      id: 5,
+      title: "Durable Hand & Power Tools",
+      description: "Professional-grade tools from Patta and TIMCO",
+      imageUrl: "/innerpage-trading/powertools.jpg",
+    },
+    {
+      id: 6,
+      title: "Adhesives",
+      description:
+        "High-quality adhesives for construction and industrial applications",
+      imageUrl: "/innerpage-trading/adhesives.jpg",
+    },
+    {
+      id: 7,
+      title: "Hardware & Building Materials",
+      description: "Comprehensive range of hardware and construction materials",
+      imageUrl: "/innerpage-trading/hardware-building-meterial.jpg",
+    },
+    {
+      id: 8,
+      title: "Electricals",
+      description: "From wiring and conduits to geotextiles and tarpaulins",
+      imageUrl: "/innerpage-trading/electricals.jpg",
+    },
+  ];
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -137,7 +140,7 @@ const divisions = [
                   className="relative z-10 h-full flex flex-col items-center justify-center px-4 sm:px-4 lg:px-6 xl:px-6 py-6 sm:py-10 lg:py-14 xl:py-14 text-white"
                 >
                   {/* Black Background Container */}
-                  <div className="bg-black/40 px-4 sm:px-6 lg:px-6 xl:px-6 py-6 sm:py-10 lg:py-14 xl:py-14 w-full max-w-xs mx-auto ">
+                 <div className="bg-black/40  mx-16 w-full  min-h-[150px] flex flex-col items-center justify-center">
                     {/* Title */}
                     <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold mb-0 text-center">
                       {division.title}

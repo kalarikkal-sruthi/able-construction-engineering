@@ -33,7 +33,7 @@ function Footer() {
             <li className="flex text-start gap-3 justify-start sm:justify-start">
               <MdEmail className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] flex-shrink-0" />
               <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px]">
-                Py.ableengineeringcoltd@gmail.com
+               Py.ableengineeringcoltd@gmail.com
               </span>
             </li>
           </ul>
