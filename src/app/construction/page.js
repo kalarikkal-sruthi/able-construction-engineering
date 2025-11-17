@@ -8,13 +8,9 @@ import OurglobalFootprint from "@/componets/ui/OurglobalFootprint";
 export default function page() {
   return (
     <main>
-   <ConstructionBanner />
-<KeyServices />
-    <OurglobalFootprint />
-      
-    
-      
-    
+      <ConstructionBanner />
+      <KeyServices />
+      <OurglobalFootprint />
     </main>
   );
 }

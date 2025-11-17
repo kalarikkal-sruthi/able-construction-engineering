@@ -11,7 +11,7 @@ function TradingBanner() {
         <div className="absolute inset-0">
           <div className="relative h-full w-full">
             <Image
-              src="/innerpage-construction/inventory-distribution.jpg"
+              src="/innerpage-trading/trading-banner.jpg"
               alt="Construction & Engineering"
               fill
               className="object-cover scale-110 parallax-zoom"
@@ -39,7 +39,7 @@ function TradingBanner() {
                 </div>
                 <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                  The Backbone of Construction and Industry
+                 The Foundation of Quality and Progress
                   </span>
                 </div>
               </motion.h1>
@@ -80,8 +80,7 @@ function TradingBanner() {
             >
               <div className="mb-3 sm:mb-4 lg:mb-6">
                 <span className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[18x] font-light font-sans tracking-wide leading-tight">
-                 Able Group&apos;s trading divisions are the vital link in the supply chain, ensuring a seamless flow of essential materials and resources. From the specialized tools in a craftsman&apos;s hands to the diesel powering industrial growth, we are a trusted partner for quality and reliability.
-                </span>
+          Able Group&apos;s trading divisions are the vital link in the supply chain, powering construction and industry across the Middle East. We are a strategic partner for contractors, businesses, and industries, providing not just materials, but reliability, quality, and a seamless supply of essentials—from the specialized tools in a craftsman&apos;s hands to the diesel fueling a nation&apos;s growth.   </span>
               </div>
             </motion.h1>
           </div>

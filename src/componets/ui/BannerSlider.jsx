@@ -1,3 +1,4 @@
+'use client';
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -146,7 +147,7 @@ function BannerSlider() {
              
                  <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                  Powering Industries in Qatar and Saudi Arabia
+                Premium Hardware & Building Materials Across the GCC
 
                   </span>
                   </div>
