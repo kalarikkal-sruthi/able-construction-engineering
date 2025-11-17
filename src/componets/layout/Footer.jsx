@@ -22,7 +22,7 @@ function Footer() {
             strategic trading, and sustainable agribusiness across India, the
             Middle East, and East Africa.
           </p>
-          <br />
+          {/* <br />
           <ul className="space-y-3 sm:space-y-4 text-gray-300">
             <div className="mb-1 sm:mb-2 lg:mb-3">
               <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
@@ -36,7 +36,7 @@ function Footer() {
                Py.ableengineeringcoltd@gmail.com
               </span>
             </li>
-          </ul>
+          </ul> */}
         </div>
 
         {/* --- Columns 2 & 3: Quick Links & New Launches - 2 columns on mobile, 2nd & 3rd columns on desktop --- */}

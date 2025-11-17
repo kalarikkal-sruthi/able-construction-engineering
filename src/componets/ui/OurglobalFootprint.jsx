@@ -55,7 +55,7 @@ function OurglobalFootprint() {
                     engineering solutions that drive economic growth and
                     community development across the nation.
                   </p>
-
+{/* 
                   <div className="space-y-4 sm:space-y-5 mb-6 sm:mb-8 lg:mb-10">
                     <div className="flex items-center justify-between py-3 sm:py-4 border-b border-gray-700">
                       <span className="text-white font-medium text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
@@ -101,7 +101,7 @@ function OurglobalFootprint() {
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
                     <motion.div
@@ -198,7 +198,7 @@ function OurglobalFootprint() {
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent lg:bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
 
                 {/* Floating Stats Grid */}
-                <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
+                {/* <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
                   <div className="bg-[#0000006b]  p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
                       25+
@@ -215,7 +215,7 @@ function OurglobalFootprint() {
                       Projects Completed
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Bottom Content */}
                 <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:left-8 text-white">
@@ -257,15 +257,15 @@ function OurglobalFootprint() {
                     enhance community living standards across the nation.
                   </p>
 
-                  <div className="space-y-4 sm:space-y-5 mb-6 sm:mb-8 lg:mb-10">
+                  {/* <div className="space-y-4 sm:space-y-5 mb-6 sm:mb-8 lg:mb-10">
                     <div className="flex items-center justify-between py-3 sm:py-4 border-b border-gray-700">
                       <span className="text-white font-medium text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
                         Residential Construction
                       </span>
                       <div className="flex items-center space-x-2">
-                        {/* <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
+                        <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
                           60+ Projects
-                        </span> */}
+                        </span>
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
@@ -274,9 +274,9 @@ function OurglobalFootprint() {
                         Commercial Development
                       </span>
                       <div className="flex items-center space-x-2">
-                        {/* <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
+                        <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
                           35+ Structures
-                        </span> */}
+                        </span>
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
@@ -285,9 +285,9 @@ function OurglobalFootprint() {
                         Urban Infrastructure
                       </span>
                       <div className="flex items-center space-x-2">
-                        {/* <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
+                        <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
                           25+ Projects
-                        </span> */}
+                        </span>
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
@@ -296,13 +296,13 @@ function OurglobalFootprint() {
                         Road Construction
                       </span>
                       <div className="flex items-center space-x-2">
-                        {/* <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
+                        <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
                           18+ Highways
-                        </span> */}
+                        </span>
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
                     <motion.div
@@ -398,7 +398,7 @@ function OurglobalFootprint() {
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent lg:bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
 
                 {/* Floating Stats Grid */}
-                <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
+                {/* <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
                   <div className="bg-[#0000006b] p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
                       20+
@@ -415,7 +415,7 @@ function OurglobalFootprint() {
                       Projects Completed
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Bottom Content */}
                 <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:left-8 text-white">
@@ -457,7 +457,7 @@ function OurglobalFootprint() {
                     standards across Qatar, UAE, and Oman.
                   </p>
 
-                  <div className="space-y-4 sm:space-y-5 mb-6 sm:mb-8 lg:mb-10">
+                  {/* <div className="space-y-4 sm:space-y-5 mb-6 sm:mb-8 lg:mb-10">
                     <div className="flex items-center justify-between py-3 sm:py-4 border-b border-gray-700">
                       <span className="text-white font-medium text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
                         Airport Mega-Projects
@@ -502,7 +502,7 @@ function OurglobalFootprint() {
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
                     <motion.div
@@ -599,7 +599,7 @@ function OurglobalFootprint() {
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent lg:bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
 
                 {/* Floating Stats Grid */}
-                <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
+                {/* <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
                   <div className="bg-[#0000006b] p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
                       25+
@@ -616,7 +616,7 @@ function OurglobalFootprint() {
                       Mega-Projects
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Bottom Content */}
                 <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:left-8 text-white">
