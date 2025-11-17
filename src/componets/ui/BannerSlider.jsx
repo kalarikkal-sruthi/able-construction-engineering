@@ -79,7 +79,7 @@ function BannerSlider() {
                   </span>
                   </div>
               </motion.h1>
-
+<Link href="/construction" className="">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ function BannerSlider() {
                 viewport={{ once: true, amount: 0.3 }}
                 className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center"
               >
-                <Link href="/construction" className="">
+                
                   <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300 text-sm xl:text-base relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
                     <span className="transition-transform duration-300 group-hover:-translate-x-2">
                       Explore Now
@@ -100,8 +100,9 @@ function BannerSlider() {
                       →
                     </span>
                   </button>
-                </Link>
+               
               </motion.div>
+               </Link>
             </div>
           </div>
         </SwiperSlide>
