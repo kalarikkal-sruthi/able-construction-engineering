@@ -22,7 +22,7 @@ function Footer() {
             strategic trading, and sustainable agribusiness across India, the
             Middle East, and East Africa.
           </p>
-          {/* <br />
+          <br />
           <ul className="space-y-3 sm:space-y-4 text-gray-300">
             <div className="mb-1 sm:mb-2 lg:mb-3">
               <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
@@ -33,10 +33,10 @@ function Footer() {
             <li className="flex text-start gap-3 justify-start sm:justify-start">
               <MdEmail className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] flex-shrink-0" />
               <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px]">
-               Py.ableengineeringcoltd@gmail.com
+               info@ablegroup.com
               </span>
             </li>
-          </ul> */}
+          </ul>
         </div>
 
         {/* --- Columns 2 & 3: Quick Links & New Launches - 2 columns on mobile, 2nd & 3rd columns on desktop --- */}
@@ -149,7 +149,7 @@ function Footer() {
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
                 <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
-                  <strong> India (Headquarters & Construction)</strong>
+                  <strong> India</strong>
                   
 
 
