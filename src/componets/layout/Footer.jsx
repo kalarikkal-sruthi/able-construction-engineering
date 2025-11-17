@@ -177,7 +177,7 @@ function Footer() {
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
                 <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
-                  <strong>Uganda (Construction & Engineering)</strong>
+                  <strong>Uganda</strong>
  
                   <br />
                   P.Y Able Construction & Engineering Co. LTD <br />
@@ -208,7 +208,7 @@ function Footer() {
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
                 <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
-                  <strong> Qatar (Trading & Building Materials) </strong>
+                  <strong> Qatar</strong>
                   <br />
                   Able Group W.L.L.
                   <br />
@@ -234,7 +234,7 @@ Ind. area Road, Doha, Qatar
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
                 <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
-                  <strong>Saudi Arabia (Trading)</strong>
+                  <strong>Saudi Arabia</strong>
                   <br />
                  Able Middle East Trading Company
 (شركة قادر الشرق الأوسط للتجارة)
@@ -256,7 +256,7 @@ Dammam, Kingdom of Saudi Arabia
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
                 <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
-                  <strong>India (Farming)</strong>
+                  <strong>India</strong>
                   <br />
                   Able Farms Pvt. Ltd.
                   <br />
