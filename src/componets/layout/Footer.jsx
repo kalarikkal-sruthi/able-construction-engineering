@@ -33,7 +33,7 @@ function Footer() {
             <li className="flex text-start gap-3 justify-start sm:justify-start">
               <MdEmail className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] flex-shrink-0" />
               <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px]">
-               info@ablegroup.com
+                info@ablegroup.com
               </span>
             </li>
           </ul>
@@ -126,13 +126,9 @@ function Footer() {
               </li>
             </ul>
           </div>
-
-
-          
         </div>
-        
       </div>
-    
+
       {/* --- Column 4: Address - Full width on mobile, 4th column on desktop --- */}
       <div className="border-t border-t-1 border-gray-400 text-start">
         <div className="mb-4 mt-8 ">
@@ -150,22 +146,19 @@ function Footer() {
                 <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
                 <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
                   <strong> India</strong>
-                  
-
-
-
-
                   <br />
-                 Able Group Trading Contractors
+                  Able Group Trading Contractors
                   <br />
-                 X-427, Cheruvadi, Mavoor,
+                  X-427, Cheruvadi, Mavoor,
                   <br />
                   Kozhikode - 673661
                   <br />
-                  Kerala, India  <br />
-                  <span className="text-[11px]">Tel: <br /></span>  +91 9656 007755 <br />
+                  Kerala, India <br />
+                  <span className="text-[11px]">
+                    Tel: <br />
+                  </span>{" "}
+                  +91 9656 007755 <br />
                   +91 9526 746402
-
                 </span>
               </li>
             </ul>
@@ -178,27 +171,22 @@ function Footer() {
                 <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
                 <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
                   <strong>Uganda</strong>
- 
                   <br />
                   P.Y Able Construction & Engineering Co. LTD <br />
-                 Nakasero ||| Buganda Road <br />
-                
-                 P.O.Box 168327  <br />
-                 Kampala Uganda
-                
-                 {/* <br />
+                  Nakasero ||| Buganda Road <br />
+                  P.O.Box 168327 <br />
+                  Kampala Uganda
+                  {/* <br />
                  Central Kampala, Nisbasero III
                   <br />
                   Buganda Road I, Uganda */}
                   <br />
-
-                   <span className="text-[11px]">Tel: <br /></span>  +256 752 405037 <br />
-                 +256 753 049048 <br />+256 758 010181
-
-                 
-
-
-          
+                  <span className="text-[11px]">
+                    Tel: <br />
+                  </span>{" "}
+                  +256 752 405037 <br />
+                  +256 753 049048 <br />
+                  +256 758 010181
                 </span>
               </li>
             </ul>
@@ -212,19 +200,17 @@ function Footer() {
                   <br />
                   Able Group W.L.L.
                   <br />
-Barwa Commercial Avenue, Type-5(Sayer), Block-30, 2nd Floor
-<br />
-Ind. area Road, Doha, Qatar
-                 
+                  Barwa Commercial Avenue, Type-5(Sayer), Block-30, 2nd Floor
+                  <br />
+                  Ind. area Road, Doha, Qatar
                   <br />
                   <span className="text-[11px]">Tel: +974 4450 1707</span>
-
-                  <br /> Showroom:Barwa Village, Building - 6, Shop-40842, Wakrah
+                  <br /> Showroom:Barwa Village, Building - 6, Shop-40842,
+                  Wakrah
                   <br />
-                   <span className="text-[11px]">Tel: +974 4415 5355</span>
+                  <span className="text-[11px]">Tel: +974 4415 5355</span>
                   {/* <a href="https://www.ablegroupqatar.com/" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:text-blue-100 underline">https://www.ablegroupqatar.com/</a>
                    */}
- 
                 </span>
               </li>
             </ul>
@@ -236,22 +222,21 @@ Ind. area Road, Doha, Qatar
                 <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
                   <strong>Saudi Arabia</strong>
                   <br />
-                 Able Middle East Trading Company
-(شركة قادر الشرق الأوسط للتجارة)
+                  Able Middle East Trading Company (شركة قادر الشرق الأوسط
+                  للتجارة)
                   <br />
                   Building No: 3325, Street: Al Afadila, Secondary No:8853
                   <br />
-Al Khalidiyah Ash Shamaliyah Dist., Postal Code: 32231
-<br />
-Dammam, Kingdom of Saudi Arabia
-                 
+                  Al Khalidiyah Ash Shamaliyah Dist., Postal Code: 32231
+                  <br />
+                  Dammam, Kingdom of Saudi Arabia
                   <br />
                   <span className="text-[11px]">Tel: +966 558 294 888</span>
                 </span>
               </li>
             </ul>
           </div>
-            <div className="flex-1">
+          <div className="flex-1">
             <ul className="space-y-3 sm:space-y-4 text-gray-300">
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
@@ -260,12 +245,10 @@ Dammam, Kingdom of Saudi Arabia
                   <br />
                   Able Farms Pvt. Ltd.
                   <br />
-Office No 5 Q, 1st Floor, Able Commercial Avenue,
-<br />
-Karasherry, Kozhikode, Kerala
-<br />
-
-                 
+                  Office No 5 Q, 1st Floor, Able Commercial Avenue,
+                  <br />
+                  Karasherry, Kozhikode, Kerala
+                  <br />
                   <span className="text-[11px]">Tel: +91 9526 746402</span>
                 </span>
               </li>
@@ -279,8 +262,7 @@ Karasherry, Kozhikode, Kerala
           {/* Copyright + Legal Links in one line */}
           <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 ">
             <span className="sm-pt-4">
-              ©{new Date().getFullYear()} AbleGroup By Uganda Construction
-              Company.
+              ©{new Date().getFullYear()} AbleGroup By Construction Company.
             </span>
             {/* <span className="hidden sm:inline">|</span>
       <span className="hover:text-white cursor-pointer transition-colors">Terms of Use</span>

@@ -109,7 +109,7 @@ function OurCoreTradingDivisions() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {divisions.map((division) => (
             <div
               key={division.id}
@@ -140,7 +140,7 @@ function OurCoreTradingDivisions() {
                   className="relative z-10 h-full flex flex-col items-center justify-center px-4 sm:px-4 lg:px-6 xl:px-6 py-6 sm:py-10 lg:py-14 xl:py-14 text-white"
                 >
                   {/* Black Background Container */}
-                 <div className="bg-black/40  mx-16 w-full  min-h-[150px] flex flex-col items-center justify-center">
+                  <div className="bg-black/40  mx-16 w-full  min-h-[150px] flex flex-col items-center justify-center">
                     {/* Title */}
                     <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold mb-0 text-center">
                       {division.title}
