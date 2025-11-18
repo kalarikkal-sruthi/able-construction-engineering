@@ -229,7 +229,7 @@ function OurStrategicPresence() {
               </div>
 
               {/* Bottom Content */}
-              <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:left-8 text-white">
+              <div className="absolute bottom-16 sm:bottom-16 lg:bottom-8 left-4 sm:left-6 lg:left-8 text-white">
                 <div className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-80 font-light">
                   Your One-Stop Destination Since 1996
                 </div>
@@ -239,7 +239,7 @@ function OurStrategicPresence() {
               </div>
 
               {/* Website Link Overlay */}
-              <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 right-4 sm:right-6 lg:right-8">
+              <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:right-8">
                 <a
                   href="https://www.ablegroupqatar.com"
                   target="_blank"
@@ -455,7 +455,7 @@ function OurStrategicPresence() {
                     Market Entry
                   </div>
                 </div>
-                <div className="bg-[#0000006b]  p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
+                <div className="bg-[#0000006b] p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                   <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
                     100%
                   </div>
@@ -465,53 +465,53 @@ function OurStrategicPresence() {
                 </div>
               </div>
 
-              {/* Bottom Content */}
-              <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:left-8 text-white">
-                <div className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-80 font-light">
-                  Expanding Legacy of Excellence
-                </div>
-                <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light mt-1 sm:mt-2">
-                  Able Middle East Trading Company
-                </div>
-              </div>
+           {/* Bottom Content */}
+<div className="absolute bottom-16 sm:bottom-16 lg:bottom-8 left-4 sm:left-6 lg:left-8 text-white">
+  <div className="text-xs sm:text-sm lg:text-sm xl:text-sm opacity-80 font-light">
+    Expanding Legacy of Excellence
+  </div>
+  <div className="text-sm sm:text-base lg:text-base xl:text-base font-light mt-1 sm:mt-2">
+    Able Middle East Trading Company
+  </div>
+</div>
 
-              {/* Address Overlay */}
-              {/* <div className="absolute top-4 sm:top-6 lg:top-8 left-4 sm:left-6 lg:left-8 max-w-xs">
-                <div className="bg-[#0000006b] p-3 sm:p-4 rounded-lg border border-white/10 backdrop-blur-sm">
-                  <div className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] text-white font-medium mb-1">
-                    Dammam Headquarters
-                  </div>
-                  <div className="text-[10px] sm:text-[12px] text-gray-300 leading-tight">
-                    Building No: 3325, Street: Al Afadila, Secondary No:8853, Al
-                    Khalidiyah Ash Shamaliyah Dist.
-                  </div>
-                </div>
-              </div> */}
+{/* Address Overlay - Commented out as per your code */}
+{/* <div className="absolute top-4 sm:top-6 lg:top-8 left-4 sm:left-6 lg:left-8 max-w-xs">
+  <div className="bg-[#0000006b] p-3 sm:p-4 rounded-lg border border-white/10 backdrop-blur-sm">
+    <div className="text-xs sm:text-sm lg:text-sm xl:text-sm text-white font-medium mb-1">
+      Dammam Headquarters
+    </div>
+    <div className="text-xs sm:text-xs text-gray-300 leading-tight">
+      Building No: 3325, Street: Al Afadila, Secondary No:8853, Al
+      Khalidiyah Ash Shamaliyah Dist.
+    </div>
+  </div>
+</div> */}
 
-              {/* Website Link Overlay */}
-              <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 right-4 sm:right-6 lg:right-8">
-                <a
-                  href="https://www.ablemiddleeast.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white font-medium py-2 px-4 rounded-full transition-all duration-300 backdrop-blur-sm text-sm border border-white/30"
-                >
-                  <span>ablemiddleeast.com</span>
-                  <svg
-                    className="w-3 h-3"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </a>
-              </div>
+{/* Website Link Overlay */}
+<div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:right-8">
+  <a
+    href="https://www.ablemiddleeast.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white font-medium py-2 px-3 sm:py-2 sm:px-4 rounded-full transition-all duration-300 backdrop-blur-sm text-xs sm:text-sm border border-white/30"
+  >
+    <span>ablemiddleeast.com</span>
+    <svg
+      className="w-3 h-3 sm:w-3 sm:h-3"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+      />
+    </svg>
+  </a>
+</div>
             </div>
           </div>
         </div>
