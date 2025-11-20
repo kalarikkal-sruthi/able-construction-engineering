@@ -10,6 +10,7 @@ import Blog from "@/componets/ui/Blog";
 
 import BannerSlider from "@/componets/ui/BannerSlider";
 import RegisterInterestForm from "@/componets/ui/RegisterInterestForm";
+import OurBranches from "@/componets/ui/OurBranches";
 
 export default function Home() {
   return (
@@ -281,7 +282,9 @@ export default function Home() {
       </section>
       <Blog />
       <PremierDevelopments />
+        <OurBranches />
       <RegisterInterestForm />
+    
     </main>
   );
 }
