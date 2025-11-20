@@ -239,29 +239,29 @@ function OurStrategicPresence() {
               </div>
 
               {/* Website Link Overlay */}
-              <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:right-8">
-                <a
-                  href="https://www.ablegroupqatar.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white font-medium py-2 px-4 rounded-full transition-all duration-300 backdrop-blur-sm text-sm border border-white/30"
-                >
-                  <span>ablegroupqatar.com</span>
-                  <svg
-                    className="w-3 h-3"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </a>
-              </div>
+<div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:left-auto lg:right-8">
+  <a
+    href="https://www.ablegroupqatar.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white font-medium py-2 px-4 rounded-full transition-all duration-300 backdrop-blur-sm text-sm border border-white/30"
+  >
+    <span>ablegroupqatar.com</span>
+    <svg
+      className="w-3 h-3"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+      />
+    </svg>
+  </a>
+</div>
             </div>
           </div>
         </div>
@@ -489,7 +489,7 @@ function OurStrategicPresence() {
 </div> */}
 
 {/* Website Link Overlay */}
-<div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:right-8">
+<div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-4 lg:left-auto lg:right-8">
   <a
     href="https://www.ablemiddleeast.com"
     target="_blank"
