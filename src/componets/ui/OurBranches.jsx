@@ -11,63 +11,45 @@ function OurBranches() {
       id: 1,
       image: "/branches/able-group-logo-1.webp",
       name: "Dubai Main Branch",
-      location: "Dubai, UAE"
+      location: "Qatar"
     },
     {
       id: 2,
       image: "/branches/able-group-logo-2.webp",
       name: "Abu Dhabi Office",
-      location: "Abu Dhabi, UAE"
+      location: "Qatar"
     },
     {
       id: 3,
       image: "/branches/able-group-logo-3.webp",
       name: "Doha Center",
-      location: "Doha, Qatar"
+      location: "Qatar"
     },
     {
       id: 4,
       image: "/branches/able-group-logo-4.webp",
       name: "Riyadh Branch",
-      location: "Riyadh, KSA"
+      location: "UAE"
     },
     {
       id: 5,
       image: "/branches/able-group-logo-5.webp",
       name: "Muscat Office",
-      location: "Muscat, Oman"
+      location: "Saudi Arabia"
     },
     {
       id: 6,
       image: "/branches/able-group-logo-6.webp",
       name: "Manama Center",
-      location: "Manama, Bahrain"
+      location: "India wayanad "
     },
     {
       id: 7,
       image: "/branches/able-group-logo-7.webp",
       name: "Kuwait City",
-      location: "Kuwait City, Kuwait"
+      location: "India, kozhikkode, Mukkam"
     },
-    // Adding more branches to have at least 8 for preview
-    {
-      id: 8,
-      image: "/branches/able-group-logo-1.webp",
-      name: "Sharjah Office",
-      location: "Sharjah, UAE"
-    },
-    {
-      id: 9,
-      image: "/branches/able-group-logo-2.webp",
-      name: "Al Ain Branch",
-      location: "Al Ain, UAE"
-    },
-    {
-      id: 10,
-      image: "/branches/able-group-logo-3.webp",
-      name: "Fujairah Center",
-      location: "Fujairah, UAE"
-    },
+  
   ];
 
   return (
@@ -152,7 +134,7 @@ function OurBranches() {
           >
             {branches.map((branch) => (
               <SwiperSlide key={branch.id}>
-                <div className="relative overflow-hidden  shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="relative overflow-hidden  transition-shadow duration-300">
                   <div className="aspect-[4/3] w-full overflow-hidden">
                     <img
                       src={branch.image}
@@ -195,8 +177,8 @@ function OurBranches() {
           </Swiper>
 
           {/* Gradient Overlays for Better Visual Effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-100 to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-gray-100 to-transparent z-10 pointer-events-none"></div>
+          {/* <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-100 to-transparent z-10 pointer-events-none"></div> */}
+          {/* <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-gray-100 to-transparent z-10 pointer-events-none"></div> */}
         </div>
       </div>
     </section>
