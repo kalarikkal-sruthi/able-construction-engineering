@@ -49,92 +49,85 @@ function OurBranches() {
       name: "Kuwait City",
       location: "India, kozhikkode, Mukkam"
     },
-  
   ];
 
   return (
     <section className="py-8 md:py-20 lg:py-20 bg-gray-100">
-        <div className="mx-auto px-4 sm:px-6 lg:px-16">
-          {/* Optional Section Heading */}
-          <div className="text-start mb-4 md:mb-8">
-            <motion.h1
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-              }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="w-full"
-            >
-              <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide leading-none-2 text-black">
-               Our Branches Network
-              </span>
-            </motion.h1>
+      <div className="mx-auto px-4 sm:px-6 lg:px-16">
+        {/* Optional Section Heading */}
+        <div className="text-start mb-4 md:mb-8">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full"
+          >
+            <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide leading-none-2 text-black">
+              Our Branches Network
+            </span>
+          </motion.h1>
 
-            <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] block mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-black">
-              Building on three decades of global excellence, we are now shaping the future of development. 
-              Explore our pioneering projects in construction, sustainable agriculture, and strategic trading—where innovation meets legacy, and new standards are born.
-            </p>
-          </div>
+          <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] block mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-black">
+            Building on three decades of global excellence, we are now shaping the future of development. 
+            Explore our pioneering projects in construction, sustainable agriculture, and strategic trading—where innovation meets legacy, and new standards are born.
+          </p>
+        </div>
 
         {/* Full Width Horizontal Scrolling Swiper */}
         <div className="relative w-full">
           <Swiper
-            slidesPerView={6} // Show 8 slides in preview
+            slidesPerView={6}
             spaceBetween={20}
             loop={true}
-            speed={5000} // Adjusted speed for better visibility of 8 slides
+            speed={3000} // Reduced speed
             autoplay={{
-              delay: 0,
+              delay: 1, // Small delay
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
               reverseDirection: false,
             }}
-            freeMode={{
-              enabled: true,
-              momentum: true,
-              momentumRatio: 1,
-              momentumVelocityRatio: 1,
-              sticky: true,
-            }}
+            freeMode={false} // Disable free mode
             centeredSlides={false}
-            modules={[Autoplay, FreeMode]}
+            modules={[Autoplay]} // Remove FreeMode
             className="branches-swiper"
             breakpoints={{
               320: {
-                slidesPerView: 3, // 2 slides on mobile
+                slidesPerView: 3,
                 spaceBetween: 10,
               },
               480: {
-                slidesPerView: 3, // 3 slides on small tablets
+                slidesPerView: 3,
                 spaceBetween: 15,
               },
               640: {
-                slidesPerView: 5, // 4 slides on tablets
+                slidesPerView: 5,
                 spaceBetween: 15,
               },
               768: {
-                slidesPerView: 5, // 5 slides on larger tablets
+                slidesPerView: 5,
                 spaceBetween: 20,
               },
               1024: {
-                slidesPerView: 6, // 6 slides on small desktop
+                slidesPerView: 6,
                 spaceBetween: 20,
               },
               1280: {
-                slidesPerView: 6, // 8 slides on desktop
+                slidesPerView: 6,
                 spaceBetween: 20,
               },
               1536: {
-                slidesPerView: 6, // Maintain 8 slides on large screens
+                slidesPerView: 6,
                 spaceBetween: 25,
               },
             }}
           >
             {branches.map((branch) => (
               <SwiperSlide key={branch.id}>
-                <div className="relative overflow-hidden  transition-shadow duration-300">
+                <div className="relative overflow-hidden">
                   <div className="aspect-[4/3] w-full overflow-hidden">
                     <img
                       src={branch.image}
@@ -144,10 +137,7 @@ function OurBranches() {
                   </div>
                   
                   {/* Branch Info Overlay - Always Visible */}
-                  <div className="absolute bottom-0 left-0 right-0  to-transparent p-4 text-black">
-                    {/* <h3 className="text-sm font-bold mb-1 line-clamp-1">
-                      {branch.name}
-                    </h3> */}
+                  <div className="absolute bottom-0 left-0 right-0 to-transparent p-4 text-black">
                     <p className="text-xs opacity-90 flex items-center gap-1">
                       <svg
                         className="w-3 h-3"
@@ -175,10 +165,6 @@ function OurBranches() {
               </SwiperSlide>
             ))}
           </Swiper>
-
-          {/* Gradient Overlays for Better Visual Effect */}
-          {/* <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-100 to-transparent z-10 pointer-events-none"></div> */}
-          {/* <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-gray-100 to-transparent z-10 pointer-events-none"></div> */}
         </div>
       </div>
     </section>
