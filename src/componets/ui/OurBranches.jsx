@@ -96,7 +96,7 @@ function OurBranches() {
             className="branches-swiper"
             breakpoints={{
               320: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 10,
               },
               480: {
@@ -137,8 +137,8 @@ function OurBranches() {
                   </div>
                   
                   {/* Branch Info Overlay - Always Visible */}
-                  <div className="absolute bottom-0 left-0 right-0 to-transparent p-4 text-black">
-                    <p className="text-xs opacity-90 flex items-center gap-1">
+                  <div className="absolute bottom-0 left-0 right-0 to-transparent p-2 text-black">
+                    <p className="text-[10px] sm:text-[10px] lg:text-[12px] xl:text-[12x] opacity-90 flex items-center gap-1">
                       <svg
                         className="w-3 h-3"
                         fill="none"
