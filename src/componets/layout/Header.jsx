@@ -141,54 +141,17 @@ export default function Header() {
               >
                 Contact Us
               </Link>
-              <button
-                className="
-      bg-transparent
-    border-1
-    border-white
-    text-white 
-          px-2 
-          xl:px-2
-          py-2 
-          rounded-full 
-         
-          transition-all 
-          duration-300 
-          text-sm 
-          xl:text-base
-          relative
-          overflow-hidden
-          group
-          
-        
-          hover:-translate-y-0.5
-          flex
-          items-center
-          justify-center
-          min-w-[135px]
-          xl:min-w-[135px]
-        "
-              >
-                <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                  Get In Touch
-                </span>
-                <span
-                  className="
-            absolute
-            right-4
-            top-1.5
-            opacity-0
-            -translate-x-2
-            group-hover:opacity-100
-            group-hover:translate-x-0
-            transition-all
-            duration-300
-            font-bold
-          "
-                >
-                  →
-                </span>
-              </button>
+
+<button
+  className={`bg-transparent border-1 border-white text-white px-2 xl:px-2 py-2 rounded-md relative overflow-hidden group transition-all duration-300 hover:bg-white hover:text-black`}
+>
+  <span>Get In Touch</span>
+  <span
+    className={`absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300`}
+  >
+    →
+  </span>
+</button>
               <div className="text-gray-300">|</div>
               <div className="flex space-x-3 xl:space-x-4">
                 <Link

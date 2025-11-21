@@ -210,28 +210,35 @@ function BannerSlider() {
                     Sustainable Farming Ventures
                   </span>
                 </div>
+                <div className="mb-3 sm:mb-4 lg:mb-6">
+                  <span className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
+                   From Farm to Market: India & Uganda
+                  </span>
+                </div>
               </motion.h1>
-
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.8,
-                  delay: 0.4,
-                  ease: "easeOut",
-                }}
-                viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center"
-              >
-                <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300 text-sm xl:text-base relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
-                  <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                    Explore Now
-                  </span>
-                  <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
-                    →
-                  </span>
-                </button>
-              </motion.div>
+ <Link href="/farming" className="">
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.8,
+                    delay: 0.4,
+                    ease: "easeOut",
+                  }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center"
+                >
+                  <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300 text-sm xl:text-base relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
+                    <span className="transition-transform duration-300 group-hover:-translate-x-2">
+                      Explore Now
+                    </span>
+                    <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
+                      →
+                    </span>
+                  </button>
+                </motion.div>
+              </Link>
+          
             </div>
           </div>
         </SwiperSlide>
