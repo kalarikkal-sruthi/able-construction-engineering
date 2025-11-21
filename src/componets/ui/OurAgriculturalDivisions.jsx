@@ -174,7 +174,7 @@ function OurAgriculturalDivisions() {
               </div>
 
               <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block   mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-white">
-                    Through our newly incorporated entity, P.Y Able Construction & Engineering Co. Ltd, we are leveraging Uganda's ideal equatorial climate and rich volcanic soil to enter the global coffee market. Our focus is on establishing a large-scale, professionally managed coffee plantation.
+                    Through our newly incorporated entity, P.Y Able Construction & Engineering Co. Ltd, we are leveraging Uganda&apos;s ideal equatorial climate and rich volcanic soil to enter the global coffee market. Our focus is on establishing a large-scale, professionally managed coffee plantation.
               </p>
             </motion.div>
           </div>
