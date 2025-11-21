@@ -100,7 +100,7 @@ function OurAgriculturalDivisions() {
           {/* Card 1 */}
           <div className="bg-white  overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
             {/* Property Image */}
-            <div className="relative h-48 w-full">
+            <div className="relative h-64 w-full">
               <img
                 src="/innerpage-farming/animal-husbandry.jpg"
                 alt="Narangba Property"
@@ -122,9 +122,9 @@ function OurAgriculturalDivisions() {
           {/* Card 2 */}
          <div className="bg-white  overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
             {/* Property Image */}
-            <div className="relative h-48 w-full">
+            <div className="relative h-64 w-full">
               <img
-                src="/innerpage-farming/animal-husbandry.jpg"
+                src="/innerpage-farming/coffee-cultivation.jpg"
                 alt="Narangba Property"
                 className="w-full h-full object-cover"
               />
@@ -133,19 +133,18 @@ function OurAgriculturalDivisions() {
 
             {/* Header with Location */}
             <div className="bg-black px-6 py-4">
-              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">Animal Husbandry</h2>
+              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">  Organic Vegetable Cultivation</h2>
               <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-                Ethical rearing of poultry (hens, ducks) for eggs and meat, and
-                buffalo for dairy production.
+               Cultivating rice and other staple crops, supporting local food sovereignty and celebrating traditional Keralan farming heritage.
               </p>
             </div>
           </div>
           {/* Card 3 */}
            <div className="bg-white  overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
             {/* Property Image */}
-            <div className="relative h-48 w-full">
+            <div className="relative h-64 w-full">
               <img
-                src="/innerpage-farming/animal-husbandry.jpg"
+                src="/innerpage-farming/crop-production.jpg"
                 alt="Narangba Property"
                 className="w-full h-full object-cover"
               />
@@ -154,7 +153,7 @@ function OurAgriculturalDivisions() {
 
             {/* Header with Location */}
             <div className="bg-black px-6 py-4">
-              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">Animal Husbandry</h2>
+              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">Staple Crop Production</h2>
               <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
                 Ethical rearing of poultry (hens, ducks) for eggs and meat, and
                 buffalo for dairy production.
