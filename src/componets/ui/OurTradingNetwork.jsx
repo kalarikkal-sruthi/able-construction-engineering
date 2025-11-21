@@ -56,7 +56,7 @@ function OurTradingNetwork() {
             className="w-full"
           >
             <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide leading-none-2 text-black">
-              Our Branches Network
+              Our Trading Network
             </span>
           </motion.h1>
 
