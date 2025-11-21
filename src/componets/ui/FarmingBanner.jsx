@@ -5,12 +5,12 @@ import Image from "next/image";
 
 function FarmingBanner() {
   return (
-     <div>
+    <div>
       <section className="relative h-[70vh] min-h-[600px] w-full overflow-hidden">
         <div className="absolute inset-0">
           <div className="relative h-full w-full">
             <Image
-              src="/innerpage-construction/innovative-architecture.jpg"
+              src="/innerpage-farming/crops-field.jpg"
               alt="Construction & Engineering"
               fill
               className="object-cover scale-110 parallax-zoom"
@@ -38,7 +38,7 @@ function FarmingBanner() {
                 </div>
                 <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-              Cultivating Quality, Nurturing Communities
+                    Cultivating Quality, Nurturing Communities
                   </span>
                 </div>
               </motion.h1>
@@ -79,15 +79,24 @@ function FarmingBanner() {
             >
               <div className="mb-3 sm:mb-4 lg:mb-6">
                 <span className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[18x] font-light font-sans tracking-wide leading-tight">
-                  The Able Group extends its legacy of building infrastructure to cultivating the very foundations of life—wholesome food and premium produce. Our strategic agribusiness ventures in the fertile landscapes of Wayanad, India, and the emerging coffee lands of Uganda represent our commitment to sustainable growth, food security, and economic diversification. We are not just farmers; we are architects of a sustainable food future.
+                  The Able Group extends its legacy of building infrastructure
+                  to cultivating the very foundations of life—wholesome food and
+                  premium produce. Our strategic agribusiness ventures in the
+                  fertile landscapes of Wayanad, India, and the emerging coffee
+                  lands of Uganda represent our commitment to sustainable
+                  growth, food security, and economic diversification. We are
+                  not just farmers; we are architects of a sustainable food
+                  future.
                 </span>
               </div>
             </motion.h1>
           </div>
         </div>
       </section>
+
+  
     </div>
-  )
+  );
 }
 
-export default FarmingBanner
+export default FarmingBanner;
