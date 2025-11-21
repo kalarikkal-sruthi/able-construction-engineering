@@ -51,14 +51,8 @@ function OurAgriculturalDivisions() {
               Our Agricultural Divisions
             </span>
           </motion.h1>
-          {/* <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
-                    Explore a curated collection of our landmark projects. Each one is
-                    a testament to the scale, innovation, and uncompromising quality
-                    we deliver, setting new standards in every market we enter.
-                  </p> */}
         </div>
         <div className="relative py-16 md:py-24 lg:py-32 overflow-hidden w-full left-1/2 -translate-x-1/2">
-          {/* Background Image Container - Full Width */}
           <div className="absolute inset-0 z-0 w-screen left-1/2 -translate-x-1/2">
             <Image
               src="/innerpage-farming/farming.jpg"
@@ -67,11 +61,10 @@ function OurAgriculturalDivisions() {
               className="object-cover"
               priority
             />
-            {/* Overlay for better text readability */}
+
             <div className="absolute inset-0 bg-black/40"></div>
           </div>
 
-          {/* Content - Still Centered */}
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -95,70 +88,183 @@ function OurAgriculturalDivisions() {
           </div>
         </div>
 
-        {/* 3 Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16">
-          {/* Card 1 */}
           <div className="bg-white  overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-            {/* Property Image */}
             <div className="relative h-64 w-full">
               <img
                 src="/innerpage-farming/animal-husbandry.jpg"
                 alt="Narangba Property"
                 className="w-full h-full object-cover"
               />
-             
             </div>
 
-            {/* Header with Location */}
             <div className="bg-black px-6 py-4">
-              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">Animal Husbandry</h2>
+              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                Animal Husbandry
+              </h2>
               <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
                 Ethical rearing of poultry (hens, ducks) for eggs and meat, and
                 buffalo for dairy production.
               </p>
             </div>
           </div>
-
-          {/* Card 2 */}
-         <div className="bg-white  overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-            {/* Property Image */}
+          <div className="bg-white  overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
             <div className="relative h-64 w-full">
               <img
                 src="/innerpage-farming/coffee-cultivation.jpg"
                 alt="Narangba Property"
                 className="w-full h-full object-cover"
               />
-             
             </div>
-
-            {/* Header with Location */}
             <div className="bg-black px-6 py-4">
-              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">  Organic Vegetable Cultivation</h2>
+              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                {" "}
+                Organic Vegetable Cultivation
+              </h2>
               <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
-               Cultivating rice and other staple crops, supporting local food sovereignty and celebrating traditional Keralan farming heritage.
+                Cultivating rice and other staple crops, supporting local food
+                sovereignty and celebrating traditional Keralan farming
+                heritage.
               </p>
             </div>
           </div>
-          {/* Card 3 */}
-           <div className="bg-white  overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-            {/* Property Image */}
+          <div className="bg-white  overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
             <div className="relative h-64 w-full">
               <img
                 src="/innerpage-farming/crop-production.jpg"
                 alt="Narangba Property"
                 className="w-full h-full object-cover"
               />
-             
             </div>
-
-            {/* Header with Location */}
             <div className="bg-black px-6 py-4">
-              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">Staple Crop Production</h2>
+              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                Staple Crop Production
+              </h2>
               <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
                 Ethical rearing of poultry (hens, ducks) for eggs and meat, and
                 buffalo for dairy production.
               </p>
             </div>
+          </div>
+        </div>
+            <div className="relative py-16 md:py-24 lg:py-32 overflow-hidden w-full left-1/2 -translate-x-1/2 mt-16">
+          <div className="absolute inset-0 z-0 w-screen left-1/2 -translate-x-1/2">
+            <Image
+              src="/innerpage-farming/coffee-cultivation.jpg"
+              alt="Background"
+              fill
+              className="object-cover"
+              priority
+            />
+
+            <div className="absolute inset-0 bg-black/40"></div>
+          </div>
+
+          <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center"
+            >
+              <div className="mb-3 sm:mb-4 lg:mb-6">
+                <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight text-white">
+                  Premium Coffee Cultivation & Export
+                </span>
+              </div>
+
+              <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block   mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-white">
+                    Through our newly incorporated entity, P.Y Able Construction & Engineering Co. Ltd, we are leveraging Uganda's ideal equatorial climate and rich volcanic soil to enter the global coffee market. Our focus is on establishing a large-scale, professionally managed coffee plantation.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16">
+          <div className="bg-white  overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="relative h-64 w-full">
+              <img
+                src="/innerpage-farming/focus-quality.jpg"
+                alt="Narangba Property"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="bg-black px-6 py-4">
+              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                Focus on Quality
+              </h2>
+              <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
+                Dedicated to cultivating high-yield, high-quality Arabica and Robusta beans suitable for the international export market.
+              </p>
+            </div>
+          </div>
+          <div className="bg-white  overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="relative h-64 w-full">
+              <img
+                src="/innerpage-farming/sustainable-and-ethical-practice.jpg"
+                alt="Narangba Property"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="bg-black px-6 py-4">
+              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                {" "}
+              Sustainable & Ethical Practices
+              </h2>
+              <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
+                Committed to sustainable land management, fair labor practices, and contributing positively to the local Ugandan economy.
+              </p>
+            </div>
+          </div>
+          <div className="bg-white  overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="relative h-64 w-full">
+              <img
+                src="/innerpage-farming/export-oriented.jpg"
+                alt="Narangba Property"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="bg-black px-6 py-4">
+              <h2 className=" text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold mb-0">
+                Export-Oriented
+              </h2>
+              <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-90 leading-relaxed text">
+               Our core mission is to become a reliable source of premium Ugandan coffee for international buyers.
+              </p>
+            </div>
+          </div>
+        </div>
+                    <div className="relative py-16 md:py-24 lg:py-32 overflow-hidden w-full left-1/2 -translate-x-1/2 mt-16">
+          <div className="absolute inset-0 z-0 w-screen left-1/2 -translate-x-1/2">
+            <Image
+              src="/innerpage-farming/philosophy-commitment.jpg"
+              alt="Background"
+              fill
+              className="object-cover"
+              priority
+            />
+
+            <div className="absolute inset-0 bg-black/40"></div>
+          </div>
+
+          <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center"
+            >
+              <div className="mb-3 sm:mb-4 lg:mb-6">
+                <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight text-white">
+                     Our Philosophy & Commitment:
+                </span>
+              </div>
+
+              <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block   mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-white">
+                    We operate on the principle that responsible business and environmental stewardship go hand-in-hand. Our farms are managed to enhance biodiversity, conserve water, and ensure the well-being of the communities we operate in. We are committed to delivering not just produce, but trust and quality from our lands to your hands.
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
