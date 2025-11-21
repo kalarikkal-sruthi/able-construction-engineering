@@ -8,7 +8,7 @@ function page() {
     <div>
       <FarmingBanner />
       <OurAgriculturalDivisions />
-      <RegisterInterestForm />
+      {/* <RegisterInterestForm /> */}
     </div>
   );
 }
