@@ -125,52 +125,44 @@ function OurAgriculturalDivisions() {
           </div>
         </div>
 
-     <div className="mt-16">
+   <div className="mt-16">
   {/* Mobile: Horizontal Scroll */}
   <div className="flex md:grid md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0">
-    {/* Hide scrollbar but keep functionality */}
-    <style jsx>{`
-      .hide-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .hide-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    `}</style>
     
-    <div className="flex-none w-80 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-      <div className="relative h-64 w-full">
+    <div className="flex-none w-72 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+      {/* Reduced image height for mobile */}
+      <div className="relative h-48 md:h-64 w-full">
         <img
           src="/innerpage-farming/animal-husbandry.jpg"
           alt="Animal Husbandry"
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="bg-black px-6 py-4">
-        <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
+      {/* Fixed height content section */}
+      <div className="bg-black px-4 md:px-6 py-4 h-30 md:h-auto flex flex-col justify-center">
+        <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
           Animal Husbandry
         </h2>
-        <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed">
+        <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
           Ethical rearing of poultry (hens, ducks) for eggs and meat, and
           buffalo for dairy production.
         </p>
       </div>
     </div>
     
-    <div className="flex-none w-80 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-      <div className="relative h-64 w-full">
+    <div className="flex-none w-72 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+      <div className="relative h-48 md:h-64 w-full">
         <img
           src="/innerpage-farming/vegetable-cultivation.jpg"
           alt="Organic Vegetable Cultivation"
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="bg-black px-6 py-4">
-        <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
+      <div className="bg-black px-4 md:px-6 py-4 h-30 md:h-auto flex flex-col justify-center">
+        <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
           Organic Vegetable Cultivation
         </h2>
-        <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed">
+        <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
           Cultivating rice and other staple crops, supporting local food
           sovereignty and celebrating traditional Keralan farming
           heritage.
@@ -178,25 +170,41 @@ function OurAgriculturalDivisions() {
       </div>
     </div>
     
-    <div className="flex-none w-80 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-      <div className="relative h-64 w-full">
+    <div className="flex-none w-72 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+      <div className="relative h-48 md:h-64 w-full">
         <img
           src="/innerpage-farming/crop-production.jpg"
           alt="Staple Crop Production"
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="bg-black px-6 py-4">
-        <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
+      <div className="bg-black px-4 md:px-6 py-4 h-30 md:h-auto flex flex-col justify-center">
+        <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
           Staple Crop Production
         </h2>
-        <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed">
+        <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
           Ethical rearing of poultry (hens, ducks) for eggs and meat, and
           buffalo for dairy production.
         </p>
       </div>
     </div>
   </div>
+
+  <style jsx>{`
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .line-clamp-4 {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  `}</style>
 </div>
       </section>
       <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-gray-100">
