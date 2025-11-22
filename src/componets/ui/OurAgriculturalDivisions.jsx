@@ -66,13 +66,13 @@ function OurAgriculturalDivisions() {
           {/* Main Content Container with Shape Background */}
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-             initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeOut",
-            }}
-            viewport={{ once: true, amount: 0.3 }}
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, amount: 0.3 }}
               className="relative"
             >
               {/* Speech Bubble Shape */}
@@ -91,7 +91,7 @@ function OurAgriculturalDivisions() {
                   <div className="flex items-center justify-center ">
                     <div className="w-12 h-px bg-green-400/60 mr-4"></div>
 
-                    <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight text-white">
+                    <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-white">
                       Integrated Farming & Food Production
                     </span>
 
@@ -100,7 +100,7 @@ function OurAgriculturalDivisions() {
 
                   {/* Description in rounded badge style */}
                   <div className="inline-block     ">
-                    <p className="text-sm sm:text-base lg:text-lg xl:text-lg font-light mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-white leading-relaxed">
+                    <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-white">
                       Nestled in the biodiverse hills of Kerala, Able Farms Pvt.
                       Ltd. is a model of integrated, sustainable agriculture. We
                       focus on creating a synergistic ecosystem that delivers
@@ -144,14 +144,16 @@ function OurAgriculturalDivisions() {
               {/* Fixed height content section */}
               <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
                 <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-             
-            >     <h2 className="text-white text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
-                  Animal Husbandry
-                </h2></motion.div>
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  {" "}
+                  <h2 className="text-white text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
+                    Animal Husbandry
+                  </h2>
+                </motion.div>
                 <p className="text-white text-[12px] sm:text-[12px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
                   Ethical rearing of poultry (hens, ducks) for eggs and meat,
                   and buffalo for dairy production.
@@ -169,14 +171,16 @@ function OurAgriculturalDivisions() {
               </div>
               <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
                 <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-             
-            >     <h2 className="text-white text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
-                  Organic Vegetable Cultivation
-                </h2></motion.div>
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  {" "}
+                  <h2 className="text-white text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
+                    Organic Vegetable Cultivation
+                  </h2>
+                </motion.div>
                 <p className="text-white text-[12px] sm:text-[12px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
                   Cultivating rice and other staple crops, supporting local food
                   sovereignty and celebrating traditional Kerala farming
@@ -194,15 +198,16 @@ function OurAgriculturalDivisions() {
                 />
               </div>
               <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
-                  <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              
-            >   <h2 className="text-white text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
-                  Staple Crop Production
-                </h2>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  {" "}
+                  <h2 className="text-white text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
+                    Staple Crop Production
+                  </h2>
                 </motion.div>
                 <p className="text-white text-[12px] sm:text-[12px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
                   Ethical rearing of poultry (hens, ducks) for eggs and meat,
@@ -230,83 +235,77 @@ function OurAgriculturalDivisions() {
         </div>
       </section>
       <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-gray-100">
-    
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Content Section */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className=" lg:text-left"
+          >
+            <div className="mb-3 sm:mb-4 lg:mb-6">
+              <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                Premium Coffee 
+                <br></br>
+                Cultivation & Export
+              </span>
+            </div>
 
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-      {/* Content Section */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }}
-        className=" lg:text-left"
-      >
-        <div className="mb-3 sm:mb-4 lg:mb-6">
-          <span className="text-black text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide leading-tight">
-            Premium Coffee Cultivation & Export
-          </span>
+            <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+              Through our newly incorporated entity, P.Y Able Construction &
+              Engineering Co. Ltd, we are leveraging Uganda&apos;s ideal
+              equatorial climate and rich volcanic soil to enter the global
+              coffee market. Our focus is on establishing a large-scale,
+              professionally managed coffee plantation.
+            </p>
+          </motion.div>
+          {/* Image Section */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="relative h-64 lg:h-96 overflow-hidden"
+          >
+            <Image
+              src="/innerpage-farming/coffee-cultivation.jpg"
+              alt="Coffee Cultivation"
+              fill
+              className="object-cover"
+              priority
+            />
+          </motion.div>
         </div>
 
-        <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3">
-          Through our newly incorporated entity, P.Y Able Construction &
-          Engineering Co. Ltd, we are leveraging Uganda&apos;s ideal
-          equatorial climate and rich volcanic soil to enter the global
-          coffee market. Our focus is on establishing a large-scale,
-          professionally managed coffee plantation.
-        </p>
-      </motion.div>
-      {/* Image Section */}
-      <motion.div
-        initial={{ opacity: 0, x: -20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }}
-        className="relative h-64 lg:h-96 overflow-hidden"
-      >
-        <Image
-          src="/innerpage-farming/coffee-cultivation.jpg"
-          alt="Coffee Cultivation"
-          fill
-          className="object-cover"
-          priority
-        />
-      </motion.div>
-
-      
-
-  
-</div>
-
-
-     <div className="pt-8 md:pt-20 lg:pt-20 ">
+        <div className="pt-8 md:pt-20 lg:pt-20 ">
           {/* Mobile: Horizontal Scroll */}
           <div className="flex md:grid md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0">
             <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               {/* Reduced image height for mobile */}
               <div className="relative h-48 md:h-64 w-full">
                 <img
-                 src="/innerpage-farming/focus-quality.jpg"
+                  src="/innerpage-farming/focus-quality.jpg"
                   alt="Animal Husbandry"
                   className="w-full h-full object-cover"
                 />
               </div>
               {/* Fixed height content section */}
               <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
-               <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              
-            >
-               <h2 className="text-white text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
-                  Focus on Quality
-                </h2>
-              </motion.div>
-               
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  <h2 className="text-white text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
+                    Focus on Quality
+                  </h2>
+                </motion.div>
+
                 <p className="text-white text-[12px] sm:text-[12px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
                   Dedicated to cultivating high-yield, high-quality Arabica and
-                Robusta beans suitable for the international export market.
+                  Robusta beans suitable for the international export market.
                 </p>
               </div>
             </div>
@@ -320,20 +319,21 @@ function OurAgriculturalDivisions() {
                 />
               </div>
               <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
-              
-              <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              
-            >  <h2 className="text-white text-[14px] sm:text-[12px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
-                  Sustainable & Ethical Practices
-                </h2>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  {" "}
+                  <h2 className="text-white text-[14px] sm:text-[12px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
+                    Sustainable & Ethical Practices
+                  </h2>
                 </motion.div>
                 <p className="text-white text-[12px] sm:text-[12px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
-                  Committed to sustainable land management, fair labor practices,
-                and contributing positively to the local Ugandan economy.
+                  Committed to sustainable land management, fair labor
+                  practices, and contributing positively to the local Ugandan
+                  economy.
                 </p>
               </div>
             </div>
@@ -347,19 +347,20 @@ function OurAgriculturalDivisions() {
                 />
               </div>
               <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
-                 <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-             
-            >    <h2 className="text-white text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
-                  Export-Oriented
-                </h2>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  {" "}
+                  <h2 className="text-white text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-0">
+                    Export-Oriented
+                  </h2>
                 </motion.div>
                 <p className="text-white text-[12px] sm:text-[12px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
                   Our core mission is to become a reliable source of premium
-                Ugandan coffee for international buyers.
+                  Ugandan coffee for international buyers.
                 </p>
               </div>
             </div>
@@ -381,9 +382,55 @@ function OurAgriculturalDivisions() {
             }
           `}</style>
         </div>
-
       </section>
-      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 ">
+
+            <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Content Section */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className=" lg:text-left"
+          >
+            <div className="mb-3 sm:mb-4 lg:mb-6">
+              <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                  Our Philosophy
+                  <br></br>
+                   & Commitment
+              </span>
+            </div>
+
+            <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+              We operate on the principle that responsible business and
+                environmental stewardship go hand-in-hand. Our farms are managed
+                to enhance biodiversity, conserve water, and ensure the
+                well-being of the communities we operate in. We are committed to
+                delivering not just produce, but trust and quality from our
+                lands to your hands.
+            </p>
+          </motion.div>
+          {/* Image Section */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="relative h-64 lg:h-96 overflow-hidden"
+          >
+            <Image
+              src="/innerpage-farming/philosophy-commitment.jpg"
+              alt="Coffee Cultivation"
+              fill
+              className="object-cover"
+              priority
+            />
+          </motion.div>
+        </div>
+
+        </section>
+      {/* <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 ">
         <div className="relative py-16 md:py-24 lg:py-32 overflow-hidden w-full left-1/2 -translate-x-1/2 ">
           <div className="absolute inset-0 z-0 w-screen left-1/2 -translate-x-1/2">
             <Image
@@ -400,12 +447,12 @@ function OurAgriculturalDivisions() {
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeOut",
-            }}
-            viewport={{ once: true, amount: 0.3 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, amount: 0.3 }}
               className="text-center"
             >
               <div className="mb-3 sm:mb-4 lg:mb-6">
@@ -424,8 +471,10 @@ function OurAgriculturalDivisions() {
               </p>
             </motion.div>
           </div>
+
+
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
