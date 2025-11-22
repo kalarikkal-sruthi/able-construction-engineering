@@ -11,9 +11,9 @@ function OurAgriculturalDivisions() {
           <Image
             src="/innerpage-farming/able-farm-logo.webp"
             alt="Able Farm Logo"
-            width={300}
+            width={200}
             height={100}
-            className="w-48 md:w-64 lg:w-80 xl:w-96 flex-shrink-0"
+            className="w-30 md:w-40 lg:w-40 xl:w-60 flex-shrink-0"
             priority
           />
         </div>
