@@ -132,7 +132,7 @@ function OurAgriculturalDivisions() {
         <div className="pt-8 md:pt-20 lg:pt-20 ">
           {/* Mobile: Horizontal Scroll */}
           <div className="flex md:grid md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0">
-            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               {/* Reduced image height for mobile */}
               <div className="relative h-48 md:h-64 w-full">
                 <img
@@ -148,7 +148,7 @@ function OurAgriculturalDivisions() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="pt-4"
+             
             >     <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Animal Husbandry
                 </h2></motion.div>
@@ -159,7 +159,7 @@ function OurAgriculturalDivisions() {
               </div>
             </div>
 
-            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
                   src="/innerpage-farming/vegetable-cultivation.jpg"
@@ -173,7 +173,7 @@ function OurAgriculturalDivisions() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="pt-4"
+             
             >     <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Organic Vegetable Cultivation
                 </h2></motion.div>
@@ -185,7 +185,7 @@ function OurAgriculturalDivisions() {
               </div>
             </div>
 
-            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
                   src="/innerpage-farming/crop-production.jpg"
@@ -199,7 +199,7 @@ function OurAgriculturalDivisions() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="pt-4"
+              
             >   <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Staple Crop Production
                 </h2>
@@ -230,52 +230,58 @@ function OurAgriculturalDivisions() {
         </div>
       </section>
       <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-gray-100">
-        <div className="relative py-16 md:py-24 lg:py-32 overflow-hidden w-full left-1/2 -translate-x-1/2 ">
-          <div className="absolute inset-0 z-0 w-screen left-1/2 -translate-x-1/2">
-            <Image
-              src="/innerpage-farming/coffee-cultivation.jpg"
-              alt="Background"
-              fill
-              className="object-cover"
-              priority
-            />
+    
 
-            <div className="absolute inset-0 bg-black/40"></div>
-          </div>
-
-          <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
-            <motion.div
-             initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeOut",
-            }}
-            viewport={{ once: true, amount: 0.3 }}
-              className="text-center"
-            >
-              <div className="mb-3 sm:mb-4 lg:mb-6">
-                <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight text-white">
-                  Premium Coffee Cultivation & Export
-                </span>
-              </div>
-
-              <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block   mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-white">
-                Through our newly incorporated entity, P.Y Able Construction &
-                Engineering Co. Ltd, we are leveraging Uganda&apos;s ideal
-                equatorial climate and rich volcanic soil to enter the global
-                coffee market. Our focus is on establishing a large-scale,
-                professionally managed coffee plantation.
-              </p>
-            </motion.div>
-          </div>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+      {/* Content Section */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+        className=" lg:text-left"
+      >
+        <div className="mb-3 sm:mb-4 lg:mb-6">
+          <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide leading-tight">
+            Premium Coffee Cultivation & Export
+          </span>
         </div>
+
+        <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3">
+          Through our newly incorporated entity, P.Y Able Construction &
+          Engineering Co. Ltd, we are leveraging Uganda&apos;s ideal
+          equatorial climate and rich volcanic soil to enter the global
+          coffee market. Our focus is on establishing a large-scale,
+          professionally managed coffee plantation.
+        </p>
+      </motion.div>
+      {/* Image Section */}
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="relative h-64 lg:h-96 overflow-hidden"
+      >
+        <Image
+          src="/innerpage-farming/coffee-cultivation.jpg"
+          alt="Coffee Cultivation"
+          fill
+          className="object-cover"
+          priority
+        />
+      </motion.div>
+
+      
+
+  
+</div>
 
 
      <div className="pt-8 md:pt-20 lg:pt-20 ">
           {/* Mobile: Horizontal Scroll */}
           <div className="flex md:grid md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0">
-            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               {/* Reduced image height for mobile */}
               <div className="relative h-48 md:h-64 w-full">
                 <img
@@ -291,7 +297,7 @@ function OurAgriculturalDivisions() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="pt-4"
+              
             >
                <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Focus on Quality
@@ -305,7 +311,7 @@ function OurAgriculturalDivisions() {
               </div>
             </div>
 
-            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
                   src="/innerpage-farming/sustainable-and-ethical-practice.jpg"
@@ -320,7 +326,7 @@ function OurAgriculturalDivisions() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="pt-4"
+              
             >  <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Sustainable & Ethical Practices
                 </h2>
@@ -332,7 +338,7 @@ function OurAgriculturalDivisions() {
               </div>
             </div>
 
-            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
                   src="/innerpage-farming/export-oriented.jpg"
@@ -346,7 +352,7 @@ function OurAgriculturalDivisions() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="pt-4"
+             
             >    <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Export-Oriented
                 </h2>
