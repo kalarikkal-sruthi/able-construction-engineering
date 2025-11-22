@@ -84,13 +84,13 @@ function OurAgriculturalDivisions() {
 
                 <div className="text-center relative z-20">
                   {/* Title with decorative lines */}
-                  <div className="flex items-center justify-center mb-6">
+                  <div className="flex items-center justify-center ">
                     <div className="w-12 h-px bg-green-400/60 mr-4"></div>
-                    <div className="mb-3 sm:mb-4 lg:mb-6">
+                  
                       <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight text-white">
                         Integrated Farming & Food Production
                       </span>
-                    </div>
+                   
                     <div className="w-12 h-px bg-green-400/60 ml-4"></div>
                   </div>
 
@@ -125,7 +125,7 @@ function OurAgriculturalDivisions() {
           </div>
         </div>
 
-   <div className="mt-16">
+   <div className="pt-8 md:pt-20 lg:pt-20 ">
   {/* Mobile: Horizontal Scroll */}
   <div className="flex md:grid md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0">
     
@@ -139,7 +139,7 @@ function OurAgriculturalDivisions() {
         />
       </div>
       {/* Fixed height content section */}
-      <div className="bg-black px-4 md:px-6 py-4 h-30 md:h-auto flex flex-col justify-center">
+      <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-auto flex flex-col justify-center">
         <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
           Animal Husbandry
         </h2>
@@ -158,7 +158,7 @@ function OurAgriculturalDivisions() {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="bg-black px-4 md:px-6 py-4 h-30 md:h-auto flex flex-col justify-center">
+      <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-auto flex flex-col justify-center">
         <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
           Organic Vegetable Cultivation
         </h2>
@@ -178,7 +178,7 @@ function OurAgriculturalDivisions() {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="bg-black px-4 md:px-6 py-4 h-30 md:h-auto flex flex-col justify-center">
+      <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-auto flex flex-col justify-center">
         <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
           Staple Crop Production
         </h2>
