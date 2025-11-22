@@ -66,9 +66,13 @@ function OurAgriculturalDivisions() {
           {/* Main Content Container with Shape Background */}
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+             initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
               className="relative"
             >
               {/* Speech Bubble Shape */}
@@ -128,7 +132,7 @@ function OurAgriculturalDivisions() {
         <div className="pt-8 md:pt-20 lg:pt-20 ">
           {/* Mobile: Horizontal Scroll */}
           <div className="flex md:grid md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0">
-            <div className="flex-none w-72 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               {/* Reduced image height for mobile */}
               <div className="relative h-48 md:h-64 w-full">
                 <img
@@ -138,10 +142,16 @@ function OurAgriculturalDivisions() {
                 />
               </div>
               {/* Fixed height content section */}
-              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-auto flex flex-col justify-center">
-                <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
+              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
+                <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="pt-4"
+            >     <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Animal Husbandry
-                </h2>
+                </h2></motion.div>
                 <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
                   Ethical rearing of poultry (hens, ducks) for eggs and meat,
                   and buffalo for dairy production.
@@ -149,7 +159,7 @@ function OurAgriculturalDivisions() {
               </div>
             </div>
 
-            <div className="flex-none w-72 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
                   src="/innerpage-farming/vegetable-cultivation.jpg"
@@ -157,10 +167,16 @@ function OurAgriculturalDivisions() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-auto flex flex-col justify-center">
-                <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
+              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
+                <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="pt-4"
+            >     <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Organic Vegetable Cultivation
-                </h2>
+                </h2></motion.div>
                 <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
                   Cultivating rice and other staple crops, supporting local food
                   sovereignty and celebrating traditional Keralan farming
@@ -169,7 +185,7 @@ function OurAgriculturalDivisions() {
               </div>
             </div>
 
-            <div className="flex-none w-72 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
                   src="/innerpage-farming/crop-production.jpg"
@@ -177,10 +193,17 @@ function OurAgriculturalDivisions() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-auto flex flex-col justify-center">
-                <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
+              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
+                  <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="pt-4"
+            >   <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Staple Crop Production
                 </h2>
+                </motion.div>
                 <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
                   Ethical rearing of poultry (hens, ducks) for eggs and meat,
                   and buffalo for dairy production.
@@ -222,9 +245,13 @@ function OurAgriculturalDivisions() {
 
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+             initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
               className="text-center"
             >
               <div className="mb-3 sm:mb-4 lg:mb-6">
@@ -248,7 +275,7 @@ function OurAgriculturalDivisions() {
      <div className="pt-8 md:pt-20 lg:pt-20 ">
           {/* Mobile: Horizontal Scroll */}
           <div className="flex md:grid md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0">
-            <div className="flex-none w-72 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               {/* Reduced image height for mobile */}
               <div className="relative h-48 md:h-64 w-full">
                 <img
@@ -258,10 +285,19 @@ function OurAgriculturalDivisions() {
                 />
               </div>
               {/* Fixed height content section */}
-              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-auto flex flex-col justify-center">
-                <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
+              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
+               <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="pt-4"
+            >
+               <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Focus on Quality
                 </h2>
+              </motion.div>
+               
                 <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
                   Dedicated to cultivating high-yield, high-quality Arabica and
                 Robusta beans suitable for the international export market.
@@ -269,7 +305,7 @@ function OurAgriculturalDivisions() {
               </div>
             </div>
 
-            <div className="flex-none w-72 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
                   src="/innerpage-farming/sustainable-and-ethical-practice.jpg"
@@ -277,10 +313,18 @@ function OurAgriculturalDivisions() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-auto flex flex-col justify-center">
-                <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
+              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
+              
+              <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="pt-4"
+            >  <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Sustainable & Ethical Practices
                 </h2>
+                </motion.div>
                 <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
                   Committed to sustainable land management, fair labor practices,
                 and contributing positively to the local Ugandan economy.
@@ -288,7 +332,7 @@ function OurAgriculturalDivisions() {
               </div>
             </div>
 
-            <div className="flex-none w-72 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div className="flex-none w-50 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
                   src="/innerpage-farming/export-oriented.jpg"
@@ -296,10 +340,17 @@ function OurAgriculturalDivisions() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-auto flex flex-col justify-center">
-                <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
+              <div className="bg-black px-4 md:px-6 py-4 h-30 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
+                 <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="pt-4"
+            >    <h2 className="text-white text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-2">
                   Export-Oriented
                 </h2>
+                </motion.div>
                 <p className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] opacity-90 leading-relaxed line-clamp-4">
                   Our core mission is to become a reliable source of premium
                 Ugandan coffee for international buyers.
@@ -342,9 +393,13 @@ function OurAgriculturalDivisions() {
 
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+              initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
               className="text-center"
             >
               <div className="mb-3 sm:mb-4 lg:mb-6">
