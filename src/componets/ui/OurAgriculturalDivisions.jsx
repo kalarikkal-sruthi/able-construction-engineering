@@ -33,50 +33,53 @@ function OurAgriculturalDivisions() {
             </span>
           </motion.h1>
         </div>
-<div className="relative py-16 md:py-24 lg:py-32 overflow-hidden w-full left-1/2 -translate-x-1/2">
-  {/* Background Image with Split Overlay */}
-  <div className="absolute inset-0 z-0 w-screen left-1/2 -translate-x-1/2">
-    <Image
-      src="/innerpage-farming/farming.jpg"
-      alt="Background"
-      fill
-      className="object-cover"
-      priority
-    />
-    {/* Split overlay - dark left, lighter right */}
-    <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
-  </div>
+        <div className="relative py-16 md:py-24 lg:py-32 overflow-hidden w-full left-1/2 -translate-x-1/2">
+          {/* Background Image with Split Overlay */}
+          <div className="absolute inset-0 z-0 w-screen left-1/2 -translate-x-1/2">
+            <Image
+              src="/innerpage-farming/farming.jpg"
+              alt="Background"
+              fill
+              className="object-cover"
+              priority
+            />
+            {/* Split overlay - dark left, lighter right */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
+          </div>
 
-  {/* Text on Black Background Area */}
-  <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      {/* Left Side - Text on Dark Background */}
-      <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-white"
-      >
-        <h2 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-white">
-         Integrated Farming <br /> & Food Production
-        </h2>
-        <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-white">
-    Nestled in the biodiverse hills of Kerala, Able Farms Pvt. Ltd. is a model of integrated, sustainable agriculture. We focus on creating a synergistic ecosystem that delivers fresh, high-quality produce to the local and regional market. </p>
-  
-      </motion.div>
+          {/* Text on Black Background Area */}
+          <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left Side - Text on Dark Background */}
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-white"
+              >
+                <h2 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-white">
+                  Integrated Farming <br /> & Food Production
+                </h2>
+                <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-white">
+                  Nestled in the biodiverse hills of Kerala, Able Farms Pvt.
+                  Ltd. is a model of integrated, sustainable agriculture. We
+                  focus on creating a synergistic ecosystem that delivers fresh,
+                  high-quality produce to the local and regional market.{" "}
+                </p>
+              </motion.div>
 
-      {/* Right Side - Your Existing Speech Bubble */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        className="relative"
-      >
-        {/* Your existing speech bubble content */}
-      </motion.div>
-    </div>
-  </div>
-</div>
+              {/* Right Side - Your Existing Speech Bubble */}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="relative"
+              >
+                {/* Your existing speech bubble content */}
+              </motion.div>
+            </div>
+          </div>
+        </div>
         <div className="pt-8 md:pt-20 lg:pt-20 ">
           {/* Mobile: Horizontal Scroll */}
           <div className="flex md:grid md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0">
