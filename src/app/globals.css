@@ -176,3 +176,7 @@ input[type='number']::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
+
+.clip-path-triangle {
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { Instagram, Facebook, Linkedin, Globe } from "lucide-react";
@@ -9,8 +9,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenDropdown, setIsOpenDropdown] = useState(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
-    useEffect(() => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 50) {
@@ -20,20 +20,22 @@ export default function Header() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <main className="relative m-0 p-0">
-      <header className={`fixed top-[0px] left-0 w-full z-50 ransition-all duration-500 ${
-      isScrolled 
-        ? 'bg-black shadow-lg' 
-        : 'bg-transparent'
-    }`}>
-        <div className={`mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   border-gray-200  bg-[#0000]   transition-all duration-500 ${
-        isScrolled ? 'bg-black' : 'bg-transparent'
-      }`}>
+      <header
+        className={`fixed top-[0px] left-0 w-full z-50 ransition-all duration-500 ${
+          isScrolled ? "bg-black shadow-lg" : "bg-transparent"
+        }`}
+      >
+        <div
+          className={`mx-auto px-4 sm:px-6  lg:px-8 py-1 sm:py-1 lg:py-2   border-gray-200  bg-[#0000]   transition-all duration-500 ${
+            isScrolled ? "bg-black" : "bg-transparent"
+          }`}
+        >
           <div className="flex justify-between items-center ">
             {/* Logo and Title */}
             <div className="flex items-center space-x-2 sm:space-x-3">
@@ -73,7 +75,7 @@ export default function Header() {
                 Home
               </Link>
               <Link
-                href=""
+                href="/about"
                 className="text-white  text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
                 About Us
@@ -142,16 +144,16 @@ export default function Header() {
                 Contact Us
               </Link>
 
-<button
-  className={`bg-transparent border-1 border-white text-white px-2 xl:px-2 py-2 rounded-md relative overflow-hidden group transition-all duration-300 hover:bg-white hover:text-black`}
->
-  <span>Get In Touch</span>
-  <span
-    className={`absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300`}
-  >
-    →
-  </span>
-</button>
+              <button
+                className={`bg-transparent border-1 border-white text-white px-2 xl:px-2 py-2 rounded-md relative overflow-hidden group transition-all duration-300 hover:bg-white hover:text-black`}
+              >
+                <span>Get In Touch</span>
+                <span
+                  className={`absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300`}
+                >
+                  →
+                </span>
+              </button>
               <div className="text-gray-300">|</div>
               <div className="flex space-x-3 xl:space-x-4">
                 <Link
