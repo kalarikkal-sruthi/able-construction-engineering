@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Counter from "@/componets/ui/Counter";
 function page() {
   // Services data
   // Services data including agribusiness
@@ -176,49 +177,49 @@ function page() {
               </motion.h1>
 
               {/* Stats Badges */}
-           <motion.div
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.4 }}
-  viewport={{ once: true, amount: 0.3 }}
-  className="flex flex-wrap justify-center gap-4 md:gap-6 mb-12 items-center"
->
-  <motion.div
-    whileHover={{ y: -5, scale: 1.05 }}
-    className="w-[calc(50%-8px)] md:w-auto h-12 md:h-auto flex items-center justify-center rounded-full px-4 py-1 md:px-6 md:py-2 border border-white-400/30"
-  >
-    <span className="text-white text-[12px] lg:text-[16px] xl:text-[16px] font-semibold text-center">
-      Est. 1992
-    </span>
-  </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true, amount: 0.3 }}
+                className="flex flex-wrap justify-center gap-4 md:gap-6 mb-12 items-center"
+              >
+                <motion.div
+                  whileHover={{ y: -5, scale: 1.05 }}
+                  className="w-[calc(50%-8px)] md:w-auto h-12 md:h-auto flex items-center justify-center rounded-full px-4 py-1 md:px-6 md:py-2 border border-white-400/30"
+                >
+                  <span className="text-white text-[12px] lg:text-[16px] xl:text-[16px] font-semibold text-center">
+                    Est. 1992
+                  </span>
+                </motion.div>
 
-  <motion.div
-    whileHover={{ y: -5, scale: 1.05 }}
-    className="w-[calc(50%-8px)] md:w-auto h-12 md:h-auto flex items-center justify-center rounded-full px-4 py-1 md:px-6 md:py-2 border border-white-400/30"
-  >
-    <span className="text-white text-[12px] lg:text-[16px] xl:text-[16px] font-semibold text-center">
-      20+ Years Experience
-    </span>
-  </motion.div>
+                <motion.div
+                  whileHover={{ y: -5, scale: 1.05 }}
+                  className="w-[calc(50%-8px)] md:w-auto h-12 md:h-auto flex items-center justify-center rounded-full px-4 py-1 md:px-6 md:py-2 border border-white-400/30"
+                >
+                  <span className="text-white text-[12px] lg:text-[16px] xl:text-[16px] font-semibold text-center">
+                    20+ Years Experience
+                  </span>
+                </motion.div>
 
-  <motion.div
-    whileHover={{ y: -5, scale: 1.05 }}
-    className="w-[calc(50%-8px)] md:w-auto h-12 md:h-auto flex items-center justify-center rounded-full px-4 py-1 md:px-6 md:py-2 border border-white-400/30"
-  >
-    <span className="text-white text-[12px] lg:text-[16px] xl:text-[16px] font-semibold text-center">
-      3 Business Verticals
-    </span>
-  </motion.div>
+                <motion.div
+                  whileHover={{ y: -5, scale: 1.05 }}
+                  className="w-[calc(50%-8px)] md:w-auto h-12 md:h-auto flex items-center justify-center rounded-full px-4 py-1 md:px-6 md:py-2 border border-white-400/30"
+                >
+                  <span className="text-white text-[12px] lg:text-[16px] xl:text-[16px] font-semibold text-center">
+                    3 Business Verticals
+                  </span>
+                </motion.div>
 
-  <motion.div
-    whileHover={{ y: -5, scale: 1.05 }}
-    className="w-[calc(50%-8px)] md:w-auto h-12 md:h-auto flex items-center justify-center rounded-full px-4 py-1 md:px-6 md:py-2 border border-white-400/30"
-  >
-    <span className="text-white text-[12px] lg:text-[16px] xl:text-[16px] font-semibold text-center">
-      International Presence
-    </span>
-  </motion.div>
-</motion.div>
+                <motion.div
+                  whileHover={{ y: -5, scale: 1.05 }}
+                  className="w-[calc(50%-8px)] md:w-auto h-12 md:h-auto flex items-center justify-center rounded-full px-4 py-1 md:px-6 md:py-2 border border-white-400/30"
+                >
+                  <span className="text-white text-[12px] lg:text-[16px] xl:text-[16px] font-semibold text-center">
+                    International Presence
+                  </span>
+                </motion.div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -250,132 +251,171 @@ function page() {
         <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/50 to-transparent z-0"></div>
       </section>
 
-      {/* <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
+      {/* <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-white">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-6xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-center mb-16"
+      >
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Our Business Verticals
+        </h2>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          Three pillars of excellence driving our growth and success
+        </p>
+      </motion.div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {businessVerticals.map((vertical, index) => (
+          <motion.div
+            key={vertical.title}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            className="relative bg-white p-8 group hover:bg-gray-50 transition-all duration-300 border-l-4 border-gray-900"
+          >
+            <div className="text-2xl font-light text-gray-400 mb-4">0{index + 1}</div>
+            
+            <h3 className="text-xl font-medium text-gray-900 mb-4">
+              {vertical.title}
+            </h3>
+            
+            <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+              {vertical.description}
+            </p>
+            
+            <div className="space-y-2">
+              {vertical.highlights.map((highlight, idx) => (
+                <div
+                  key={idx}
+                  className="text-gray-500 text-sm py-1 border-b border-gray-100 last:border-b-0"
+                >
+                  {highlight}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section> */}
+
+      {/* Introduction Section */}
+      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center mb-12"
+              className="text-white"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Our Business Verticals
+              <h2 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                Building Excellence Since 1992
               </h2>
-              <p className="text-lg text-gray-600">
-                Three pillars of excellence driving our growth and success
+              <p className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                Able Group is a diversified business conglomerate operating for
+                over 20 years across India and the Middle East. With strong
+                management capabilities, we excel in three core business
+                verticals: Construction, Trading, and Agribusiness.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {businessVerticals.map((vertical, index) => (
-                <motion.div
-                  key={vertical.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                  className="relative bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-8 text-center group hover:shadow-xl transition-all duration-300"
+            <div className="space-y-3">
+              <div className="flex items-center">
+                <svg
+                  className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
                 >
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-3xl text-white">{vertical.icon}</span>
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    {vertical.title}
-                  </h3>
-                  <p className="text-gray-600 mb-6">{vertical.description}</p>
-                  <div className="space-y-2 text-left">
-                    {vertical.highlights.map((highlight, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-center text-gray-700"
-                      >
-                        <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                        <span className="text-sm">{highlight}</span>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
-              ))}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+                <span className="text-gray-700 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
+                  Complex construction project execution
+                </span>
+              </div>
+              <div className="flex items-center">
+                <svg
+                  className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+                <span className="text-gray-700 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
+                  Comprehensive trading and supply chain
+                </span>
+              </div>
+              <div className="flex items-center">
+                <svg
+                  className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+                <span className="text-gray-700 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
+                  Sustainable agricultural practices
+                </span>
+              </div>
             </div>
-          </div>
+          </motion.div>
+<motion.div
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative"
+>
+  <div className="bg-gradient-to-br from-gray-900 to-gray-700 rounded-2xl p-8 text-white border border-gray-600">
+    <h3 className="text-2xl font-bold mb-4 text-white">Our Global Presence</h3>
+    <div className="grid grid-cols-2 gap-4">
+      <div className="text-center">
+        <Counter value={20} suffix="+" />
+        <div className="text-sm text-gray-300 mt-1">Years Experience</div>
+      </div>
+      <div className="text-center">
+        <Counter value={4} />
+        <div className="text-sm text-gray-300 mt-1">Countries</div>
+      </div>
+      <div className="text-center">
+        <Counter value={3} />
+        <div className="text-sm text-gray-300 mt-1">Business Verticals</div>
+      </div>
+      <div className="text-center">
+        <Counter value={300} suffix="+" />
+        <div className="text-sm text-gray-300 mt-1">Team Members</div>
+      </div>
+    </div>
+  </div>
+</motion.div>
         </div>
-      </section> */}
-
-      {/* Introduction Section */}
-      {/* <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-              >
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                  Building Excellence Since 1992
-                </h2>
-                <p className="text-lg text-gray-600 mb-6">
-                  Able Group is a diversified business conglomerate operating
-                  for over 20 years across India and the Middle East. With
-                  strong management capabilities, we excel in three core
-                  business verticals: Construction, Trading, and Agribusiness.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-gray-700">
-                      Complex construction project execution
-                    </span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-gray-700">
-                      Comprehensive trading and supply chain
-                    </span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-gray-700">
-                      Sustainable agricultural practices
-                    </span>
-                  </div>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="relative"
-              >
-                <div className="bg-gradient-to-br from-blue-600 to-green-600 rounded-2xl p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-4">
-                    Our Global Presence
-                  </h3>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="text-center">
-                      <div className="text-3xl font-bold">20+</div>
-                      <div className="text-sm">Years Experience</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-3xl font-bold">4</div>
-                      <div className="text-sm">Countries</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-3xl font-bold">3</div>
-                      <div className="text-sm">Business Verticals</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-3xl font-bold">300+</div>
-                      <div className="text-sm">Team Members</div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+      </section>
 
       {/* Agribusiness Focus Section */}
       {/* <section className="py-16 bg-white">
