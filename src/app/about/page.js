@@ -607,8 +607,8 @@ function page() {
         md:w-40 md:h-52 
         lg:w-60 lg:h-80 
    
-        object-cover"
-                  
+        object-cover "
+                   
                   />
                 </div>
               </div>
