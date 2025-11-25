@@ -144,7 +144,7 @@ function page() {
         <div className="absolute inset-0">
           <div className="relative h-full w-full">
             <Image
-              src="/innerpage-farming/crops-field.jpg"
+              src="/aboutus/meeting.jpg"
               alt="Able Group - Construction, Trading & Agribusiness"
               fill
               className="object-cover scale-110 parallax-zoom"
@@ -329,45 +329,60 @@ function page() {
                 verticals: Construction, Trading, and Agribusiness.
               </p>
             </motion.div>
-
           </motion.div>
-        <TwoByTwoStatsGrid />
-
+          <TwoByTwoStatsGrid />
         </div>
       </section>
-          <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-gray-100">
+      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-gray-100">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
-             <motion.h1
-                        initial={{ opacity: 0, y: -20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{
-                          duration: 0.8,
-                          ease: "easeOut",
-                        }}
-                        viewport={{ once: true, amount: 0.3 }}
-                        className="w-full"
-                      >
-                        <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-                         Mission
-                        </span>
-                      </motion.h1>
+            <motion.h1
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="w-full"
+            >
+              <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
+                Mission
+              </span>
+            </motion.h1>
+            <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
+              To deliver exceptional civil engineering and construction services
+              through innovative solutions, unwavering commitment to quality,
+              and strict adherence to health, safety, and environmental
+              standards. We strive to exceed client expectations by executing
+              complex infrastructure projects with precision, within stipulated
+              timelines and budgets, while fostering sustainable growth and
+              community development.
+            </p>
           </div>
-<div>
-             <motion.h1
-                        initial={{ opacity: 0, y: -20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{
-                          duration: 0.8,
-                          ease: "easeOut",
-                        }}
-                        viewport={{ once: true, amount: 0.3 }}
-                        className="w-full"
-                      >
-                        <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-                        Vision
-                        </span>
-                      </motion.h1>
+          <div>
+            <motion.h1
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="w-full"
+            >
+              <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
+                Vision
+              </span>
+            </motion.h1>
+            <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+              To be the premier global construction and trading conglomerate,
+              recognized for excellence in infrastructure development,
+              technological innovation, and client satisfaction. We aspire to
+              expand our international footprint while maintaining our core
+              values of professionalism, quality craftsmanship, and sustainable
+              business practices across all our operations.
+            </p>
           </div>
         </div>
       </section>
@@ -459,93 +474,164 @@ function page() {
       </section> */}
 
       {/* Leadership Section */}
-      {/* <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Our Leadership
-              </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Guided by visionary leadership across all business verticals
-              </p>
-            </motion.div>
+      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 ">
+        <div className="text-start mb-4 md:mb-8">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full"
+          >
+            <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
+              Our Leadership
+            </span>
+          </motion.h1>
+          {/* Alternative Shorter Introduction */}
 
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6 }}
-                  className="text-center"
-                >
-                  <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-green-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl text-white">👑</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Mr. Yakkoob Purayil
-                  </h3>
-                  <p className="text-green-600 font-semibold mb-2">
-                    Chairman & Founder
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    With over 30 years of experience across construction,
-                    trading, and agriculture, Mr. Purayil has successfully
-                    expanded the group&apos;s operations globally.
-                  </p>
-                </motion.div>
+          <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
+            Guided by visionary leadership across all business verticals
+          </p>
+        </div>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="text-center"
-                >
-                  <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-green-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl text-white">⚡</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Mr. Muhammad Basheer
-                  </h3>
-                  <p className="text-green-600 font-semibold mb-2">CEO</p>
-                  <p className="text-gray-600 text-sm">
-                    Leading the technical front with vast experience in
-                    construction engineering and successful project performance
-                    across various government departments.
-                  </p>
-                </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Chairman */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white  border transition-all duration-300"
+          >
+            <div className="flex flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
+              {/* Image Section - Left */}
+              <div className="flex-shrink-0">
+                <div className="overflow-hidden   shadow-md">
+                  <Image
+                    src="/aboutus/person1.webp"
+                    alt="Mr. Yakkoob Purayil"
+                    width={240}
+                    height={320}
+                    className=" w-40 h-52 
+        sm:w-40 sm:h-52 
+        md:w-40 md:h-52 
+        lg:w-60 lg:h-80 
+   
+        object-cover"
+                  />
+                </div>
+              </div>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  className="text-center"
-                >
-                  <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-green-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl text-white">🏗️</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Mr. Ishaque Purayil
-                  </h3>
-                  <p className="text-green-600 font-semibold mb-2">
-                    Board Director
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    Bringing technical expertise and strategic vision to drive
-                    the company&apos;s growth across all business verticals
-                    including agribusiness.
-                  </p>
-                </motion.div>
+              {/* Content Section - Right */}
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                  Mr. Yakkoob Purayil
+                </h3>
+                <div className="w-16 h-0.5 bg-gray-400 mx-auto md:mx-0 mb-4"></div>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  Chairman & Founder
+                </p>
+                {/* <p className="text-gray-500 leading-relaxed max-w-2xl">
+                  Visionary leader with 45+ years of experience in construction
+                  and trading across GCC countries and India. Founded Able Group
+                  in 1992 and expanded operations globally.
+                </p> */}
               </div>
             </div>
-          </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white  border transition-all duration-300"
+          >
+            <div className="flex flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
+              {/* Image Section - Left */}
+              <div className="flex-shrink-0">
+                <div className="overflow-hidden   shadow-md">
+                  <Image
+                    src="/aboutus/person1.webp"
+                    alt="Mr. Yakkoob Purayil"
+                    width={240}
+                    height={320}
+                    className=" w-40 h-52 
+        sm:w-40 sm:h-52 
+        md:w-40 md:h-52 
+        lg:w-60 lg:h-80 
+   
+        object-cover"
+                  
+                  />
+                </div>
+              </div>
+
+              {/* Content Section - Right */}
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                  Mr. Shajeem A Hameed
+                </h3>
+                <div className="w-16 h-0.5 bg-gray-400 mx-auto md:mx-0 mb-4"></div>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  General Manager
+                </p>
+                {/* <p className="text-gray-500 leading-relaxed max-w-2xl">
+                  Visionary leader with 45+ years of experience in construction
+                  and trading across GCC countries and India. Founded Able Group
+                  in 1992 and expanded operations globally.
+                </p> */}
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white  border transition-all duration-300"
+          >
+            <div className="flex flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
+              {/* Image Section - Left */}
+              <div className="flex-shrink-0">
+                <div className="overflow-hidden   shadow-md">
+                  <Image
+                   src="/aboutus/person1.webp"
+                    alt="Mr. Yakkoob Purayil"
+                    width={240}
+                    height={320}
+                    className=" w-40 h-52 
+        sm:w-40 sm:h-52 
+        md:w-40 md:h-52 
+        lg:w-60 lg:h-80 
+   
+        object-cover"
+                  
+                  />
+                </div>
+              </div>
+
+              {/* Content Section - Right */}
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                  Mr. Ishaque Purayil
+                </h3>
+                <div className="w-16 h-0.5 bg-gray-400 mx-auto md:mx-0 mb-4"></div>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  Technical Manager
+                </p>
+                {/* <p className="text-gray-500 leading-relaxed max-w-2xl">
+                  Visionary leader with 45+ years of experience in construction
+                  and trading across GCC countries and India. Founded Able Group
+                  in 1992 and expanded operations globally.
+                </p> */}
+              </div>
+            </div>
+          </motion.div>
         </div>
-      </section> */}
+      </section>
 
       {/* Services Section - Construction Focus */}
       {/* <section className="py-16 bg-white">
