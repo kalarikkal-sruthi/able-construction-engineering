@@ -336,7 +336,6 @@ function page() {
       <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-gray-100">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
-<<<<<<< HEAD
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -384,46 +383,6 @@ function page() {
               values of professionalism, quality craftsmanship, and sustainable
               business practices across all our operations.
             </p>
-=======
-             <motion.h1
-                        initial={{ opacity: 0, y: -20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{
-                          duration: 0.8,
-                          ease: "easeOut",
-                        }}
-                        viewport={{ once: true, amount: 0.3 }}
-                        className="w-full"
-                      >
-                        <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-                         Mission
-                        </span>
-                      </motion.h1>
-                      <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
-           To deliver exceptional civil engineering and construction services through innovative solutions, unwavering commitment to quality, and strict adherence to health, safety, and environmental standards. We strive to exceed client expectations by executing complex infrastructure projects with precision, within stipulated timelines and budgets, while fostering sustainable growth and community development.
-          </p>
-          </div>
-<div>
-             <motion.h1
-                        initial={{ opacity: 0, y: -20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{
-                          duration: 0.8,
-                          ease: "easeOut",
-                        }}
-                        viewport={{ once: true, amount: 0.3 }}
-                        className="w-full"
-                      >
-                        <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-                        Vision
-                        </span>
-                      </motion.h1>
-                      <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                        To be the premier global construction and trading conglomerate, recognized for excellence in infrastructure development, technological innovation, and client satisfaction. We aspire to expand our international footprint while maintaining our core values of professionalism, quality craftsmanship, and sustainable business practices across all our operations.
-
-
-                      </p>
->>>>>>> 563e6f6116e62b471d2e28b8401586f03ec81a2f
           </div>
         </div>
       </section>
