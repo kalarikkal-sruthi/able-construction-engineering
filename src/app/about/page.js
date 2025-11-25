@@ -2,7 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Counter from "@/componets/ui/Counter";
+import StatsGrid from "@/componets/ui/Counter";
+import TwoByTwoStatsGrid from "@/componets/ui/Counter";
 function page() {
   // Services data
   // Services data including agribusiness
@@ -329,7 +330,7 @@ function page() {
               </p>
             </motion.div>
 
-            <div className="space-y-3">
+            {/* <div className="space-y-3">
               <div className="flex items-center">
                 <svg
                   className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0"
@@ -384,36 +385,10 @@ function page() {
                   Sustainable agricultural practices
                 </span>
               </div>
-            </div>
+            </div> */}
           </motion.div>
-<motion.div
-  initial={{ opacity: 0, x: 50 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.8 }}
-  className="relative"
->
-  <div className="bg-gradient-to-br from-gray-900 to-gray-700 rounded-2xl p-8 text-white border border-gray-600">
-    <h3 className="text-2xl font-bold mb-4 text-white">Our Global Presence</h3>
-    <div className="grid grid-cols-2 gap-4">
-      <div className="text-center">
-        <Counter value={20} suffix="+" />
-        <div className="text-sm text-gray-300 mt-1">Years Experience</div>
-      </div>
-      <div className="text-center">
-        <Counter value={4} />
-        <div className="text-sm text-gray-300 mt-1">Countries</div>
-      </div>
-      <div className="text-center">
-        <Counter value={3} />
-        <div className="text-sm text-gray-300 mt-1">Business Verticals</div>
-      </div>
-      <div className="text-center">
-        <Counter value={300} suffix="+" />
-        <div className="text-sm text-gray-300 mt-1">Team Members</div>
-      </div>
-    </div>
-  </div>
-</motion.div>
+        <TwoByTwoStatsGrid />
+
         </div>
       </section>
 
