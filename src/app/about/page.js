@@ -144,7 +144,7 @@ function page() {
         <div className="absolute inset-0">
           <div className="relative h-full w-full">
             <Image
-              src="/innerpage-farming/crops-field.jpg"
+              src="/aboutus/meeting.jpg"
               alt="Able Group - Construction, Trading & Agribusiness"
               fill
               className="object-cover scale-110 parallax-zoom"
@@ -352,6 +352,9 @@ function page() {
                          Mission
                         </span>
                       </motion.h1>
+                      <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
+           To deliver exceptional civil engineering and construction services through innovative solutions, unwavering commitment to quality, and strict adherence to health, safety, and environmental standards. We strive to exceed client expectations by executing complex infrastructure projects with precision, within stipulated timelines and budgets, while fostering sustainable growth and community development.
+          </p>
           </div>
 <div>
              <motion.h1
@@ -368,6 +371,11 @@ function page() {
                         Vision
                         </span>
                       </motion.h1>
+                      <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                        To be the premier global construction and trading conglomerate, recognized for excellence in infrastructure development, technological innovation, and client satisfaction. We aspire to expand our international footprint while maintaining our core values of professionalism, quality craftsmanship, and sustainable business practices across all our operations.
+
+
+                      </p>
           </div>
         </div>
       </section>
