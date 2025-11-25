@@ -87,11 +87,11 @@ const TwoByTwoStatsGrid = () => {
             {/* Main vertical line container */}
             <div className="flex">
               {/* Vertical line */}
-              <div className="w-0.5 bg-gray-300 mr-6 mt-1"></div>
+              <div className="w-0.5 bg-gray-300  mr-2  md:mr-4 mt-1"></div>
 
               <div className="flex-1">
                 {/* Title at top */}
-                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-8 text-black ">
+                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8 text-black ">
                  Years Experience
                 </h4>
 
@@ -116,11 +116,11 @@ const TwoByTwoStatsGrid = () => {
             {/* Main vertical line container */}
             <div className="flex">
               {/* Vertical line */}
-              <div className="w-0.5 bg-gray-300 mr-6 mt-1"></div>
+              <div className="w-0.5 bg-gray-300  mr-2  md:mr-4  mt-1"></div>
 
               <div className="flex-1">
                 {/* Title at top */}
-                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-8 text-black ">
+                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8 text-black ">
                 Countries
                 </h4>
 
@@ -155,11 +155,11 @@ const TwoByTwoStatsGrid = () => {
             {/* Main vertical line container */}
             <div className="flex">
               {/* Vertical line */}
-              <div className="w-0.5 bg-gray-300 mr-6 mt-1"></div>
+              <div className="w-0.5 bg-gray-300 mr-2  md:mr-4  mt-1"></div>
 
               <div className="flex-1">
                 {/* Title at top */}
-                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-8 text-black ">
+                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8  text-black ">
                   Business Verticals
                 </h4>
 
@@ -184,11 +184,11 @@ const TwoByTwoStatsGrid = () => {
             {/* Main vertical line container */}
             <div className="flex">
               {/* Vertical line */}
-              <div className="w-0.5 bg-gray-300 mr-6 mt-1"></div>
+              <div className="w-0.5 bg-gray-300  mr-2  md:mr-4  mt-1"></div>
 
               <div className="flex-1">
                 {/* Title at top */}
-                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-8 text-black ">
+                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8 text-black ">
                 Business Verticals
                 </h4>
 

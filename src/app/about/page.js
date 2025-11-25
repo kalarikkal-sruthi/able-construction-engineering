@@ -307,7 +307,7 @@ function page() {
 
       {/* Introduction Section */}
       <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
