@@ -497,18 +497,18 @@ function page() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
           {/* Chairman */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
-            className="bg-white  border transition-all duration-300"
+            className="bg-white p-4 md:p-8 border transition-all duration-300"
           >
             <div className="flex flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
               {/* Image Section - Left */}
-              <div className="flex-shrink-0">
+              {/* <div className="flex-shrink-0">
                 <div className="overflow-hidden   shadow-md">
                   <Image
                     src="/aboutus/person1.webp"
@@ -523,22 +523,22 @@ function page() {
         object-cover"
                   />
                 </div>
-              </div>
+              </div> */}
 
               {/* Content Section - Right */}
-              <div className="flex-1 text-center md:text-left">
+              <div className="flex-1 text-start">
                 <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
                   Mr. Yakkoob Purayil
                 </h3>
-                <div className="w-16 h-0.5 bg-gray-400 mx-auto md:mx-0 mb-4"></div>
+                <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
                 <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
                   Chairman & Founder
                 </p>
-                {/* <p className="text-gray-500 leading-relaxed max-w-2xl">
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
                   Visionary leader with 45+ years of experience in construction
                   and trading across GCC countries and India. Founded Able Group
                   in 1992 and expanded operations globally.
-                </p> */}
+                </p>
               </div>
             </div>
           </motion.div>
@@ -549,9 +549,9 @@ function page() {
             viewport={{ once: true }}
             className="bg-white  border transition-all duration-300"
           >
-            <div className="flex flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
+            <div className="flex p-4 md:p-8 flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
               {/* Image Section - Left */}
-              <div className="flex-shrink-0">
+              {/* <div className="flex-shrink-0">
                 <div className="overflow-hidden   shadow-md">
                   <Image
                     src="/aboutus/person1.webp"
@@ -567,22 +567,22 @@ function page() {
                   
                   />
                 </div>
-              </div>
+              </div> */}
 
               {/* Content Section - Right */}
-              <div className="flex-1 text-center md:text-left">
+              <div className="flex-1 text-start">
                 <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
-                  Mr. Shajeem A Hameed
+                 Muhammed Basheer
                 </h3>
-                <div className="w-16 h-0.5 bg-gray-400 mx-auto md:mx-0 mb-4"></div>
+                <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
                 <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                  General Manager
+                 Managing Director
                 </p>
-                {/* <p className="text-gray-500 leading-relaxed max-w-2xl">
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
                   Visionary leader with 45+ years of experience in construction
                   and trading across GCC countries and India. Founded Able Group
                   in 1992 and expanded operations globally.
-                </p> */}
+                </p>
               </div>
             </div>
           </motion.div>
@@ -593,9 +593,9 @@ function page() {
             viewport={{ once: true }}
             className="bg-white  border transition-all duration-300"
           >
-            <div className="flex flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
+            <div className="flex p-4 md:p-8 flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
               {/* Image Section - Left */}
-              <div className="flex-shrink-0">
+              {/* <div className="flex-shrink-0">
                 <div className="overflow-hidden   shadow-md">
                   <Image
                    src="/aboutus/person1.webp"
@@ -611,22 +611,22 @@ function page() {
                    
                   />
                 </div>
-              </div>
+              </div> */}
 
               {/* Content Section - Right */}
-              <div className="flex-1 text-center md:text-left">
+              <div className="flex-1 text-start">
                 <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
                   Mr. Ishaque Purayil
                 </h3>
-                <div className="w-16 h-0.5 bg-gray-400 mx-auto md:mx-0 mb-4"></div>
+                <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
                 <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                  Technical Manager
+                  Director
                 </p>
-                {/* <p className="text-gray-500 leading-relaxed max-w-2xl">
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
                   Visionary leader with 45+ years of experience in construction
                   and trading across GCC countries and India. Founded Able Group
                   in 1992 and expanded operations globally.
-                </p> */}
+                </p>
               </div>
             </div>
           </motion.div>
