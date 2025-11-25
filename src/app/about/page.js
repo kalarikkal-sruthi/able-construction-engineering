@@ -386,7 +386,7 @@ function page() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.2 + 0.2 }}
-                    className="text-xl font-light text-white text-opacity-80 mb-2"
+                    className="text-3xl md:text-6xl font-light text-white text-opacity-80 mb-2"
                   >
                     0{index + 1}
                   </motion.div>
@@ -396,7 +396,7 @@ function page() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.2 + 0.3 }}
-                    className="text-xl md:text-2xl font-bold text-white mb-3"
+                    className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-white"
                   >
                     {vertical.title}
                   </motion.h3>
