@@ -21,13 +21,16 @@ function Blog() {
               className="w-full"
             >
               <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-               Our Next Chapter
+                Our Next Chapter
               </span>
             </motion.h1>
             {/* Alternative Shorter Introduction */}
 
             <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
-             Building on three decades of global excellence, we are now shaping the future of development. Explore our pioneering projects in construction, sustainable agriculture, and strategic trading—where innovation meets legacy, and new standards are born.
+              Building on three decades of global excellence, we are now shaping
+              the future of development. Explore our pioneering projects in
+              construction, sustainable agriculture, and strategic trading—where
+              innovation meets legacy, and new standards are born.
             </p>
           </div>
 

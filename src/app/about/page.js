@@ -38,7 +38,7 @@ function page() {
       icon: "🌱",
       image: "/apartments/agriculture.jpg",
       description:
-        "Sustainable farming and integrated food production in Kerala",
+        "Sustainable farming and integrated food production in Kerala and  Uganda",
       highlights: [
         "Integrated Farming Systems",
         "Fresh Produce Supply",
