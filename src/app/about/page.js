@@ -5,13 +5,12 @@ import Image from "next/image";
 import StatsGrid from "@/componets/ui/Counter";
 import TwoByTwoStatsGrid from "@/componets/ui/Counter";
 function page() {
-  // Services data
-  // Services data including agribusiness
-  // Business Verticals data
+  
   const businessVerticals = [
     {
       title: "Construction",
       icon: "🏗️",
+      image: "/apartments/construction1.jpg",
       description:
         "Comprehensive civil engineering and infrastructure development services",
       highlights: [
@@ -24,6 +23,7 @@ function page() {
     {
       title: "Trading",
       icon: "📦",
+      image: "/apartments/trading1.jpg",
       description:
         "Wholesale and retail distribution of building materials and industrial supplies",
       highlights: [
@@ -36,6 +36,7 @@ function page() {
     {
       title: "Agribusiness",
       icon: "🌱",
+      image: "/apartments/agriculture.jpg",
       description:
         "Sustainable farming and integrated food production in Kerala",
       highlights: [
@@ -252,59 +253,6 @@ function page() {
         <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/50 to-transparent z-0"></div>
       </section>
 
-      {/* <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-white">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="max-w-6xl mx-auto">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-center mb-16"
-      >
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Our Business Verticals
-        </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Three pillars of excellence driving our growth and success
-        </p>
-      </motion.div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {businessVerticals.map((vertical, index) => (
-          <motion.div
-            key={vertical.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-            className="relative bg-white p-8 group hover:bg-gray-50 transition-all duration-300 border-l-4 border-gray-900"
-          >
-            <div className="text-2xl font-light text-gray-400 mb-4">0{index + 1}</div>
-            
-            <h3 className="text-xl font-medium text-gray-900 mb-4">
-              {vertical.title}
-            </h3>
-            
-            <p className="text-gray-600 mb-6 text-sm leading-relaxed">
-              {vertical.description}
-            </p>
-            
-            <div className="space-y-2">
-              {vertical.highlights.map((highlight, idx) => (
-                <div
-                  key={idx}
-                  className="text-gray-500 text-sm py-1 border-b border-gray-100 last:border-b-0"
-                >
-                  {highlight}
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  </div>
-</section> */}
-
       {/* Introduction Section */}
       <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -387,94 +335,108 @@ function page() {
         </div>
       </section>
 
-      {/* Agribusiness Focus Section */}
-      {/* <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="relative"
-              >
-                <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-4">
-                    Able Farms Pvt. Ltd.
-                  </h3>
-                  <p className="mb-4">
-                    Our agricultural division focuses on sustainable farming
-                    practices and integrated food production in the biodiverse
-                    hills of Kerala.
-                  </p>
-                  <div className="space-y-3">
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
-                      <span>Integrated sustainable agriculture</span>
-                    </div>
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
-                      <span>Fresh, high-quality produce</span>
-                    </div>
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
-                      <span>Local and regional market focus</span>
-                    </div>
-                    <div className="flex items-center">
-                      <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
-                      <span>Synergistic ecosystem creation</span>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
+      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 ">
+        <div className="text-start mb-4 md:mb-8">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full"
+          >
+            <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
+              Our Business Verticals
+            </span>
+          </motion.h1>
+          {/* Alternative Shorter Introduction */}
 
+          <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
+            Three pillars of excellence driving our growth and success
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {businessVerticals.map((vertical, index) => (
+            <div
+              key={vertical.title}
+              className="relative h-100 md:h-150 overflow-hidden group "
+            >
+              {/* Image */}
+              <img
+                src={vertical.image || `/apartments/apartment${index + 1}.jpg`}
+                alt={vertical.title}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-80 group-hover:opacity-70 transition-all duration-500"></div>
+
+              {/* Content */}
               <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+                className="absolute inset-0 flex items-end justify-center p-6"
               >
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                  Sustainable Agribusiness
-                </h2>
-                <p className="text-lg text-gray-600 mb-6">
-                  Able Farms represents our commitment to sustainable
-                  agriculture and food production. Nestled in the biodiverse
-                  hills of Kerala, we focus on creating synergistic ecosystems
-                  that deliver fresh, high-quality produce to local and regional
-                  markets.
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-green-50 rounded-lg p-4 text-center">
-                    <div className="text-2xl font-bold text-green-600">🌱</div>
-                    <div className="font-semibold text-green-800">Organic</div>
-                    <div className="text-sm text-green-600">Practices</div>
-                  </div>
-                  <div className="bg-green-50 rounded-lg p-4 text-center">
-                    <div className="text-2xl font-bold text-green-600">🌍</div>
-                    <div className="font-semibold text-green-800">
-                      Sustainable
-                    </div>
-                    <div className="text-sm text-green-600">Ecosystem</div>
-                  </div>
-                  <div className="bg-green-50 rounded-lg p-4 text-center">
-                    <div className="text-2xl font-bold text-green-600">🏞️</div>
-                    <div className="font-semibold text-green-800">Kerala</div>
-                    <div className="text-sm text-green-600">Location</div>
-                  </div>
-                  <div className="bg-green-50 rounded-lg p-4 text-center">
-                    <div className="text-2xl font-bold text-green-600">📈</div>
-                    <div className="font-semibold text-green-800">Growth</div>
-                    <div className="text-sm text-green-600">Focused</div>
-                  </div>
+                <div className="text-white text-start w-full">
+                  {/* Number */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.2 + 0.2 }}
+                    className="text-xl font-light text-white text-opacity-80 mb-2"
+                  >
+                    0{index + 1}
+                  </motion.div>
+
+                  {/* Title */}
+                  <motion.h3
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.2 + 0.3 }}
+                    className="text-xl md:text-2xl font-bold text-white mb-3"
+                  >
+                    {vertical.title}
+                  </motion.h3>
+
+                  {/* Description */}
+                  <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.2 + 0.4 }}
+                    className="text-white text-opacity-90 mb-4 text-sm leading-relaxed"
+                  >
+                    {vertical.description}
+                  </motion.p>
+
+                  {/* Highlights */}
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.6, delay: index * 0.2 + 0.5 }}
+                    className="space-y-2"
+                  >
+                    {vertical.highlights.map((highlight, idx) => (
+                      <div
+                        key={idx}
+                        className="text-white text-opacity-80 text-xs py-1 border-b border-white border-opacity-20 last:border-b-0"
+                      >
+                        {highlight}
+                      </div>
+                    ))}
+                  </motion.div>
                 </div>
               </motion.div>
             </div>
-          </div>
+          ))}
         </div>
-      </section> */}
+       
+      </section>
 
       {/* Leadership Section */}
-      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 ">
+      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-gray-100 ">
         <div className="text-start mb-4 md:mb-8">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -572,11 +534,11 @@ function page() {
               {/* Content Section - Right */}
               <div className="flex-1 text-start">
                 <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
-                 Muhammed Basheer
+                  Muhammed Basheer
                 </h3>
                 <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
                 <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                 Managing Director
+                  Managing Director
                 </p>
                 <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
                   Visionary leader with 45+ years of experience in construction
@@ -632,140 +594,6 @@ function page() {
           </motion.div>
         </div>
       </section>
-
-      {/* Services Section - Construction Focus */}
-      {/* <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Construction Services
-              </h2>
-              <p className="text-lg text-gray-600">
-                Comprehensive civil engineering and infrastructure solutions
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {constructionServices.map((service, index) => (
-                <motion.div
-                  key={service.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300"
-                >
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-green-500 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-2xl text-white">{service.icon}</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    {service.title}
-                  </h3>
-                  <ul className="space-y-2">
-                    {service.items.map((item, idx) => (
-                      <li key={idx} className="flex items-center text-gray-600">
-                        <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Trading Business Section */}
-      {/* <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-              >
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                  Trading Division
-                </h2>
-                <p className="text-lg text-gray-600 mb-6">
-                  Our trading operations span across multiple countries,
-                  providing comprehensive supply chain solutions for
-                  construction and industrial needs.
-                </p>
-                <div className="space-y-4">
-                  <div className="bg-white rounded-lg p-4 shadow-sm">
-                    <h4 className="font-bold text-gray-900 mb-2">
-                      Building Materials
-                    </h4>
-                    <p className="text-gray-600 text-sm">
-                      Wholesale and retail distribution of construction
-                      materials
-                    </p>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-sm">
-                    <h4 className="font-bold text-gray-900 mb-2">
-                      Industrial Supplies
-                    </h4>
-                    <p className="text-gray-600 text-sm">
-                      Power tools, safety equipment, and industrial hardware
-                    </p>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-sm">
-                    <h4 className="font-bold text-gray-900 mb-2">
-                      Fuel & Energy
-                    </h4>
-                    <p className="text-gray-600 text-sm">
-                      Diesel trading and energy solutions for commercial sectors
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 text-white"
-              >
-                <h3 className="text-2xl font-bold mb-6">Trading Operations</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <span>Building Materials Retail</span>
-                    <span className="font-bold">✓</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>Hardware Wholesale</span>
-                    <span className="font-bold">✓</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>Power Tools Distribution</span>
-                    <span className="font-bold">✓</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>Safety Products</span>
-                    <span className="font-bold">✓</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>Sanitary Ware</span>
-                    <span className="font-bold">✓</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>Diesel Trading</span>
-                    <span className="font-bold">✓</span>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* Global Presence Section */}
       {/* <section className="py-16 bg-gradient-to-r from-blue-900 to-green-900 text-white">
