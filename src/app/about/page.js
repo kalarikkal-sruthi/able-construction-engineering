@@ -330,65 +330,45 @@ function page() {
               </p>
             </motion.div>
 
-            {/* <div className="space-y-3">
-              <div className="flex items-center">
-                <svg
-                  className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-                <span className="text-gray-700 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
-                  Complex construction project execution
-                </span>
-              </div>
-              <div className="flex items-center">
-                <svg
-                  className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-                <span className="text-gray-700 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
-                  Comprehensive trading and supply chain
-                </span>
-              </div>
-              <div className="flex items-center">
-                <svg
-                  className="w-4 h-4 text-gray-600 mr-3 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-                <span className="text-gray-700 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
-                  Sustainable agricultural practices
-                </span>
-              </div>
-            </div> */}
           </motion.div>
         <TwoByTwoStatsGrid />
 
+        </div>
+      </section>
+          <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-gray-100">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div>
+             <motion.h1
+                        initial={{ opacity: 0, y: -20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                          duration: 0.8,
+                          ease: "easeOut",
+                        }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="w-full"
+                      >
+                        <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
+                         Mission
+                        </span>
+                      </motion.h1>
+          </div>
+<div>
+             <motion.h1
+                        initial={{ opacity: 0, y: -20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                          duration: 0.8,
+                          ease: "easeOut",
+                        }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="w-full"
+                      >
+                        <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
+                        Vision
+                        </span>
+                      </motion.h1>
+          </div>
         </div>
       </section>
 
