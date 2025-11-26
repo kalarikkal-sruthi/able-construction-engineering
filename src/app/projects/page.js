@@ -38,7 +38,7 @@ function page() {
             </div>
           </div>
 
-          <div className="col-span-5 lg:col-span-3 bg-gray-800 h-full min-h-[300px] lg:min-h-[450px] ">
+          <div className="col-span-5 lg:col-span-3 overflow-hidden bg-gray-800 h-full min-h-[300px] lg:min-h-[450px] ">
             <div className="relative w-full h-full  overflow-hidden">
               <Image
                 src="/gallery/gallery-banner.jpg"
