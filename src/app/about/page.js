@@ -596,7 +596,7 @@ function page() {
       </section>
 
       {/* Global Presence Section */}
-      {/* <section className="py-16 bg-gradient-to-r from-blue-900 to-green-900 text-white">
+      <section className="py-16 bg-gradient-to-r from-blue-900 to-green-900 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <motion.div
@@ -634,7 +634,7 @@ function page() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA Section */}
       {/* <section className="py-16 bg-gradient-to-r from-blue-600 to-green-600 text-white">

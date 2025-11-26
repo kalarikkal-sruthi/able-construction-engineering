@@ -35,13 +35,18 @@ function BannerSlider() {
       >
         <SwiperSlide>
           <div className="relative h-screen w-full flex items-center justify-center">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="absolute top-0 left-0 w-full h-full object-cover z-10"
-            >
+             <video
+      // ref={videoRef}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="auto"
+      crossOrigin="anonymous"
+      disablePictureInPicture
+      className="absolute top-0 left-0 w-full h-full object-cover z-10"
+      poster="/main-banner-video-image.png" 
+    >
               <source src="/hero.mp4" type="video/mp4" />
               <source src="/hero.mp4" type="video/webm" />
               <Image
@@ -105,11 +110,15 @@ function BannerSlider() {
         <SwiperSlide>
           <div className="relative h-screen w-full flex items-center justify-center">
             <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="absolute top-0 left-0 w-full h-full object-cover z-10"
+                autoPlay
+      muted
+      loop
+      playsInline
+      preload="auto"
+      crossOrigin="anonymous"
+      disablePictureInPicture
+      className="absolute top-0 left-0 w-full h-full object-cover z-10"
+      poster="/main-banner-video-image.png"
             >
               <source src="/hero2.mp4" type="video/mp4" />
               <source src="/hero2.mp4" type="video/webm" />
@@ -175,11 +184,15 @@ function BannerSlider() {
         <SwiperSlide>
           <div className="relative h-screen w-full flex items-center justify-center">
             <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="absolute top-0 left-0 w-full h-full object-cover z-10"
+               autoPlay
+      muted
+      loop
+      playsInline
+      preload="auto"
+      crossOrigin="anonymous"
+      disablePictureInPicture
+      className="absolute top-0 left-0 w-full h-full object-cover z-10"
+      poster="/main-banner-video-image.png"
             >
               <source src="/hero3.mp4" type="video/mp4" />
               <source src="/hero3.mp4" type="video/webm" />
