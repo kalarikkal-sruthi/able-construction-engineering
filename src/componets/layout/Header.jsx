@@ -314,7 +314,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/developments"
+              href="/projects"
               className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
               onClick={() => setIsOpen(false)}
             >
