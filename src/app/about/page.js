@@ -5,7 +5,6 @@ import Image from "next/image";
 import StatsGrid from "@/componets/ui/Counter";
 import TwoByTwoStatsGrid from "@/componets/ui/Counter";
 function page() {
-  
   const businessVerticals = [
     {
       title: "Construction",
@@ -432,7 +431,6 @@ function page() {
             </div>
           ))}
         </div>
-       
       </section>
 
       {/* Leadership Section */}
@@ -538,7 +536,7 @@ function page() {
                 </h3>
                 <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
                 <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                  Managing Director
+                  Managing Director & Head of Trading Operations
                 </p>
                 <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
                   Visionary leader with 45+ years of experience in construction
@@ -582,7 +580,7 @@ function page() {
                 </h3>
                 <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
                 <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                  Director
+                  Director - Engineering & Operations
                 </p>
                 <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
                   Visionary leader with 45+ years of experience in construction
@@ -595,6 +593,35 @@ function page() {
         </div>
       </section>
 
+      {/* Leadership Section */}
+      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16  ">
+        <div className="text-start mb-4 md:mb-8">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full"
+          >
+            <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
+              Our Worldwide Operations
+            </span>
+          </motion.h1>
+          {/* Alternative Shorter Introduction */}
+
+          <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
+           Operating across multiple countries with diversified business operations
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+          </div>
+
+          </section>
+
       {/* Global Presence Section */}
       <section className="py-16 bg-gradient-to-r from-blue-900 to-green-900 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -606,7 +633,7 @@ function page() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Global Footprint
+               Our Worldwide Operations
               </h2>
               <p className="text-xl text-blue-200">
                 Operating across multiple countries with diversified business

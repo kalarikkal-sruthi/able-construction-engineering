@@ -132,7 +132,7 @@ export default function Header() {
                 Future Plans
               </Link>
               <Link
-                href=""
+                href="/projects"
                 className="text-white   text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
                 Developments
