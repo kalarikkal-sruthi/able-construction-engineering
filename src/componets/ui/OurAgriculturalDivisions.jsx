@@ -93,7 +93,7 @@ function OurAgriculturalDivisions() {
                 />
               </div>
               {/* Fixed height content section */}
-              <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
+              <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-48 xl:36 flex flex-col justify-center">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -120,7 +120,7 @@ function OurAgriculturalDivisions() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
+              <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-48 xl:36  flex flex-col justify-center">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -148,7 +148,7 @@ function OurAgriculturalDivisions() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
+              <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-48 xl:36  flex flex-col justify-center">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
