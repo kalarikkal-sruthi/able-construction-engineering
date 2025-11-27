@@ -7,11 +7,11 @@ import TwoByTwoStatsGrid from "@/componets/ui/Counter";
 function page() {
   const businessVerticals = [
     {
-      title: "Construction",
+      title: " Global Construction & Engineering",
       icon: "🏗️",
       image: "/apartments/construction1.jpg",
       description:
-        "Comprehensive civil engineering and infrastructure development services",
+        "We are builders of landmark infrastructure, including bridges, highways, airports, and residential apartments, with a proven track record in India, UAE, Qatar, and Oman. Our new venture, P.Y. Able Construction & Engineering Co. Ltd., marks our strategic entry into Uganda's building sector.",
       highlights: [
         "Earth Works & Excavation",
         "Road & Bridge Construction",
@@ -20,11 +20,11 @@ function page() {
       ],
     },
     {
-      title: "Trading",
+      title: "  Strategic Trading & Supply",
       icon: "📦",
       image: "/apartments/trading1.jpg",
       description:
-        "Wholesale and retail distribution of building materials and industrial supplies",
+        "Through Able Group W.L.L. in Qatar and Able Middle East Trading Company in Saudi Arabia, we are a leading supplier of hardware, tools, and building materials. Our division, Al Marwa Diesel Trading L.L.C., is a key provider of diesel to the industrial and commercial sectors.",
       highlights: [
         "Building Materials Supply",
         "Power & Hand Tools",
@@ -33,11 +33,11 @@ function page() {
       ],
     },
     {
-      title: "Agribusiness",
+      title: "Sustainable Agribusiness",
       icon: "🌱",
       image: "/apartments/agriculture.jpg",
       description:
-        "Sustainable farming and integrated food production in Kerala and  Uganda",
+        "Our commitment to the land is realized through Able Farms Pvt. Ltd. in Wayanad, India, focusing on integrated farming. We are now expanding this expertise into Uganda with a focus on premium coffee cultivation for export.",
       highlights: [
         "Integrated Farming Systems",
         "Fresh Produce Supply",
@@ -294,17 +294,16 @@ function page() {
               className="w-full"
             >
               <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-                Mission
+                Our Mission
               </span>
             </motion.h1>
             <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
-              To deliver exceptional civil engineering and construction services
-              through innovative solutions, unwavering commitment to quality,
-              and strict adherence to health, safety, and environmental
-              standards. We strive to exceed client expectations by executing
-              complex infrastructure projects with precision, within stipulated
-              timelines and budgets, while fostering sustainable growth and
-              community development.
+              To power progress and nurture communities through our integrated
+              ecosystem. We deliver excellence in construction, provide
+              reliability through strategic trading and supply, and foster
+              sustainable growth via agribusiness. We are committed to quality,
+              innovation, and integrity in every project, partnership, and
+              product, from the ground up.
             </p>
           </div>
           <div>
@@ -319,22 +318,19 @@ function page() {
               className="w-full"
             >
               <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-                Vision
+                Our Vision
               </span>
             </motion.h1>
             <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-              To be the premier global construction and trading conglomerate,
-              recognized for excellence in infrastructure development,
-              technological innovation, and client satisfaction. We aspire to
-              expand our international footprint while maintaining our core
-              values of professionalism, quality craftsmanship, and sustainable
-              business practices across all our operations.
+              To be the world&apos;s most trusted and dynamic integrated
+              conglomerate, setting the global benchmark for excellence in
+              building essential infrastructure, supplying vital materials, and
+              cultivating sustainable resources.
             </p>
           </div>
         </div>
       </section>
-
-      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 ">
+      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16  ">
         <div className="text-start mb-4 md:mb-8">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -347,13 +343,206 @@ function page() {
             className="w-full"
           >
             <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-              Our Business Verticals
+              Our Leadership
             </span>
           </motion.h1>
           {/* Alternative Shorter Introduction */}
 
           <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
-            Three pillars of excellence driving our growth and success
+            Guided by visionary leadership across all business verticals
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+          {/* Chairman */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white p-4 md:p-8 border transition-all duration-300"
+          >
+            <div className="flex flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
+              {/* Image Section - Left */}
+              {/* <div className="flex-shrink-0">
+                <div className="overflow-hidden   shadow-md">
+                  <Image
+                    src="/aboutus/person1.webp"
+                    alt="Mr. Yakkoob Purayil"
+                    width={240}
+                    height={320}
+                    className=" w-40 h-52 
+        sm:w-40 sm:h-52 
+        md:w-40 md:h-52 
+        lg:w-60 lg:h-80 
+   
+        object-cover"
+                  />
+                </div>
+              </div> */}
+
+              {/* Content Section - Right */}
+              <div className="flex-1 text-start">
+                <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                  Mr. Yakkoob Purayil
+                </h3>
+                <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  Chairman & Founder
+                </p>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  A pioneering entrepreneur with over 45 years of experience,
+                  Mr. Yakkoob Purayil is the visionary founder of the entire
+                  Able Group ecosystem. He established the group&apos;s first company
+                  in Qatar in 1996 and has since strategically diversified from
+                  its core trading roots into a multi-sector powerhouse.
+                </p>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  Under his stewardship, the group has successfully expanded
+                  into construction, mass transportation, diesel supply, retail,
+                  and agriculture. His acumen for building relationships and
+                  reinvesting profits into new ventures is the cornerstone of
+                  the group&apos;s sustained growth across India, Qatar, UAE,
+                  Oman, and now Uganda. A respected figure, Mr. Purayil is also
+                  deeply committed to social welfare, regularly contributing to
+                  education, healthcare, and community development.{" "}
+                </p>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white  border transition-all duration-300"
+          >
+            <div className="flex p-4 md:p-8 flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
+              {/* Image Section - Left */}
+              {/* <div className="flex-shrink-0">
+                <div className="overflow-hidden   shadow-md">
+                  <Image
+                    src="/aboutus/person1.webp"
+                    alt="Mr. Yakkoob Purayil"
+                    width={240}
+                    height={320}
+                    className=" w-40 h-52 
+        sm:w-40 sm:h-52 
+        md:w-40 md:h-52 
+        lg:w-60 lg:h-80 
+   
+        object-cover"
+                  
+                  />
+                </div>
+              </div> */}
+
+              {/* Content Section - Right */}
+              <div className="flex-1 text-start">
+                <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                  Mr. Muhammad Basheer
+                </h3>
+                <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  Chief Executive Officer
+                </p>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  Mr. Muhammad Basheer provides strategic leadership and
+                  operational oversight for the group&apos;s trading and supply
+                  divisions. His seasoned management acumen is vital to the
+                  success of Able Group&apos;s hardware and building material
+                  businesses in Qatar and Saudi Arabia.
+                </p>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  He ensures these divisions operate with maximum efficiency and
+                  profitability, managing the supply chain, key client
+                  relationships, and the extensive portfolio of products. His
+                  focus on reliability and quality solidifies our reputation as
+                  a leading supplier in the region.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white  border transition-all duration-300"
+          >
+            <div className="flex p-4 md:p-8 flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
+              {/* Image Section - Left */}
+              {/* <div className="flex-shrink-0">
+                <div className="overflow-hidden   shadow-md">
+                  <Image
+                   src="/aboutus/person1.webp"
+                    alt="Mr. Yakkoob Purayil"
+                    width={240}
+                    height={320}
+                    className=" w-40 h-52 
+        sm:w-40 sm:h-52 
+        md:w-40 md:h-52 
+        lg:w-60 lg:h-80 
+   
+        object-cover "
+                   
+                  />
+                </div>
+              </div> */}
+
+              {/* Content Section - Right */}
+              <div className="flex-1 text-start">
+                <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                  Mr. Ishaque Purayil
+                </h3>
+                <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  Director
+                </p>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  Mr. Ishaque Purayil provides strategic leadership across the
+                  group&apos;s trading and construction divisions. As a
+                  qualified Civil Engineer, he brings technical expertise to
+                  both operational streams.
+                </p>
+                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
+                  For the trading divisions in Qatar and Saudi Arabia, he
+                  oversees the supply chain, product portfolio, and market
+                  expansion for building materials and hardware. In
+                  construction, his engineering background ensures technical
+                  excellence in project execution, from bridges and treatment
+                  plants to roadworks and building construction. His dual role
+                  ensures both business verticals maintain the highest standards
+                  of quality and operational efficiency.{" "}
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16  bg-gray-100">
+        <div className="text-start mb-4 md:mb-8">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full"
+          >
+            <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
+              The Able Group Ecosystem
+            </span>
+          </motion.h1>
+          {/* Alternative Shorter Introduction */}
+
+          <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
+            Under this leadership, the Able Group has evolved into a fully
+            integrated ecosystem, capable of handling every aspect of
+            development:
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -434,167 +623,7 @@ function page() {
       </section>
 
       {/* Leadership Section */}
-      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-gray-100 ">
-        <div className="text-start mb-4 md:mb-8">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeOut",
-            }}
-            viewport={{ once: true, amount: 0.3 }}
-            className="w-full"
-          >
-            <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-              Our Leadership
-            </span>
-          </motion.h1>
-          {/* Alternative Shorter Introduction */}
-
-          <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
-            Guided by visionary leadership across all business verticals
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-          {/* Chairman */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="bg-white p-4 md:p-8 border transition-all duration-300"
-          >
-            <div className="flex flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
-              {/* Image Section - Left */}
-              {/* <div className="flex-shrink-0">
-                <div className="overflow-hidden   shadow-md">
-                  <Image
-                    src="/aboutus/person1.webp"
-                    alt="Mr. Yakkoob Purayil"
-                    width={240}
-                    height={320}
-                    className=" w-40 h-52 
-        sm:w-40 sm:h-52 
-        md:w-40 md:h-52 
-        lg:w-60 lg:h-80 
-   
-        object-cover"
-                  />
-                </div>
-              </div> */}
-
-              {/* Content Section - Right */}
-              <div className="flex-1 text-start">
-                <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
-                  Mr. Yakkoob Purayil
-                </h3>
-                <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
-                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                  Chairman & Founder
-                </p>
-                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                  Visionary leader with 45+ years of experience in construction
-                  and trading across GCC countries and India. Founded Able Group
-                  in 1992 and expanded operations globally.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="bg-white  border transition-all duration-300"
-          >
-            <div className="flex p-4 md:p-8 flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
-              {/* Image Section - Left */}
-              {/* <div className="flex-shrink-0">
-                <div className="overflow-hidden   shadow-md">
-                  <Image
-                    src="/aboutus/person1.webp"
-                    alt="Mr. Yakkoob Purayil"
-                    width={240}
-                    height={320}
-                    className=" w-40 h-52 
-        sm:w-40 sm:h-52 
-        md:w-40 md:h-52 
-        lg:w-60 lg:h-80 
-   
-        object-cover"
-                  
-                  />
-                </div>
-              </div> */}
-
-              {/* Content Section - Right */}
-              <div className="flex-1 text-start">
-                <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
-                  Muhammed Basheer
-                </h3>
-                <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
-                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                  Managing Director & Head of Trading Operations
-                </p>
-                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                  Visionary leader with 45+ years of experience in construction
-                  and trading across GCC countries and India. Founded Able Group
-                  in 1992 and expanded operations globally.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="bg-white  border transition-all duration-300"
-          >
-            <div className="flex p-4 md:p-8 flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
-              {/* Image Section - Left */}
-              {/* <div className="flex-shrink-0">
-                <div className="overflow-hidden   shadow-md">
-                  <Image
-                   src="/aboutus/person1.webp"
-                    alt="Mr. Yakkoob Purayil"
-                    width={240}
-                    height={320}
-                    className=" w-40 h-52 
-        sm:w-40 sm:h-52 
-        md:w-40 md:h-52 
-        lg:w-60 lg:h-80 
-   
-        object-cover "
-                   
-                  />
-                </div>
-              </div> */}
-
-              {/* Content Section - Right */}
-              <div className="flex-1 text-start">
-                <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
-                  Mr. Ishaque Purayil
-                </h3>
-                <div className="w-16 h-0.5 bg-gray-400 mx-0 mb-4"></div>
-                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                  Director - Engineering & Operations
-                </p>
-                <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
-                  Visionary leader with 45+ years of experience in construction
-                  and trading across GCC countries and India. Founded Able Group
-                  in 1992 and expanded operations globally.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Leadership Section */}
-      <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16  ">
+      {/* <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16  ">
         <div className="text-start mb-4 md:mb-8">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -610,20 +639,18 @@ function page() {
               Our Worldwide Operations
             </span>
           </motion.h1>
-          {/* Alternative Shorter Introduction */}
-
+         
           <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
-           Operating across multiple countries with diversified business operations
+            Operating across multiple countries with diversified business
+            operations
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-          </div>
-
-          </section>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8"></div>
+      </section> */}
 
       {/* Global Presence Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-900 to-green-900 text-white">
+      {/* <section className="py-16 bg-gradient-to-r from-blue-900 to-green-900 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <motion.div
@@ -633,7 +660,7 @@ function page() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-               Our Worldwide Operations
+                Our Worldwide Operations
               </h2>
               <p className="text-xl text-blue-200">
                 Operating across multiple countries with diversified business
@@ -661,7 +688,7 @@ function page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       {/* <section className="py-16 bg-gradient-to-r from-blue-600 to-green-600 text-white">

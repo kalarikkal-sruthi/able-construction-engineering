@@ -167,7 +167,7 @@ function OurStrategicPresence() {
                       </span>
                     </a>
                   </motion.div>
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -191,7 +191,7 @@ function OurStrategicPresence() {
                         →
                       </span>
                     </a>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
               </motion.div>
             </div>
@@ -404,7 +404,7 @@ function OurStrategicPresence() {
                       </span>
                     </a>
                   </motion.div>
-                  <motion.div
+                  {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -428,7 +428,7 @@ function OurStrategicPresence() {
                         →
                       </span>
                     </a>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
               </motion.div>
             </div>

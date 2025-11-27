@@ -125,12 +125,12 @@ export default function Header() {
                   </Link>
                 </div>
               </div>
-              <Link
+              {/* <Link
                 href=""
                 className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
               >
                 Future Plans
-              </Link>
+              </Link> */}
               <Link
                 href="/projects"
                 className="text-white   text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
@@ -145,7 +145,7 @@ export default function Header() {
               </Link>
 
               <button
-                className={`bg-transparent border-1 border-white text-white px-2 xl:px-2 py-2 rounded-md relative overflow-hidden group transition-all duration-300 hover:bg-white hover:text-black`}
+                className={`bg-transparent border-1 border-white text-white px-2 xl:px-4 py-2 rounded-full relative overflow-hidden group transition-all duration-300 hover:bg-white hover:text-black`}
               >
                 <span>Get In Touch</span>
                 <span
@@ -305,13 +305,13 @@ export default function Header() {
               </div>
             </div>
 
-            <Link
+            {/* <Link
               href="/future-plans"
               className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
               onClick={() => setIsOpen(false)}
             >
               Future Plans
-            </Link>
+            </Link> */}
 
             <Link
               href="/projects"
