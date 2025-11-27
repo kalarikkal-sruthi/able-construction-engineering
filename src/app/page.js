@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import QualityServices from "@/componets/ui/QualityServices";
+import QualityServices from "@/componets/ui/OurCoreCompetencies";
 import { MdDesignServices } from "react-icons/md"; // Design Development
 import { FiCalendar } from "react-icons/fi"; // Project Planning
 import { GiSofa } from "react-icons/gi"; // Interior Design
@@ -11,6 +11,8 @@ import Blog from "@/componets/ui/OurNextChapter";
 import BannerSlider from "@/componets/ui/BannerSlider";
 import RegisterInterestForm from "@/componets/ui/RegisterInterestForm";
 import OurBranches from "@/componets/ui/OurBranches";
+import OurNextChapter from "@/componets/ui/OurNextChapter";
+import OurCoreCompetencies from "@/componets/ui/OurCoreCompetencies";
 
 export default function Home() {
   return (
@@ -95,7 +97,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-      <QualityServices />
+      <OurCoreCompetencies />
 
       <section className="flex py-8 md:py-20 lg:py-20">
         <div className=" mx-auto mx-auto px-4 sm:px-6 lg:px-16 w-full">
@@ -280,7 +282,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Blog />
+      <OurNextChapter />
       <PremierDevelopments />
         <OurBranches />
       <RegisterInterestForm />

@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 
-function QualityServices() {
+function OurCoreCompetencies() {
   return (
     <section className="py-8 md:py-20 lg:py-20 bg-gray-100">
       <div className=" mx-auto px-4 sm:px-6 lg:px-16">
@@ -568,7 +568,7 @@ function QualityServices() {
           {/* Custom Pagination */}
           <div className="swiper-pagination flex justify-center items-center gap-3 !relative !mt-8 "></div>
         </div>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
@@ -620,11 +620,11 @@ function QualityServices() {
               →
             </span>
           </button>
-        </motion.div>
+        </motion.div> */}
         {/* Optional Navigation Buttons */}
       </div>
     </section>
   );
 }
 
-export default QualityServices;
+export default OurCoreCompetencies;
