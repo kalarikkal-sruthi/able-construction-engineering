@@ -6,7 +6,7 @@ import { MdDesignServices } from "react-icons/md"; // Design Development
 import { FiCalendar } from "react-icons/fi"; // Project Planning
 import { GiSofa } from "react-icons/gi"; // Interior Design
 import PremierDevelopments from "@/componets/ui/PremierDevelopments";
-import Blog from "@/componets/ui/Blog";
+import Blog from "@/componets/ui/OurNextChapter";
 
 import BannerSlider from "@/componets/ui/BannerSlider";
 import RegisterInterestForm from "@/componets/ui/RegisterInterestForm";

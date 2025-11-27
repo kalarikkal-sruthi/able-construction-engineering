@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 
 import { motion } from "framer-motion";
 
-function Blog() {
+function OurNextChapter() {
   return (
     <div>
       {" "}
@@ -79,7 +79,7 @@ function Blog() {
           viewport={{ once: true }}
           className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-10 lg:gap-6 justify-center items-center"
         >
-          <button
+          {/* <button
             className="
             bg-black
     border-1
@@ -123,11 +123,11 @@ function Blog() {
             >
               →
             </span>
-          </button>
+          </button> */}
         </motion.div>
       </section>
     </div>
   );
 }
 
-export default Blog;
+export default OurNextChapter;
