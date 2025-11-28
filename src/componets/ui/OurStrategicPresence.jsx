@@ -4,6 +4,16 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 function OurStrategicPresence() {
+
+  const handleViewProfileQatar = () => {
+    const pdfUrl = '/documents/ABLE GROUP QATAR TRADING.pdf';
+    window.open(pdfUrl, '_blank');
+  };
+
+  const handleViewProfileSaudiArabia = () => {
+    const pdfUrl = '/documents/ABLE GROUP SAUDI ARABIA TRADING.pdf';
+    window.open(pdfUrl, '_blank');
+  };
   return (
     <section className="py-8 md:py-20 lg:py-20 bg-gray-100">
       <div className=" mx-auto px-4 sm:px-6 lg:px-16">
@@ -117,10 +127,8 @@ function OurStrategicPresence() {
                     viewport={{ once: true }}
                     className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
                   >
-                    <a
-                      href="https://www.ablegroupqatar.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      <button onClick={handleViewProfileQatar}
+                      
                       className="
                 bg-black
                 border-1
@@ -165,7 +173,7 @@ function OurStrategicPresence() {
                       >
                         →
                       </span>
-                    </a>
+                    </button>
                   </motion.div>
                   {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -354,10 +362,8 @@ function OurStrategicPresence() {
                     viewport={{ once: true }}
                     className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
                   >
-                    <a
-                      href="https://www.ablemiddleeast.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <button
+                    onClick={handleViewProfileSaudiArabia}
                       className="
                 bg-black
                 border-1
@@ -402,7 +408,7 @@ function OurStrategicPresence() {
                       >
                         →
                       </span>
-                    </a>
+                    </button>
                   </motion.div>
                   {/* <motion.div
                     initial={{ opacity: 0, y: 30 }}
