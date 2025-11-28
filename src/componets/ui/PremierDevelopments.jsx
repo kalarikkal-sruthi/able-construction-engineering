@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import "swiper/css/pagination";import Link from "next/link";
 
 // import required modules
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
@@ -502,7 +502,7 @@ function PremierDevelopments() {
           viewport={{ once: true }}
           className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
         >
-          <button
+         <Link href="projects"> <button
             className="
     bg-black
     border-1
@@ -546,7 +546,7 @@ function PremierDevelopments() {
             >
               →
             </span>
-          </button>
+          </button></Link>
         </motion.div>
         {/* Optional Navigation Buttons */}
       </div>
