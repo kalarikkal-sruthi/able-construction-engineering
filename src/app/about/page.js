@@ -393,9 +393,10 @@ function page() {
                 <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
                   A pioneering entrepreneur with over 45 years of experience,
                   Mr. Yakkoob Purayil is the visionary founder of the entire
-                  Able Group ecosystem. He established the group&apos;s first company
-                  in Qatar in 1996 and has since strategically diversified from
-                  its core trading roots into a multi-sector powerhouse.
+                  Able Group ecosystem. He established the group&apos;s first
+                  company in Qatar in 1996 and has since strategically
+                  diversified from its core trading roots into a multi-sector
+                  powerhouse.
                 </p>
                 <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black">
                   Under his stewardship, the group has successfully expanded

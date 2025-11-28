@@ -10,6 +10,7 @@ export default function Header() {
   const [isOpenDropdown, setIsOpenDropdown] = useState(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -23,6 +24,22 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const scrollToContact = () => {
+    const contactForm = document.getElementById("contactForm");
+    if (contactForm) {
+      contactForm.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      // Add visual indicator
+      contactForm.classList.add("");
+      setTimeout(() => {
+        contactForm.classList.remove("");
+      }, 2000);
+    }
+  };
 
   return (
     <main className="relative m-0 p-0">
@@ -145,6 +162,7 @@ export default function Header() {
               </Link>
 
               <button
+                onClick={scrollToContact}
                 className={`bg-transparent border-1 border-white text-white px-2 xl:px-4 py-2 rounded-full relative overflow-hidden group transition-all duration-300 hover:bg-white hover:text-black`}
               >
                 <span>Get In Touch</span>

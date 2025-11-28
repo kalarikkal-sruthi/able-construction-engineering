@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 import { motion } from "framer-motion";
 
 const RegisterInterestForm = () => {
@@ -26,8 +26,32 @@ const RegisterInterestForm = () => {
     // Handle form submission here
     console.log("Form submitted:", formData);
   };
+
+   useEffect(() => {
+   
+    const fadeInElements = document.querySelectorAll('.fade-in')
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible')
+        }
+      })
+    }, { threshold: 0.1 })
+    
+    fadeInElements.forEach(element => {
+      observer.observe(element)
+    })
+
+    return () => {
+      fadeInElements.forEach(element => {
+        observer.unobserve(element)
+      })
+    }
+  }, [])
+
+ 
   return (
-    <section className="flex py-8 md:py-16 lg:py-20 bg-gradient-to-br from-[#000000ea] to-[#000000f5]">
+    <section   id="contactForm"   style={{ scrollMarginTop: '6rem' }} className="flex py-8 md:py-16 lg:py-20 bg-gradient-to-br from-[#000000ea] to-[#000000f5]">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 w-full max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 xl:gap-16 items-start">
           {/* Content Column - spans 2 of 5 columns on desktop (40%) */}
