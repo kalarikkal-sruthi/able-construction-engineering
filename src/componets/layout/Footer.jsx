@@ -51,7 +51,7 @@ function Footer() {
             <ul className="space-y-2 sm:space-y-3 text-gray-300">
               <li>
                 <a
-                  href="#"
+                  href="/"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   Home
@@ -59,7 +59,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href=""
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   About Us
@@ -102,7 +102,7 @@ function Footer() {
             <ul className="space-y-2 sm:space-y-3 text-gray-300">
               <li>
                 <a
-                  href="#"
+                  href="/construction"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   Construction & Engineering
@@ -110,7 +110,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/trading"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   Commodities Trading
@@ -118,7 +118,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/farming"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   Agricultural Farming
