@@ -243,7 +243,12 @@ function Footer() {
                   Dammam, Kingdom of Saudi Arabia
                   <br />
                   <span className="text-[11px]">Tel: </span> <br />
-                  +966 558 294 88
+             <a 
+  href="tel:+96655829488"
+  className="hover:underline"
+>
+   +966 558 294 88
+</a>     
                 </span>
               </li>
             </ul>
@@ -261,7 +266,11 @@ function Footer() {
                   <br />
                   Karasherry, Kozhikode, Kerala
                   <br />
-                  <span className="text-[11px]">Tel: +91 9526 746402</span>
+                  <span className="text-[11px]">Tel:   </span><br />
+
+                  <a href="tel:+919526746402" className=" hover:underline cursor-pointe">
+  +91 9526 746402
+</a>
                 </span>
               </li>
             </ul>
