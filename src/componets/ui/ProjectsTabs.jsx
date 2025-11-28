@@ -29,7 +29,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/water-park.jpg",
         },
         {
           title: "DS 150 – sewage treatment plant",
@@ -40,7 +40,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/sewage-treatment.jpg",
         },
         {
           title: "New Doha International Airport Project",
@@ -51,7 +51,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/doha-international-airport.jpg",
         },
         {
           title: "Hamad Port",
@@ -62,7 +62,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/hamad-port.jpg",
         },
         {
           title: "Wadi Adai-Al Amerat highway",
@@ -73,7 +73,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/amerat-highway.jpg",
         },
         {
           title: "Tsunami Rehabilitation Developent of Beach",
@@ -84,7 +84,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/tsunami.jpg",
         },
         {
           title: "Construction of sambarkode Bridge across Siruvani River",
@@ -95,7 +95,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/bridge.jpg",
         },
         {
           title: "Renovation of DFO’s Banglow",
@@ -106,7 +106,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/bunglow.jpg",
         },
         {
           title:
@@ -118,7 +118,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/mangalam-dam.jpg",
         },
         {
           title: "Improvements to Mankavu-Kanniparamba road",
@@ -129,7 +129,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/mankavu-road.jpg",
         },
         {
           title:
@@ -141,7 +141,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/harber.jpg",
         },
         {
           title: "F.C. ASE Works reforming the sea wall",
@@ -152,7 +152,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/sea-wall.jpg",
         },
         {
           title:
@@ -164,7 +164,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/kappad.jpg",
         },
         {
           title: "Construction of Sub registrar Office",
@@ -175,7 +175,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/registrar-office.jpg",
         },
         {
           title: "Improvements to Chennalode-Ottupara road",
@@ -186,7 +186,7 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/chennalod.jpg",
         },
         {
           title:
@@ -198,8 +198,21 @@ export default function ProjectsTabs() {
           // amount: "917 million SAR",
           // organization: "KAPSARC",
           // department: "School of Public Policy",
-          image: "",
+          image: "/gallery/thikkodi.jpg",
         },
+         {
+          title:
+            " Thannithode – Thekkumthod Plantation Road",
+          // subtitle: "Formula One Grand Prix",
+          location: "INDIA",
+          // type: "Real Estate",
+          // city: "Abu Dhabi",
+          // amount: "917 million SAR",
+          // organization: "KAPSARC",
+          // department: "School of Public Policy",
+          image: "/gallery/Thannithod-thekkthod-road.jpg",
+        },
+       
       ],
     },
     {
