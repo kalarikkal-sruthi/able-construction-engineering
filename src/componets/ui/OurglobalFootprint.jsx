@@ -2,6 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 function OurglobalFootprint() {
+
+   const handleViewProfile = () => {
+    const pdfUrl = '/documents/ABLE GROUP CONSTRUCTION.pdf';
+    window.open(pdfUrl, '_blank');
+  };
   return (
     <div>
       {" "}
@@ -101,86 +106,6 @@ function OurglobalFootprint() {
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-                    <motion.div
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{
-                        duration: 0.8,
-                        delay: 0.4,
-                        ease: "easeOut",
-                      }}
-                      viewport={{ once: true }}
-                      className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
-                    >
-                      <button
-                        className="
-            bg-black
-            border-1
-            border-black
-            text-white 
-            px-2 
-            xl:px-2
-            py-2 
-            rounded-full 
-            transition-all 
-            duration-300 
-            text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]
-            relative
-            overflow-hidden
-            group
-            hover:-translate-y-0.5
-            flex
-            items-center
-            justify-center
-            min-w-[200px]
-            xl:min-w-[200px]
-          
-          "
-                      >
-                        <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                          View Our Profile
-                        </span>
-                        <span
-                          className="
-              absolute
-              right-4
-              top-1.5
-              opacity-0
-              -translate-x-2
-              group-hover:opacity-100
-              group-hover:translate-x-0
-              transition-all
-              duration-300
-              font-bold
-            "
-                        >
-                          →
-                        </span>
-                      </button>
-                    </motion.div>
-                    {/* <motion.div
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{
-                        duration: 0.8,
-                        delay: 0.4,
-                        ease: "easeOut",
-                      }}
-                      viewport={{ once: true, amount: 0.3 }}
-                      className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
-                    >
-                      <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300    text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]  relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
-                        <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                          Explore Now
-                        </span>
-                        <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
-                          →
-                        </span>
-                      </button>
-                    </motion.div> */}
                   </div>
                 </motion.div>
               </div>
@@ -304,7 +229,7 @@ function OurglobalFootprint() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                  {/* <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
                     <motion.div
                       initial={{ opacity: 0, y: 30 }}
                       whileInView={{ opacity: 1, y: 0 }}
@@ -361,7 +286,7 @@ function OurglobalFootprint() {
                         </span>
                       </button>
                     </motion.div>
-                    {/* <motion.div
+                    <motion.div
                       initial={{ opacity: 0, y: 30 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
@@ -380,8 +305,8 @@ function OurglobalFootprint() {
                           →
                         </span>
                       </button>
-                    </motion.div> */}
-                  </div>
+                    </motion.div>
+                  </div> */}
                 </motion.div>
               </div>
 
@@ -504,7 +429,7 @@ function OurglobalFootprint() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                  {/* <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
                     <motion.div
                       initial={{ opacity: 0, y: 30 }}
                       whileInView={{ opacity: 1, y: 0 }}
@@ -562,7 +487,7 @@ function OurglobalFootprint() {
                         </span>
                       </button>
                     </motion.div>
-                    {/* <motion.div
+                    <motion.div
                       initial={{ opacity: 0, y: 30 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
@@ -581,8 +506,8 @@ function OurglobalFootprint() {
                           →
                         </span>
                       </button>
-                    </motion.div> */}
-                  </div>
+                    </motion.div>
+                  </div> */}
                 </motion.div>
               </div>
 
@@ -629,6 +554,86 @@ function OurglobalFootprint() {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.4,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true }}
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
+            >
+              <button onClick={handleViewProfile}
+                className="
+            bg-black
+            border-1
+            border-black
+            text-white 
+            px-2 
+            xl:px-2
+            py-2 
+            rounded-full 
+            transition-all 
+            duration-300 
+            text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]
+            relative
+            overflow-hidden
+            group
+            hover:-translate-y-0.5
+            flex
+            items-center
+            justify-center
+            min-w-[200px]
+            xl:min-w-[200px]
+          
+          "
+              >
+                <span className="transition-transform duration-300 group-hover:-translate-x-2">
+                  View Our Profile
+                </span>
+                <span
+                  className="
+              absolute
+              right-4
+              top-1.5
+              opacity-0
+              -translate-x-2
+              group-hover:opacity-100
+              group-hover:translate-x-0
+              transition-all
+              duration-300
+              font-bold
+            "
+                >
+                  →
+                </span>
+              </button>
+            </motion.div>
+            {/* <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.4,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
+            >
+              <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300    text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]  relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
+                <span className="transition-transform duration-300 group-hover:-translate-x-2">
+                  Explore Now
+                </span>
+                <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
+                  →
+                </span>
+              </button>
+            </motion.div> */}
           </div>
         </div>
       </section>
