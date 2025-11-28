@@ -50,44 +50,37 @@ function Footer() {
             </div>
             <ul className="space-y-2 sm:space-y-3 text-gray-300">
               <li>
-                <a
+                <Link
                   href="/"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href=""
+                <Link
+                  href="/about"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
+              
               <li>
-                <a
-                  href="#"
-                  className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
-                >
-                  Future Plans
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                <Link
+                  href="/projects"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   Developments
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -101,28 +94,28 @@ function Footer() {
             </div>
             <ul className="space-y-2 sm:space-y-3 text-gray-300">
               <li>
-                <a
+                <Link
                   href="/construction"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   Construction & Engineering
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/trading"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   Commodities Trading
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/farming"
                   className="hover:text-white transition-colors duration-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]"
                 >
                   Agricultural Farming
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
