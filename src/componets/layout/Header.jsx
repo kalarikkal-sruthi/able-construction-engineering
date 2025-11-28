@@ -160,19 +160,18 @@ export default function Header() {
               >
                 Contact Us
               </Link>
-
-              <button
-                onClick={scrollToContact}
-                className={`bg-transparent border-1 border-white text-white px-2 xl:px-4 py-2 rounded-full relative overflow-hidden group transition-all duration-300 hover:bg-white hover:text-black`}
-              >
-                <span>Get In Touch</span>
-                <span
-                  className={`absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300`}
+              <Link href="/contact">
+                <button
+                  className={`bg-transparent border-1 border-white text-white px-2 xl:px-4 py-2 rounded-full relative overflow-hidden group transition-all duration-300 hover:bg-white hover:text-black`}
                 >
-                  →
-                </span>
-              </button>
-
+                  <span>Get In Touch</span>
+                  <span
+                    className={`absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300`}
+                  >
+                    →
+                  </span>
+                </button>
+              </Link>
               <div className="text-gray-300">|</div>
               <div className="flex space-x-3 xl:space-x-4">
                 <Link

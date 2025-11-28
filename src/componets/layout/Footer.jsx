@@ -147,11 +147,16 @@ function Footer() {
                   Kozhikode - 673661
                   <br />
                   Kerala, India <br />
-                  <span className="text-[11px]">
-                    Tel: <br />
-                  </span>{" "}
-                  +91 9656 007755 <br />
-                  +91 9526 746402
+                <span className="text-[11px]">
+  Tel: <br />
+</span>{" "}
+<a href="tel:+919656007755" className="hover:underline">
+  +91 9656 007755
+</a>{" "}
+<br />
+<a href="tel:+919526746402" className="hover:underline">
+  +91 9526 746402
+</a>
                 </span>
               </li>
             </ul>
@@ -174,12 +179,18 @@ function Footer() {
                   <br />
                   Buganda Road I, Uganda */}
                   <br />
-                  <span className="text-[11px]">
-                    Tel: <br />
-                  </span>{" "}
-                  +256 752 405037 <br />
-                  +256 753 049048 <br />
-                  +256 758 010181
+                <span className="text-[11px]">
+  Tel: <br />
+</span> 
+<a href="tel:+256752405037" className="hover:underline">
+  +256 752 405037
+</a> <br />
+<a href="tel:+256753049048" className="hover:underline">
+  +256 753 049048
+</a> <br />
+<a href="tel:+256758010181" className="hover:underline">
+  +256 758 010181
+</a>
                 </span>
               </li>
             </ul>
@@ -201,7 +212,14 @@ function Footer() {
                   <br /> Showroom:Barwa Village, Building - 6, Shop-40842,
                   Wakrah
                   <br />
-                  <span className="text-[11px]">Tel: +974 4415 5355</span>
+                  <span className="text-[11px]">
+                  Tel:  <br />
+                  </span><a 
+  href="tel:+97444155355"
+  className="hover:underline"
+>
+   +974 4415 5355
+</a>
                   {/* <a href="https://www.ablegroupqatar.com/" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:text-blue-100 underline">https://www.ablegroupqatar.com/</a>
                    */}
                 </span>
@@ -224,7 +242,8 @@ function Footer() {
                   <br />
                   Dammam, Kingdom of Saudi Arabia
                   <br />
-                  <span className="text-[11px]">Tel: +966 558 294 888</span>
+                  <span className="text-[11px]">Tel: </span> <br />
+                  +966 558 294 88
                 </span>
               </li>
             </ul>
