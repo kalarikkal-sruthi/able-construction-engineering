@@ -90,7 +90,7 @@ function PremierDevelopments() {
               <div className="group relative  transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
-                    src="/modern developments/Yas Island, Abudhabi.jpg"
+                    src="/modern developments/Yas Island, Abudhabi.webp"
                     alt="Site Excavation"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 "
                   />
@@ -171,7 +171,7 @@ function PremierDevelopments() {
               <div className="group relative   transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
-                    src="/modern developments/waterpark.jpg"
+                    src="/modern developments/waterpark.webp"
                     alt="Land Grading"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -252,7 +252,7 @@ function PremierDevelopments() {
               <div className="group relative   transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
-                    src="/modern developments/sewageplant.jpg"
+                    src="/modern developments/sewageplant.webp"
                     alt="Land Grading"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -332,7 +332,7 @@ function PremierDevelopments() {
               <div className="group relative  transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
-                    src="/modern developments/airport.jpg"
+                    src="/modern developments/airport.webp"
                     alt="Land Grading"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -413,7 +413,7 @@ function PremierDevelopments() {
               <div className="group relative transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
-                    src="/modern developments/hamadport.jpg"
+                    src="/modern developments/hamadport.webp"
                     alt="Land Grading"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
