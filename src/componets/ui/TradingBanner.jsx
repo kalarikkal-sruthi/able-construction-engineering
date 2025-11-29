@@ -10,7 +10,7 @@ function TradingBanner() {
         <div className="absolute inset-0">
           <div className="relative h-full w-full">
             <Image
-              src="/innerpage-trading/trading-banner.jpg"
+              src="/innerpage-trading/trading-banner.webp"
               alt="Construction & Engineering"
               fill
               className="object-cover scale-110 parallax-zoom"

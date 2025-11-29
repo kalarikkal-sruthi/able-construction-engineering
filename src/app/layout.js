@@ -5,6 +5,9 @@ import Footer from "@/componets/layout/Footer";
 export const metadata = {
   title:"Able Group",
   description: "",
+   icons: {
+    icon: '/logo-favicon.png', 
+  },
 };
 
 export default function RootLayout({ children }) {

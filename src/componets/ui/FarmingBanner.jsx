@@ -10,7 +10,7 @@ function FarmingBanner() {
         <div className="absolute inset-0">
           <div className="relative h-full w-full">
             <Image
-              src="/innerpage-farming/crops-field.jpg"
+              src="/innerpage-farming/crops-field.webp"
               alt="Construction & Engineering"
               fill
               className="object-cover scale-110 parallax-zoom"

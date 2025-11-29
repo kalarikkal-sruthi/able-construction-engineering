@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Switzer:wght@400;500;600;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
@@ -6,23 +5,6 @@
   --font-body: "Inter", sans-serif;
   color-scheme: light dark;
 }
-
-/* @font-face {
-  font-family: 'Switzer';
-  src: url('/fonts/Switzer-Regular.woff2') format('woff2'),
-       url('/fonts/Switzer-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Switzer';
-  src: url('/fonts/Switzer-Extrabold.ttf') format('woff2'),
-       url('/fonts/Switzer-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-} */
 
 
 
@@ -32,8 +14,7 @@ body {
   font-optical-sizing: auto;
   ;
   font-style: normal;
-  /* background-color: #f9fafb;
-  color: #111827; */
+
   margin: 0;
 }
 
@@ -67,10 +48,7 @@ body {
 
 .swiper-slide {
   text-align: center;
-  /* font-size: 18px; */
-  /* background: #444; */
 
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,21 +98,10 @@ body {
   }
 }
 
-/* .swiper-pagination-bullet-active{
- 
-    background: black !important;
- 
-}
-.swiper-pagination-bullet{
-  width: 8px !important;
-  height: 8px !important;
-  margin-right: 10px;
-} */
 
-/* Custom pagination dots */
 .swiper-pagination-bullet {
 
-  /* opacity: 0.5; */
+
   width: 10px;
   height: 10px;
 
@@ -147,7 +114,7 @@ body {
   height: 12px;
 }
 
-/* Position the pagination */
+
 .swiper-pagination {
   bottom: 30px !important;
 }
@@ -156,7 +123,7 @@ body {
   margin: 6px !important;
 }
 
-/* Custom styles for better form appearance */
+
 select {
   appearance: none;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
@@ -170,7 +137,7 @@ select:focus {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23fbbf24' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
 }
 
-/* Remove default number input arrows */
+
 input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
