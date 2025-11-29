@@ -93,7 +93,7 @@ function OurCoreCompetencies() {
           >
             {/* Slide 1 */}
             <SwiperSlide>
-              <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+              <div className="group relative overflow-hidden  hover:shadow-2xl transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/expertise/jcb.jpg"
@@ -172,7 +172,7 @@ function OurCoreCompetencies() {
 
             {/* Slide 2 */}
             <SwiperSlide>
-              <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+              <div className="group relative overflow-hidden  hover:shadow-2xl transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/expertise/rcc.jpg"
@@ -251,7 +251,7 @@ function OurCoreCompetencies() {
 
             {/* Slide 3 */}
             <SwiperSlide>
-              <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+              <div className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/expertise/road.jpg"
@@ -330,7 +330,7 @@ function OurCoreCompetencies() {
 
             {/* Slide 4 */}
             <SwiperSlide>
-              <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+              <div className="group relative overflow-hidden  hover:shadow-2xl transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/expertise/pipeline.jpg"
@@ -408,7 +408,7 @@ function OurCoreCompetencies() {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+              <div className="group relative overflow-hidden  hover:shadow-2xl transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/expertise/drainage.jpg"
@@ -485,7 +485,7 @@ function OurCoreCompetencies() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="group relative overflow-hidden rounded-xl hover:shadow-2xl transition-all duration-500 h-full bg-white">
+              <div className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src="/expertise/bridge.jpg"

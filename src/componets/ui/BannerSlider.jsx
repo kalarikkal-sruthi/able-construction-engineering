@@ -45,7 +45,7 @@ function BannerSlider() {
       crossOrigin="anonymous"
       disablePictureInPicture
       className="absolute top-0 left-0 w-full h-full object-cover z-10"
-      poster="/main-banner-video-image.png" 
+      // poster="/main-banner-video-image.png" 
     >
               <source src="/hero1.mp4" type="video/mp4" />
               <source src="/hero1.mp4" type="video/webm" />
