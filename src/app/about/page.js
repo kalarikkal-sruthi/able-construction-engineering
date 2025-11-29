@@ -8,7 +8,7 @@ function page() {
     {
       title: " Global Construction & Engineering",
       icon: "🏗️",
-      image: "/apartments/construction1.jpg",
+      image: "/apartments/construction1.webp",
       description:
         "We are builders of landmark infrastructure, including bridges, highways, airports, and residential apartments, with a proven track record in India, UAE, Qatar, and Oman. Our new venture, P.Y. Able Construction & Engineering Co. Ltd., marks our strategic entry into Uganda's building sector.",
       highlights: [
@@ -21,7 +21,7 @@ function page() {
     {
       title: "  Strategic Trading & Supply",
       icon: "📦",
-      image: "/apartments/trading1.jpg",
+      image: "/apartments/trading1.webp",
       description:
         "Through Able Group W.L.L. in Qatar and Able Middle East Trading Company in Saudi Arabia, we are a leading supplier of hardware, tools, and building materials. Our division, Al Marwa Diesel Trading L.L.C., is a key provider of diesel to the industrial and commercial sectors.",
       highlights: [
@@ -34,7 +34,7 @@ function page() {
     {
       title: "Sustainable Agribusiness",
       icon: "🌱",
-      image: "/apartments/agriculture.jpg",
+      image: "/apartments/agriculture.webp",
       description:
         "Our commitment to the land is realized through Able Farms Pvt. Ltd. in Wayanad, India, focusing on integrated farming. We are now expanding this expertise into Uganda with a focus on premium coffee cultivation for export.",
       highlights: [
@@ -484,7 +484,7 @@ function page() {
               className="relative h-100 md:h-150 overflow-hidden group "
             >
               <img
-                src={vertical.image || `/apartments/apartment${index + 1}.jpg`}
+                src={vertical.image || `/apartments/apartment${index + 1}.webp`}
                 alt={vertical.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
