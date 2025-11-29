@@ -1,15 +1,14 @@
-"use client"
+"use client";
 import React from "react";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Instagram, Facebook, Linkedin, Globe } from "lucide-react";
 function Footer() {
-    const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  // Show button when page is scrolled down
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 300) {
@@ -19,21 +18,20 @@ function Footer() {
       }
     };
 
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   return (
     <footer className="bg-[#000] text-white relative px-4 py-8 sm:px-6 sm:py-12 md:py-16 lg:px-8 lg:py-20 xl:px-12 xl:py-24">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 xl:gap-14 mb-8">
-        {/* --- Column 1: Company Info - Full width on mobile, 1st column on desktop --- */}
         <div className="lg:col-span-1 text-start sm:text-left">
           <Link href="/" className="inline-block">
             <div className="mb-1 sm:mb-2 lg:mb-3">
@@ -64,9 +62,7 @@ function Footer() {
           </ul>
         </div>
 
-        {/* --- Columns 2 & 3: Quick Links & New Launches - 2 columns on mobile, 2nd & 3rd columns on desktop --- */}
         <div className="grid grid-cols-2 gap-8 lg:col-span-2 lg:grid-cols-2">
-          {/* Quick Links */}
           <div className="text-start sm:text-left">
             <div className="mb-1 sm:mb-2 lg:mb-3">
               <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
@@ -90,7 +86,7 @@ function Footer() {
                   About Us
                 </Link>
               </li>
-              
+
               <li>
                 <Link
                   href="/projects"
@@ -110,7 +106,6 @@ function Footer() {
             </ul>
           </div>
 
-          {/* New Launches */}
           <div className="text-start sm:text-left">
             <div className="mb-1 sm:mb-2 lg:mb-3">
               <span className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-light font-sans tracking-wide drop-shadow-lg leading-none-2">
@@ -147,7 +142,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* --- Column 4: Address - Full width on mobile, 4th column on desktop --- */}
       <div className="border-t border-t-1 border-gray-400 text-start">
         <div className="mb-4 mt-8 ">
           <span className="text-2xl sm:text-3xl lg:text-3xl xl:text-3xl font-light font-sans tracking-wide drop-shadow-lg">
@@ -156,10 +150,8 @@ function Footer() {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
-          {/* Head Office Section */}
           <div className="flex-1">
             <ul className="space-y-3 sm:space-y-4 text-gray-300">
-              {/* Head Office */}
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] mt-1 flex-shrink-0" />
                 <span className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-left">
@@ -172,22 +164,21 @@ function Footer() {
                   Kozhikode - 673661
                   <br />
                   Kerala, India <br />
-                <span className="text-[11px]">
-  Tel: <br />
-</span>{" "}
-<a href="tel:+919656007755" className="hover:underline">
-  +91 9656 007755
-</a>{" "}
-<br />
-<a href="tel:+919526746402" className="hover:underline">
-  +91 9526 746402
-</a>
+                  <span className="text-[11px]">
+                    Tel: <br />
+                  </span>{" "}
+                  <a href="tel:+919656007755" className="hover:underline">
+                    +91 9656 007755
+                  </a>{" "}
+                  <br />
+                  <a href="tel:+919526746402" className="hover:underline">
+                    +91 9526 746402
+                  </a>
                 </span>
               </li>
             </ul>
           </div>
 
-          {/* Associated Companies Section */}
           <div className="flex-1">
             <ul className="space-y-3 sm:space-y-4 text-gray-300">
               <li className="flex items-start gap-3">
@@ -199,23 +190,21 @@ function Footer() {
                   Nakasero ||| Buganda Road <br />
                   P.O.Box 168327 <br />
                   Kampala Uganda
-                  {/* <br />
-                 Central Kampala, Nisbasero III
                   <br />
-                  Buganda Road I, Uganda */}
+                  <span className="text-[11px]">
+                    Tel: <br />
+                  </span>
+                  <a href="tel:+256752405037" className="hover:underline">
+                    +256 752 405037
+                  </a>{" "}
                   <br />
-                <span className="text-[11px]">
-  Tel: <br />
-</span> 
-<a href="tel:+256752405037" className="hover:underline">
-  +256 752 405037
-</a> <br />
-<a href="tel:+256753049048" className="hover:underline">
-  +256 753 049048
-</a> <br />
-<a href="tel:+256758010181" className="hover:underline">
-  +256 758 010181
-</a>
+                  <a href="tel:+256753049048" className="hover:underline">
+                    +256 753 049048
+                  </a>{" "}
+                  <br />
+                  <a href="tel:+256758010181" className="hover:underline">
+                    +256 758 010181
+                  </a>
                 </span>
               </li>
             </ul>
@@ -238,15 +227,11 @@ function Footer() {
                   Wakrah
                   <br />
                   <span className="text-[11px]">
-                  Tel:  <br />
-                  </span><a 
-  href="tel:+97444155355"
-  className="hover:underline"
->
-   +974 4415 5355
-</a>
-                  {/* <a href="https://www.ablegroupqatar.com/" target="_blank" rel="noopener noreferrer" class="text-blue-300 hover:text-blue-100 underline">https://www.ablegroupqatar.com/</a>
-                   */}
+                    Tel: <br />
+                  </span>
+                  <a href="tel:+97444155355" className="hover:underline">
+                    +974 4415 5355
+                  </a>
                 </span>
               </li>
             </ul>
@@ -268,12 +253,9 @@ function Footer() {
                   Dammam, Kingdom of Saudi Arabia
                   <br />
                   <span className="text-[11px]">Tel: </span> <br />
-             <a 
-  href="tel:+96655829488"
-  className="hover:underline"
->
-   +966 558 294 88
-</a>     
+                  <a href="tel:+96655829488" className="hover:underline">
+                    +966 558 294 88
+                  </a>
                 </span>
               </li>
             </ul>
@@ -291,11 +273,14 @@ function Footer() {
                   <br />
                   Karasherry, Kozhikode, Kerala
                   <br />
-                  <span className="text-[11px]">Tel:   </span><br />
-
-                  <a href="tel:+919526746402" className=" hover:underline cursor-pointe">
-  +91 9526 746402
-</a>
+                  <span className="text-[11px]">Tel: </span>
+                  <br />
+                  <a
+                    href="tel:+919526746402"
+                    className=" hover:underline cursor-pointe"
+                  >
+                    +91 9526 746402
+                  </a>
                 </span>
               </li>
             </ul>
@@ -305,19 +290,12 @@ function Footer() {
 
       <div className="border-t border-t-1 border-gray-400 mt-8 sm:mt-12 ">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-2 text-white text-[10px] sm:text-[11px]">
-          {/* Copyright + Legal Links in one line */}
           <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 ">
             <span className="sm-pt-4">
               ©{new Date().getFullYear()} AbleGroup By Construction Company.
             </span>
-            {/* <span className="hidden sm:inline">|</span>
-      <span className="hover:text-white cursor-pointer transition-colors">Terms of Use</span>
-      <span className="hover:text-white cursor-pointer transition-colors">Privacy Notice</span>
-      <span className="hover:text-white cursor-pointer transition-colors">Trustine Cookies</span>
-      <span className="hover:text-white cursor-pointer transition-colors">Quality Policy</span> */}
           </div>
 
-          {/* Social/Icon Area */}
           <div className="flex gap-1 text-xs">
             <div className="flex justify-start  py-4 sm-py-2 space-x-4 sm:space-x-6 ">
               <Link
@@ -369,23 +347,27 @@ function Footer() {
           </svg>
         </a>
 
-           {/* Scroll to Top Button (Conditional) */}
-      {isVisible && (
-        <button
-          onClick={scrollToTop}
-          className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 mt-2 bg-black hover:bg-gray-700 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
-          aria-label="Scroll to top"
-        >
-          <svg
-            className="w-6 h-6 sm:w-6 sm:h-6 text-white"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+        {isVisible && (
+          <button
+            onClick={scrollToTop}
+            className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 mt-2 bg-black hover:bg-gray-700 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
+            aria-label="Scroll to top"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-          </svg>
-        </button>
-      )}
+            <svg
+              className="w-6 h-6 sm:w-6 sm:h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 15l7-7 7 7"
+              />
+            </svg>
+          </button>
+        )}
       </div>
     </footer>
   );
