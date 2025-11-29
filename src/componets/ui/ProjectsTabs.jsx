@@ -14,63 +14,63 @@ export default function ProjectsTabs() {
 
           location: "UNITED ARAB EMIRATES",
 
-          image: "/modern developments/Yas Island, Abudhabi.jpg",
+          image: "/modern developments/Yas Island, Abudhabi.webp",
         },
         {
           title: "Project ‘N’ – Water Park at Yas Island",
 
           location: "UNITED ARAB EMIRATES",
 
-          image: "/gallery/water-park.jpg",
+          image: "/gallery/water-park.webp",
         },
         {
           title: "DS 150 – sewage treatment plant",
 
           location: "UNITED ARAB EMIRATES",
 
-          image: "/gallery/sewage-treatment.jpg",
+          image: "/gallery/sewage-treatment.webp",
         },
         {
           title: "New Doha International Airport Project",
 
           location: "QATAR",
 
-          image: "/gallery/doha-international-airport.jpg",
+          image: "/gallery/doha-international-airport.webp",
         },
         {
           title: "Hamad Port",
 
           location: "QATAR",
 
-          image: "/gallery/hamad-port.jpg",
+          image: "/gallery/hamad-port.webp",
         },
         {
           title: "Wadi Adai-Al Amerat highway",
 
           location: "OMAN",
 
-          image: "/gallery/amerat-highway.jpg",
+          image: "/gallery/amerat-highway.webp",
         },
         {
           title: "Tsunami Rehabilitation Developent of Beach",
 
           location: "INDIA",
 
-          image: "/gallery/tsunami.jpg",
+          image: "/gallery/tsunami.webp",
         },
         {
           title: "Construction of sambarkode Bridge across Siruvani River",
 
           location: "INDIA",
 
-          image: "/gallery/bridge.jpg",
+          image: "/gallery/bridge.webp",
         },
         {
           title: "Renovation of DFO’s Banglow",
 
           location: "INDIA",
 
-          image: "/gallery/bunglow.jpg",
+          image: "/gallery/bunglow.webp",
         },
         {
           title:
@@ -78,14 +78,14 @@ export default function ProjectsTabs() {
 
           location: "INDIA",
 
-          image: "/gallery/mangalam-dam.jpg",
+          image: "/gallery/mangalam-dam.webp",
         },
         {
           title: "Improvements to Mankavu-Kanniparamba road",
 
           location: "INDIA",
 
-          image: "/gallery/mankavu-road.jpg",
+          image: "/gallery/mankavu-road.webp",
         },
         {
           title:
@@ -93,14 +93,14 @@ export default function ProjectsTabs() {
 
           location: "INDIA",
 
-          image: "/gallery/harber.jpg",
+          image: "/gallery/harber.webp",
         },
         {
           title: "F.C. ASE Works reforming the sea wall",
 
           location: "INDIA",
 
-          image: "/gallery/sea-wall.jpg",
+          image: "/gallery/sea-wall.webp",
         },
         {
           title:
@@ -108,21 +108,21 @@ export default function ProjectsTabs() {
 
           location: "INDIA",
 
-          image: "/gallery/kappad.jpg",
+          image: "/gallery/kappad.webp",
         },
         {
           title: "Construction of Sub registrar Office",
 
           location: "INDIA",
 
-          image: "/gallery/registrar-office.jpg",
+          image: "/gallery/registrar-office.webp",
         },
         {
           title: "Improvements to Chennalode-Ottupara road",
 
           location: "INDIA",
 
-          image: "/gallery/chennalod.jpg",
+          image: "/gallery/chennalod.webp",
         },
         {
           title:
@@ -130,14 +130,14 @@ export default function ProjectsTabs() {
 
           location: "INDIA",
 
-          image: "/gallery/thikkodi.jpg",
+          image: "/gallery/thikkodi.webp",
         },
         {
           title: " Thannithode – Thekkumthod Plantation Road",
 
           location: "INDIA",
 
-          image: "/gallery/Thannithod-thekkthod-road.jpg",
+          image: "/gallery/Thannithod-thekkthod-road.webp",
         },
       ],
     },
