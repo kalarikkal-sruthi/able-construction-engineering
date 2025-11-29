@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import StatsGrid from "@/componets/ui/Counter";
 import TwoByTwoStatsGrid from "@/componets/ui/Counter";
 function page() {
   const businessVerticals = [
@@ -47,7 +46,6 @@ function page() {
     },
   ];
 
-  // Construction Services data
   const constructionServices = [
     {
       title: "Earth Works",
@@ -111,7 +109,6 @@ function page() {
     },
   ];
 
-  // Countries data
   const countries = [
     {
       name: "United Arab Emirates",
@@ -144,7 +141,7 @@ function page() {
         <div className="absolute inset-0">
           <div className="relative h-full w-full">
             <Image
-              src="/aboutus/meeting.jpg"
+              src="/aboutus/meeting.webp"
               alt="Able Group - Construction, Trading & Agribusiness"
               fill
               className="object-cover scale-110 parallax-zoom"
@@ -154,7 +151,6 @@ function page() {
           </div>
         </div>
 
-        {/* Main Content */}
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center justify-center">
           <div className="max-w-6xl w-full">
             <div className="relative z-30 text-center text-white px-4 sm:px-6 lg:px-8 xl:px-12 max-w-6xl mx-auto">
@@ -177,7 +173,6 @@ function page() {
                 </div>
               </motion.h1>
 
-              {/* Stats Badges */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -225,7 +220,6 @@ function page() {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -252,7 +246,6 @@ function page() {
         <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/50 to-transparent z-0"></div>
       </section>
 
-      {/* Introduction Section */}
       <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <motion.div
@@ -346,7 +339,6 @@ function page() {
               Our Leadership
             </span>
           </motion.h1>
-          {/* Alternative Shorter Introduction */}
 
           <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
             Guided by visionary leadership across all business verticals
@@ -354,7 +346,6 @@ function page() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-          {/* Chairman */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -363,25 +354,6 @@ function page() {
             className="bg-white p-4 md:p-8 border transition-all duration-300"
           >
             <div className="flex flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
-              {/* Image Section - Left */}
-              {/* <div className="flex-shrink-0">
-                <div className="overflow-hidden   shadow-md">
-                  <Image
-                    src="/aboutus/person1.webp"
-                    alt="Mr. Yakkoob Purayil"
-                    width={240}
-                    height={320}
-                    className=" w-40 h-52 
-        sm:w-40 sm:h-52 
-        md:w-40 md:h-52 
-        lg:w-60 lg:h-80 
-   
-        object-cover"
-                  />
-                </div>
-              </div> */}
-
-              {/* Content Section - Right */}
               <div className="flex-1 text-start">
                 <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
                   Mr. Yakkoob Purayil
@@ -419,26 +391,6 @@ function page() {
             className="bg-white  border transition-all duration-300"
           >
             <div className="flex p-4 md:p-8 flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
-              {/* Image Section - Left */}
-              {/* <div className="flex-shrink-0">
-                <div className="overflow-hidden   shadow-md">
-                  <Image
-                    src="/aboutus/person1.webp"
-                    alt="Mr. Yakkoob Purayil"
-                    width={240}
-                    height={320}
-                    className=" w-40 h-52 
-        sm:w-40 sm:h-52 
-        md:w-40 md:h-52 
-        lg:w-60 lg:h-80 
-   
-        object-cover"
-                  
-                  />
-                </div>
-              </div> */}
-
-              {/* Content Section - Right */}
               <div className="flex-1 text-start">
                 <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
                   Mr. Muhammad Basheer
@@ -472,26 +424,6 @@ function page() {
             className="bg-white  border transition-all duration-300"
           >
             <div className="flex p-4 md:p-8 flex-row md:flex-col lg:flex-col xl:flex-row items-center gap-4 md:gap-6">
-              {/* Image Section - Left */}
-              {/* <div className="flex-shrink-0">
-                <div className="overflow-hidden   shadow-md">
-                  <Image
-                   src="/aboutus/person1.webp"
-                    alt="Mr. Yakkoob Purayil"
-                    width={240}
-                    height={320}
-                    className=" w-40 h-52 
-        sm:w-40 sm:h-52 
-        md:w-40 md:h-52 
-        lg:w-60 lg:h-80 
-   
-        object-cover "
-                   
-                  />
-                </div>
-              </div> */}
-
-              {/* Content Section - Right */}
               <div className="flex-1 text-start">
                 <h3 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide  leading-none-2 text-black">
                   Mr. Ishaque Purayil
@@ -538,7 +470,6 @@ function page() {
               The Able Group Ecosystem
             </span>
           </motion.h1>
-          {/* Alternative Shorter Introduction */}
 
           <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
             Under this leadership, the Able Group has evolved into a fully
@@ -552,17 +483,14 @@ function page() {
               key={vertical.title}
               className="relative h-100 md:h-150 overflow-hidden group "
             >
-              {/* Image */}
               <img
                 src={vertical.image || `/apartments/apartment${index + 1}.jpg`}
                 alt={vertical.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
 
-              {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-80 group-hover:opacity-70 transition-all duration-500"></div>
 
-              {/* Content */}
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -570,7 +498,6 @@ function page() {
                 className="absolute inset-0 flex items-end justify-center p-6"
               >
                 <div className="text-white text-start w-full">
-                  {/* Number */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -580,7 +507,6 @@ function page() {
                     0{index + 1}
                   </motion.div>
 
-                  {/* Title */}
                   <motion.h3
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -590,7 +516,6 @@ function page() {
                     {vertical.title}
                   </motion.h3>
 
-                  {/* Description */}
                   <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -600,7 +525,6 @@ function page() {
                     {vertical.description}
                   </motion.p>
 
-                  {/* Highlights */}
                   <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -622,112 +546,6 @@ function page() {
           ))}
         </div>
       </section>
-
-      {/* Leadership Section */}
-      {/* <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16  ">
-        <div className="text-start mb-4 md:mb-8">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeOut",
-            }}
-            viewport={{ once: true, amount: 0.3 }}
-            className="w-full"
-          >
-            <span className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black ">
-              Our Worldwide Operations
-            </span>
-          </motion.h1>
-         
-          <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
-            Operating across multiple countries with diversified business
-            operations
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8"></div>
-      </section> */}
-
-      {/* Global Presence Section */}
-      {/* <section className="py-16 bg-gradient-to-r from-blue-900 to-green-900 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Our Worldwide Operations
-              </h2>
-              <p className="text-xl text-blue-200">
-                Operating across multiple countries with diversified business
-                operations
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {countries.map((country, index) => (
-                <motion.div
-                  key={country.name}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center"
-                >
-                  <div className="text-3xl mb-3">{country.flag}</div>
-                  <h3 className="text-xl font-bold mb-2">{country.name}</h3>
-                  <p className="text-blue-200">{country.companies} Companies</p>
-                  <p className="text-sm text-gray-300 mt-2">
-                    Since {country.established}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* CTA Section */}
-      {/* <section className="py-16 bg-gradient-to-r from-blue-600 to-green-600 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-3xl md:text-4xl font-bold mb-6"
-            >
-              Ready to Start Your Project?
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl mb-8 text-blue-100"
-            >
-              Whether it's construction, trading, or agriculture - let's build
-              success together.
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-            >
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
-                Contact Us
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors duration-300">
-                View Our Work
-              </button>
-            </motion.div>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 }
