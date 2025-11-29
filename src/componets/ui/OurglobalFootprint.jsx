@@ -109,7 +109,7 @@ function OurglobalFootprint() {
 
               <div className="lg:col-span-2 relative h-64 sm:h-72 md:h-80 lg:h-auto min-h-[300px]">
                 <Image
-                  src="/innerpage-construction/india.jpg"
+                  src="/innerpage-construction/india.webp"
                   alt="Strategic Infrastructure Development in India"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 66vw, 50vw"
@@ -214,7 +214,7 @@ function OurglobalFootprint() {
 
               <div className="lg:col-span-2 relative h-64 sm:h-72 md:h-80 lg:h-auto min-h-[300px]">
                 <Image
-                  src="/innerpage-construction/unganda.jpg"
+                  src="/innerpage-construction/unganda.webp"
                   alt="Urban Development and Construction in Uganda"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 66vw, 50vw"
@@ -331,7 +331,7 @@ function OurglobalFootprint() {
 
               <div className="lg:col-span-2 relative h-64 sm:h-72 md:h-80 lg:h-auto min-h-[300px]">
                 <Image
-                  src="/innerpage-construction/middle-east.jpg"
+                  src="/innerpage-construction/middle-east.webp"
                   alt="Mega-Projects in Middle East: Airports, Formula 1 Tracks, and Strategic Infrastructure"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 66vw, 50vw"
