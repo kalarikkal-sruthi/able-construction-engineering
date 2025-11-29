@@ -7,6 +7,7 @@ import RegisterInterestForm from "@/componets/ui/RegisterInterestForm";
 import OurBranches from "@/componets/ui/OurBranches";
 import OurNextChapter from "@/componets/ui/OurNextChapter";
 import OurCoreCompetencies from "@/componets/ui/OurCoreCompetencies";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -142,7 +143,7 @@ export default function Home() {
               </div>
 
               <div className="flex space-x-4 ">
-                <button
+           <Link href="/about">    <button
                   className="
                              bg-black
     border-1
@@ -176,7 +177,7 @@ export default function Home() {
                   <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
                     →
                   </span>
-                </button>
+                </button></Link> 
               </div>
             </div>
 
