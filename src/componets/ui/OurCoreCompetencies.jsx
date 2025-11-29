@@ -95,7 +95,7 @@ return (
                </div>
             </div>
          </SwiperSlide>
-         {/* Slide 2 */}
+    
          <SwiperSlide>
             <div className="group relative overflow-hidden  hover:shadow-2xl transition-all duration-500 h-full bg-white">
                <div className="aspect-square overflow-hidden">

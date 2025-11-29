@@ -173,9 +173,9 @@ export default function Home() {
                   <span className="transition-transform duration-300 group-hover:-translate-x-2">
                     Learn More
                   </span>
-                 <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-  →
-</span>
+                  <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                    →
+                  </span>
                 </button>
               </div>
             </div>
@@ -183,15 +183,14 @@ export default function Home() {
             <div className="relative">
               <div className="relative h-[600px] overflow-hidden">
                 <Image
-                  src="/businessmeet.jpg" 
+                  src="/businessmeet-one.webp"
                   alt="Luxury Apartment Interior"
                   fill
                   className="object-cover"
                   priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
                 />
               </div>
-
-             
             </div>
           </div>
         </div>

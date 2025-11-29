@@ -429,22 +429,9 @@ export default function Header() {
                 <span className="transition-transform duration-300 group-hover:-translate-x-2">
                   Get In Touch
                 </span>
-                <span
-                  className="
-            absolute
-            right-4
-            top-1.5
-            opacity-0
-            -translate-x-2
-            group-hover:opacity-100
-            group-hover:translate-x-0
-            transition-all
-            duration-300
-            font-bold
-          "
-                >
-                  →
-                </span>
+               <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+  →
+</span>
               </button>
             </div>
           </nav>

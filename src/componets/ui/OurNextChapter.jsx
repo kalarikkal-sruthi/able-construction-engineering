@@ -42,7 +42,7 @@ function OurNextChapter() {
               {" "}
               {/* Fixed height */}
               <img
-                src="/apartments/apartment6.jpg"
+                src="/apartments/apartment6.webp"
                 alt="Description 1"
                 className="w-full h-full object-cover "
               />
@@ -53,7 +53,7 @@ function OurNextChapter() {
               {" "}
               {/* Same fixed height */}
               <img
-                src="/apartments/apartment4.jpg"
+                src="/apartments/apartment4.webp"
                 alt="Description 2"
                 className="w-full h-full object-cover "
               />
@@ -64,7 +64,7 @@ function OurNextChapter() {
               {" "}
               {/* Same fixed height */}
               <img
-                src="/apartments/apartment3.jpg"
+                src="/apartments/apartment3.webp"
                 alt="Description 3"
                 className="w-full h-full object-cover "
               />
