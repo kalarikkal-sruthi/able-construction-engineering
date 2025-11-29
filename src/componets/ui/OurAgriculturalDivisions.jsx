@@ -34,23 +34,20 @@ function OurAgriculturalDivisions() {
           </motion.h1>
         </div>
         <div className="relative py-16 md:py-24 lg:py-32 overflow-hidden w-full left-1/2 -translate-x-1/2">
-          {/* Background Image with Split Overlay */}
           <div className="absolute inset-0 z-0 w-screen left-1/2 -translate-x-1/2">
             <Image
-              src="/innerpage-farming/farming.jpg"
+              src="/innerpage-farming/farming.webp"
               alt="Background"
               fill
               className="object-cover"
               priority
             />
-            {/* Split overlay - dark left, lighter right */}
+
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
           </div>
 
-          {/* Text on Black Background Area */}
           <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left Side - Text on Dark Background */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -68,31 +65,26 @@ function OurAgriculturalDivisions() {
                 </p>
               </motion.div>
 
-              {/* Right Side - Your Existing Speech Bubble */}
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
-              >
-                {/* Your existing speech bubble content */}
-              </motion.div>
+              ></motion.div>
             </div>
           </div>
         </div>
         <div className="pt-8 md:pt-20 lg:pt-20 ">
-          {/* Mobile: Horizontal Scroll */}
           <div className="flex md:grid md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0">
             <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-              {/* Reduced image height for mobile */}
               <div className="relative h-48 md:h-64 w-full">
                 <img
-                  src="/innerpage-farming/animal-husbandry.jpg"
+                  src="/innerpage-farming/animal-husbandry.webp"
                   alt="Animal Husbandry"
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Fixed height content section */}
+
               <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-48 xl:36 flex flex-col justify-center">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -115,7 +107,7 @@ function OurAgriculturalDivisions() {
             <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
-                  src="/innerpage-farming/vegetable-cultivation.jpg"
+                  src="/innerpage-farming/vegetable-cultivation.webp"
                   alt="Organic Vegetable Cultivation"
                   className="w-full h-full object-cover"
                 />
@@ -143,7 +135,7 @@ function OurAgriculturalDivisions() {
             <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
-                  src="/innerpage-farming/crop-production.jpg"
+                  src="/innerpage-farming/crop-production.webp"
                   alt="Staple Crop Production"
                   className="w-full h-full object-cover"
                 />
@@ -187,7 +179,6 @@ function OurAgriculturalDivisions() {
       </section>
       <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 bg-gray-100">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Content Section */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -211,7 +202,7 @@ function OurAgriculturalDivisions() {
               professionally managed coffee plantation.
             </p>
           </motion.div>
-          {/* Image Section */}
+
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -220,7 +211,7 @@ function OurAgriculturalDivisions() {
             className="relative h-64 lg:h-96 overflow-hidden"
           >
             <Image
-              src="/innerpage-farming/coffee-cultivation.jpg"
+              src="/innerpage-farming/coffee-cultivation.webp"
               alt="Coffee Cultivation"
               fill
               className="object-cover"
@@ -230,18 +221,16 @@ function OurAgriculturalDivisions() {
         </div>
 
         <div className="pt-8 md:pt-20 lg:pt-20 ">
-          {/* Mobile: Horizontal Scroll */}
           <div className="flex md:grid md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 overflow-x-auto md:overflow-visible pb-4 md:pb-0">
             <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
-              {/* Reduced image height for mobile */}
               <div className="relative h-48 md:h-64 w-full">
                 <img
-                  src="/innerpage-farming/focus-quality.jpg"
+                  src="/innerpage-farming/focus-quality.webp"
                   alt="Animal Husbandry"
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Fixed height content section */}
+
               <div className="bg-black px-4 md:px-6 py-4 h-35 sm:h-40 md:h-60 lg:h-auto flex flex-col justify-center">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -264,7 +253,7 @@ function OurAgriculturalDivisions() {
             <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
-                  src="/innerpage-farming/sustainable-and-ethical-practice.jpg"
+                  src="/innerpage-farming/sustainable-and-ethical-practice.webp"
                   alt="Organic Vegetable Cultivation"
                   className="w-full h-full object-cover"
                 />
@@ -292,7 +281,7 @@ function OurAgriculturalDivisions() {
             <div className="flex-none w-65 md:w-auto md:flex-1 bg-white overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="relative h-48 md:h-64 w-full">
                 <img
-                  src="/innerpage-farming/export-oriented.jpg"
+                  src="/innerpage-farming/export-oriented.webp"
                   alt="Staple Crop Production"
                   className="w-full h-full object-cover"
                 />
@@ -337,7 +326,6 @@ function OurAgriculturalDivisions() {
 
       <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Content Section */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -361,7 +349,7 @@ function OurAgriculturalDivisions() {
               hands.
             </p>
           </motion.div>
-          {/* Image Section */}
+
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -370,7 +358,7 @@ function OurAgriculturalDivisions() {
             className="relative h-64 lg:h-96 overflow-hidden"
           >
             <Image
-              src="/innerpage-farming/philosophy-commitment.jpg"
+              src="/innerpage-farming/philosophy-commitment.webp"
               alt="Coffee Cultivation"
               fill
               className="object-cover"
@@ -379,51 +367,6 @@ function OurAgriculturalDivisions() {
           </motion.div>
         </div>
       </section>
-      {/* <section className="py-8 md:py-20 lg:py-20 px-4 sm:px-6 lg:px-16 ">
-        <div className="relative py-16 md:py-24 lg:py-32 overflow-hidden w-full left-1/2 -translate-x-1/2 ">
-          <div className="absolute inset-0 z-0 w-screen left-1/2 -translate-x-1/2">
-            <Image
-              src="/innerpage-farming/philosophy-commitment.jpg"
-              alt="Background"
-              fill
-              className="object-cover"
-              priority
-            />
-
-            <div className="absolute inset-0 bg-black/40"></div>
-          </div>
-
-          <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-              }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="text-center"
-            >
-              <div className="mb-3 sm:mb-4 lg:mb-6">
-                <span className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight text-white">
-                  Our Philosophy & Commitment
-                </span>
-              </div>
-
-              <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block   mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-white">
-                We operate on the principle that responsible business and
-                environmental stewardship go hand-in-hand. Our farms are managed
-                to enhance biodiversity, conserve water, and ensure the
-                well-being of the communities we operate in. We are committed to
-                delivering not just produce, but trust and quality from our
-                lands to your hands.
-              </p>
-            </motion.div>
-          </div>
-
-
-        </div>
-      </section> */}
     </div>
   );
 }

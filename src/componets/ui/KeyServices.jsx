@@ -1,11 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  Truck,
-  Building,
-  Route, // Changed from Road to Route
-  Warehouse,
-} from "lucide-react";
+import { Truck, Building, Route, Warehouse } from "lucide-react";
 import Image from "next/image";
 
 function KeyServices() {
@@ -16,24 +11,23 @@ function KeyServices() {
       description:
         "Mass excavation, embankment filling, and site development for any scale, powered by our fleet of CAT and Komatsu equipment.",
       shade: "bg-gray-900",
-      backgroundImage:"/innerpage-construction/earth-work.webp",
-    }
-,
+      backgroundImage: "/innerpage-construction/earth-work.webp",
+    },
     {
       icon: Warehouse,
       title: "RCC & Civil Structures",
       description:
         "Specialists in complex structures including bridges, box culverts, sewage treatment plants, water tanks, and airport infrastructures.",
       shade: "bg-gray-800",
-       backgroundImage:"/innerpage-construction/rcc.webp"
+      backgroundImage: "/innerpage-construction/rcc.webp",
     },
     {
       icon: Route,
       title: "Road Works",
       description:
         "Building and improving highways and carriageways, from sub-base preparation to final surface finishing, often in joint ventures with top asphalt specialists.",
-      shade: "bg-gray-700", 
-      backgroundImage:"/innerpage-construction/road-work.webp"
+      shade: "bg-gray-700",
+      backgroundImage: "/innerpage-construction/road-work.webp",
     },
     {
       icon: Building,
@@ -41,14 +35,13 @@ function KeyServices() {
       description:
         "Constructing robust and modern apartments, commercial buildings, and government facilities, with a strong ongoing presence in Uganda and India.",
       shade: "bg-gray-600",
-       backgroundImage:"/innerpage-construction/building-construction.webp"
+      backgroundImage: "/innerpage-construction/building-construction.webp",
     },
   ];
   return (
     <div>
       <section className="py-8 md:py-20 lg:py-20  ">
         <div className=" mx-auto px-4 sm:px-6 lg:px-16">
-          
           <div className="text-start mb-4 md:mb-8">
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
@@ -64,7 +57,6 @@ function KeyServices() {
                 Our Key Services
               </span>
             </motion.h1>
-           
 
             <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
               Explore a curated collection of our landmark projects. Each one is
@@ -72,40 +64,38 @@ function KeyServices() {
               we deliver, setting new standards in every market we enter.
             </p>
           </div>
-        
+
           <div className="flex flex-col justify-start space-y-6 lg:col-span-2">
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, index) => (
-<div
-  key={index}
-  className="relative rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:transform hover:-translate-y-2 text-white h-full"
->
-  
-  <div className="absolute inset-0">
-    <Image
-      src={service.backgroundImage}
-      alt={service.title}
-      fill
-      className="object-cover group-hover:scale-105 transition-transform duration-500"
-    />
-    <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/60 to-black/70 group-hover:from-gray-900/70 group-hover:via-gray-900/50 group-hover:to-black/60 transition-all duration-300"></div>
-  </div>
+                <div
+                  key={index}
+                  className="relative rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:transform hover:-translate-y-2 text-white h-full"
+                >
+                  <div className="absolute inset-0">
+                    <Image
+                      src={service.backgroundImage}
+                      alt={service.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-gray-900/60 to-black/70 group-hover:from-gray-900/70 group-hover:via-gray-900/50 group-hover:to-black/60 transition-all duration-300"></div>
+                  </div>
 
-  
-  <div className="relative z-10  px-4 sm:px-4 lg:px-6 xl:px-6 py-6 sm:py-10 lg:py-14 xl:py-14 flex flex-col items-center text-center h-full justify-center">
-    <div className="w-8 sm:w-10 lg:w-14 xl:w-14  h-8 sm:h-10 lg:h-14 xl:h-14 bg-black bg-opacity-20 rounded-full flex items-center justify-center  group-hover:bg-black group-hover:bg-opacity-30 group-hover:scale-110 transition-all duration-300">
-      <service.icon className="w-4 sm:w-5 lg:w-6 xl:w-6 h-4 sm:h-5 lg:h-6 xl:h-6 text-white mb-0" />
-    </div>
+                  <div className="relative z-10  px-4 sm:px-4 lg:px-6 xl:px-6 py-6 sm:py-10 lg:py-14 xl:py-14 flex flex-col items-center text-center h-full justify-center">
+                    <div className="w-8 sm:w-10 lg:w-14 xl:w-14  h-8 sm:h-10 lg:h-14 xl:h-14 bg-black bg-opacity-20 rounded-full flex items-center justify-center  group-hover:bg-black group-hover:bg-opacity-30 group-hover:scale-110 transition-all duration-300">
+                      <service.icon className="w-4 sm:w-5 lg:w-6 xl:w-6 h-4 sm:h-5 lg:h-6 xl:h-6 text-white mb-0" />
+                    </div>
 
-    <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold text-white mb-0">
-      {service.title}
-    </h3>
+                    <h3 className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-semibold text-white mb-0">
+                      {service.title}
+                    </h3>
 
-    <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] text-white text-opacity-90 leading-relaxed">
-      {service.description}
-    </p>
-  </div>
-</div>
+                    <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] text-white text-opacity-90 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>

@@ -49,13 +49,17 @@ body {
 }
 
 @keyframes parallaxZoom {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1.1);
   }
+
   50% {
     transform: scale(1.20);
   }
 }
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -180,6 +184,7 @@ input[type='number'] {
 .clip-path-triangle {
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
+
 video {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -188,18 +193,22 @@ video {
   -webkit-perspective: 1000;
   perspective: 1000;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s, transform 0.6s;
 }
+
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
-button{
+
+button {
   cursor: pointer;
 }

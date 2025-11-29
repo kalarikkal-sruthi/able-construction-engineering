@@ -43,7 +43,6 @@ function OurTradingNetwork() {
   return (
     <section className="py-8 md:py-20 lg:py-20 ">
       <div className="mx-auto px-4 sm:px-6 lg:px-16">
-        {/* Optional Section Heading */}
         <div className="text-start mb-4 md:mb-8">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -68,22 +67,21 @@ function OurTradingNetwork() {
           </p>
         </div>
 
-        {/* Full Width Horizontal Scrolling Swiper */}
         <div className="relative w-full ">
           <Swiper
             slidesPerView={5}
             spaceBetween={20}
             loop={true}
-            speed={3000} // Reduced speed
+            speed={3000}
             autoplay={{
-              delay: 1, // Small delay
+              delay: 1,
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
               reverseDirection: false,
             }}
-            freeMode={false} // Disable free mode
+            freeMode={false}
             centeredSlides={false}
-            modules={[Autoplay]} // Remove FreeMode
+            modules={[Autoplay]}
             className="branches-swiper"
             breakpoints={{
               320: {
@@ -127,7 +125,6 @@ function OurTradingNetwork() {
                     />
                   </div>
 
-                  {/* Branch Info Overlay - Always Visible */}
                   <div className="absolute bottom-0 left-0 right-0 to-transparent p-2 text-black">
                     <p className="text-[10px] sm:text-[10px] lg:text-[12px] xl:text-[12x] opacity-90 flex items-center gap-1">
                       <svg

@@ -32,8 +32,6 @@ export default function Header() {
         behavior: "smooth",
         block: "start",
       });
-
-      // Add visual indicator
       contactForm.classList.add("");
       setTimeout(() => {
         contactForm.classList.remove("");
@@ -54,7 +52,6 @@ export default function Header() {
           }`}
         >
           <div className="flex justify-between items-center ">
-            {/* Logo and Title */}
             <div className="flex items-center space-x-2 sm:space-x-3">
               <div className="font-bold text-blue-600 flex items-center">
                 <Link
@@ -70,20 +67,15 @@ export default function Header() {
                   />
                 </Link>
               </div>
-              {/* Able Group Title with Highlighted Head */}
               <div className="sm:block">
                 <div className="flex items-baseline">
                   <span className="text-1xl sm:text-2xl lg:text-2xl xl:text-2xl font-bold  text-white font-sans tracking-wide  leading-none-2">
                     ABLE GROUP
                   </span>
-                  {/* <span className="text-lg sm:text-xl lg:text-3xl font-bold  text-black  px-2 py-1 rounded-l-md">
-                    ABLE GROUP
-                  </span> */}
                 </div>
               </div>
             </div>
 
-            {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6 mr-4">
               <Link
                 href="/"
@@ -108,8 +100,6 @@ export default function Header() {
                 >
                   Our Businesses ▼
                 </Link>
-
-                {/* Dropdown Menu */}
                 <div
                   className={`
         absolute top-full left-0 bg-black min-w-[200px] 
@@ -142,12 +132,6 @@ export default function Header() {
                   </Link>
                 </div>
               </div>
-              {/* <Link
-                href=""
-                className="text-white text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
-              >
-                Future Plans
-              </Link> */}
               <Link
                 href="/projects"
                 className="text-white   text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] transition-colors"
@@ -204,8 +188,6 @@ export default function Header() {
                 </Link>
               </div>
             </nav>
-
-            {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="lg:hidden text-white hover:text-black focus:outline-none mr-2 p-2"
@@ -214,8 +196,6 @@ export default function Header() {
             </button>
           </div>
         </div>
-
-        {/* Mobile Dropdown */}
         <div
           className={`
   lg:hidden 
@@ -236,7 +216,6 @@ export default function Header() {
   ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}
 `}
         >
-          {/* Close Button */}
           <button
             onClick={() => setIsOpen(false)}
             className="absolute top-4 right-4 p-2 text-gray-500 hover:text-gray-700 transition-colors"
@@ -272,8 +251,6 @@ export default function Header() {
             >
               About Us
             </Link>
-
-            {/* Mobile Dropdown for Our Businesses */}
             <div className="">
               <button
                 onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
@@ -287,8 +264,6 @@ export default function Header() {
                   }`}
                 />
               </button>
-
-              {/* Mobile Dropdown Menu */}
               <div
                 className={`
                 overflow-hidden transition-all duration-300 ease-in-out
@@ -322,15 +297,6 @@ export default function Header() {
                 </Link>
               </div>
             </div>
-
-            {/* <Link
-              href="/future-plans"
-              className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Future Plans
-            </Link> */}
-
             <Link
               href="/projects"
               className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
@@ -346,25 +312,6 @@ export default function Header() {
             >
               Contact Us
             </Link>
-            {/* {[
-              "Home",
-              "About",
-              "Business Plan",
-              "Our Works",
-              "Company Profile",
-              "Contact",
-            ].map((label) => (
-              <Link
-                key={label}
-                href={`/${label.toLowerCase().replace(" ", "-")}`}
-                className="text-gray-800 hover:text-[#251f77] py-4  transition-all duration-200 font-medium text-left  border-gray-100 hover:translate-x-2"
-                onClick={() => setIsOpen(false)}
-              >
-                {label}
-              </Link>
-            ))} */}
-
-            {/* Social Icons in Mobile Menu */}
             <div className="flex justify-start  py-4  space-x-4 sm:space-x-6 ">
               <Link
                 href="https://www.instagram.com/"
@@ -395,43 +342,14 @@ export default function Header() {
                 <Globe className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
             </div>
-
-            {/* Animated Button */}
             <div className="pt-3 sm:pt-4 md:pt-6">
-              <button
-                className="
-          bg-black
-    border-1
-    border-black
-    text-white 
-          px-2 
-          xl:px-2
-          py-2 
-          rounded-full 
-         
-          transition-all 
-          duration-300 
-          text-sm 
-          xl:text-base
-          relative
-          overflow-hidden
-          group
-          
-        
-          hover:-translate-y-0.5
-          flex
-          items-center
-          justify-center
-          min-w-[135px]
-          xl:min-w-[135px]
-        "
-              >
+              <button className="bg-black border-1 border-black text-white px-2 xl:px-2 py-2 rounded-md relative group overflow-hidden">
                 <span className="transition-transform duration-300 group-hover:-translate-x-2">
                   Get In Touch
                 </span>
-               <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-  →
-</span>
+                <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                  →
+                </span>
               </button>
             </div>
           </nav>

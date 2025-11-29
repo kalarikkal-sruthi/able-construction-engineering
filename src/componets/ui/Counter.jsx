@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "@react-spring/web";
-
-// Counter Component
 const Counter = ({ value, suffix = "", duration = 2000 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -21,8 +19,7 @@ const Counter = ({ value, suffix = "", duration = 2000 }) => {
   return (
     <animated.span ref={ref} className="font-bold">
       {number.to((n) => {
-        if (suffix === "+")
-          return `${Math.round(n).toLocaleString()}${suffix}`;
+        if (suffix === "+") return `${Math.round(n).toLocaleString()}${suffix}`;
         return `${Math.round(n).toLocaleString()}${suffix}`;
       })}
     </animated.span>
@@ -66,145 +63,111 @@ const TwoByTwoStatsGrid = () => {
   ];
 
   return (
-    
-      <div className="">
-        {/* First Row - 2 Columns */}
+    <div className="">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-2 md:grid-cols-2 gap-6 mb-6"
+      >
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-2 gap-6 mb-6"
+          className="bg-white  p-4 md:p-8 transition-all duration-300 relative"
         >
-          {/* Media Spend */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="bg-white  p-4 md:p-8 transition-all duration-300 relative"
-          >
-            {/* Main vertical line container */}
-            <div className="flex">
-              {/* Vertical line */}
-              <div className="w-0.5 bg-gray-300  mr-2  md:mr-4 mt-1"></div>
+          <div className="flex">
+            <div className="w-0.5 bg-gray-300  mr-2  md:mr-4 mt-1"></div>
 
-              <div className="flex-1">
-                {/* Title at top */}
-                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8 text-black ">
-                 Years Experience
-                </h4>
+            <div className="flex-1">
+              <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8 text-black ">
+                Years Experience
+              </h4>
 
-                {/* Much larger Number */}
-                <h3 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black">
-                  <Counter value={20} suffix="+" />
-                </h3>
-
-                {/* Paragraph content */}
-              </div>
+              <h3 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                <Counter value={20} suffix="+" />
+              </h3>
             </div>
-          </motion.div>
+          </div>
+        </motion.div>
 
-          {/* Customers */}
-            <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="bg-white p-4 md:p-8 transition-all duration-300 relative"
-          >
-            {/* Main vertical line container */}
-            <div className="flex">
-              {/* Vertical line */}
-              <div className="w-0.5 bg-gray-300  mr-2  md:mr-4  mt-1"></div>
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="bg-white p-4 md:p-8 transition-all duration-300 relative"
+        >
+          <div className="flex">
+            <div className="w-0.5 bg-gray-300  mr-2  md:mr-4  mt-1"></div>
 
-              <div className="flex-1">
-                {/* Title at top */}
-                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8 text-black ">
+            <div className="flex-1">
+              <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8 text-black ">
                 Countries
-                </h4>
+              </h4>
 
-                {/* Much larger Number */}
-                <h3 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black">
-                  <Counter value={4}  />
-                </h3>
-
-                {/* Paragraph content */}
-              </div>
+              <h3 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                <Counter value={4} />
+              </h3>
             </div>
-          </motion.div>
-
+          </div>
         </motion.div>
+      </motion.div>
 
-        {/* Second Row - 2 Columns */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-2 md:grid-cols-2 gap-6"
+      >
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-2 gap-6"
+          className="bg-white p-4 md:p-8 transition-all duration-300 relative"
         >
-          {/* Certifications */}
-            <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="bg-white p-4 md:p-8 transition-all duration-300 relative"
-          >
-            {/* Main vertical line container */}
-            <div className="flex">
-              {/* Vertical line */}
-              <div className="w-0.5 bg-gray-300 mr-2  md:mr-4  mt-1"></div>
+          <div className="flex">
+            <div className="w-0.5 bg-gray-300 mr-2  md:mr-4  mt-1"></div>
 
-              <div className="flex-1">
-                {/* Title at top */}
-                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8  text-black ">
-                  Business Verticals
-                </h4>
+            <div className="flex-1">
+              <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8  text-black ">
+                Business Verticals
+              </h4>
 
-                {/* Much larger Number */}
-                <h3 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black">
-                  <Counter value={3}  />
-                </h3>
-
-                {/* Paragraph content */}
-              </div>
+              <h3 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                <Counter value={3} />
+              </h3>
             </div>
-          </motion.div>
-
-
-            <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="bg-white p-4 md:p-8 transition-all duration-300 relative"
-          >
-            {/* Main vertical line container */}
-            <div className="flex">
-              {/* Vertical line */}
-              <div className="w-0.5 bg-gray-300  mr-2  md:mr-4  mt-1"></div>
-
-              <div className="flex-1">
-                {/* Title at top */}
-                <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8 text-black ">
-                Projects Completed
-                </h4>
-
-                {/* Much larger Number */}
-                <h3 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black">
-                  <Counter value={300} suffix="+" />
-                </h3>
-
-                {/* Paragraph content */}
-              </div>
-            </div>
-          </motion.div>
-
+          </div>
         </motion.div>
-      </div>
-  
+
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="bg-white p-4 md:p-8 transition-all duration-300 relative"
+        >
+          <div className="flex">
+            <div className="w-0.5 bg-gray-300  mr-2  md:mr-4  mt-1"></div>
+
+            <div className="flex-1">
+              <h4 className=" text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] font-semibold mb-4 md:mb-8 text-black ">
+                Projects Completed
+              </h4>
+
+              <h3 className="text-2xl sm:text-2xl lg:text-4xl xl:text-4xl font-light font-sans tracking-wide  leading-none-2 text-black">
+                <Counter value={300} suffix="+" />
+              </h3>
+            </div>
+          </div>
+        </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

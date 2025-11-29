@@ -1,16 +1,13 @@
 "use client";
 import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Image from "next/image";
 import Link from "next/link";
-// import required modules
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 
 function BannerSlider() {
@@ -35,18 +32,18 @@ function BannerSlider() {
       >
         <SwiperSlide>
           <div className="relative h-screen w-full flex items-center justify-center">
-             <video
-      // ref={videoRef}
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="auto"
-      crossOrigin="anonymous"
-      disablePictureInPicture
-      className="absolute top-0 left-0 w-full h-full object-cover z-10"
-      // poster="/main-banner-video-image.png" 
-    >
+            <video
+              // ref={videoRef}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              crossOrigin="anonymous"
+              disablePictureInPicture
+              className="absolute top-0 left-0 w-full h-full object-cover z-10"
+              poster="/main-banner-video-image.png"
+            >
               <source src="/hero1.mp4" type="video/mp4" />
               <source src="/hero1.mp4" type="video/webm" />
               <Image
@@ -59,7 +56,7 @@ function BannerSlider() {
 
             <div className="absolute top-0 left-0 h-full bg-black z-20"></div>
 
-            {/* Centered Text Content */}
+            
             <div className="relative z-30 text-center text-white px-4 sm:px-6 lg:px-8 xl:px-12 max-w-4xl mx-auto">
               <motion.h1
                 initial={{ opacity: 0, y: -20 }}
@@ -110,15 +107,15 @@ function BannerSlider() {
         <SwiperSlide>
           <div className="relative h-screen w-full flex items-center justify-center">
             <video
-                autoPlay
-      muted
-      loop
-      playsInline
-      preload="auto"
-      crossOrigin="anonymous"
-      disablePictureInPicture
-      className="absolute top-0 left-0 w-full h-full object-cover z-10"
-      poster="/main-banner-video-image.png"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              crossOrigin="anonymous"
+              disablePictureInPicture
+              className="absolute top-0 left-0 w-full h-full object-cover z-10"
+              poster="/main-banner-video-image.png"
             >
               <source src="/hero2.mp4" type="video/mp4" />
               <source src="/hero2.mp4" type="video/webm" />
@@ -132,7 +129,7 @@ function BannerSlider() {
 
             <div className="absolute top-0 left-0 h-full bg-black z-20"></div>
 
-            {/* Centered Text Content */}
+           
             <div className="relative z-30 text-center text-white px-4 sm:px-6 lg:px-8 xl:px-12 max-w-4xl mx-auto">
               <motion.h1
                 initial={{ opacity: 0, y: -20 }}
@@ -184,15 +181,15 @@ function BannerSlider() {
         <SwiperSlide>
           <div className="relative h-screen w-full flex items-center justify-center">
             <video
-               autoPlay
-      muted
-      loop
-      playsInline
-      preload="auto"
-      crossOrigin="anonymous"
-      disablePictureInPicture
-      className="absolute top-0 left-0 w-full h-full object-cover z-10"
-      poster="/main-banner-video-image.png"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              crossOrigin="anonymous"
+              disablePictureInPicture
+              className="absolute top-0 left-0 w-full h-full object-cover z-10"
+              poster="/main-banner-video-image.png"
             >
               <source src="/hero3.mp4" type="video/mp4" />
               <source src="/hero3.mp4" type="video/webm" />
@@ -206,7 +203,7 @@ function BannerSlider() {
 
             <div className="absolute top-0 left-0 h-full bg-black z-20"></div>
 
-            {/* Centered Text Content */}
+           
             <div className="relative z-30 text-center text-white px-4 sm:px-6 lg:px-8 xl:px-12 max-w-4xl mx-auto">
               <motion.h1
                 initial={{ opacity: 0, y: -20 }}
@@ -225,11 +222,11 @@ function BannerSlider() {
                 </div>
                 <div className="mb-3 sm:mb-4 lg:mb-6">
                   <span className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                   From Farm to Market: India & Uganda
+                    From Farm to Market: India & Uganda
                   </span>
                 </div>
               </motion.h1>
- <Link href="/farming" className="">
+              <Link href="/farming" className="">
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -251,7 +248,6 @@ function BannerSlider() {
                   </button>
                 </motion.div>
               </Link>
-          
             </div>
           </div>
         </SwiperSlide>

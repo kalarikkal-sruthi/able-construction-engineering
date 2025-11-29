@@ -20,7 +20,6 @@ function FarmingBanner() {
           </div>
         </div>
 
-        {/* Rest of your content remains the same */}
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center justify-center">
           <div className="max-w-4xl">
             <div className="relative z-30 text-center text-white px-4 sm:px-6 lg:px-8 xl:px-12 max-w-4xl mx-auto">
@@ -93,8 +92,6 @@ function FarmingBanner() {
           </div>
         </div>
       </section>
-
-  
     </div>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState ,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const RegisterInterestForm = () => {
@@ -23,38 +23,41 @@ const RegisterInterestForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
     console.log("Form submitted:", formData);
   };
 
-   useEffect(() => {
-   
-    const fadeInElements = document.querySelectorAll('.fade-in')
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible')
-        }
-      })
-    }, { threshold: 0.1 })
-    
-    fadeInElements.forEach(element => {
-      observer.observe(element)
-    })
+  useEffect(() => {
+    const fadeInElements = document.querySelectorAll(".fade-in");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    fadeInElements.forEach((element) => {
+      observer.observe(element);
+    });
 
     return () => {
-      fadeInElements.forEach(element => {
-        observer.unobserve(element)
-      })
-    }
-  }, [])
+      fadeInElements.forEach((element) => {
+        observer.unobserve(element);
+      });
+    };
+  }, []);
 
- 
   return (
-    <section   id="contactForm"   style={{ scrollMarginTop: '6rem' }} className="flex py-8 md:py-16 lg:py-20 bg-gradient-to-br from-[#000000ea] to-[#000000f5]">
+    <section
+      id="contactForm"
+      style={{ scrollMarginTop: "6rem" }}
+      className="flex py-8 md:py-16 lg:py-20 bg-gradient-to-br from-[#000000ea] to-[#000000f5]"
+    >
       <div className="mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 w-full max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 xl:gap-16 items-start">
-          {/* Content Column - spans 2 of 5 columns on desktop (40%) */}
           <div className="flex flex-col justify-start space-y-6 lg:col-span-2">
             <div className="space-y-4 my-0">
               <div className="text-start">
@@ -76,7 +79,6 @@ const RegisterInterestForm = () => {
               </div>
             </div>
 
-            {/* Optional description text */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -91,11 +93,9 @@ const RegisterInterestForm = () => {
             </motion.div>
           </div>
 
-          {/* Form Column - spans 3 of 5 columns on desktop (60%) */}
           <div className="relative lg:col-span-3">
             <div className="relative overflow-hidden">
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
-                {/* Row 1: First Name & Last Name */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                   <div className="space-y-2">
                     <input
@@ -124,7 +124,6 @@ const RegisterInterestForm = () => {
                   </div>
                 </div>
 
-                {/* Row 2: Mobile Number & Email */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                   <div className="space-y-2">
                     <input
@@ -153,7 +152,6 @@ const RegisterInterestForm = () => {
                   </div>
                 </div>
 
-                {/* Row 3: Company Name & Message */}
                 <div className="space-y-3 sm:space-y-4">
                   <div className="space-y-2">
                     <input
@@ -180,7 +178,6 @@ const RegisterInterestForm = () => {
                   </div>
                 </div>
 
-                {/* Submit Button */}
                 <div className="">
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}

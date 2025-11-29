@@ -12,7 +12,6 @@ export default function page() {
       <ConstructionBanner />
       <KeyServices />
       <OurglobalFootprint />
-  
     </main>
   );
 }

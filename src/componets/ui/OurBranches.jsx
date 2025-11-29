@@ -11,50 +11,49 @@ function OurBranches() {
       id: 1,
       image: "/branches/able-group-logo-1.webp",
       name: "Dubai Main Branch",
-      location: "Qatar"
+      location: "Qatar",
     },
     {
       id: 2,
       image: "/branches/able-group-logo-2.webp",
       name: "Abu Dhabi Office",
-      location: "Qatar"
+      location: "Qatar",
     },
     {
       id: 3,
       image: "/branches/able-group-logo-3.webp",
       name: "Doha Center",
-      location: "Qatar"
+      location: "Qatar",
     },
     {
       id: 4,
       image: "/branches/able-group-logo-4.webp",
       name: "Riyadh Branch",
-      location: "UAE"
+      location: "UAE",
     },
     {
       id: 5,
       image: "/branches/able-group-logo-5.webp",
       name: "Muscat Office",
-      location: "Saudi Arabia"
+      location: "Saudi Arabia",
     },
     {
       id: 6,
       image: "/branches/able-group-logo-6.webp",
       name: "Manama Center",
-      location: "India wayanad "
+      location: "India wayanad ",
     },
     {
       id: 7,
       image: "/branches/able-group-logo-7.webp",
       name: "Kuwait City",
-      location: "India, kozhikkode, Mukkam"
+      location: "India, kozhikkode, Mukkam",
     },
   ];
 
   return (
     <section className="py-8 md:py-20 lg:py-20 bg-gray-100">
       <div className="mx-auto px-4 sm:px-6 lg:px-16">
-        {/* Optional Section Heading */}
         <div className="text-start mb-4 md:mb-8">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -72,27 +71,28 @@ function OurBranches() {
           </motion.h1>
 
           <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16px] block mt-2 md:mt-3 sm:mt-2 mb-4 md:mb-8 sm:mb-3 text-black">
-            Building on three decades of global excellence, we are now shaping the future of development. 
-            Explore our pioneering projects in construction, sustainable agriculture, and strategic trading—where innovation meets legacy, and new standards are born.
+            Building on three decades of global excellence, we are now shaping
+            the future of development. Explore our pioneering projects in
+            construction, sustainable agriculture, and strategic trading—where
+            innovation meets legacy, and new standards are born.
           </p>
         </div>
 
-        {/* Full Width Horizontal Scrolling Swiper */}
         <div className="relative w-full">
           <Swiper
             slidesPerView={6}
             spaceBetween={20}
             loop={true}
-            speed={3000} // Reduced speed
+            speed={3000}
             autoplay={{
-              delay: 1, // Small delay
+              delay: 1,
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
               reverseDirection: false,
             }}
-            freeMode={false} // Disable free mode
+            freeMode={false}
             centeredSlides={false}
-            modules={[Autoplay]} // Remove FreeMode
+            modules={[Autoplay]}
             className="branches-swiper"
             breakpoints={{
               320: {
@@ -135,8 +135,7 @@ function OurBranches() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  
-                  {/* Branch Info Overlay - Always Visible */}
+
                   <div className="absolute bottom-0 left-0 right-0 to-transparent p-2 text-black">
                     <p className="text-[10px] sm:text-[10px] lg:text-[12px] xl:text-[12x] opacity-90 flex items-center gap-1">
                       <svg

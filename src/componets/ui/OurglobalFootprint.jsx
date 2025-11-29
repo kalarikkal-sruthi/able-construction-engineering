@@ -2,17 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 function OurglobalFootprint() {
-
-   const handleViewProfile = () => {
-    const pdfUrl = '/documents/ABLE GROUP CONSTRUCTION.pdf';
-    window.open(pdfUrl, '_blank');
+  const handleViewProfile = () => {
+    const pdfUrl = "/documents/ABLE GROUP CONSTRUCTION.pdf";
+    window.open(pdfUrl, "_blank");
   };
   return (
     <div>
       {" "}
       <section className="py-8 md:py-20 lg:py-20 bg-gray-100">
         <div className=" mx-auto px-4 sm:px-6 lg:px-16">
-          {/* Optional Section Heading */}
           <div className="text-start mb-4 md:mb-8">
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
@@ -36,7 +34,6 @@ function OurglobalFootprint() {
           </div>
           <div className="bg-white   overflow-hidden border border-gray-100 mb-4 md:mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-3">
-              {/* Text Panel - Executive Dark Theme */}
               <div className="lg:col-span-1 p-8 sm:p-10 lg:p-12 bg-gradient-to-br from-gray-900 to-gray-800">
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
@@ -110,7 +107,6 @@ function OurglobalFootprint() {
                 </motion.div>
               </div>
 
-              {/* Image Panel with Overlay Stats */}
               <div className="lg:col-span-2 relative h-64 sm:h-72 md:h-80 lg:h-auto min-h-[300px]">
                 <Image
                   src="/innerpage-construction/india.jpg"
@@ -122,7 +118,6 @@ function OurglobalFootprint() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent lg:bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
 
-                {/* Floating Stats Grid */}
                 <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
                   <div className="bg-[#0000006b]  p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
@@ -142,7 +137,6 @@ function OurglobalFootprint() {
                   </div>
                 </div>
 
-                {/* Bottom Content */}
                 <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:left-8 text-white">
                   <div className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-80 font-light">
                     Transforming Infrastructure Since 1998
@@ -157,7 +151,6 @@ function OurglobalFootprint() {
 
           <div className="bg-white shadow-2xl overflow-hidden border border-gray-100 mb-4 md:mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-3">
-              {/* Text Panel - Executive Dark Theme */}
               <div className="lg:col-span-1 p-8 sm:p-10 lg:p-12 bg-gradient-to-br from-gray-900 to-gray-800">
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
@@ -188,9 +181,6 @@ function OurglobalFootprint() {
                         Residential Construction
                       </span>
                       <div className="flex items-center space-x-2">
-                        {/* <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
-                          60+ Projects
-                        </span> */}
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
@@ -199,9 +189,6 @@ function OurglobalFootprint() {
                         Commercial Development
                       </span>
                       <div className="flex items-center space-x-2">
-                        {/* <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
-                          35+ Structures
-                        </span> */}
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
@@ -210,9 +197,6 @@ function OurglobalFootprint() {
                         Urban Infrastructure
                       </span>
                       <div className="flex items-center space-x-2">
-                        {/* <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
-                          25+ Projects
-                        </span> */}
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
@@ -221,96 +205,13 @@ function OurglobalFootprint() {
                         Road Construction
                       </span>
                       <div className="flex items-center space-x-2">
-                        {/* <span className="text-white font-semibold text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x]">
-                          18+ Highways
-                        </span> */}
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                     </div>
                   </div>
-
-                  {/* <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-                    <motion.div
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{
-                        duration: 0.8,
-                        delay: 0.4,
-                        ease: "easeOut",
-                      }}
-                      viewport={{ once: true }}
-                      className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
-                    >
-                      <button
-                        className="
-                bg-black
-                border-1
-                border-black
-                text-white 
-                px-2 
-                xl:px-2
-                py-2 
-                rounded-full 
-                transition-all 
-                duration-300 
-                text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]
-                relative
-                overflow-hidden
-                group
-                hover:-translate-y-0.5
-                flex
-                items-center
-                justify-center
-                min-w-[200px]
-                xl:min-w-[200px]
-              "
-                      >
-                        <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                          View Our Profile
-                        </span>
-                        <span
-                          className="
-                  absolute
-                  right-4
-                  top-1.5
-                  opacity-0
-                  -translate-x-2
-                  group-hover:opacity-100
-                  group-hover:translate-x-0
-                  transition-all
-                  duration-300
-                  font-bold
-                "
-                        >
-                          →
-                        </span>
-                      </button>
-                    </motion.div>
-                    <motion.div
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{
-                        duration: 0.8,
-                        delay: 0.4,
-                        ease: "easeOut",
-                      }}
-                      viewport={{ once: true, amount: 0.3 }}
-                      className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
-                    >
-                      <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300 text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
-                        <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                          Explore Now
-                        </span>
-                        <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
-                          →
-                        </span>
-                      </button>
-                    </motion.div>
-                  </div> */}
                 </motion.div>
               </div>
 
-              {/* Image Panel with Overlay Stats */}
               <div className="lg:col-span-2 relative h-64 sm:h-72 md:h-80 lg:h-auto min-h-[300px]">
                 <Image
                   src="/innerpage-construction/unganda.jpg"
@@ -322,7 +223,6 @@ function OurglobalFootprint() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent lg:bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
 
-                {/* Floating Stats Grid */}
                 <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
                   <div className="bg-[#0000006b] p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
@@ -342,7 +242,6 @@ function OurglobalFootprint() {
                   </div>
                 </div>
 
-                {/* Bottom Content */}
                 <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:left-8 text-white">
                   <div className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-80 font-light">
                     Building Uganda&apos;s Future Since 2003
@@ -357,7 +256,6 @@ function OurglobalFootprint() {
 
           <div className="bg-white shadow-2xl overflow-hidden border border-gray-100 mb-4 md:mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-3">
-              {/* Text Panel - Executive Dark Theme */}
               <div className="lg:col-span-1 p-8 sm:p-10 lg:p-12 bg-gradient-to-br from-gray-900 to-gray-800">
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
@@ -428,90 +326,9 @@ function OurglobalFootprint() {
                       </div>
                     </div>
                   </div>
-
-                  {/* <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-                    <motion.div
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{
-                        duration: 0.8,
-                        delay: 0.4,
-                        ease: "easeOut",
-                      }}
-                      viewport={{ once: true }}
-                      className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
-                    >
-                      <button
-                        className="
-            bg-black
-            border-1
-            border-black
-            text-white 
-            px-2 
-            xl:px-2
-            py-2 
-            rounded-full 
-            transition-all 
-            duration-300 
-            text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]
-            relative
-            overflow-hidden
-            group
-            hover:-translate-y-0.5
-            flex
-            items-center
-            justify-center
-            min-w-[200px]
-            xl:min-w-[200px]
-          
-          "
-                      >
-                        <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                          View Our Profile
-                        </span>
-                        <span
-                          className="
-              absolute
-              right-4
-              top-1.5
-              opacity-0
-              -translate-x-2
-              group-hover:opacity-100
-              group-hover:translate-x-0
-              transition-all
-              duration-300
-              font-bold
-            "
-                        >
-                          →
-                        </span>
-                      </button>
-                    </motion.div>
-                    <motion.div
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{
-                        duration: 0.8,
-                        delay: 0.4,
-                        ease: "easeOut",
-                      }}
-                      viewport={{ once: true, amount: 0.3 }}
-                      className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
-                    >
-                      <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300    text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]  relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
-                        <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                          Explore Now
-                        </span>
-                        <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
-                          →
-                        </span>
-                      </button>
-                    </motion.div>
-                  </div> */}
                 </motion.div>
               </div>
 
-              {/* Image Panel with Overlay Stats */}
               <div className="lg:col-span-2 relative h-64 sm:h-72 md:h-80 lg:h-auto min-h-[300px]">
                 <Image
                   src="/innerpage-construction/middle-east.jpg"
@@ -523,7 +340,6 @@ function OurglobalFootprint() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent lg:bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
 
-                {/* Floating Stats Grid */}
                 <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8 grid grid-cols-2 gap-3 sm:gap-4">
                   <div className="bg-[#0000006b] p-3 sm:p-4 text-center border border-white/10 min-w-[60px] sm:min-w-[100px]">
                     <div className="text-[14px] sm:text-[16px] lg:text-[16px] xl:text-[16x] font-bold text-white">
@@ -543,7 +359,6 @@ function OurglobalFootprint() {
                   </div>
                 </div>
 
-                {/* Bottom Content */}
                 <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:left-8 text-white">
                   <div className="text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] opacity-80 font-light">
                     Qatar • UAE • Oman
@@ -568,7 +383,8 @@ function OurglobalFootprint() {
               viewport={{ once: true }}
               className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
             >
-              <button onClick={handleViewProfile}
+              <button
+                onClick={handleViewProfile}
                 className="
             bg-black
             border-1
@@ -614,26 +430,6 @@ function OurglobalFootprint() {
                 </span>
               </button>
             </motion.div>
-            {/* <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.4,
-                ease: "easeOut",
-              }}
-              viewport={{ once: true, amount: 0.3 }}
-              className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 lg:gap-6 justify-center items-center"
-            >
-              <button className="bg-transparent border border-white text-white px-2 xl:px-2 py-2 rounded-full transition-all duration-300    text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x]  relative overflow-hidden group hover:-translate-y-0.5 flex items-center justify-center min-w-[135px] xl:min-w-[135px] hover:bg-white/20">
-                <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                  Explore Now
-                </span>
-                <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 font-bold">
-                  →
-                </span>
-              </button>
-            </motion.div> */}
           </div>
         </div>
       </section>
