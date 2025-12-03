@@ -30,7 +30,7 @@ const RegisterInterestForm = () => {
     setSubmitStatus({ type: '', message: '' });
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/api/contactpage', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
