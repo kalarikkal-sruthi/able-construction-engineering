@@ -54,7 +54,7 @@ export async function POST(request) {
     // Email content
     const mailOptions = {
       from: `"Website Contact" <${process.env.GMAIL_USER.trim()}>`,
-      to: 'sruth',
+      to: 'kalarikkalsruthi79@gmail.com',
       subject: `New Contact: ${formData.firstName} ${formData.lastName}`,
       html: `
         <h2>New Contact Form Submission</h2>
