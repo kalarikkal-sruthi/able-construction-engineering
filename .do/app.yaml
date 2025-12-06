@@ -1,0 +1,14 @@
+name: my-next-app
+static_sites:
+  - name: able-construction-engineering
+    github:
+      branch: main
+      deploy_on_push: true
+    source_dir: /
+    build_command: npm run build
+    environment_slug: node-js
+    envs:
+      - key: NODE_ENV
+        value: production
+    index_document: index.html
+    error_document: 404.html
