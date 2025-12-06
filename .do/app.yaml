@@ -5,10 +5,15 @@ static_sites:
       branch: main
       deploy_on_push: true
     source_dir: /
-    build_command: npm run build
+    build_command: |
+      npm ci --cache .npm --prefer-offline
+      npm run build
     environment_slug: node-js
     envs:
       - key: NODE_ENV
         value: production
+      # Add Node.js optimization
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=4096"
     index_document: index.html
     error_document: 404.html
