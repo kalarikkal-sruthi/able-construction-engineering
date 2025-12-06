@@ -2,15 +2,13 @@
   "name": "my-next-app",
   "version": "0.1.0",
   "private": true,
+
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "echo 'Static site'",
-    "lint": "eslint .",
-    "postinstall": "npm run build"  
-  },
-  "engines": {
-    "node": "18.x"
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
     "@react-spring/web": "^10.0.3",
