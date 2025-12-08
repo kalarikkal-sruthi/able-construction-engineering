@@ -6,8 +6,8 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "lint": "next lint"
+   
   },
   "dependencies": {
     "@react-spring/web": "^10.0.3",
