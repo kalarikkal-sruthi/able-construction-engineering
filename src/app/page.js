@@ -143,8 +143,10 @@ export default function Home() {
               </div>
 
               <div className="flex space-x-4 ">
-           <Link href="/about">    <button
-                  className="
+                <Link href="/about">
+                  {" "}
+                  <button
+                    className="
                              bg-black
     border-1
     border-black
@@ -170,14 +172,15 @@ export default function Home() {
           min-w-[135px]
           xl:min-w-[135px]
         "
-                >
-                  <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                    Learn More
-                  </span>
-                  <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-                    →
-                  </span>
-                </button></Link> 
+                  >
+                    <span className="transition-transform duration-300 group-hover:-translate-x-2">
+                      Learn More
+                    </span>
+                    <span className="absolute right-4 top-1.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                      →
+                    </span>
+                  </button>
+                </Link>
               </div>
             </div>
 

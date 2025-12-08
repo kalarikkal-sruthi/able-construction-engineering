@@ -1,18 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   
-  reactCompiler: true ,
-
-
-  swcMinify: true, 
+  output: 'standalone',
+  
+  // Keep these
+  reactStrictMode: true,
+  swcMinify: true,
+  
+  // Optional optimizations
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
-  },
- 
-  experimental: {
-    // esmExternals: false,
-    
-    // turbo: true,
   },
 };
 
