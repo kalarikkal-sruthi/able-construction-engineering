@@ -4,7 +4,7 @@ services:
     github:
       branch: main
       deploy_on_push: true
-    source_dir: /src # Only if package.json is in src/
+    source_dir: / # Only if package.json is in src/
     build_command: |
       npm ci --no-audit --prefer-offline
       npm run build
