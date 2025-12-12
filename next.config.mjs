@@ -1,17 +1,25 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   distDir: 'build',
   trailingSlash: true,
-  images: { unoptimized: true },
-  assetPrefix: '.',
   
-  // Webpack config only (will be used with --webpack flag)
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.output.publicPath = './';
+  // ⚠️ CRITICAL: Add turbopack config
+  turbopack: {
+    // Turbopack configuration for static export
+    resolveAlias: {
+      // Add any path aliases you use
     }
-    return config;
   },
+  
+  // Remove webpack config OR use only one
+  // webpack: (config) => { ... }  // ⛔ REMOVE THIS
+  
+  // Keep these
+  images: {
+    unoptimized: true,
+  },
+  assetPrefix: '.',
 };
 
 export default nextConfig;
