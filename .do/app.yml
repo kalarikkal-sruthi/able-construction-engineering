@@ -1,7 +1,7 @@
 static_sites:
   - name: web
     build_command: npm run build
-   
+    output_dir: build
     catchall_document: index.html
     # Add headers for CSS
     headers:
