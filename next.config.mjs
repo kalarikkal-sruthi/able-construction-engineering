@@ -1,14 +1,17 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  distDir: 'build',  // or 'out' - whichever you're using
+  distDir: 'build',
   trailingSlash: true,
-  images: {
-    unoptimized: true,  // Required for static export
-  },
-
-  reactStrictMode: true,
+  images: { unoptimized: true },
   assetPrefix: '.',
+  
+  // Webpack config only (will be used with --webpack flag)
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.output.publicPath = './';
+    }
+    return config;
+  },
 };
 
 export default nextConfig;

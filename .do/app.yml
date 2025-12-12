@@ -1,0 +1,15 @@
+static_sites:
+  - name: web
+    build_command: npm run build
+    output_dir: build
+    catchall_document: index.html
+    # Add headers for CSS
+    headers:
+      - path: /*
+        values:
+          - key: Cache-Control
+            value: public, max-age=31536000, immutable
+      - path: /_next/static/*
+        values:
+          - key: Cache-Control
+            value: public, max-age=31536000, immutable
