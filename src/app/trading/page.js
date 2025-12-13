@@ -6,120 +6,84 @@ import TradingBanner from "@/componets/ui/TradingBanner";
 import React from "react";
 import Head from "next/head";
 
-export const metadata = {
-  title:
-    "Trading Division | Able Group Developers | Global Supply Chain & Material Trading",
-  description:
-    "Able Group's trading divisions in Qatar & Saudi Arabia supply essential construction materials & industrial fuel. Global supply chain network serving infrastructure projects worldwide.",
-  keywords:
-    "construction materials trading, industrial fuel supply, Qatar trading, Saudi Arabia trading, building materials, steel trading, cement supply, supply chain management, Able Group trading",
-  openGraph: {
-    title:
-      "Trading Division | Able Group Developers | Global Supply Chain Network",
-    description:
-      "Essential construction materials and industrial fuel supply through our established trading networks in Qatar and Saudi Arabia.",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Able Group Trading Division | Global Supply Chain Solutions",
-    description:
-      "Reliable supplier of construction materials and industrial fuel across Middle East and global markets.",
-  },
-  alternates: {
-    canonical: "/trading",
-  },
-};
 function page() {
   return (
     <>
       <Head>
-        {/* Additional meta tags specific to trading page */}
+        <title>
+          Able Group Trading Division | Global Supply Chain & Material
+          Distribution
+        </title>
         <meta
-          property="og:image"
-          content="https://ablegroupdevelopers.com/trading-og-image.jpg"
+          name="description"
+          content="Able Group's global trading division supplies essential construction materials, industrial fuel, and building supplies across Qatar, Saudi Arabia, UAE, and India."
+        />
+         <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
         <meta
-          property="og:image:alt"
-          content="Able Group Trading Division - Global Supply Chain"
+          name="keywords"
+          content="construction materials trading, industrial fuel supply, building materials distributor, Qatar trading, Saudi Arabia suppliers, UAE construction supplies, global supply chain, Able Group trading"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://ablegroupdevelopers.com/trading" />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Able Group Trading Division | Global Supply Chain & Material Distribution"
         />
         <meta
-          name="twitter:image"
-          content="https://ablegroupdevelopers.com/trading-twitter-image.jpg"
+          property="og:description"
+          content="Global suppliers of construction materials and industrial fuel with established networks across Middle East and India."
+        />
+        <meta
+          property="og:url"
+          content="https://ablegroupdevelopers.com/trading"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:title" content="Able Group Trading Division" />
+        <meta
+          name="twitter:description"
+          content="Reliable global supply chain partners for construction and industrial needs."
         />
       </Head>
-
-      <div itemScope itemType="https://schema.org/Organization">
-        {/* Hidden structured data for this specific page */}
-        <meta itemProp="name" content="Able Group Trading Division" />
-        <meta
-          itemProp="description"
-          content="Global supplier of construction materials and industrial fuel with operations in Qatar and Saudi Arabia."
-        />
-
-        <main>
-          <TradingBanner />
-          <OurCoreTradingDivisions />
-          <OurStrategicPresence />
-          <OurTradingNetwork />
-        </main>
+      <div>
+        <TradingBanner />
+        <OurCoreTradingDivisions />
+        <OurStrategicPresence />
+        <OurTradingNetwork />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://ablegroupdevelopers.com/trading#organization",
+              "@type": "Service",
               name: "Able Group Trading Division",
-              url: "https://ablegroupdevelopers.com/trading",
               description:
-                "Global supplier of construction materials and industrial fuel with trading operations in Qatar and Saudi Arabia.",
-              foundingDate: "1992",
-              areaServed: [
-                "Qatar",
-                "Saudi Arabia",
-                "UAE",
-                "India",
-                "East Africa",
-              ],
-              makesOffer: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Product",
-                    name: "Construction Materials",
-                    description:
-                      "Steel, cement, aggregates, and building materials",
-                  },
-                  availableAtOrFrom: {
-                    "@type": "Place",
-                    name: "Qatar Trading Division",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Product",
-                    name: "Industrial Fuel",
-                    description:
-                      "Fuel supply for construction and industrial use",
-                  },
-                  availableAtOrFrom: {
-                    "@type": "Place",
-                    name: "Saudi Arabia Trading Division",
-                  },
-                },
-              ],
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "sales",
-                availableLanguage: ["English", "Arabic", "Hindi"],
-              },
-              parentOrganization: {
+                "Global trading division supplying construction materials and industrial fuel across Middle East and India",
+              provider: {
                 "@type": "Organization",
                 name: "Able Group Developers",
                 url: "https://ablegroupdevelopers.com",
               },
+              areaServed: {
+                "@type": "Place",
+                name: "Middle East, India, East Africa",
+              },
+              offers: {
+                "@type": "Offer",
+                category: "Construction Materials & Industrial Fuel Supply",
+              },
+              serviceType: [
+                "Construction Material Distribution",
+                "Industrial Fuel Supply",
+                "Building Supplies Trading",
+                "Global Logistics",
+              ],
             }),
           }}
         />
