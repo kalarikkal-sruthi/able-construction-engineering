@@ -19,7 +19,7 @@ export default function Home() {
           name="description"
           content="Able Group is a global conglomerate with 30+ years of excellence in construction, infrastructure, trading, and sustainable agribusiness across India, Middle East & East Africa."
         />
-        <meta name="keywords" content="construction, infrastructure, real estate, development, sustainable agribusiness, trading, Qatar, Saudi Arabia, UAE, India, Uganda" />
+        <meta name="keywords" content="construction, infrastructure,  development, sustainable agribusiness, trading, Qatar, Saudi Arabia, UAE, India, Uganda" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta
           name="viewport"
