@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Able Group is a global conglomerate with 30+ years of excellence in construction, infrastructure, trading, and sustainable agribusiness across India, Middle East & East Africa.",
   keywords:
-    "construction, infrastructure, real estate, development, sustainable agribusiness, trading, Qatar, Saudi Arabia, UAE, India, Uganda, building, development group, Able Group",
+    "construction, sustainable agribusiness, trading, Qatar, Saudi Arabia, UAE, India, Uganda, building, development group, Able Group",
   robots: {
     index: true,
     follow: true,
@@ -63,8 +63,9 @@ export const metadata = {
   },
   viewport: {
     width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
+    initialScale: 1.0,
+    maximumScale: 1.0,
+    userScalable: false,
   },
   icons: {
     icon: [
@@ -84,22 +85,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Preconnect to important domains */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-
-        {/* Additional meta tags for better SEO */}
         <meta
           name="google-site-verification"
           content="your-verification-code"
         />
         <meta name="msvalidate.01" content="your-bing-verification-code" />
-
-        {/* Preload critical resources */}
         <link
           rel="preload"
           href="/logo-favicon.png"
@@ -108,7 +104,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased text-gray-700 bg-white">
-        {/* Skip to content link for accessibility */}
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:p-4 focus:border-2 focus:border-black"
@@ -119,8 +114,6 @@ export default function RootLayout({ children }) {
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
-
-        {/* Structured data for better SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
