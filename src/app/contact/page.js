@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import RegisterInterestForm from "@/componets/ui/RegisterInterestForm";
 
 function page() {
   return (
@@ -14,7 +15,7 @@ function page() {
           <div className="absolute inset-0">
             <div className="relative h-full w-full">
               <Image
-                src="/aboutus/meeting.webp"
+                src="/contactus/1.jpg"
                 alt="Able Group leadership team meeting discussing construction and business strategies in modern conference room"
                 fill
                 className="object-cover scale-110 parallax-zoom"
@@ -46,39 +47,17 @@ function page() {
                      Contact Us
                     </h1>
                     <h2 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
-                      Construction • Trading • Agribusiness
+                How can we support your project today?
                     </h2>
                   </motion.div>
                 </header>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  className="flex flex-wrap justify-center gap-4 md:gap-6 mb-12 items-center"
-                >
-                  {[
-                    { label: "Est. 1992" },
-                    { label: "20+ Years Experience" },
-                    { label: "3 Business Verticals" },
-                    { label: "International Presence" },
-                  ].map((item, index) => (
-                    <motion.div
-                      key={index}
-                      whileHover={{ y: -5, scale: 1.05 }}
-                      className="w-[calc(50%-8px)] md:w-auto h-12 md:h-auto flex items-center justify-center rounded-full px-4 py-1 md:px-6 md:py-2 border border-white-400/30"
-                    >
-                      <span className="text-white text-[12px] lg:text-[16px] xl:text-[16px] font-semibold text-center">
-                        {item.label}
-                      </span>
-                    </motion.div>
-                  ))}
-                </motion.div>
+            
               </div>
             </div>
           </div>
         </section>
+      <RegisterInterestForm />
 
         
       </main>

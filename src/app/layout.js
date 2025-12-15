@@ -91,16 +91,17 @@ export default function RootLayout({ children }) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+           <meta 
+          name="viewport" 
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" 
+        />
         <meta
           name="google-site-verification"
           content="your-verification-code"
         />
         <meta name="msvalidate.01" content="your-bing-verification-code" />
        
-        <meta 
-          name="viewport" 
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" 
-        />
+     
       
         <link
           rel="preload"
