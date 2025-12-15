@@ -1,3 +1,4 @@
+"use cleint"
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -42,7 +43,7 @@ function page() {
                       id="about-us-heading"
                       className="text-3xl sm:text-3xl lg:text-4xl xl:text-5xl font-light font-sans tracking-wide drop-shadow-lg leading-tight mb-4"
                     >
-                      About Us
+                     Contact Us
                     </h1>
                     <h2 className="text-1xl sm:text-1xl lg:text-2xl xl:text-2xl font-light font-sans tracking-wide drop-shadow-lg leading-tight">
                       Construction • Trading • Agribusiness

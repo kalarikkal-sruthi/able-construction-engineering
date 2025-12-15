@@ -61,12 +61,12 @@ export const metadata = {
     images: ["/twitter-image.jpg"],
     creator: "@ablegroup",
   },
- viewport: {
-  width: "device-width",
-  initialScale: 1.0,
-  maximumScale: 5.0,  
-  userScalable: true,  
-},
+//  viewport: {
+//   width: "device-width",
+//   initialScale: 1.0,
+//   maximumScale: 5.0,  
+//   userScalable: true,  
+// },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
