@@ -61,12 +61,12 @@ export const metadata = {
     images: ["/twitter-image.jpg"],
     creator: "@ablegroup",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1.0,
-    maximumScale: 1.0,
-    userScalable: false,
-  },
+ viewport: {
+  width: "device-width",
+  initialScale: 1.0,
+  maximumScale: 5.0,  
+  userScalable: true,  
+},
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -96,6 +96,12 @@ export default function RootLayout({ children }) {
           content="your-verification-code"
         />
         <meta name="msvalidate.01" content="your-bing-verification-code" />
+       
+        <meta 
+          name="viewport" 
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" 
+        />
+      
         <link
           rel="preload"
           href="/logo-favicon.png"
