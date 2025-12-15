@@ -80,7 +80,14 @@ export const metadata = {
   themeColor: "#000000",
   category: "construction",
 };
-
+export function generateViewport() {
+  return {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  }
+}
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
@@ -91,10 +98,10 @@ export default function RootLayout({ children }) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-           <meta 
+           {/* <meta 
           name="viewport" 
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" 
-        />
+        /> */}
         <meta
           name="google-site-verification"
           content="your-verification-code"
