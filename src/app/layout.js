@@ -1,12 +1,15 @@
-import Header from "@/componets/layout/Header";
+import Header from "@/componets/layout/Header"
 import "./globals.css";
 import Footer from "@/componets/layout/Footer";
+import Loading from "@/componets/ui/Loading"
+
+
 
 export const metadata = {
   title:
     "Able Group Developers | Global Construction & Development Group Since 1992",
   description:
-    "Able Group is a global conglomerate with 30+ years of excellence in construction, infrastructure, trading, and sustainable agribusiness across India, Middle East & East Africa.",
+    "Able Group is a global conglomerate with 30+ years of excellence in construction,  trading, and sustainable agribusiness across India, Middle East & East Africa.",
   keywords:
     "construction, sustainable agribusiness, trading, Qatar, Saudi Arabia, UAE, India, Uganda, building, development group, Able Group",
   robots: {
@@ -37,9 +40,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Able Group Developers | Global Construction & Development Group Since 1992",
-    description:
-      "30+ years of excellence in construction, infrastructure, and sustainable development across multiple continents.",
+      "Able Group Developers",
+    // description:
+    //   "30+ years of excellence in construction, infrastructure, and sustainable development across multiple continents.",
     url: "https://ablegroupdevelopers.com",
     siteName: "Able Group Developers",
     images: [
@@ -55,7 +58,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Able Group Developers | Global Construction & Development Group",
+    title: "Able Group Developers",
     description:
       "Building landmarks and nurturing communities since 1992 across India, Middle East, and East Africa.",
     images: ["/twitter-image.jpg"],
@@ -124,8 +127,10 @@ export default function RootLayout({ children }) {
         >
           Skip to main content
         </a>
-
+        <Loading />
+        
         <Header />
+
         <main id="main-content">{children}</main>
         <Footer />
         <script

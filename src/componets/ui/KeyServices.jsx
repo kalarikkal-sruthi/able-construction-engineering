@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Truck, Building, Route, Warehouse } from "lucide-react";
 import Image from "next/image";
 
+
+
 function KeyServices() {
   const services = [
     {
@@ -43,6 +45,7 @@ function KeyServices() {
       <section className="py-8 md:py-20 lg:py-20  ">
         <div className=" mx-auto px-4 sm:px-6 lg:px-16">
           <div className="text-start mb-4 md:mb-8">
+          
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -57,6 +60,7 @@ function KeyServices() {
                 Our Key Services
               </span>
             </motion.h1>
+            
 
             <p className="text-[12px] sm:text-[16px] lg:text-[16px] xl:text-[16x] block  mt-2 md:mt-3 sm:mt-2mb-4 md:mb-8 sm:mb-3 text-black ">
               Explore a curated collection of our landmark projects. Each one is

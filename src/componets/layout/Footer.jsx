@@ -40,6 +40,7 @@ function Footer() {
               </span>
             </div>
           </Link>
+          
           <p className="text-gray-300 text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[14x] leading-relaxed">
             A dynamic international conglomerate specializing in construction,
             strategic trading, and sustainable agribusiness across India, the
