@@ -1,19 +1,38 @@
-
-export default nextConfig;
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-});
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  distDir: 'build',
+  distDir: 'build', 
+  trailingSlash: true,
   images: {
-    unoptimized: true,
+    unoptimized: true,  
   },
-  // Keep these optimizations:
   compress: true,
   generateEtags: true,
   poweredByHeader: false,
+  reactStrictMode: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
 };
 
-module.exports = withBundleAnalyzer(nextConfig);
+export default nextConfig;
+
+
+// export default nextConfig;
+// const withBundleAnalyzer = require('@next/bundle-analyzer')({
+//   enabled: process.env.ANALYZE === 'true',
+// });
+
+// const nextConfig = {
+//   output: 'export',
+//   distDir: 'build',
+//   images: {
+//     unoptimized: true,
+//   },
+
+//   compress: true,
+//   generateEtags: true,
+//   poweredByHeader: false,
+// };
+
+// module.exports = withBundleAnalyzer(nextConfig);
