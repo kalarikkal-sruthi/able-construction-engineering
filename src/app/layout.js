@@ -1,7 +1,7 @@
 import Header from "@/componets/layout/Header"
 import "./globals.css";
 import Footer from "@/componets/layout/Footer";
-import Loading from "@/componets/ui/Loading"
+
 
 
 
@@ -127,7 +127,7 @@ export default function RootLayout({ children }) {
         >
           Skip to main content
         </a>
-        <Loading />
+      
         
         <Header />
 

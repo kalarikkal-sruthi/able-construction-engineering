@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import RegisterInterestForm from "@/componets/ui/RegisterInterestForm";
-
 function page() {
   return (
     <>
@@ -28,7 +27,6 @@ function page() {
               ></div>
             </div>
           </div>
-
           <div className="relative z-10 container mx-auto px-4 h-full flex items-center justify-center">
             <div className="max-w-6xl w-full">
               <div className="relative z-30 text-center text-white px-4 sm:px-6 lg:px-8 xl:px-12 max-w-6xl mx-auto">
@@ -50,19 +48,14 @@ function page() {
                 How can we support your project today?
                     </h2>
                   </motion.div>
-                </header>
-
-            
+                </header>            
               </div>
             </div>
           </div>
         </section>
       <RegisterInterestForm />
-
-        
       </main>
     </>
   );
 }
-
 export default page;

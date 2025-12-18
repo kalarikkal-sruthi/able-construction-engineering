@@ -1,20 +1,16 @@
 // app/api/contact/route.js
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-
 export async function POST(request) {
   console.log('=== CONTACT FORM API CALLED ===');
-  
   try {
     // Log environment variables (safely)
     console.log('GMAIL_USER exists:', !!process.env.GMAIL_USER);
     console.log('GMAIL_APP_PASSWORD exists:', !!process.env.GMAIL_APP_PASSWORD);
     console.log('NODE_ENV:', process.env.NODE_ENV);
-
     // Parse form data
     const formData = await request.json();
     console.log('Form data received:', formData);
-
     // Validate required fields
     if (!formData.firstName || !formData.lastName || !formData.email) {
       console.log('Validation failed: Missing required fields');
@@ -23,7 +19,6 @@ export async function POST(request) {
         { status: 400 }
       );
     }
-
     // Check if email is configured
     if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
       console.log('Email configuration missing');
@@ -32,7 +27,6 @@ export async function POST(request) {
         { status: 500 }
       );
     }
-
     // Create transporter with more options
     console.log('Creating transporter...');
     const transporter = nodemailer.createTransport({
@@ -45,12 +39,10 @@ export async function POST(request) {
       debug: true,
       logger: true
     });
-
     // Verify transporter configuration
     console.log('Verifying transporter...');
     await transporter.verify();
     console.log('Transporter verified successfully');
-
     // Email content
     const mailOptions = {
       from: `"Website Contact" <${process.env.GMAIL_USER.trim()}>`,
@@ -75,11 +67,9 @@ export async function POST(request) {
         Sent: ${new Date().toLocaleString()}
       `
     };
-
     console.log('Sending email...');
     const info = await transporter.sendMail(mailOptions);
     console.log('Email sent successfully:', info.messageId);
-
     return NextResponse.json(
       { 
         success: true, 
@@ -88,23 +78,19 @@ export async function POST(request) {
       },
       { status: 200 }
     );
-
   } catch (error) {
     console.error('=== ERROR DETAILS ===');
     console.error('Error name:', error.name);
     console.error('Error message:', error.message);
     console.error('Error code:', error.code);
     console.error('Error stack:', error.stack);
-    
     // Check for specific Gmail errors
     if (error.code === 'EAUTH') {
       console.error('Authentication failed. Check GMAIL_APP_PASSWORD');
     }
-    
     if (error.code === 'EENVELOPE') {
       console.error('Email envelope error. Check recipient email');
     }
-
     return NextResponse.json(
       { 
         error: 'Failed to submit form',
