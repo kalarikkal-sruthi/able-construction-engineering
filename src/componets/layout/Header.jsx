@@ -159,28 +159,28 @@ export default function Header() {
               <div className="text-gray-300">|</div>
               <div className="flex space-x-3 xl:space-x-4">
                 <Link
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/ablegroupdevelopers/"
                   target="_blank"
                   className="text-white  hover:text-pink-600 transition"
                 >
                   <Instagram size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/people/Ablegroupdevelopers/61585551792073/"
                   target="_blank"
                   className="text-white  hover:text-blue-600 transition"
                 >
                   <Facebook size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/in/ablegroup-developers-3863823a2/"
                   target="_blank"
                   className="text-white  hover:text-blue-700 transition"
                 >
                   <Linkedin size={18} className="xl:w-5 xl:h-5" />
                 </Link>
                 <Link
-                  href="https://yourwebsite.com"
+                  href="https://ablegroupdevelopers.com/"
                   target="_blank"
                   className="text-white  hover:text-green-600 transition"
                 >
