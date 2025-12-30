@@ -158,7 +158,7 @@ const RegisterInterestForm = () => {
 
           <div className="relative lg:col-span-3">
             <div className="relative overflow-hidden">
-              {submitStatus.message && (
+              {/* {submitStatus.message && (
                 <motion.div
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -170,8 +170,7 @@ const RegisterInterestForm = () => {
                 >
                   {submitStatus.message}
                 </motion.div>
-              )}
-
+              )} */}
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                   <div className="space-y-2">

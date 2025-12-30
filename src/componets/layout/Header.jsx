@@ -314,28 +314,28 @@ export default function Header() {
             </Link>
             <div className="flex justify-start  py-4  space-x-4 sm:space-x-6 ">
               <Link
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/ablegroupdevelopers/"
                 target="_blank"
                 className="text-gray-500 hover:text-pink-600 transition-transform duration-300 hover:scale-110"
               >
                 <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
               <Link
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/people/Ablegroupdevelopers/61585551792073/"
                 target="_blank"
                 className="text-gray-500 hover:text-blue-600 transition-transform duration-300 hover:scale-110"
               >
                 <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
               <Link
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/ablegroup-developers-3863823a2/"
                 target="_blank"
                 className="text-gray-500 hover:text-blue-700 transition-transform duration-300 hover:scale-110"
               >
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
               <Link
-                href="https://yourwebsite.com"
+                href="https://ablegroupdevelopers.com/"
                 target="_blank"
                 className="text-gray-500 hover:text-green-600 transition-transform duration-300 hover:scale-110"
               >
