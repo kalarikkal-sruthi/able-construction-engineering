@@ -54,6 +54,7 @@ function page() {
           </div>
         </section>
       <RegisterInterestForm />
+      
       </main>
     </>
   );
